@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5230fa425aa890a4980b076cc34fe758
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _fpsCameraT: {instanceID: 0}
+  - _target: {instanceID: 0}
+  - _grabTargetIcon: {fileID: 21300000, guid: 2a233acb8cd8ff746a0044afed81dd28, type: 3}
+  - _defaultTargetIcon: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
