@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 65c39322699f70b43afa6f7488ce7b91
+guid: e5a20bc0819e0f54cb5fc0a7022ba0af
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ScaffaleLungo
-    second: {fileID: 2100000, guid: f7a60e9050b776a469c0bdf9e45f8674, type: 2}
+      name: DisplayFrutta
+    second: {fileID: 2100000, guid: 6c4de00831c602f40b42da859d63ac88, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
