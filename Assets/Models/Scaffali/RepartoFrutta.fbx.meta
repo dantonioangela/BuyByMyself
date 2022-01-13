@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5a20bc0819e0f54cb5fc0a7022ba0af
+guid: fcd7c358ea98d314c9e7077459be1b76
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: DisplayFrutta
-    second: {fileID: 2100000, guid: 6c4de00831c602f40b42da859d63ac88, type: 2}
+    second: {fileID: 2100000, guid: ec98968236c79b3488509328b1271d82, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
