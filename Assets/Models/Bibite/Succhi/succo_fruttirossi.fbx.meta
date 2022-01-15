@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tappo
-    second: {fileID: -3886673917889824797, guid: 6cbadd2feda3f9e44b8b056e13e2a220, type: 3}
+    second: {fileID: 2100000, guid: 6b56ddcf5dda2c140ba35a9272f62516, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
