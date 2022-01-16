@@ -13,12 +13,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Pollo_ossa
-    second: {fileID: 2100000, guid: 2ccd653bc1429bb43beedb6885175360, type: 2}
+    second: {fileID: 2100000, guid: dcffb95dc964c75468255bd0debe612d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Pollo_vaschetta
-    second: {fileID: 2100000, guid: d47abfef27dc8da45bd93e80712c0bcb, type: 2}
+    second: {fileID: 2100000, guid: dcffb95dc964c75468255bd0debe612d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

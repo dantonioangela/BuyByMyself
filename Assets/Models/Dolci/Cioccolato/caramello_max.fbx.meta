@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CaramelloMax
-    second: {fileID: 2100000, guid: 5217398cd5b6ae947bc5fea24fe59a5d, type: 2}
+    second: {fileID: 2100000, guid: 1a6557c13f4dd834597f297ec6267816, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

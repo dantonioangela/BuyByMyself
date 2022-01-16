@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: pollo
-    second: {fileID: 2100000, guid: 7fc25b56f24e43847aee61e166428a81, type: 2}
+    second: {fileID: 2100000, guid: c44c6487f6cca1a438d17ffc0cad95e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

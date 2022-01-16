@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: uva_foglia
-    second: {fileID: 2100000, guid: 3c0febd1da51d644cbab227ad73f1c15, type: 2}
+    second: {fileID: 2100000, guid: da95a0c756cbe28499f79374b7b064f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

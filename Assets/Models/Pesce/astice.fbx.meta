@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: vaschetta
-    second: {fileID: 2100000, guid: 5a48d3e28dc6a8544a3d63b2b4183ffc, type: 2}
+    second: {fileID: 2100000, guid: 193724ce02106d0498a922fd47c65fa8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: fondente
-    second: {fileID: 2100000, guid: 39d75f3bda9f59145870a66e3754ecc3, type: 2}
+    second: {fileID: 2100000, guid: 1a6557c13f4dd834597f297ec6267816, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

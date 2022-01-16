@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: peperone_rosso_marcio
-    second: {fileID: 2100000, guid: 9e5207c09bedab745947e282d9ad9f51, type: 2}
+    second: {fileID: 2100000, guid: ac9c46dd3332c894ca69b85b074bd88f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

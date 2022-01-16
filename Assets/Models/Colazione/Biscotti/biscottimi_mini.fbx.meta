@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: biscotti1
-    second: {fileID: 2100000, guid: a9ae4202938c1b641af8916748ff122b, type: 2}
+    second: {fileID: 2100000, guid: 3aa4c731e63065744919d610b1b408e6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

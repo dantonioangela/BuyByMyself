@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Nocciola
-    second: {fileID: 2100000, guid: c3f77f7f1f9be1f44b48e259dcce8440, type: 2}
+    second: {fileID: 2100000, guid: 1a6557c13f4dd834597f297ec6267816, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

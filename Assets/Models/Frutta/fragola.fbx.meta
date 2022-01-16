@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Foglia
-    second: {fileID: 2100000, guid: b29dc77a9e5ba8440be59c95122d7099, type: 2}
+    second: {fileID: 2100000, guid: 6d2c4e0f9c1967844a093cf2cb812ab5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
