@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Yogurt_carta
-    second: {fileID: 2100000, guid: 5a0d61325f37745ee8e6a32e828ec209, type: 2}
+    second: {fileID: 2100000, guid: eb5fec411873642238093369b199c440, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
