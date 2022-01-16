@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mozzarella
-    second: {fileID: 2100000, guid: 7e40f8bd53969416683998a0d27e79b5, type: 2}
+    second: {fileID: 2100000, guid: c1c411c074dc84efbba14845c572de15, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Lievito_pane
-    second: {fileID: 2100000, guid: 3218f2a035c6e426384ac6cde4eca05f, type: 2}
+    second: {fileID: 2100000, guid: 808b297e033074da4b9e3296077e3ad9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
