@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c90424b1921c4300ad4356b6b22bfdf
+guid: 3d84bf2b73fa84a6882c47f194c27a3a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Carrello
-    second: {fileID: 2100000, guid: b3e7edb5ca97542f08536f3122a13a26, type: 2}
+      name: FetteBiscottate_Merendine
+    second: {fileID: 2100000, guid: cea8ea1ef6e3b4892badfd95f4581049, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

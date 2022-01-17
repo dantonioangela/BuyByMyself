@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f17ef356b979499997ed741f036bd63
+guid: b5f3d0d375ee5472d909446552a2f91f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: x3
-    second: {fileID: 2100000, guid: 031a4f73a772b408fbabf7822aedccfd, type: 2}
+      name: FetteBiscottate_Merendine
+    second: {fileID: 2100000, guid: cea8ea1ef6e3b4892badfd95f4581049, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

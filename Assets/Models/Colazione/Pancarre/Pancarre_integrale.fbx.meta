@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c90424b1921c4300ad4356b6b22bfdf
+guid: 8489ec0d34a0245b2a2c1b25f699463f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Carrello
-    second: {fileID: 2100000, guid: b3e7edb5ca97542f08536f3122a13a26, type: 2}
+      name: PanCarre
+    second: {fileID: 2100000, guid: aaac0f525ccb944ae9de2daa4bf1c7ba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
