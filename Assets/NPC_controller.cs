@@ -7,12 +7,15 @@ public class NPC_controller : MonoBehaviour
 {
     private NavMeshAgent myAgent;
     private GameObject[] availablePlaces;
+    private Animator animator;
     private int lastShelfChosen;
     private Ray ray;
     private RaycastHit hit;
     private bool alreadyWaiting = false;
     private int seed = 1900;
     private float smooth = 5.0f;
+    private bool isWalking;
+    public float animationSpeed;
 
     private void Awake()
     {
@@ -25,6 +28,9 @@ public class NPC_controller : MonoBehaviour
         availablePlaces = GameObject.FindGameObjectsWithTag("PlaceToStop");
         lastShelfChosen = Random.Range(0, availablePlaces.Length - 1);
         myAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        animator.SetBool("isWalking", true);
+        isWalking = true;
         SetDestination();
     }
 
@@ -44,14 +50,18 @@ public class NPC_controller : MonoBehaviour
                 SetDestination();
             }
         }
+        if(isWalking) animator.speed = myAgent.velocity.magnitude * animationSpeed;
     }
 
     IEnumerator Waiter()
     {
         alreadyWaiting = true;
-        
+        animator.SetBool("isWalking", false);
+        isWalking = false;
         StartCoroutine(RotateMe());
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(Random.Range(3, 7));
+        animator.SetBool("isWalking", true);
+        isWalking = true;
         SetDestination();
         alreadyWaiting = false;
     }
