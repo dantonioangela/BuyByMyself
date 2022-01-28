@@ -57,6 +57,7 @@ public class NPC_controller : MonoBehaviour
     {
         alreadyWaiting = true;
         animator.SetBool("isWalking", false);
+        animator.speed = 1;
         isWalking = false;
         StartCoroutine(RotateMe());
         yield return new WaitForSecondsRealtime(Random.Range(3, 7));
