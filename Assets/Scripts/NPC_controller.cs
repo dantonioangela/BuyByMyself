@@ -40,7 +40,6 @@ public class NPC_controller : MonoBehaviour
         ray = new Ray(transform.position, Vector3.forward);
         if (DestinationReached() && !alreadyWaiting)
         {
-            Debug.Log("suca");
             StartCoroutine(Waiter());
         }
         else if (Physics.Raycast(ray, out hit, 0.9f))
