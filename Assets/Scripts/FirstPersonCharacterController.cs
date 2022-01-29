@@ -14,6 +14,8 @@ public class FirstPersonCharacterController : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _jumpHeight = 3f;
 
+    private Vector3 move;
+
 
     private CharacterController _characterController;
     private float cameraXRotation = 0f;
@@ -23,7 +25,6 @@ public class FirstPersonCharacterController : MonoBehaviour
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
-
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -55,8 +56,11 @@ public class FirstPersonCharacterController : MonoBehaviour
 
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        Vector3 move = (transform.right * h + transform.forward * v).normalized;
-        _characterController.Move(move * _speed * Time.deltaTime);
+        float xPos = h *_speed* Time.deltaTime; 
+        float yPos = v *_speed* Time.deltaTime;
+        transform.position = new Vector3(xPos, yPos, 0);
+        //move = (transform.right * h + transform.forward * v).normalized;
+        //_characterController.Move(move * _speed * Time.deltaTime);
 
         //JUMPING
         if (Input.GetKey(KeyCode.Space) && _isGrounded)
