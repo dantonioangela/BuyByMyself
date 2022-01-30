@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CassaCheckOut
-    second: {fileID: 2100000, guid: c11a7df735af74f48985a493bee31701, type: 2}
+    second: {fileID: 2100000, guid: 494fd7444b5ce3c4592d15a0d303474f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

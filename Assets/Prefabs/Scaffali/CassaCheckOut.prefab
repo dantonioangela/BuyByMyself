@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4912144331218586763
+--- !u!1 &4978856622255516473
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5719749178436605489}
-  - component: {fileID: 8705310777479059860}
-  - component: {fileID: 6857730225578716510}
+  - component: {fileID: 5644034066997342595}
+  - component: {fileID: 8790033071817326118}
+  - component: {fileID: 6780327329027295980}
   m_Layer: 0
   m_Name: CassaCheckOut
   m_TagString: Untagged
@@ -18,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5719749178436605489
+--- !u!4 &5644034066997342595
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912144331218586763}
-  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: 0.50000006, w: 0.49999997}
-  m_LocalPosition: {x: 1.13, y: 1, z: 11.13}
+  m_GameObject: {fileID: 4978856622255516473}
+  m_LocalRotation: {x: -0.5000001, y: 0.49999994, z: 0.49999994, w: 0.50000006}
+  m_LocalPosition: {x: -3.9997811, y: 0.00000035762787, z: 13.806623}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
---- !u!33 &8705310777479059860
+--- !u!33 &8790033071817326118
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912144331218586763}
+  m_GameObject: {fileID: 4978856622255516473}
   m_Mesh: {fileID: 2726389143993372555, guid: c62a9d80818a1dd4589b5e13d02173fd, type: 3}
---- !u!23 &6857730225578716510
+--- !u!23 &6780327329027295980
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912144331218586763}
+  m_GameObject: {fileID: 4978856622255516473}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

@@ -3,12 +3,7 @@ guid: adb9acaf5d648324aaa19b7025229579
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ZuccaBad
-    second: {fileID: 2100000, guid: 8f8139bc3246bf5428303a5f7daf6e6d, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
