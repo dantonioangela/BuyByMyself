@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class Camera_controller : MonoBehaviour
 {
-    public GameObject player;
-    // Start is called before the first frame update
-    void Start()
-    {
+    new private Camera camera;
+    public Player_Controller player_controller;
+    private int oldMask;
 
+    private void Start()
+    {
+        oldMask = Camera.main.cullingMask;
+        camera = GetComponent<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, 1.65f, player.transform.position.z);
-        transform.rotation = Quaternion.LookRotation(player.transform.forward, transform.up);
+        if( player_controller.inventario)
+        {
+            camera.cullingMask = (oldMask << LayerMask.NameToLayer("UI_inventario"));
+        }
+        else
+        {
+            camera.cullingMask = oldMask;
+        }
     }
 }

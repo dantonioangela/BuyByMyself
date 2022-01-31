@@ -7,6 +7,7 @@ public class NPC_controller : MonoBehaviour
 {
     private NavMeshAgent myAgent;
     private GameObject[] availablePlaces;
+    public Player_Controller player;
     private Animator animator;
     private int lastShelfChosen;
     private Ray ray;
@@ -37,19 +38,32 @@ public class NPC_controller : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        ray = new Ray(transform.position, Vector3.forward);
-        if (DestinationReached() && !alreadyWaiting)
+        if (!player.inventario)
         {
-            StartCoroutine(Waiter());
-        }
-        else if (Physics.Raycast(ray, out hit, 0.9f))
-        {
-            if (hit.transform.gameObject.tag == "NPC" && hit.transform != transform && hit.normal.magnitude - myAgent.transform.forward.magnitude < 0.1 && hit.normal.magnitude - myAgent.transform.forward.magnitude > -0.1)
+            if (myAgent.isStopped)
             {
-                SetDestination();
+                myAgent.isStopped = false;
+                if (!isWalking) animator.speed = 1;
             }
+            ray = new Ray(transform.position, Vector3.forward);
+            if (DestinationReached() && !alreadyWaiting)
+            {
+                StartCoroutine(Waiter());
+            }
+            else if (Physics.Raycast(ray, out hit, 0.9f))
+            {
+                if (hit.transform.gameObject.tag == "NPC" && hit.transform != transform && hit.normal.magnitude - myAgent.transform.forward.magnitude < 0.1 && hit.normal.magnitude - myAgent.transform.forward.magnitude > -0.1)
+                {
+                    SetDestination();
+                }
+            }
+            if (isWalking) animator.speed = myAgent.velocity.magnitude * animationSpeed;
         }
-        if(isWalking) animator.speed = myAgent.velocity.magnitude * animationSpeed;
+        else
+        {
+            animator.speed = 0f;
+            myAgent.isStopped = true;
+        }
     }
 
     IEnumerator Waiter()
