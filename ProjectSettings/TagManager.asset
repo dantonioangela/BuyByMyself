@@ -47,6 +47,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 257739303
+    locked: 0
+  - name: Foreground
+    uniqueID: 3261600025
+    locked: 0
+  - name: UI_carrello
+    uniqueID: 3609001607
+    locked: 0
   - name: UI_inventario
-    uniqueID: 1766228373
+    uniqueID: 3435811089
     locked: 0

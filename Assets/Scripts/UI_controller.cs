@@ -7,6 +7,10 @@ public class UI_controller : MonoBehaviour
     public Player_Controller player_controller;
     private Transform UI_inventario;
 
+    //DA CAMBIARE
+    public GameObject obj1;
+    public GameObject obj2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,7 @@ public class UI_controller : MonoBehaviour
         if (player_controller.inventario)
         {
             UI_inventario.gameObject.SetActive(true);
+            
         }
         else
         {
