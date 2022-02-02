@@ -10,6 +10,7 @@ TagManager:
   - player
   - carrello
   - Floor
+  - cassiera
   layers:
   - Default
   - TransparentFX

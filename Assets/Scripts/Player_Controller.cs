@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
     public bool inventario;
+    public bool UI_active = false;
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
 
@@ -29,7 +30,7 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!inventario)
+        if (!inventario && !UI_active)
         {
             if (carrello.mode == 0)
             {
