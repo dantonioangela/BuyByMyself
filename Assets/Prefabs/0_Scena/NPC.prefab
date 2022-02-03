@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.5, y: -3.57}
-  m_SizeDelta: {x: 263.9, y: 30}
+  m_AnchoredPosition: {x: 5.5, y: -1.8}
+  m_SizeDelta: {x: 263.9, y: 83.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &433421864
 CanvasRenderer:
@@ -66,21 +66,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7916645feca9b834b9d09c3db15ece30, type: 3}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: b6c88b8f9de1ff344a7bff65fca7a736, type: 3}
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 2.08
-  m_Text: 'Non hai il carrello,
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.28
+  m_Text: 'NON HAI IL CARRELLO,
 
-    non puoi pagare!'
+    NON PUOI PAGARE!'
 --- !u!1 &838115777
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 838115780}
   - component: {fileID: 838115779}
   m_Layer: 5
-  m_Name: Do you want to pay?
+  m_Name: Vuoi pagare?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,8 +147,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7916645feca9b834b9d09c3db15ece30, type: 3}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: b6c88b8f9de1ff344a7bff65fca7a736, type: 3}
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2.27
-  m_Text: Vuoi pagare la tua spesa?
+  m_Text: VUOI PAGARE LA TUA SPESA?
 --- !u!1 &1220575429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1697,10 @@ PrefabInstance:
     - target: {fileID: 9036899582502153066, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
       propertyPath: m_Name
       value: animatedUomo
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036899582502153066, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
