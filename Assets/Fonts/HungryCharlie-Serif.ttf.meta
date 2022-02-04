@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a917f1cacaad3164db9c843c9a44ecf4
+guid: f8c2e626892b6d943a0c96466cf36fc8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Hungry Charlie
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b6c88b8f9de1ff344a7bff65fca7a736, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
