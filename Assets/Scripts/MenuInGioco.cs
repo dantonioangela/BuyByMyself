@@ -7,6 +7,7 @@ public class MenuInGioco : MonoBehaviour
 {
 
     static public bool GiocoInPausa = false;
+    public Player_Controller player;
 
     public GameObject PauseMenuUI;
 
@@ -28,6 +29,7 @@ public class MenuInGioco : MonoBehaviour
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
+        player.UI_active = false;
         Time.timeScale = 1f;
         GiocoInPausa = false;
     }
@@ -35,6 +37,7 @@ public class MenuInGioco : MonoBehaviour
     void Pause()
     {
         PauseMenuUI.SetActive(true);
+        player.UI_active = true;
         Time.timeScale = 0f;
         GiocoInPausa = true;
     }
