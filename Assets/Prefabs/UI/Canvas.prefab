@@ -406,7 +406,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7540371192540200412}
         m_TargetAssemblyTypeName: MenuInGioco, Assembly-CSharp
-        m_MethodName: Esci
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
