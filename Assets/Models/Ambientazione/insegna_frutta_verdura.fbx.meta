@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1af486536750a0048b13ab8b91e578eb
+guid: 5dc8a27a6418c1e4f9a92f6e1660de0f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,28 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Arancio
-    second: {fileID: 2100000, guid: d2eeac8a48bc1de43b9c498d04e2bb06, type: 2}
+      name: Corda
+    second: {fileID: 2100000, guid: deaa799057e049b4fb1be21b0edf7bc4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Giallo
-    second: {fileID: 2100000, guid: d2eeac8a48bc1de43b9c498d04e2bb06, type: 2}
+      name: Frutta
+    second: {fileID: 2100000, guid: deaa799057e049b4fb1be21b0edf7bc4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Rosso
-    second: {fileID: 2100000, guid: d2eeac8a48bc1de43b9c498d04e2bb06, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blu
-    second: {fileID: 2100000, guid: d2eeac8a48bc1de43b9c498d04e2bb06, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: verde
-    second: {fileID: 2100000, guid: d2eeac8a48bc1de43b9c498d04e2bb06, type: 2}
+      name: Silver
+    second: {fileID: 2100000, guid: deaa799057e049b4fb1be21b0edf7bc4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
