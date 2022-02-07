@@ -18,12 +18,6 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuUI.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StartGame()
     {
         MainMenuUI.SetActive(false);
