@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MenuInGioco : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class MenuInGioco : MonoBehaviour
     public Player_Controller player;
 
     public GameObject PauseMenuUI;
+    public GameObject OptionsMenuUI;
+    public GameObject MainMenuUI;
+
+    public AudioMixer audioMixer;
 
     // Update is called once per frame
     void Update()
@@ -44,13 +49,26 @@ public class MenuInGioco : MonoBehaviour
 
     public void Opzioni()
     {
-        Debug.Log("Opzioni...");
+        PauseMenuUI.SetActive(false);
+        OptionsMenuUI.SetActive(true);
     }
 
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        Debug.Log("Ritorno al MainMenu...");
+        PauseMenuUI.SetActive(false);
+        MainMenuUI.SetActive(true);
+    }
+
+    public void Indietro()
+    {
+        OptionsMenuUI.SetActive(false);
+        PauseMenuUI.SetActive(true);
+    }
+
+    public void Volume(float volume)
+    {
+        audioMixer.SetFloat("MasterVolume", volume);
     }
 
 }
