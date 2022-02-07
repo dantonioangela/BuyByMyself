@@ -11,6 +11,7 @@ TagManager:
   - carrello
   - Floor
   - cassiera
+  - Vetro_frigo
   layers:
   - Default
   - TransparentFX

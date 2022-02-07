@@ -71,9 +71,17 @@ public class Player_Controller : MonoBehaviour
     {
         xRot -= playerMouseInput.y * sensitivityY ;
         xRot = Mathf.Clamp(xRot, -10f, 20f);
-        if (carrello.mode == 0 && xRot > 18f && Input.GetMouseButtonDown(0))
+        if (carrello.mode == 0 && xRot > 18f)
         {
-            inventario = true;
+            carrello.GetComponent<isSelectable>().Select();
+            if (Input.GetMouseButtonDown(0))
+            {
+                inventario = true;
+            }
+        }
+        else if( !carrello.selected )
+        {
+            carrello.GetComponent<isSelectable>().Deselect();
         }
         transform.Rotate(0f, playerMouseInput.x * sensitivityX, 0f);
         playerCamera.transform.localRotation = Quaternion.Euler(xRot , 0f, 0f);

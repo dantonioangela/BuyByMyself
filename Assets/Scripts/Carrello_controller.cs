@@ -17,6 +17,7 @@ public class Carrello_controller : MonoBehaviour
     private bool[] conBusta = new bool[3];
     private int numeroOggetti;
     private Transform parent;
+    public bool selected = false;
 
     public float prezzo_totale;
     //DA CAMBIARE
@@ -62,17 +63,37 @@ public class Carrello_controller : MonoBehaviour
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 5.0f))
             {
-                if (Input.GetMouseButtonDown(0) && hit.collider.tag == "carrello")
+                if (hit.collider.tag == "carrello")
                 {
-                    mode = 0;
-                    carrelloCollider.enabled = false;
-                    navObstacle.enabled = false;
-                    //DA CAMBIARE
-                    numeroOggetti -= 15;
-                    transform.parent = parent;
-                    transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
-                    transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);
+                    if (!selected)
+                    {
+                        GetComponent<isSelectable>().Select();
+                        selected = true;
+                    }
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        GetComponent<isSelectable>().Deselect();
+                        selected = false;
+                        mode = 0;
+                        carrelloCollider.enabled = false;
+                        navObstacle.enabled = false;
+                        //DA CAMBIARE
+                        numeroOggetti -= 15;
+                        transform.parent = parent;
+                        transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
+                        transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);
+                    }
                 }
+                else if (selected)
+                {
+                    GetComponent<isSelectable>().Deselect();
+                    selected = false;
+                }
+            }
+            else if (selected)
+            {
+                GetComponent<isSelectable>().Deselect();
+                selected = false;
             }
         }
 

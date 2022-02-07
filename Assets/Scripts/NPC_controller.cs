@@ -15,7 +15,7 @@ public class NPC_controller : MonoBehaviour
     private Ray rayCam;
     private RaycastHit hitCam;
     private bool alreadyWaiting = false;
-    private int seed = 4679;
+    private int seed = 3257;
     private float smooth = 0.3f;
     private bool isWalking;
     public float animationSpeed;
