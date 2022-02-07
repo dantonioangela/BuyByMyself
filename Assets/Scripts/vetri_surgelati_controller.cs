@@ -62,10 +62,21 @@ public class vetri_surgelati_controller : MonoBehaviour
                     aperto[0]++;
                     if (aperto[0] == 1)
                     {
-                        StartCoroutine(ToRight(0));
+                        if (aperto[1] == 1)
+                        {
+                            StartCoroutine(GoBack(1));
+                            aperto[0] = 3;
+                        }
+                        else if (aperto[2] == 1)
+                        {
+                            StartCoroutine(GoBack(2));
+                            aperto[0] = 3;
+                        }
+                        else StartCoroutine(ToRight(0));
                     }
                     if(aperto[0] == 2)
                     {
+                        if (aperto[2] == 1) StartCoroutine(GoBack(2));
                         StartCoroutine(GoBack(0));
                     }
                 }
@@ -93,8 +104,16 @@ public class vetri_surgelati_controller : MonoBehaviour
                     aperto[1]++;
                     if (aperto[1] == 1)
                     {
-                        if(aperto[2] == 1) StartCoroutine(GoBack(2));
-                        StartCoroutine(ToLeft(1));
+                        if (aperto[0] == 1)
+                        {
+                            StartCoroutine(GoBack(0));
+                            aperto[1] = 3;
+                        }
+                        else
+                        {
+                            if (aperto[2] == 1) StartCoroutine(GoBack(2));
+                            StartCoroutine(ToLeft(1));
+                        }
                     }
                     if (aperto[1] == 2)
                     {
@@ -208,6 +227,16 @@ public class vetri_surgelati_controller : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         aperto[i] = 0;
+        if(aperto[0] == 3)
+        {
+            StartCoroutine(ToRight(0));
+            aperto[0] = 1;
+        }
+        if(aperto[1] == 3)
+        {
+            StartCoroutine(ToLeft(1));
+            aperto[1] = 1;
+        }
         yield return null;
     }
 }
