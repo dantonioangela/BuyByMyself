@@ -3,12 +3,7 @@ guid: 2e80b2279239a13429670dc364e15cea
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vetro_frigo
-    second: {fileID: 2100000, guid: ebfb4dea26a535c40b87dd27ebd165c0, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

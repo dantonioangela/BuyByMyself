@@ -6,13 +6,14 @@ public class vetri_surgelati_controller : MonoBehaviour
 {
     private GameObject[] child = new GameObject[3];
     private Vector3[] pos_init = new Vector3[3];
-    public float z_spostamento;
-    public float x_spostamento;
+    private float z_spostamento = 0.002f;
+    private float x_spostamento;
     private bool[] isSelected = new bool[3];
+    private int[] aperto = new int[3];
     private Ray ray;
     private RaycastHit hit;
-    public float speed_z = 0.5f;
-    public float speed_x = 0.5f;
+    private float speed_z = 1f;
+    private float speed_x = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,16 @@ public class vetri_surgelati_controller : MonoBehaviour
         isSelected[0] = false;
         isSelected[1] = false;
         isSelected[2] = false;
+        aperto[0] = 0;
+        aperto[1] = 0;
+        aperto[2] = 0;
         child[0] = transform.GetChild(0).gameObject;
         child[1] = transform.GetChild(1).gameObject;
         child[2] = transform.GetChild(2).gameObject;
+        pos_init[0] = child[0].transform.localPosition;
+        pos_init[1] = child[1].transform.localPosition;
+        pos_init[2] = child[2].transform.localPosition;
+        x_spostamento = pos_init[0].x - pos_init[1].x;
 
     }
 
@@ -51,9 +59,15 @@ public class vetri_surgelati_controller : MonoBehaviour
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GoBack(1);
-                    GoBack(2);
-                    ToRight(0);
+                    aperto[0]++;
+                    if (aperto[0] == 1)
+                    {
+                        StartCoroutine(ToRight(0));
+                    }
+                    if(aperto[0] == 2)
+                    {
+                        StartCoroutine(GoBack(0));
+                    }
                 }
 
             }
@@ -76,9 +90,16 @@ public class vetri_surgelati_controller : MonoBehaviour
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GoBack(0);
-                    GoBack(2);
-                    ToLeft(1);
+                    aperto[1]++;
+                    if (aperto[1] == 1)
+                    {
+                        if(aperto[2] == 1) StartCoroutine(GoBack(2));
+                        StartCoroutine(ToLeft(1));
+                    }
+                    if (aperto[1] == 2)
+                    {
+                        StartCoroutine(GoBack(1));
+                    }
                 }
             }
             else if(hit.collider == child[2].GetComponent<Collider>())
@@ -100,9 +121,16 @@ public class vetri_surgelati_controller : MonoBehaviour
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GoBack(0);
-                    GoBack(1);
-                    ToRight(2);
+                    aperto[2]++;
+                    if (aperto[2] == 1)
+                    {
+                        if (aperto[1] == 1) StartCoroutine(GoBack(1));
+                        StartCoroutine(ToRight(2));
+                    }
+                    if (aperto[2] == 2)
+                    {
+                        StartCoroutine(GoBack(2));
+                    }
                 }
             }
             else if(isSelected[0] || isSelected[1] || isSelected[2])
@@ -126,55 +154,60 @@ public class vetri_surgelati_controller : MonoBehaviour
         }
     }
 
-    IEnumerator ToRight (int i)
+    private IEnumerator ToRight (int i)
     {
-        while (child[i].transform.position.z < pos_init[i].z + z_spostamento)
+        while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
-            child[i].transform.Translate(0f, 0f, z_spostamento * speed_z * Time.deltaTime);
-            yield return null;
+            child[i].transform.position += child[i].transform.up * Time.deltaTime * speed_z;
+            yield return new WaitForEndOfFrame();
         }
-        while (child[i].transform.position.x < pos_init[i].x + x_spostamento)
+        while (child[i].transform.localPosition.x > pos_init[i].x - x_spostamento)
         {
-            child[i].transform.Translate(x_spostamento * speed_x * Time.deltaTime, 0f, 0f);
-            yield return null;
+            child[i].transform.position += -child[i].transform.right * Time.deltaTime * speed_x;
+            yield return new WaitForEndOfFrame();
         }
         yield return null;
     }
 
-    IEnumerator ToLeft(int i)
+    private IEnumerator ToLeft(int i)
     {
-        while (child[i].transform.position.z < pos_init[i].z + z_spostamento)
+        while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
-            child[i].transform.Translate(0f, 0f, z_spostamento * speed_z * Time.deltaTime);
-            yield return null;
+            child[i].transform.position += child[i].transform.up * Time.deltaTime * speed_z;
+            yield return new WaitForEndOfFrame();
         }
-        while (child[i].transform.position.x > pos_init[i].x - x_spostamento)
+        while (child[i].transform.localPosition.x < pos_init[i].x + x_spostamento)
         {
-            child[i].transform.Translate(-x_spostamento * speed_x * Time.deltaTime, 0f, 0f );
-            yield return null;
+            child[i].transform.position -= -child[i].transform.right * Time.deltaTime * speed_x;
+            yield return new WaitForEndOfFrame();
         }
         yield return null;
     }
 
-    IEnumerator GoBack(int i)
+    private IEnumerator GoBack(int i)
     {
-        while (child[i].transform.position.z > pos_init[i].z)
+        if(i != 1)
         {
-            child[i].transform.Translate(0f, 0f, -z_spostamento * speed_z * Time.deltaTime);
-            yield return null;
+            while (child[i].transform.localPosition.x < pos_init[i].x)
+            {
+                child[i].transform.position -= -child[i].transform.right * Time.deltaTime * speed_x;
+                yield return new WaitForEndOfFrame();
+            }
         }
-        while (child[i].transform.position.x != pos_init[i].x)
+        else
         {
-            if (i == 1)
+            while (child[i].transform.localPosition.x > pos_init[i].x)
             {
-                child[i].transform.Translate(x_spostamento * speed_x * Time.deltaTime, 0f, 0f);
+                child[i].transform.position += -child[i].transform.right * Time.deltaTime * speed_x;
+                yield return new WaitForEndOfFrame();
             }
-            else
-            {
-                child[i].transform.Translate(-x_spostamento * speed_x * Time.deltaTime, 0f, 0f);
-            }
-            yield return null;
         }
+        while (child[i].transform.localPosition.y < pos_init[i].y)
+        {
+            child[i].transform.position -= child[i].transform.up * Time.deltaTime * speed_z;
+            yield return new WaitForEndOfFrame();
+        }
+        aperto[i] = 0;
         yield return null;
     }
 }
