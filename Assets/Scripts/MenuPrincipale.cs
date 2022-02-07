@@ -36,7 +36,7 @@ public class MenuPrincipale : MonoBehaviour
         Application.Quit();
     }
 
-    public void Difficoltà()
+    public void Difficolta()
     {
         Debug.Log("Selezione difficoltà");
     }
