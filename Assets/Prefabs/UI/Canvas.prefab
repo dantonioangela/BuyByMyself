@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 616449252}
   - component: {fileID: 616449254}
   - component: {fileID: 616449253}
+  - component: {fileID: 4294300293859063964}
   m_Layer: 5
   m_Name: LogoBBM
   m_TagString: Untagged
@@ -460,7 +461,7 @@ RectTransform:
   m_GameObject: {fileID: 616449251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.8819864, y: 2.8819864, z: 2.8819864}
+  m_LocalScale: {x: 2.8819864, y: 2.881986, z: 2.881986}
   m_Children: []
   m_Father: {fileID: 5597425743337373754}
   m_RootOrder: 3
@@ -508,6 +509,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &4294300293859063964
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616449251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d8fdcf2b1a523d499b153cb9fa41606, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &773869881
 GameObject:
   m_ObjectHideFlags: 0
