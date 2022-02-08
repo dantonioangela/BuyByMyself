@@ -2,30 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
 public class PhysicsGrabbable : Grabbable
 {
-    private Rigidbody _rigidbody;
     private Collider _collider;
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
+
 
     protected override void Start ()
     {
         base.Start();
         _collider = GetComponent<Collider>();
-        _rigidbody = GetComponent<Rigidbody>();
-
+        //originalPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+        //originalRotation = new Quaternion(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z);
+        originalPosition = gameObject.transform.position;
+        originalRotation = gameObject.transform.rotation;
     }
 
     public override void Grab(GameObject grabber)
     {
-        _collider.enabled = false;
-        _rigidbody.isKinematic = true;
+        
     }
 
     public override void Drop()
     {
-        _collider.enabled = true;
-        _rigidbody.isKinematic = false;
+        gameObject.transform.position = originalPosition;
+        gameObject.transform.rotation = originalRotation;
     }
 }

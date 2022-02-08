@@ -13,7 +13,7 @@ public class FPSInteractionManager : MonoBehaviour
     private Interactable _pointingInteractable;
     private Grabbable _pointingGrabbable;
 
-    private CharacterController _fpsController;
+    private CapsuleCollider playerCollider;
     private Vector3 _rayOrigin;
 
     private Grabbable _grabbedObject = null;
@@ -25,12 +25,12 @@ public class FPSInteractionManager : MonoBehaviour
 
     void Start()
     {
-        _fpsController = GetComponent<CharacterController>();
+        playerCollider = GetComponent<CapsuleCollider>();
     }
 
     void Update()
     {
-        _rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
+        _rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
 
         if(_grabbedObject == null)
             CheckInteraction();
@@ -104,7 +104,7 @@ public class FPSInteractionManager : MonoBehaviour
     private void Grab(Grabbable grabbable)
     {
         _grabbedObject = grabbable;
-        grabbable.transform.SetParent(_fpsCameraT);
+        grabbable.transform.SetParent(_fpsCameraT, true);
 
         _target.enabled = false;
     }

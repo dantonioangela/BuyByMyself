@@ -22,6 +22,7 @@ public class Player_Controller : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         playerRB = GetComponent<Rigidbody>();
         carrelloCollider = GetComponent<BoxCollider>();
         inventario = false;
@@ -69,7 +70,7 @@ public class Player_Controller : MonoBehaviour
 
     private void MoveCamera()
     {
-        xRot -= playerMouseInput.y * sensitivityY ;
+        xRot -= playerMouseInput.y * sensitivityY;
         xRot = Mathf.Clamp(xRot, -10f, 20f);
         if (carrello.mode == 0 && xRot > 18f)
         {
@@ -79,19 +80,19 @@ public class Player_Controller : MonoBehaviour
                 inventario = true;
             }
         }
-        else if( !carrello.selected )
+        else if (!carrello.selected)
         {
             carrello.GetComponent<isSelectable>().Deselect();
         }
         transform.Rotate(0f, playerMouseInput.x * sensitivityX, 0f);
-        playerCamera.transform.localRotation = Quaternion.Euler(xRot , 0f, 0f);
+        playerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
         transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
         transform.position = new Vector3(transform.position.x, 1.65f, transform.position.z);
     }
 
-    public void SetInventario( bool status)
+    public void SetInventario(bool status)
     {
         inventario = status;
     }
-        
+
 }
