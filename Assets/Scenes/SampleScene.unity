@@ -196,29 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &960835049 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1066958630, guid: 87eef3fe8e039d849a913542d5c18778, type: 3}
-  m_PrefabInstance: {fileID: 1628359479584082881}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &960835055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960835049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5230fa425aa890a4980b076cc34fe758, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fpsCameraT: {fileID: 1121484912}
-  _debugRay: 0
-  _interactionDistance: 3
-  _target: {fileID: 422091942}
-  _targetDefaultIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _targetGrabIcon: {fileID: 21300000, guid: 2a233acb8cd8ff746a0044afed81dd28, type: 3}
 --- !u!114 &1017669067 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1193077717309127079, guid: 04181c69e22ac12409e6f1f2ee0347cd, type: 3}
@@ -241,17 +218,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee68dc2b95713754fb0d172be4b52722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1121484912 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1280485840, guid: 87eef3fe8e039d849a913542d5c18778, type: 3}
-  m_PrefabInstance: {fileID: 1628359479584082881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1523095169 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1066958632, guid: 87eef3fe8e039d849a913542d5c18778, type: 3}
   m_PrefabInstance: {fileID: 1628359479584082881}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960835049}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fa2544e8c4b5f140a092d21856719d6, type: 3}
@@ -349,6 +321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 960835055, guid: 87eef3fe8e039d849a913542d5c18778, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 422091942}
     - target: {fileID: 1628359479238639224, guid: 87eef3fe8e039d849a913542d5c18778, type: 3}
       propertyPath: m_Name
       value: Giocatore
