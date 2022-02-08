@@ -20,6 +20,8 @@ public class MenuInGioco : MonoBehaviour
     Resolution[] resolutions;
     public Dropdown ResolutionDropdownUI;
 
+    bool inOptions = false;
+
     private void Start()
     {
         resolutions = Screen.resolutions;
@@ -56,6 +58,11 @@ public class MenuInGioco : MonoBehaviour
                     Pause();
                 }
             }
+
+            if (inOptions)
+            {
+                Indietro();
+            }
         }
     }
     public void Resume()
@@ -79,6 +86,7 @@ public class MenuInGioco : MonoBehaviour
         PauseMenuUI.SetActive(false);
         OptionsMenuUI.SetActive(true);
         MenuPrincipale.MainMenuActive = true;
+        inOptions = true;
     }
 
     public void MainMenu()
@@ -94,6 +102,7 @@ public class MenuInGioco : MonoBehaviour
         OptionsMenuUI.SetActive(false);
         PauseMenuUI.SetActive(true);
         MenuPrincipale.MainMenuActive = false;
+        inOptions = false;
     }
 
     public void Volume(float volume)

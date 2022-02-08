@@ -11,8 +11,12 @@ public class MenuPrincipale : MonoBehaviour
     public GameObject OptionsUI;
     public GameObject MainMenuUI;
     public AudioMixer audioMixer;
+    public GameObject SceltaDiffUI;
 
     static public bool MainMenuActive = false;
+
+    bool inOptions = false;
+    bool inScelta = false;
 
     Resolution[] resolutions;
     public Dropdown MAINResolutionDropdownUI;
@@ -42,17 +46,35 @@ public class MenuPrincipale : MonoBehaviour
         MAINResolutionDropdownUI.RefreshShownValue();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (inOptions)
+            {
+                Indietro();
+            }
+
+            if (inScelta)
+            {
+                BackToMainMenu();
+            }
+
+        }
+    }
+
     public void StartGame()
     {
         MainMenuUI.SetActive(false);
-        player.UI_active = false;
-        MainMenuActive = false;
+        SceltaDiffUI.SetActive(true);
+        inScelta = true;
     }
 
     public void Opzioni()
     {
         MainMenuUI.SetActive(false);
         OptionsUI.SetActive(true);
+        inOptions = true;
     }
 
     public void Esci()
@@ -70,6 +92,7 @@ public class MenuPrincipale : MonoBehaviour
     {
         OptionsUI.SetActive(false);
         MainMenuUI.SetActive(true);
+        inOptions = false;
     }
 
     public void Credits()
@@ -87,4 +110,31 @@ public class MenuPrincipale : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
+
+    public void BackToMainMenu()
+    {
+        SceltaDiffUI.SetActive(false);
+        MainMenuUI.SetActive(true);
+        inScelta = false;
+    }
+
+    public void PartitaFacile()
+    {
+        player.UI_active = false;
+        MainMenuActive = false;
+        SceltaDiffUI.SetActive(false);
+    }
+    public void PartitaMedia()
+    {
+        player.UI_active = false;
+        MainMenuActive = false;
+        SceltaDiffUI.SetActive(false);
+    }
+    public void PartitaDifficile()
+    {
+        player.UI_active = false;
+        MainMenuActive = false;
+        SceltaDiffUI.SetActive(false);
+    }
+
 }
