@@ -14,6 +14,7 @@ public class FPSInteractionManager : MonoBehaviour
     private Grabbable _pointingGrabbable;
 
     private CapsuleCollider playerCollider;
+    private Player_Controller playerController;
     private Vector3 _rayOrigin;
 
     private Grabbable _grabbedObject = null;
@@ -26,6 +27,7 @@ public class FPSInteractionManager : MonoBehaviour
     void Start()
     {
         playerCollider = GetComponent<CapsuleCollider>();
+        playerController = GetComponent<Player_Controller>();
     }
 
     void Update()
@@ -83,10 +85,17 @@ public class FPSInteractionManager : MonoBehaviour
     {
         //if (_pointingInteractable)
         //    _target.color = Color.green;
-        if (_pointingGrabbable)
-            _target.sprite = _targetGrabIcon;
-        else
-            _target.sprite = _targetDefaultIcon;
+        if(playerController.UI_active){
+            _target.enabled = false;
+        }
+        else{
+            _target.enabled = true;
+            if (_pointingGrabbable)
+                _target.sprite = _targetGrabIcon;
+            else
+                _target.sprite = _targetDefaultIcon;
+        }
+        
     }
 
     private void Drop()
