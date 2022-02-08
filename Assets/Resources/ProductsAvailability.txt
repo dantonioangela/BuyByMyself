@@ -1,0 +1,15 @@
+pera 10
+mela 20 
+succo 2
+latte 5
+uova 3
+crema 6
+bicchiere 10
+molletta 5
+cannuccia 10
+pc 3
+cfu 2
+acqua 15
+pomodoro 7
+puffo 3
+nano 5

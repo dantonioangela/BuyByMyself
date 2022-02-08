@@ -15,6 +15,7 @@ class ProductModel {
     public int? origin { get; }
     public int[]? season { get; }
     public float price { get; }
+    public int modelsNumber { get; } //numero dei modelli di questo tipo necessari nella scena
 
     public ProductModel(string id, string name, bool? sustainable, bool? packaging, int? size, int? origin, int[]? season, float price)
     {

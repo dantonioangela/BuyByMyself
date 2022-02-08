@@ -14,15 +14,18 @@ using UnityEngine.SceneManagement;
 class Loader : MonoBehaviour
 {
     public static ArrayList productModels;
+    public static Dictionary<string, int> modelsAvailability;
     private String xmlPath;
     private XmlTextReader reader; 
     bool finishedLoading = false;
 
     void Start() {
         productModels = new ArrayList();
+        modelsAvailability = new Dictionary<string, int>();
         xmlPath = "Assets/Resources/product_models.xml";
         reader = new XmlTextReader(xmlPath);
         LoadXML();  
+        createDictionary();
     }
 
     void Update() {
@@ -81,6 +84,14 @@ class Loader : MonoBehaviour
         return null;
     }
 
-
+    void createDictionary(){
+        string name;
+        int quantity;
+        string[] lines = System.IO.File.ReadAllLines("Assets/Resources/ProductsAvailability.txt");
+        foreach(string line in lines){
+            string[] strings = line.Split(' ');
+            modelsAvailability.Add(strings[0], int.Parse(strings[1]));
+        }
+    }
 
 }
