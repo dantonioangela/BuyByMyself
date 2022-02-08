@@ -33,6 +33,7 @@ public class Player_Controller : MonoBehaviour
     {
         if (!inventario && !UI_active)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             if (carrello.mode == 0)
             {
                 carrelloCollider.enabled = true;
@@ -51,6 +52,7 @@ public class Player_Controller : MonoBehaviour
         }
         else
         {
+            Cursor.lockState = CursorLockMode.None;
             playerRB.velocity = new Vector3(0f, 0f, 0f);
         }
     }

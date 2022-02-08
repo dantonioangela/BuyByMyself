@@ -29,12 +29,10 @@ public class UI_controller : MonoBehaviour
         if (player_controller.inventario)
         {
             UI_inventario.gameObject.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
             UI_inventario.gameObject.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
         }
         if (cassiera_controller.isTalking && player_controller.carrello.mode == 0)
         {
