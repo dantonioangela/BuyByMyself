@@ -54,6 +54,7 @@ public class MenuInGioco : MonoBehaviour
     {
         PauseMenuUI.SetActive(false);
         OptionsMenuUI.SetActive(true);
+        MenuPrincipale.MainMenuActive = true;
     }
 
     public void MainMenu()
@@ -68,6 +69,7 @@ public class MenuInGioco : MonoBehaviour
     {
         OptionsMenuUI.SetActive(false);
         PauseMenuUI.SetActive(true);
+        MenuPrincipale.MainMenuActive = false;
     }
 
     public void Volume(float volume)
