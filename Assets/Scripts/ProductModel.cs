@@ -7,19 +7,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 class ProductModel {
-    public string id { get; }
-    public string name { get; }
-    public bool? sustainable { get; }
-    public bool? packaging { get; }
-    public int? size { get; }
-    public int? origin { get; }
-    public int[]? season { get; }
-    public float price { get; }
-    public int modelsNumber { get; } //numero dei modelli di questo tipo necessari nella scena
+    //public string id { get; }
+    public string name;
+    public string listName;
+    public bool? sustainable;
+    public bool? packaging;
+    public int? size;
+    public int? origin;
+    public int[]? season;
+    public float price;
+    public int counter; //numero dei modelli di questo tipo necessari nella scena
 
-    public ProductModel(string id, string name, bool? sustainable, bool? packaging, int? size, int? origin, int[]? season, float price)
+    public ProductModel(string name, string listName, bool? sustainable, bool? packaging, int? size, int? origin, int[]? season, float price)
     {
-        this.id = id;
+        this.listName = listName;
         this.name = name;
         this.sustainable = sustainable;
         this.packaging = packaging;
@@ -27,5 +28,11 @@ class ProductModel {
         this.origin = origin;
         this.season = season;
         this.price = price;
+        this.counter = 0;
+    }
+
+    public void resetCounter()
+    {
+        this.counter = 0;
     }
 }

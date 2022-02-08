@@ -14,11 +14,10 @@ public class ListaSpesa : MonoBehaviour
     void Start()
     {
         listaSpesa = new Dictionary<string, int>();
-        itemsNumber = 15;
-        createList();
-        foreach(var entry in listaSpesa){
-            Debug.Log("Prodotto: " + entry.Key + " Quantità: " + entry.Value);
-        }
+        //itemsNumber = 15;
+        itemsNumber = 7;
+        CreateList();
+        UpdateProductModelsCounter();
     }
 
     // Update is called once per frame
@@ -27,26 +26,48 @@ public class ListaSpesa : MonoBehaviour
         
     }
 
-    void createList(){
+    void CreateList(){
         int index;
         string productName;
         int quantity;
-        //TODO: controllare di non mettere nella lista prodotti marci facendo check su nome (id?). 
-        //TODO: mettere nome del prodotto nella lista invece che tag
+
         index = Random.Range(0, Loader.modelsAvailability.Count);
         productName = Loader.modelsAvailability.ElementAt(index).Key;
-        quantity = Random.Range(1, Loader.modelsAvailability[productName] - (int)(Loader.modelsAvailability[productName] / 2));
+        quantity = Random.Range(1, (int)(Loader.modelsAvailability[productName][1]/ 2));
         listaSpesa.Add(productName, quantity);
         for (int i = 1; i < itemsNumber; i++) {
             while (listaSpesa.ContainsKey(productName)) { 
                 index = Random.Range(0, Loader.modelsAvailability.Count);
                 productName = Loader.modelsAvailability.ElementAt(index).Key;
             }
-            //string[] productNames = new string[Loader.modelsAvailability.Count];
-            quantity = Random.Range(1, Loader.modelsAvailability[productName] - (int)(Loader.modelsAvailability[productName]/2));
+            quantity = Random.Range(1, (int)(Loader.modelsAvailability[productName][1] / 2));
             listaSpesa.Add(productName, quantity);
         }
 
+    }
+
+    private void UpdateProductModelsCounter()
+    {
+        int index;
+        int numProd;
+        int numProdRestanti;
+        int j;
+        foreach( var i in Loader.modelsAvailability )
+        {
+            index = Loader.NamesToIndex[i.Key][0];  //indice prima occorrenza
+            numProd = i.Value[1];
+            numProdRestanti = numProd;
+            if ( listaSpesa.ContainsKey(i.Key))
+            {
+                Loader.productModels[index].counter = listaSpesa[i.Key];
+                numProdRestanti = numProd - listaSpesa[i.Key];
+            }
+
+            for (j = 0; j < numProdRestanti; j++)
+            {
+                Loader.productModels[ Random.Range(index, index + Loader.NamesToIndex[i.Key][1]) ].counter++;
+            }
+        }
     }
 
 }
