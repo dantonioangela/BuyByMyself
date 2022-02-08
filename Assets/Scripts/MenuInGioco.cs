@@ -21,15 +21,18 @@ public class MenuInGioco : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GiocoInPausa)
+            if (!MenuPrincipale.MainMenuActive)
             {
-                Resume();
+                if (GiocoInPausa)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
             }
-            else
-            {
-                Pause();
-            }
-        }        
+        }
     }
     public void Resume()
     {
@@ -58,6 +61,7 @@ public class MenuInGioco : MonoBehaviour
         Time.timeScale = 1f;
         PauseMenuUI.SetActive(false);
         MainMenuUI.SetActive(true);
+        MenuPrincipale.MainMenuActive = true;
     }
 
     public void Indietro()
