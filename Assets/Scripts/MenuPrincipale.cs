@@ -123,18 +123,21 @@ public class MenuPrincipale : MonoBehaviour
         player.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
+        MainMenuUI.SetActive(false);
     }
     public void PartitaMedia()
     {
         player.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
+        MainMenuUI.SetActive(false);
     }
     public void PartitaDifficile()
     {
         player.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
+        MainMenuUI.SetActive(false);
     }
 
 }
