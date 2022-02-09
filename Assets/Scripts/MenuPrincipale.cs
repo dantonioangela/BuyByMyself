@@ -17,6 +17,7 @@ public class MenuPrincipale : MonoBehaviour
 
     bool inOptions = false;
     bool inScelta = false;
+    static public bool inGame = false;
 
     Resolution[] resolutions;
     public Dropdown MAINResolutionDropdownUI;
@@ -50,14 +51,17 @@ public class MenuPrincipale : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (inOptions)
+            if (!inGame)
             {
-                Indietro();
-            }
+                if (inOptions)
+                {
+                    Indietro();
+                }
 
-            if (inScelta)
-            {
-                BackToMainMenu();
+                if (inScelta)
+                {
+                    BackToMainMenu();
+                }
             }
 
         }
@@ -124,6 +128,7 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
+        inGame = true;
     }
     public void PartitaMedia()
     {
@@ -131,6 +136,7 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
+        inGame = true;
     }
     public void PartitaDifficile()
     {
@@ -138,6 +144,7 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
+        inGame = true;
     }
 
 }
