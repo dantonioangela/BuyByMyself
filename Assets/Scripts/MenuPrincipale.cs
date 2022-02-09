@@ -130,6 +130,7 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuUI.SetActive(false);
         inGame = true;
     }
+
     public void PartitaMedia()
     {
         player.UI_active = false;
