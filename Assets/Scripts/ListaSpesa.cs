@@ -7,23 +7,33 @@ using System.Linq;
 public class ListaSpesa : MonoBehaviour
 {
 
-    public Dictionary<string, int> listaSpesa;
+    [System.NonSerialized] public static Dictionary<string, int> listaSpesa;
     private int itemsNumber;
+    public int season;
+    public static float budget = 0.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        listaSpesa = new Dictionary<string, int>();
-        //itemsNumber = 15;
-        itemsNumber = 7;
-        CreateList();
-        UpdateProductModelsCounter();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void StartMe()
+    {
+        listaSpesa = new Dictionary<string, int>();
+        //itemsNumber = 15;
+        itemsNumber = 7;
+        CreateList();
+        CalculateBudget();
+        UpdateProductModelsCounter();
+        season = Random.Range(0, 3);
     }
 
     void CreateList(){
@@ -68,6 +78,11 @@ public class ListaSpesa : MonoBehaviour
                 Loader.productModels[ Random.Range(index, index + Loader.NamesToIndex[i.Key][1]) ].counter++;
             }
         }
+    }
+
+    private void CalculateBudget()
+    {
+        budget = 10f;
     }
 
 }

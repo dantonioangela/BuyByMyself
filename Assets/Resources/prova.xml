@@ -7,7 +7,7 @@
 		<size>null</size>
 		<origin>null</origin>
 		<season>1 1 1 1</season>
-		<price>0</price>
+		<price>1,5</price>
 	</product>
 	<product>
 		<name>Mela Rossa</name>
@@ -17,7 +17,7 @@
 		<size>null</size>
 		<origin>null</origin>
 		<season>1 1 1 1</season>
-		<price>0</price>
+		<price>2</price>
 	</product>
 	<product>
 		<name>Mela Arancione</name>
@@ -27,7 +27,7 @@
 		<size>null</size>
 		<origin>null</origin>
 		<season>1 1 1 1</season>
-		<price>0</price>
+		<price>1</price>
 	</product>
 	<product>
 		<name>pera Verde</name>

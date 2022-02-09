@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-class Product : PhysicsGrabbable {
+public class Product : PhysicsGrabbable {
 
-    private ProductModel model;
+    public ProductModel model;
     public int quality { get; }
-    public  DateTime expirationDate { get; }
+    public int expirationDate;      // = 0 significa tra un anno. ecc..
+    private string[] expiration = { "tra un anno", "dopodomani", "il mese scorso" };
 
     protected override void Start() {
         base.Start();

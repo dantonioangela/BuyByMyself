@@ -1,5 +1,5 @@
 pera/4 8 
-Mela/4 8 
+Mela/4 18 
 succo/6 12
 latte/4 8
 uova/5 5

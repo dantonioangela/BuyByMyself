@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class ProductModel {
+public class ProductModel {
     //public string id { get; }
     public string name;
     public string listName;

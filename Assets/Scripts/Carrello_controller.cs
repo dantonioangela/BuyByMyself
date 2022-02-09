@@ -6,31 +6,33 @@ using UnityEngine.AI;
 public class Carrello_controller : MonoBehaviour
 {
     private GameObject[] busta = new GameObject[3];    
-    public int mode = 0;
+    public static int mode = 0;
     private Ray ray;
     private RaycastHit hit;
     private Ray rayCarrello;
     private RaycastHit hitCarrello;
     private Collider carrelloCollider;
     private NavMeshObstacle navObstacle;
-    public GameObject prefabBusta;
+    [SerializeField] private GameObject prefabBusta;
     private bool[] conBusta = new bool[3];
     private int numeroOggetti;
     private Transform parent;
-    public bool selected = false;
-
-    public float prezzo_totale;
+    public static bool selected = false;
+    public static float prezzo_totale_carrello;
+    [SerializeField] private UI_controller inventario;
     //DA CAMBIARE
-    public float budget;
+    private float budget;
+    private GameObject mySelf;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        budget = ListaSpesa.budget;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();
         navObstacle = GetComponent<NavMeshObstacle>();
-        prezzo_totale = 0.0f;
+        prezzo_totale_carrello = 0.0f;
         numeroOggetti = 0;
         budget = 8f;
         conBusta[0] = false;
@@ -38,6 +40,7 @@ public class Carrello_controller : MonoBehaviour
         conBusta[2] = false;
         transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
         transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);
+        mySelf = gameObject;
     }
 
     // Update is called once per frame
@@ -45,7 +48,7 @@ public class Carrello_controller : MonoBehaviour
     {
         UpdateBuste();
 
-        if (mode == 0)
+        if (mode == 0)                                  //ho il carrello agganciato
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -54,11 +57,9 @@ public class Carrello_controller : MonoBehaviour
                 navObstacle.enabled = true;
                 transform.parent = null;
                 //DA CAMBIARE
-                prezzo_totale += 6.0f;
-                numeroOggetti += 15;
             }
         }
-        else if (mode == 1)
+        else if (mode == 1)                             //non ho il carrello
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 5.0f))
@@ -78,7 +79,6 @@ public class Carrello_controller : MonoBehaviour
                         carrelloCollider.enabled = false;
                         navObstacle.enabled = false;
                         //DA CAMBIARE
-                        numeroOggetti -= 15;
                         transform.parent = parent;
                         transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
                         transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);
@@ -168,5 +168,19 @@ public class Carrello_controller : MonoBehaviour
         }
     }
 
+    public void AddProductToChart (GameObject product)
+    {
+        prezzo_totale_carrello += product.GetComponent<Product>().model.price;
+        
+        inventario.AddProductToInventario(product);
+        
+    }
+
+    public void RemoveProductFromChart (GameObject product)
+    {
+        prezzo_totale_carrello -= product.GetComponent<Product>().model.price;
+        product.transform.position += new Vector3(0f, 10f, 0f);
+        //product.transform.parent = null;
+    }
 
 }

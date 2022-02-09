@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DisplayCarrello_controller : MonoBehaviour
 {
-    public Carrello_controller carrello;
+    //public Carrello_controller carrello;
     new public Camera camera;
     private Text prezzo;
     private Color defaultTextColor;
@@ -22,8 +22,9 @@ public class DisplayCarrello_controller : MonoBehaviour
     void Update()
     {
 
-        prezzo.text = "€" + Mathf.Round(carrello.prezzo_totale*100)/100;
-        if(carrello.prezzo_totale > carrello.budget)
+        //prezzo.text = "€" + Mathf.Round(carrello.prezzo_totale*100)/100;
+        prezzo.text = "€" + Mathf.Round( Carrello_controller.prezzo_totale_carrello * 100) / 100;
+        if (Carrello_controller.prezzo_totale_carrello > ListaSpesa.budget)
         {
             prezzo.color = Color.black;
             camera.backgroundColor = new Color(201/255f, 22/255f, 10/255f);

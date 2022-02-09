@@ -39,7 +39,7 @@ public class Cassiera_controller : MonoBehaviour
                     {
                         GetComponentInChildren<isSelectable>().Deselect();
                         selected = false;
-                        if (player.carrello.mode == 0)      //se ha il carrello
+                        if (Carrello_controller.mode == 0)      //se ha il carrello
                         {
                             animator.SetTrigger("click");
                             isTalking = true;

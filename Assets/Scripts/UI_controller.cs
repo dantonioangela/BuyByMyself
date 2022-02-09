@@ -9,6 +9,11 @@ public class UI_controller : MonoBehaviour
     private Transform UI_inventario;
     private Transform UI_cassiera_pay;
     private Transform UI_cassiera_notPay;
+    private bool inventarioActive = false;
+    //private GameObject[] productsInInventario = new GameObject[15];
+    private List<GameObject> productsInInventario = new List<GameObject>();
+    private int counter = 0;
+    private int i = 0;
 
 
 
@@ -26,23 +31,32 @@ public class UI_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player_controller.inventario)
+        if (player_controller.inventario )
         {
-            UI_inventario.gameObject.SetActive(true);
+            if (!inventarioActive)
+            {
+                UI_inventario.gameObject.SetActive(true);
+                inventarioActive = true;
+                for (i = 0; i < counter; i++)
+                {
+                    transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
+                }
+            }
         }
-        else
+        else if(inventarioActive)
         {
             UI_inventario.gameObject.SetActive(false);
+            inventarioActive = false;
         }
-        if (cassiera_controller.isTalking && player_controller.carrello.mode == 0)
+        if (cassiera_controller.isTalking && Carrello_controller.mode == 0)
         {
             UI_cassiera_pay.gameObject.SetActive(true);
         }
-        else if(!cassiera_controller.isTalking && player_controller.carrello.mode == 0)
+        else if(!cassiera_controller.isTalking && Carrello_controller.mode == 0)
         {
             UI_cassiera_pay.gameObject.SetActive(false);
         }
-        else if(cassiera_controller.isTalking && player_controller.carrello.mode == 1)
+        else if(cassiera_controller.isTalking && Carrello_controller.mode == 1)
         {
             UI_cassiera_notPay.gameObject.SetActive(true);
         }
@@ -50,5 +64,26 @@ public class UI_controller : MonoBehaviour
         {
             UI_cassiera_notPay.gameObject.SetActive(false);
         }
+    }
+
+
+    public void AddProductToInventario( GameObject product)
+    {
+        
+        if (counter < 14)
+        {
+            productsInInventario.Add(product);
+            counter++;
+        }
+        else
+        {
+            Debug.Log("Inventario pieno");
+        }
+    }
+
+    public void RemoveProductFromInventario (GameObject product)
+    {
+        productsInInventario.Remove(product);
+        counter--;
     }
 }

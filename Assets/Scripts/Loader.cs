@@ -13,30 +13,29 @@ using UnityEngine.SceneManagement;
 
 class Loader : MonoBehaviour
 {
-    public static List<ProductModel> productModels;
-    public static Dictionary<string, int[]> modelsAvailability; //nome + numProdottiFullStats + numTotaleProdotti con   quel nome
-    public static Dictionary<string, int[]> NamesToIndex;       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
+    public static List<ProductModel> productModels = new List<ProductModel>();
+    public static Dictionary<string, int[]> modelsAvailability = new Dictionary<string, int[]>(); //nome + numProdottiFullStats + numTotaleProdotti con   quel nome
+    public static Dictionary<string, int[]> NamesToIndex = new Dictionary<string, int[]>();       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
 
-    private String xmlPath;
-    private XmlTextReader reader; 
+    private String xmlPath = "Assets/Resources/prova.xml";
+    //xmlPath = "Assets/Resources/product_models.xml";
+    //private XmlTextReader reader; 
     bool finishedLoading = false;
 
-    void Awake() {
-        productModels = new List<ProductModel>();
-        modelsAvailability = new Dictionary<string, int[]>();
-        NamesToIndex = new Dictionary<string, int[]>();
+    void Start() {
 
-        //xmlPath = "Assets/Resources/product_models.xml";
-        xmlPath = "Assets/Resources/prova.xml";
-        reader = new XmlTextReader(xmlPath);
-        LoadXML();  
-        createDictionary();
     }
 
     void Update() {
-        if (finishedLoading) {
-            
-        }
+
+    }
+
+    public void StartMe()
+    {
+
+        XmlTextReader reader = new XmlTextReader(xmlPath);
+        LoadXML();
+        createDictionary();
 
     }
 
@@ -56,7 +55,7 @@ class Loader : MonoBehaviour
                 xmlSize = product.Element("size").Value,
                 xmlOrigin = product.Element("origin").Value,
                 xmlSeason = product.Element("season").Value,
-                xmlPrice = product.Element("price").Value
+                xmlPrice =  product.Element("price").Value
             };
         int i = 0;
 
