@@ -1,7 +1,7 @@
 <products>
 	<product>
 		<name>Mela Verde</name>
-		<listname>Mela</listname>
+		<listname>Mela/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -11,7 +11,7 @@
 	</product>
 	<product>
 		<name>Mela Rossa</name>
-		<listname>Mela</listname>
+		<listname>Mela/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -21,7 +21,7 @@
 	</product>
 	<product>
 		<name>Mela Arancione</name>
-		<listname>Mela</listname>
+		<listname>Mela/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -31,7 +31,7 @@
 	</product>
 	<product>
 		<name>pera Verde</name>
-		<listname>Pera</listname>
+		<listname>Pera/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -41,7 +41,7 @@
 	</product>
 	<product>
 		<name>Pera Rossa</name>
-		<listname>Pera</listname>
+		<listname>Pera/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -51,7 +51,7 @@
 	</product>
 	<product>
 		<name>Pera Arancione</name>
-		<listname>Pera</listname>
+		<listname>Pera/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -61,7 +61,7 @@
 	</product>
 	<product>
 		<name>cocomero Verde</name>
-		<listname>cocomero</listname>
+		<listname>cocomero/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -71,7 +71,7 @@
 	</product>
 	<product>
 		<name>cocomero Rossa</name>
-		<listname>cocomero</listname>
+		<listname>cocomero/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -81,7 +81,7 @@
 	</product>
 	<product>
 		<name>cocomero Arancione</name>
-		<listname>cocomero</listname>
+		<listname>cocomero/</listname>
 		<sustainable>null</sustainable>
 		<packaging>null</packaging>
 		<size>null</size>
@@ -90,28 +90,38 @@
 		<price>0</price>
 	</product>
   <product>
-    <name>banana Rossa</name>
-    <listname>banana</listname>
+    <name>bananaBUONA</name>
+    <listname>frutta/banana</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
-    <origin>null</origin>
+    <origin>1</origin>
     <season>1 1 1 1</season>
     <price>0</price>
   </product>
   <product>
-    <name>banana Arancione</name>
-    <listname>banana</listname>
+    <name>banana</name>
+    <listname>frutta/banana_bad</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
-    <origin>null</origin>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana_bad</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
     <season>1 1 1 1</season>
     <price>0</price>
   </product>
   <product>
     <name>succo Arancione</name>
-    <listname>succo</listname>
+    <listname>succo/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -121,7 +131,7 @@
   </product>
   <product>
     <name>succo a</name>
-    <listname>succo</listname>
+    <listname>succo/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -131,7 +141,7 @@
   </product>
   <product>
     <name>succo b</name>
-    <listname>succo</listname>
+    <listname>succo/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -141,7 +151,7 @@
   </product>
   <product>
     <name>latte a</name>
-    <listname>latte</listname>
+    <listname>latte/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -151,7 +161,7 @@
   </product>
   <product>
     <name>latte b</name>
-    <listname>latte</listname>
+    <listname>latte/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -161,7 +171,7 @@
   </product>
   <product>
     <name>uova a</name>
-    <listname>uova</listname>
+    <listname>uova/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -171,7 +181,7 @@
   </product>
   <product>
     <name>uova b</name>
-    <listname>uova</listname>
+    <listname>uova/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -181,7 +191,7 @@
   </product>
   <product>
     <name>crema a</name>
-    <listname>crema</listname>
+    <listname>crema/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -191,7 +201,7 @@
   </product>
   <product>
     <name>crema b</name>
-    <listname>crema</listname>
+    <listname>crema/</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>

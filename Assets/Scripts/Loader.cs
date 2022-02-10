@@ -47,11 +47,10 @@ class Loader : MonoBehaviour
         // Query the data and write out a subset of contacts
         var products = from product in xml.Descendants("product")
             select new {
-                //xmlId = product.Element("id").Value,
                 xmlName = product.Element("name").Value,
-                xmlListName = product.Element("listname").Value.ToLower(),
-                xmlSustainable = product.Element("sustainable").Value,
-                xmlPackaging = product.Element("packaging").Value,
+                xmlListName = product.Element("listname").Value.ToLower(),          //  frutta/banana_bad
+                xmlSustainable = product.Element("sustainable").Value,              //  frutta/banana
+                xmlPackaging = product.Element("packaging").Value,                  //  fette biscottate/integrali_eco
                 xmlSize = product.Element("size").Value,
                 xmlOrigin = product.Element("origin").Value,
                 xmlSeason = product.Element("season").Value,
@@ -120,7 +119,7 @@ class Loader : MonoBehaviour
         string name;
         string[] lines = System.IO.File.ReadAllLines("Assets/Resources/ProductsAvailability.txt");
         foreach(string line in lines){
-            string[] strings = line.Split('/');
+            string[] strings = line.Split(':');
             name = strings[0].ToLower();
             string[] substrings = strings[1].Split(' ');
             modelsAvailability.Add(name, new int[2] { int.Parse(substrings[0]), int.Parse(substrings[1]) });

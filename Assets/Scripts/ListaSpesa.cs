@@ -34,24 +34,37 @@ public class ListaSpesa : MonoBehaviour
         CalculateBudget();
         UpdateProductModelsCounter();
         season = Random.Range(0, 3);
+        foreach(var i in listaSpesa)
+        {
+            Debug.Log("lista spesa: " + i.Key + i.Value);
+        }
     }
 
     void CreateList(){
         int index;
         string productName;
+        string productNameList;
         int quantity;
 
-        index = Random.Range(0, Loader.modelsAvailability.Count);
-        productName = Loader.modelsAvailability.ElementAt(index).Key;
-        quantity = Random.Range(1, (int)(Loader.modelsAvailability[productName][1]/ 2));
-        listaSpesa.Add(productName, quantity);
-        for (int i = 1; i < itemsNumber; i++) {
-            while (listaSpesa.ContainsKey(productName)) { 
+        for (int i = 0; i < itemsNumber; i++) {
+            index = Random.Range(0, Loader.modelsAvailability.Count);
+            productName = Loader.modelsAvailability.ElementAt(index).Key;
+            productNameList = productName.Split('/')[0];
+            while (listaSpesa.ContainsKey(productNameList)) { 
                 index = Random.Range(0, Loader.modelsAvailability.Count);
                 productName = Loader.modelsAvailability.ElementAt(index).Key;
+                productNameList = productName.Split('/')[0];
             }
-            quantity = Random.Range(1, (int)(Loader.modelsAvailability[productName][1] / 2));
-            listaSpesa.Add(productName, quantity);
+            quantity = Loader.modelsAvailability[productName][0];
+            while (quantity == 0)
+            {
+                index = Random.Range(0, Loader.modelsAvailability.Count);
+                productName = Loader.modelsAvailability.ElementAt(index).Key;
+                productNameList = productName.Split('/')[0];
+                quantity = Loader.modelsAvailability[productName][0];
+            }
+            quantity = Random.Range(1, (int)(quantity * 0.8));
+            listaSpesa.Add(productNameList, quantity);
         }
 
     }
@@ -62,15 +75,17 @@ public class ListaSpesa : MonoBehaviour
         int numProd;
         int numProdRestanti;
         int j;
-        foreach( var i in Loader.modelsAvailability )
+        string prodListName;
+        foreach( var i in Loader.modelsAvailability )       
         {
             index = Loader.NamesToIndex[i.Key][0];  //indice prima occorrenza
+            prodListName = i.Key.Split('/')[0];
             numProd = i.Value[1];
-            numProdRestanti = numProd;
-            if ( listaSpesa.ContainsKey(i.Key))
+            numProdRestanti = numProd;          
+            if ( listaSpesa.ContainsKey(prodListName) && i.Value[0] !=0)     
             {
-                Loader.productModels[index].counter = listaSpesa[i.Key];
-                numProdRestanti = numProd - listaSpesa[i.Key];
+                Loader.productModels[index].counter = listaSpesa[prodListName];
+                numProdRestanti = numProd - listaSpesa[prodListName];
             }
 
             for (j = 0; j < numProdRestanti; j++)

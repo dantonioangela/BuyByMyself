@@ -84,7 +84,7 @@ public class Label_assigner : MonoBehaviour
 
         foreach (var i in child)
         {
-            Debug.Log(i.GetComponent<Product>().model.listName + ", counter = " + i.GetComponent<Product>().model.counter);
+            Debug.Log(i.GetComponent<Product>().model.listName + ", " + i.GetComponent<Product>().model.name + ":: " + "counter = " + i.GetComponent<Product>().model.counter);
         }
 
     }
