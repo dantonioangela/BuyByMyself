@@ -34,7 +34,7 @@ public class PhysicsGrabbable : Grabbable
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);
             //GetComponent<Product>().transform.SetParent(Camera.main.gameObject.transform.parent.GetChild(1));
-            Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<Carrello_controller>().AddProductToChart( gameObject );
+            Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject );
         }
     }
 }
