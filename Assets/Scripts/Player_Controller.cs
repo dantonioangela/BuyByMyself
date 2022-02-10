@@ -9,19 +9,22 @@ public class Player_Controller : MonoBehaviour
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
 
-    [SerializeField] private Transform playerCamera;
+    private Transform playerCamera;
     private Rigidbody playerRB;
     [SerializeField] private float speed;
     [SerializeField] private float sensitivityX;
     [SerializeField] private float sensitivityY;
     private float xRot;
-    public Carrello_controller carrello;
+    //public Carrello_controller carrello;
+    [System.NonSerialized] public Carrello_controller carrello;
     private Collider carrelloCollider;
 
     private Vector3 moveVector;
 
     void Start()
     {
+        playerCamera = transform.GetChild(0);
+        carrello = transform.GetChild(1).GetComponent<Carrello_controller>();
         Cursor.lockState = CursorLockMode.Locked;
         playerRB = GetComponent<Rigidbody>();
         carrelloCollider = GetComponent<BoxCollider>();
@@ -34,12 +37,12 @@ public class Player_Controller : MonoBehaviour
         if (!inventario && !UI_active)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            if (carrello.mode == 0)
+            if (Carrello_controller.mode == 0)
             {
                 carrelloCollider.enabled = true;
 
             }
-            else if (carrello.mode == 1)
+            else if (Carrello_controller.mode == 1)
             {
                 carrelloCollider.enabled = false;
             }
@@ -59,7 +62,7 @@ public class Player_Controller : MonoBehaviour
 
     private void MovePlayer()
     {
-        if (carrello.mode == 1)
+        if (Carrello_controller.mode == 1)
         {
             moveVector = transform.TransformDirection(playerMovementInput) * speed * 1.5f;
         }
@@ -74,17 +77,19 @@ public class Player_Controller : MonoBehaviour
     {
         xRot -= playerMouseInput.y * sensitivityY;
         xRot = Mathf.Clamp(xRot, -10f, 20f);
-        if (carrello.mode == 0 && xRot > 18f)
+        if (Carrello_controller.mode == 0 && xRot > 18f)
         {
             carrello.GetComponent<isSelectable>().Select();
+            Carrello_controller.selected = true;
             if (Input.GetMouseButtonDown(0))
             {
                 inventario = true;
             }
         }
-        else if (!carrello.selected)
+        else if (xRot <= 18f && Carrello_controller.selected)
         {
             carrello.GetComponent<isSelectable>().Deselect();
+            Carrello_controller.selected = false;
         }
         transform.Rotate(0f, playerMouseInput.x * sensitivityX, 0f);
         playerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);

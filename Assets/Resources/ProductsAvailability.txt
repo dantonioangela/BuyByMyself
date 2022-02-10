@@ -1,0 +1,8 @@
+pera/4 8 
+Mela/4 18 
+succo/6 12
+latte/4 8
+uova/5 5
+banana/5 7
+cocomero/5 9
+crema/3 7

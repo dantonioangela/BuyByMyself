@@ -1,0 +1,204 @@
+<products>
+	<product>
+		<name>Mela Verde</name>
+		<listname>Mela</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>1,5</price>
+	</product>
+	<product>
+		<name>Mela Rossa</name>
+		<listname>Mela</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>2</price>
+	</product>
+	<product>
+		<name>Mela Arancione</name>
+		<listname>Mela</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>1</price>
+	</product>
+	<product>
+		<name>pera Verde</name>
+		<listname>Pera</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+	<product>
+		<name>Pera Rossa</name>
+		<listname>Pera</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+	<product>
+		<name>Pera Arancione</name>
+		<listname>Pera</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+	<product>
+		<name>cocomero Verde</name>
+		<listname>cocomero</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+	<product>
+		<name>cocomero Rossa</name>
+		<listname>cocomero</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+	<product>
+		<name>cocomero Arancione</name>
+		<listname>cocomero</listname>
+		<sustainable>null</sustainable>
+		<packaging>null</packaging>
+		<size>null</size>
+		<origin>null</origin>
+		<season>1 1 1 1</season>
+		<price>0</price>
+	</product>
+  <product>
+    <name>banana Rossa</name>
+    <listname>banana</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 1 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>banana Arancione</name>
+    <listname>banana</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 1 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>succo Arancione</name>
+    <listname>succo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 1 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>succo a</name>
+    <listname>succo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 1 0 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>succo b</name>
+    <listname>succo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>latte a</name>
+    <listname>latte</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>latte b</name>
+    <listname>latte</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>uova a</name>
+    <listname>uova</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>uova b</name>
+    <listname>uova</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>crema a</name>
+    <listname>crema</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+  <product>
+    <name>crema b</name>
+    <listname>crema</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>1 0 1 1</season>
+    <price>0</price>
+  </product>
+</products>
+
+

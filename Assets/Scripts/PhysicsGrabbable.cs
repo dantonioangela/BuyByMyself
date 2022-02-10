@@ -14,6 +14,7 @@ public class PhysicsGrabbable : Grabbable
     {
         base.Start();
         _collider = GetComponent<Collider>();
+
         //originalPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         //originalRotation = new Quaternion(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z);
         originalPosition = gameObject.transform.position;
@@ -29,5 +30,11 @@ public class PhysicsGrabbable : Grabbable
     {
         gameObject.transform.position = originalPosition;
         gameObject.transform.rotation = originalRotation;
+        if ( Carrello_controller.selected)
+        {
+            gameObject.transform.position -= new Vector3(0f, 10f, 0f);
+            //GetComponent<Product>().transform.SetParent(Camera.main.gameObject.transform.parent.GetChild(1));
+            Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<Carrello_controller>().AddProductToChart( gameObject );
+        }
     }
 }

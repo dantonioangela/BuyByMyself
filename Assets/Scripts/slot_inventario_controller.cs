@@ -9,8 +9,9 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
 
     private RectTransform icon;
     private Vector2 initialPos;
-    private bool slotEmpty;
-    [SerializeField]  private Text number;
+    [System.NonSerialized] public bool slotEmpty = true;
+    public GameObject productInThisSlot;
+    [SerializeField] private Text number;
     [SerializeField] private Texture emptyTexture;
     [SerializeField] private Canvas canvas;
 
@@ -19,9 +20,9 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     void Start()
     {
         icon = GetComponent<RectTransform>();
+        //transform.GetComponent<RawImage>().texture = emptyTexture;
         initialPos = icon.anchoredPosition;
-        number.text = "1";
-        slotEmpty = false;
+        //number.text = "0";
     }
 
     // Update is called once per frame
@@ -53,14 +54,33 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
             }
             else
             {
-                number.text = (int.Parse(number.text) - 1).ToString();
-                if( int.Parse(number.text) == 0)
-                {
-                    icon.GetComponent<RawImage>().texture = emptyTexture;
-                    slotEmpty = true;
-                    number.text = "";
-                }
+                icon.anchoredPosition = initialPos;
+                icon.GetComponent<RawImage>().color = new Color(1f, 1f, 1f);
+                RemoveProduct();
             }
+        }
+    }
+
+    public void AddProductInSlot( GameObject product)
+    {
+        productInThisSlot = product;
+        number.text = "1";
+        transform.GetComponent<RawImage>().texture = product.GetComponent<icon>().myIcon;
+        slotEmpty = false;
+    }
+
+    public void RemoveProduct()
+    {
+        //number.text = (int.Parse(number.text) - 1).ToString();
+        number.text = "0";
+        if( int.Parse(number.text) == 0)
+        {
+
+            transform.GetComponent<RawImage>().texture = emptyTexture;
+            slotEmpty = true;
+            Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<Carrello_controller>().RemoveProductFromChart(productInThisSlot);
+            transform.parent.parent.parent.GetComponent<UI_controller>().RemoveProductFromInventario(productInThisSlot);
+            productInThisSlot = null;
         }
     }
 }

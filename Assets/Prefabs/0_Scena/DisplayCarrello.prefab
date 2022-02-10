@@ -460,7 +460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908372786dfa4d04ba16b54518d0e539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carrello: {fileID: 0}
   camera: {fileID: 2065740246803180360}
 --- !u!1 &3886760984346443456
 GameObject:
