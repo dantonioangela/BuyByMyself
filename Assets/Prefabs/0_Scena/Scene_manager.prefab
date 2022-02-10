@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: Mela
+  listName: Mela/
 --- !u!1001 &7759360334415523332
 PrefabInstance:
   m_ObjectHideFlags: 0
