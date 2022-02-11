@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class tutorial_lista : MonoBehaviour
 {
@@ -45,11 +46,9 @@ public class tutorial_lista : MonoBehaviour
     void InizializzaLista()
     {
         string s = "";
-        foreach (var i in ListaSpesa.listaSpesa)
-        {
-            //stampi i.Key e i.Value
-            s = s + i.Value + "  " + i.Key + "\n";
-        }
+
+        s = s + "banane" + "  " + "10" + "\n";
+
         TestoLista.text = s;
     }
 }
