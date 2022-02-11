@@ -500,6 +500,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Intensity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_ShadowAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 986019956, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2681503477832186368, guid: 11b2399bc3b57cd4087c64fb98b259c0, type: 3}
       propertyPath: m_RootOrder
       value: 2
