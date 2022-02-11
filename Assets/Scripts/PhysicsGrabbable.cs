@@ -17,6 +17,7 @@ public class PhysicsGrabbable : Grabbable
         base.Start();
         _collider = gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;
         _rigidBody = gameObject.AddComponent(typeof(Rigidbody)) as Rigidbody;
+        _rigidBody.isKinematic = true;
         originalPosition = gameObject.transform.position;
         originalRotation = gameObject.transform.rotation;
     }
@@ -43,7 +44,7 @@ public class PhysicsGrabbable : Grabbable
             dropped = false;
             timeLeft = 30;
         }
-        _rigidBody.isKinematic = true;
+
     }
 
     public override void Drop()
@@ -51,7 +52,6 @@ public class PhysicsGrabbable : Grabbable
         if ( Carrello_controller.selected)
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);
-            //GetComponent<Product>().transform.SetParent(Camera.main.gameObject.transform.parent.GetChild(1));
             Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject );
         }
         else{

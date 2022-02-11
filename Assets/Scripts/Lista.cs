@@ -31,6 +31,10 @@ public class Lista : MonoBehaviour
 
     void ShowLista()
     {
+        foreach(var i in ListaSpesa.listaSpesa)
+        {
+            //stampi i.Key e i.Value
+        }
         ListaUI.SetActive(true);
         ListaAttiva = true;
     }

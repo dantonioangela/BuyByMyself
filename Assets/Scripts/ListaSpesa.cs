@@ -46,6 +46,8 @@ public class ListaSpesa : MonoBehaviour
         string productNameList;
         int quantity;
 
+        itemsNumber = Random.Range((int)(itemsNumber * 0.7), itemsNumber + 1);
+
         for (int i = 0; i < itemsNumber; i++) {
             index = Random.Range(0, Loader.modelsAvailability.Count);
             productName = Loader.modelsAvailability.ElementAt(index).Key;
