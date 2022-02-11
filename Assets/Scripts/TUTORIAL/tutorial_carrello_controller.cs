@@ -6,6 +6,11 @@ using UnityEngine.AI;
 public class tutorial_carrello_controller : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    private bool tutorialStepDone = false;
+    public tutorial_canvas_controller speech;
+
+
     private GameObject[] busta = new GameObject[3];
     public static int mode = 0;
     private Ray ray;
@@ -171,14 +176,28 @@ public class tutorial_carrello_controller : MonoBehaviour
 
     public void AddProductToChart(GameObject product)
     {
-        prezzo_totale_carrello += product.GetComponent<tutorial_product>().price;
+        if (numeroOggetti < 15)
+        {
+            if(numeroOggetti == 1 && !tutorialStepDone)
+            {
+                speech.ChangeSpeech(5);
+                tutorialStepDone = true ;
+            }
+            numeroOggetti++;
+            prezzo_totale_carrello += product.GetComponent<tutorial_product>().price;
 
-        inventario.AddProductToInventario(product);
+            inventario.AddProductToInventario(product);
+        }
+        else
+        {
+            Debug.Log("inventario pieno");
+        }
 
     }
 
     public void RemoveProductFromChart(GameObject product)
     {
+        numeroOggetti--;
         prezzo_totale_carrello -= product.GetComponent<tutorial_product>().price;
         product.transform.position += new Vector3(0f, 10f, 0f);
         //product.transform.parent = null;

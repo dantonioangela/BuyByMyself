@@ -6,6 +6,10 @@ public class tutorial_mappa : MonoBehaviour
 {
     static public bool MappaAttiva = false;
     public tutorial_canvas_controller speech;
+    private bool tutorialStepDone = false;
+
+    public GameObject banana1;
+    public GameObject banana2;
 
     public GameObject MappaUI;
 
@@ -21,7 +25,16 @@ public class tutorial_mappa : MonoBehaviour
             else
             {
                 ShowMappa();
-                speech.ChangeSpeech(2);
+                if (!tutorialStepDone)
+                {
+                    speech.ChangeSpeech(4);
+                    banana1.GetComponent<MeshCollider>().enabled = true;
+                    banana2.GetComponent<MeshCollider>().enabled = true;
+                    banana1.GetComponent<tutorial_product>().enabled = true;
+                    banana2.GetComponent<tutorial_product>().enabled = true;
+
+                    tutorialStepDone = true;
+                }
             }
         }
     }

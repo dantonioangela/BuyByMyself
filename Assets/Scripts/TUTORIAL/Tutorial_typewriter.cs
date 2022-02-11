@@ -8,6 +8,8 @@ public class Tutorial_typewriter : MonoBehaviour
     private string currentText = "";
     private int i;
     private float delay = 0.08f;
+    public bool stop = false;
+    private int counter = 0;
     [System.NonSerialized] public bool isReady = true;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,10 @@ public class Tutorial_typewriter : MonoBehaviour
     // Update is called once per frame
     public void NewSpeech( string speech)
     {
+        if (!isReady)
+        {
+            stop = true;
+        }
         StartCoroutine(ShowText(speech));
     }
 
@@ -28,19 +34,26 @@ public class Tutorial_typewriter : MonoBehaviour
 
     IEnumerator ShowText( string speech)
     {
-        if (isReady)
+        isReady = false;
+        int current_counter = counter;
+        for (i = 0; i <= speech.Length; i++)
         {
-            isReady = false;
-            for (i = 0; i <= speech.Length; i++)
+            currentText = speech.Substring(0, i);
+            this.GetComponent<Text>().text = currentText;
+            if (counter != current_counter)
             {
-                currentText = speech.Substring(0, i);
-                this.GetComponent<Text>().text = currentText;
-                yield return new WaitForSeconds(delay);
+                yield break;
             }
-            yield return new WaitForSecondsRealtime(2);
-            Clean();
-            isReady = true;
+            yield return new WaitForSeconds(delay);
         }
-
+        yield return new WaitForSecondsRealtime(2);
+        Clean();
+        isReady = true;
     }
+
+    public void ChangeCounter(int c)
+    {
+        counter = c;
+    }
+
 }

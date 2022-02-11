@@ -6,10 +6,12 @@ using TMPro;
 public class tutorial_lista : MonoBehaviour
 {
     static public bool ListaAttiva = false;
+    private bool tutorialStepDone = false;
 
     public GameObject ListaUI;
 
     public TextMeshProUGUI TestoLista;
+    public tutorial_canvas_controller speech;
 
     private void Start()
     {
@@ -27,7 +29,13 @@ public class tutorial_lista : MonoBehaviour
             }
             else
             {
+                if (!tutorialStepDone)
+                {
+                    speech.ChangeSpeech(2);
+                    tutorialStepDone = true;
+                }
                 ShowLista();
+                
             }
         }
     }

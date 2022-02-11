@@ -530,6 +530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speech: {fileID: 1923863467}
+  banana1: {fileID: 3359640151060183162}
+  banana2: {fileID: 6964188476142433511}
   MappaUI: {fileID: 1557795349}
 --- !u!114 &21012113
 MonoBehaviour:
@@ -563,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ListaUI: {fileID: 1197083826}
   TestoLista: {fileID: 300972890}
+  speech: {fileID: 1923863467}
 --- !u!1 &26730474
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +4989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c603d616809503f4eab1a67e5555fa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop: 0
 --- !u!1 &1557795349
 GameObject:
   m_ObjectHideFlags: 0
@@ -37457,6 +37461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f192c1656262b97428e72d096c723839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speech: {fileID: 1923863467}
   prefabBusta: {fileID: 3291374650979557229, guid: 61f9c2d2b5a667f4899ad1d6f7dd3437, type: 3}
   inventario: {fileID: 1826811331}
 --- !u!1 &3260341973804006762
@@ -38264,6 +38269,10 @@ GameObject:
   - component: {fileID: 2725810573452550848}
   - component: {fileID: 1331902013355306341}
   - component: {fileID: 3863853850108320175}
+  - component: {fileID: 3359640151060183165}
+  - component: {fileID: 3359640151060183164}
+  - component: {fileID: 3359640151060183163}
+  - component: {fileID: 3359640151060183166}
   m_Layer: 0
   m_Name: banana_marcia (1)
   m_TagString: Untagged
@@ -38271,6 +38280,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3359640151060183163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3359640151060183162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: banana marcia
+  listName: banana
+  season: 00000000000000000000000000000000
+  price: 2
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!64 &3359640151060183164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3359640151060183162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3216447080179446721, guid: eb74958f0c3a693468297ef2afdbdc75, type: 3}
+--- !u!54 &3359640151060183165
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3359640151060183162}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3359640151060183166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3359640151060183162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 465449461b4478343affc1568e7158ec, type: 3}
 --- !u!1 &3359640151746739155
 GameObject:
   m_ObjectHideFlags: 0
@@ -41294,7 +41365,7 @@ RectTransform:
   m_GameObject: {fileID: 4967048272677973365}
   m_LocalRotation: {x: 0, y: 0, z: -0.043619405, w: 0.9990483}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1197083829}
   m_RootOrder: 0
@@ -68473,7 +68544,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6964188476142433511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
   m_Name: 
@@ -68494,7 +68565,7 @@ MeshCollider:
   m_GameObject: {fileID: 6964188476142433511}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
