@@ -106,7 +106,7 @@ public class MenuPrincipale : MonoBehaviour
 
     public void Tutorial()
     {
-        Debug.Log("Tutorial...");
+        SceneManager.LoadScene(1);
     }
 
     public void SetRisoluzione(int resolutionIndex)
