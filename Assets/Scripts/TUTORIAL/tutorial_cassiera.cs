@@ -15,6 +15,7 @@ public class tutorial_cassiera : MonoBehaviour
     private bool selected = false;
 
     public bool tutorialStepStart = false;
+    public bool tutorialStepDone = false;
     public tutorial_canvas_controller speech;
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class tutorial_cassiera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tutorialStepStart)
+        if (tutorialStepStart && !tutorialStepDone)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!isTalking)
@@ -46,13 +47,17 @@ public class tutorial_cassiera : MonoBehaviour
                             selected = false;
                             if (tutorial_carrello_controller.mode == 0)      //se ha il carrello
                             {
-                                speech.ChangeSpeech(13);
+
+                                /*speech.ChangeSpeech(13);
                                 animator.SetTrigger("click");
                                 isTalking = true;
                                 speechCloud = wantTopay.gameObject;
                                 speechCloud.SetActive(true);
                                 speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
-                                player.UI_active = true;
+                                player.UI_active = true;*/
+                                tutorialStepDone = true;
+                                speech.ChangeSpeech(13);
+                                pay();
                             }
                             else
                             {

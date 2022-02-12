@@ -89,8 +89,11 @@ public class tutorial_player_controller : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && tutorialStepInventarioStart)
             {
                 inventario = true;
-                speech.ChangeSpeech(10);
-                tutorialStepOpenInventarioDone = true;
+                if (!tutorialStepOpenInventarioDone)
+                {
+                    speech.ChangeSpeech(10);
+                    tutorialStepOpenInventarioDone = true;
+                }
                 tutorialInventario.tutorialStepViaBananeStart = true;
             }
         }

@@ -22,7 +22,9 @@ public class tutorial_inventario : MonoBehaviour
         if(tutorialStepViaBananeStart && transform.GetChild(1).GetComponent<tutorial_slot_inventario>().slotEmpty && !tutorialStepDone)
         {
             tutorialStepDone = true;
+            tutorialStepViaBananeStart = false;
             speech.ChangeSpeech(11);
+            speech.tutorialStepBananaInventarioDone = true;
         }
     }
 
