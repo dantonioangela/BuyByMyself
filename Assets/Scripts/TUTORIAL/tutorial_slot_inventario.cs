@@ -9,7 +9,6 @@ public class tutorial_slot_inventario : MonoBehaviour, IDragHandler, IEndDragHan
     private Vector2 initialPos;
     [System.NonSerialized] public bool slotEmpty = true;
     public GameObject productInThisSlot;
-    [SerializeField] private Text number;
     [SerializeField] private Texture emptyTexture;
     [SerializeField] private Canvas canvas;
 
@@ -63,7 +62,6 @@ public class tutorial_slot_inventario : MonoBehaviour, IDragHandler, IEndDragHan
     public void AddProductInSlot(GameObject product)
     {
         productInThisSlot = product;
-        number.text = "1";
         transform.GetComponent<RawImage>().texture = product.GetComponent<icon>().myIcon;
         slotEmpty = false;
     }
@@ -71,15 +69,11 @@ public class tutorial_slot_inventario : MonoBehaviour, IDragHandler, IEndDragHan
     public void RemoveProduct()
     {
         //number.text = (int.Parse(number.text) - 1).ToString();
-        number.text = "0";
-        if (int.Parse(number.text) == 0)
-        {
 
             transform.GetComponent<RawImage>().texture = emptyTexture;
             slotEmpty = true;
             Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<tutorial_carrello_controller>().RemoveProductFromChart(productInThisSlot);
             transform.parent.parent.parent.GetComponent<tutorial_UI>().RemoveProductFromInventario(productInThisSlot);
             productInThisSlot = null;
-        }
     }
 }

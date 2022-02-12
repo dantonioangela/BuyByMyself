@@ -17,7 +17,12 @@ public class tutorial_canvas_controller : MonoBehaviour
                                   "Ottima scelta! Manca solo il salmone",
                                   "Clicca sul vetro del reparto frigo per aprirlo",
                                   "Adesso compra il salmone!",
-                                  "Oops! Abbiamo sforato il budget... Clicca sul carrello per accedere all'inventario!"};
+                                  "Oops! Abbiamo sforato il budget... Clicca sul carrello per vedere cosa contengono le buste!",
+                                  "Quelle banane non sembrano molto buone... Trascinale fuori dalla busta per eliminarle dal carrello!",
+                                  "Perfetto, clicca la freccia per tornare indietro",
+                                  "Abbiamo finito la nostra spesa, clicca su di me, alla cassa",
+                                  "Super! Hai imparato tutto, ma torna nel tutorial se avrai bisogno di ricordare i comandi",
+                                  "Grazie mille e alla prossima, buon divertimento!"};
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +33,7 @@ public class tutorial_canvas_controller : MonoBehaviour
 
     private void Update()
     {
-        if (speech.isReady && (counter == 0 || counter == 2 || counter == 6))
+        if (speech.isReady && (counter == 0 || counter == 2 || counter == 6 || counter == 13))
         {
             counter++;
             speech.ChangeCounter(counter);
