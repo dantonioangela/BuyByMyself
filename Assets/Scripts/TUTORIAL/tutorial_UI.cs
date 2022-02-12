@@ -7,6 +7,8 @@ public class tutorial_UI : MonoBehaviour
 
     public tutorial_player_controller player_controller;
     public tutorial_cassiera cassiera_controller;
+    public bool tutorialStepInventarioStart = false;
+
     private Transform UI_inventario;
     private Transform UI_cassiera_pay;
     private Transform UI_cassiera_notPay;
@@ -70,7 +72,6 @@ public class tutorial_UI : MonoBehaviour
 
     public void AddProductToInventario(GameObject product)
     {
-
         if (counter < 14)
         {
             productsInInventario.Add(product);

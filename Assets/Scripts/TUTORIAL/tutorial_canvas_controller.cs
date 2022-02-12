@@ -13,7 +13,11 @@ public class tutorial_canvas_controller : MonoBehaviour
                                   "Ottimo! Dobbiamo comprare delle banane, vediamo dove si trova il reparto giusto!",
                                   "Premi M per vedere la mappa del supermercato",
                                   "Ora che hai trovato il reparto frutta, prendi due caschi di banane",
-                                  "Grande! Adesso compra anche una bibita"};
+                                  "Grande! Adesso compra anche una bibita",
+                                  "Ottima scelta! Manca solo il salmone",
+                                  "Clicca sul vetro del reparto frigo per aprirlo",
+                                  "Adesso compra il salmone!",
+                                  "Oops! Abbiamo sforato il budget... Clicca sul carrello per accedere all'inventario!"};
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +28,7 @@ public class tutorial_canvas_controller : MonoBehaviour
 
     private void Update()
     {
-        if (speech.isReady && (counter ==0 || counter ==2))
+        if (speech.isReady && (counter == 0 || counter == 2 || counter == 6))
         {
             counter++;
             speech.ChangeCounter(counter);
@@ -38,7 +42,4 @@ public class tutorial_canvas_controller : MonoBehaviour
         speech.ChangeCounter(c);
         speech.NewSpeech(sentences[c]);
     }
-
-
-
 }
