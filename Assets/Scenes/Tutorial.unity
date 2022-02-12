@@ -5581,6 +5581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_controller: {fileID: 1628359478668145897}
   cassiera_controller: {fileID: 311248997330791739}
+  tutorialStepInventarioStart: 0
 --- !u!1 &1834030600
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8179,10 @@ GameObject:
   - component: {fileID: 707017594465504818}
   - component: {fileID: 4494609285293949335}
   - component: {fileID: 1838867352185124189}
+  - component: {fileID: 181274751243719820}
+  - component: {fileID: 181274751243719819}
+  - component: {fileID: 181274751243719818}
+  - component: {fileID: 181274751243719817}
   m_Layer: 0
   m_Name: aranciata_mini
   m_TagString: Untagged
@@ -8185,6 +8190,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &181274751243719817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751243719816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: bcca10e2d4825e241af0701d32d9b950, type: 3}
+--- !u!114 &181274751243719818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751243719816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &181274751243719819
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751243719816}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &181274751243719820
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751243719816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4442227238770914966, guid: bbf70bab5c3c4184fa73c7a4beaa114f, type: 3}
 --- !u!1 &181274751482396812
 GameObject:
   m_ObjectHideFlags: 0
@@ -8196,6 +8263,10 @@ GameObject:
   - component: {fileID: 707017594236525110}
   - component: {fileID: 4494609284996552083}
   - component: {fileID: 1838867351956922713}
+  - component: {fileID: 181274751482396816}
+  - component: {fileID: 181274751482396815}
+  - component: {fileID: 181274751482396814}
+  - component: {fileID: 181274751482396813}
   m_Layer: 0
   m_Name: aranciata_mini (1)
   m_TagString: Untagged
@@ -8203,6 +8274,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &181274751482396813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751482396812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: bcca10e2d4825e241af0701d32d9b950, type: 3}
+--- !u!114 &181274751482396814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751482396812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &181274751482396815
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751482396812}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &181274751482396816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274751482396812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4442227238770914966, guid: bbf70bab5c3c4184fa73c7a4beaa114f, type: 3}
 --- !u!1 &181274752746304175
 GameObject:
   m_ObjectHideFlags: 0
@@ -8214,6 +8347,10 @@ GameObject:
   - component: {fileID: 707017595244570645}
   - component: {fileID: 4494609283724339120}
   - component: {fileID: 1838867353100555130}
+  - component: {fileID: 181274752746304179}
+  - component: {fileID: 181274752746304178}
+  - component: {fileID: 181274752746304177}
+  - component: {fileID: 181274752746304176}
   m_Layer: 0
   m_Name: aranciata_mini (2)
   m_TagString: Untagged
@@ -8221,6 +8358,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &181274752746304176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274752746304175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: bcca10e2d4825e241af0701d32d9b950, type: 3}
+--- !u!114 &181274752746304177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274752746304175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &181274752746304178
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274752746304175}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &181274752746304179
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274752746304175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4442227238770914966, guid: bbf70bab5c3c4184fa73c7a4beaa114f, type: 3}
 --- !u!1 &181274753202735909
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,6 +8431,10 @@ GameObject:
   - component: {fileID: 707017595904397727}
   - component: {fileID: 4494609284450623034}
   - component: {fileID: 1838867352415562480}
+  - component: {fileID: 181274753202735913}
+  - component: {fileID: 181274753202735912}
+  - component: {fileID: 181274753202735911}
+  - component: {fileID: 181274753202735910}
   m_Layer: 0
   m_Name: aranciata_mini (3)
   m_TagString: Untagged
@@ -8239,6 +8442,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &181274753202735910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274753202735909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: bcca10e2d4825e241af0701d32d9b950, type: 3}
+--- !u!114 &181274753202735911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274753202735909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &181274753202735912
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274753202735909}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &181274753202735913
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274753202735909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4442227238770914966, guid: bbf70bab5c3c4184fa73c7a4beaa114f, type: 3}
 --- !u!114 &182290273153460055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10203,7 +10468,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 43
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -183.494}
 --- !u!4 &436086115357169974
 Transform:
@@ -10217,7 +10482,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 42
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -166.972}
 --- !u!95 &439790422168553035
 Animator:
@@ -12544,7 +12809,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 40
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -165.232}
 --- !u!4 &707999591679409936
 Transform:
@@ -12558,7 +12823,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 41
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -168.373}
 --- !u!23 &713611258836900310
 MeshRenderer:
@@ -13799,7 +14064,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 27
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 53.339}
 --- !u!4 &862570832888065883
 Transform:
@@ -13813,7 +14078,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 25
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 92.756}
 --- !u!4 &862570833495059362
 Transform:
@@ -13827,7 +14092,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 26
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: -89.972, y: 0, z: 127.42}
 --- !u!23 &863647592009802479
 MeshRenderer:
@@ -14196,7 +14461,7 @@ Transform:
   m_LocalScale: {x: 0.009999999, y: 0.009999997, z: 0.009999997}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &939670689267627159
 Transform:
@@ -17954,6 +18219,10 @@ GameObject:
   - component: {fileID: 1960901144501408566}
   - component: {fileID: 3213703879848287379}
   - component: {fileID: 828004751302338649}
+  - component: {fileID: 1188200018202954128}
+  - component: {fileID: 1188200018202954127}
+  - component: {fileID: 1188200018202954126}
+  - component: {fileID: 1188200018202954125}
   m_Layer: 0
   m_Name: acqua_mini
   m_TagString: Untagged
@@ -17961,6 +18230,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1188200018202954125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018202954124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 2c6ddf44b7bb09049a350449eaad57b6, type: 3}
+--- !u!114 &1188200018202954126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018202954124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1188200018202954127
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018202954124}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1188200018202954128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018202954124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2121192588583815503, guid: 3e42c71528ec9154d9fdce72aef2f25b, type: 3}
 --- !u!1 &1188200018225080723
 GameObject:
   m_ObjectHideFlags: 0
@@ -17972,6 +18303,10 @@ GameObject:
   - component: {fileID: 1960901144320111401}
   - component: {fileID: 3213703879733836940}
   - component: {fileID: 828004751521384518}
+  - component: {fileID: 1188200018225080727}
+  - component: {fileID: 1188200018225080726}
+  - component: {fileID: 1188200018225080725}
+  - component: {fileID: 1188200018225080724}
   m_Layer: 0
   m_Name: acqua_mini (1)
   m_TagString: Untagged
@@ -17979,6 +18314,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1188200018225080724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018225080723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 2c6ddf44b7bb09049a350449eaad57b6, type: 3}
+--- !u!114 &1188200018225080725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018225080723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1188200018225080726
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018225080723}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1188200018225080727
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200018225080723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2121192588583815503, guid: 3e42c71528ec9154d9fdce72aef2f25b, type: 3}
 --- !u!1 &1188200019297520282
 GameObject:
   m_ObjectHideFlags: 0
@@ -17990,6 +18387,10 @@ GameObject:
   - component: {fileID: 1960901145394614304}
   - component: {fileID: 3213703878661382021}
   - component: {fileID: 828004752598559567}
+  - component: {fileID: 1188200019297520286}
+  - component: {fileID: 1188200019297520285}
+  - component: {fileID: 1188200019297520284}
+  - component: {fileID: 1188200019297520283}
   m_Layer: 0
   m_Name: acqua_mini (2)
   m_TagString: Untagged
@@ -17997,6 +18398,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1188200019297520283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200019297520282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 2c6ddf44b7bb09049a350449eaad57b6, type: 3}
+--- !u!114 &1188200019297520284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200019297520282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1188200019297520285
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200019297520282}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1188200019297520286
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188200019297520282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2121192588583815503, guid: 3e42c71528ec9154d9fdce72aef2f25b, type: 3}
 --- !u!1 &1203239779262262214
 GameObject:
   m_ObjectHideFlags: 0
@@ -18400,7 +18863,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 76
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -57.093}
 --- !u!4 &1246172078056569794
 Transform:
@@ -18414,7 +18877,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 77
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1246172078611082975
 Transform:
@@ -18428,7 +18891,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 78
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -0.15}
 --- !u!23 &1263200696364898332
 MeshRenderer:
@@ -19533,6 +19996,10 @@ GameObject:
   - component: {fileID: 1849973892373717689}
   - component: {fileID: 3315694829712813340}
   - component: {fileID: 713611258836900310}
+  - component: {fileID: 1362266149862963207}
+  - component: {fileID: 1362266149862963206}
+  - component: {fileID: 1362266149862963205}
+  - component: {fileID: 1362266149862963204}
   m_Layer: 0
   m_Name: frizzante_mini
   m_TagString: Untagged
@@ -19540,6 +20007,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1362266149862963204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266149862963203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 0391c827eff5ea74a9e0eba768e7b6aa, type: 3}
+--- !u!114 &1362266149862963205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266149862963203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1362266149862963206
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266149862963203}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1362266149862963207
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266149862963203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8857805142056248922, guid: e8668a675724a514dae6f6044aae3d82, type: 3}
 --- !u!1 &1362266150991315007
 GameObject:
   m_ObjectHideFlags: 0
@@ -19551,6 +20080,10 @@ GameObject:
   - component: {fileID: 1849973893432875653}
   - component: {fileID: 3315694828693427488}
   - component: {fileID: 713611259895865834}
+  - component: {fileID: 1362266150991315011}
+  - component: {fileID: 1362266150991315010}
+  - component: {fileID: 1362266150991315009}
+  - component: {fileID: 1362266150991315008}
   m_Layer: 0
   m_Name: frizzante_mini (2)
   m_TagString: Untagged
@@ -19558,6 +20091,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1362266150991315008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266150991315007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 0391c827eff5ea74a9e0eba768e7b6aa, type: 3}
+--- !u!114 &1362266150991315009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266150991315007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1362266150991315010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266150991315007}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1362266150991315011
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266150991315007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8857805142056248922, guid: e8668a675724a514dae6f6044aae3d82, type: 3}
 --- !u!1 &1362266151349976276
 GameObject:
   m_ObjectHideFlags: 0
@@ -19569,6 +20164,10 @@ GameObject:
   - component: {fileID: 1849973893040744046}
   - component: {fileID: 3315694828234189259}
   - component: {fileID: 713611259772099841}
+  - component: {fileID: 1362266151349976280}
+  - component: {fileID: 1362266151349976279}
+  - component: {fileID: 1362266151349976278}
+  - component: {fileID: 1362266151349976277}
   m_Layer: 0
   m_Name: frizzante_mini (1)
   m_TagString: Untagged
@@ -19576,6 +20175,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1362266151349976277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266151349976276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 0391c827eff5ea74a9e0eba768e7b6aa, type: 3}
+--- !u!114 &1362266151349976278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266151349976276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1362266151349976279
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266151349976276}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1362266151349976280
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362266151349976276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8857805142056248922, guid: e8668a675724a514dae6f6044aae3d82, type: 3}
 --- !u!114 &1372055035603638023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21034,6 +21695,10 @@ GameObject:
   - component: {fileID: 2097010161714224608}
   - component: {fileID: 3077586050157335109}
   - component: {fileID: 959618002234615439}
+  - component: {fileID: 1608281003253303134}
+  - component: {fileID: 1608281003253303133}
+  - component: {fileID: 1608281003253303132}
+  - component: {fileID: 1608281003253303131}
   m_Layer: 0
   m_Name: te_pesca_mini (1)
   m_TagString: Untagged
@@ -21041,6 +21706,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1608281003253303131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281003253303130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 65cd3d0b29e001a43b82fd666d874cec, type: 3}
+--- !u!114 &1608281003253303132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281003253303130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1608281003253303133
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281003253303130}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1608281003253303134
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281003253303130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1162531251893893059, guid: ff02426a474a89b4ba9310f0f26616dd, type: 3}
 --- !u!1 &1608281004507146467
 GameObject:
   m_ObjectHideFlags: 0
@@ -21052,6 +21779,10 @@ GameObject:
   - component: {fileID: 2097010162699629145}
   - component: {fileID: 3077586048861568508}
   - component: {fileID: 959618002817878326}
+  - component: {fileID: 1608281004507146471}
+  - component: {fileID: 1608281004507146470}
+  - component: {fileID: 1608281004507146469}
+  - component: {fileID: 1608281004507146468}
   m_Layer: 0
   m_Name: te_pesca_mini (2)
   m_TagString: Untagged
@@ -21059,6 +21790,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1608281004507146468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004507146467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 65cd3d0b29e001a43b82fd666d874cec, type: 3}
+--- !u!114 &1608281004507146469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004507146467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1608281004507146470
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004507146467}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1608281004507146471
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004507146467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1162531251893893059, guid: ff02426a474a89b4ba9310f0f26616dd, type: 3}
 --- !u!1 &1608281004689047037
 GameObject:
   m_ObjectHideFlags: 0
@@ -21070,6 +21863,10 @@ GameObject:
   - component: {fileID: 2097010162560657223}
   - component: {fileID: 3077586048788785378}
   - component: {fileID: 959618002948463656}
+  - component: {fileID: 1608281004689047041}
+  - component: {fileID: 1608281004689047040}
+  - component: {fileID: 1608281004689047039}
+  - component: {fileID: 1608281004689047038}
   m_Layer: 0
   m_Name: te_pesca_mini
   m_TagString: Untagged
@@ -21077,6 +21874,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1608281004689047038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004689047037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 65cd3d0b29e001a43b82fd666d874cec, type: 3}
+--- !u!114 &1608281004689047039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004689047037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1608281004689047040
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004689047037}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1608281004689047041
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608281004689047037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1162531251893893059, guid: ff02426a474a89b4ba9310f0f26616dd, type: 3}
 --- !u!33 &1611876412061502386
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21246,6 +22105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventario: 0
   UI_active: 0
+  tutorialStepInventarioStart: 0
+  tutorialStepOpenInventarioDone: 0
   speed: 5
   sensitivityX: 5
   sensitivityY: 2
@@ -23481,7 +24342,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 70
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1849973893040744046
 Transform:
@@ -23495,7 +24356,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 69
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -56.934}
 --- !u!4 &1849973893432875653
 Transform:
@@ -23509,7 +24370,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 68
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -16.148}
 --- !u!1 &1850591145378477016
 GameObject:
@@ -23928,6 +24789,10 @@ GameObject:
   - component: {fileID: 1246172078056569794}
   - component: {fileID: 2802524788279309415}
   - component: {fileID: 72170000404545709}
+  - component: {fileID: 1873667094367838588}
+  - component: {fileID: 1873667094367838587}
+  - component: {fileID: 1873667094367838586}
+  - component: {fileID: 1873667094367838585}
   m_Layer: 0
   m_Name: cola_mini (1)
   m_TagString: Untagged
@@ -23935,6 +24800,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1873667094367838585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094367838584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 7567556ae92a5fa43b1b53512fa041f4, type: 3}
+--- !u!114 &1873667094367838586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094367838584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1873667094367838587
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094367838584}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1873667094367838588
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094367838584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8741711821563349887, guid: 6e0f91dc3494d1d4e8450778d7e70551, type: 3}
 --- !u!1 &1873667094507135111
 GameObject:
   m_ObjectHideFlags: 0
@@ -23946,6 +24873,10 @@ GameObject:
   - component: {fileID: 1246172077927430717}
   - component: {fileID: 2802524788148467096}
   - component: {fileID: 72170000542073170}
+  - component: {fileID: 1873667094507135115}
+  - component: {fileID: 1873667094507135114}
+  - component: {fileID: 1873667094507135113}
+  - component: {fileID: 1873667094507135112}
   m_Layer: 0
   m_Name: cola_mini (2)
   m_TagString: Untagged
@@ -23953,6 +24884,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1873667094507135112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094507135111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 7567556ae92a5fa43b1b53512fa041f4, type: 3}
+--- !u!114 &1873667094507135113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094507135111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1873667094507135114
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094507135111}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1873667094507135115
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094507135111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8741711821563349887, guid: 6e0f91dc3494d1d4e8450778d7e70551, type: 3}
 --- !u!1 &1873667094855283813
 GameObject:
   m_ObjectHideFlags: 0
@@ -23964,6 +24957,10 @@ GameObject:
   - component: {fileID: 1246172078611082975}
   - component: {fileID: 2802524788765008250}
   - component: {fileID: 72169999883589040}
+  - component: {fileID: 1873667094855283817}
+  - component: {fileID: 1873667094855283816}
+  - component: {fileID: 1873667094855283815}
+  - component: {fileID: 1873667094855283814}
   m_Layer: 0
   m_Name: cola_mini
   m_TagString: Untagged
@@ -23971,6 +24968,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1873667094855283814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094855283813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 7567556ae92a5fa43b1b53512fa041f4, type: 3}
+--- !u!114 &1873667094855283815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094855283813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &1873667094855283816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094855283813}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1873667094855283817
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873667094855283813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8741711821563349887, guid: 6e0f91dc3494d1d4e8450778d7e70551, type: 3}
 --- !u!65 &1873878378568595682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26108,7 +27167,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 63
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 26.374}
 --- !u!4 &2097010162560657223
 Transform:
@@ -26122,7 +27181,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 64
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2097010162699629145
 Transform:
@@ -26136,7 +27195,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 62
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 2.867}
 --- !u!33 &2099396195591745822
 MeshFilter:
@@ -28383,7 +29442,7 @@ Transform:
   m_LocalScale: {x: 0.2567879, y: 0.25678793, z: 0.25678793}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -12.666, y: 0, z: 90}
 --- !u!4 &2358938499775032809
 Transform:
@@ -28397,7 +29456,7 @@ Transform:
   m_LocalScale: {x: 0.256788, y: 0.256788, z: 0.256788}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0.02, y: 0, z: -87.189}
 --- !u!95 &2360581311737419382
 Animator:
@@ -28760,7 +29819,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 55
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: -89.972, y: 0, z: -132.648}
 --- !u!4 &2423524714407912517
 Transform:
@@ -28774,7 +29833,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 54
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -174.41}
 --- !u!1 &2427423035567498930
 GameObject:
@@ -32331,7 +33390,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 50
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -169.755}
 --- !u!4 &2688269683421783389
 Transform:
@@ -32345,7 +33404,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 51
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -165.502}
 --- !u!114 &2689164474926764736
 MonoBehaviour:
@@ -32668,6 +33727,9 @@ GameObject:
   - component: {fileID: 3270016922625218735}
   - component: {fileID: 1931679776139417354}
   - component: {fileID: 4407409730776490944}
+  - component: {fileID: 2750221337714213398}
+  - component: {fileID: 2750221337714213400}
+  - component: {fileID: 2750221337714213399}
   m_Layer: 0
   m_Name: salmone (2)
   m_TagString: Untagged
@@ -32675,6 +33737,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2750221337714213398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750221337714213397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6257402361467227479, guid: 57a88a52568984542b730ea20bdfb5aa, type: 3}
+--- !u!114 &2750221337714213399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750221337714213397}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: salmone
+  listName: salmone
+  season: 00000000000000000000000000000000
+  price: 3
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &2750221337714213400
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750221337714213397}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &2757645776450372148
 Transform:
   m_ObjectHideFlags: 0
@@ -36080,7 +37191,7 @@ Transform:
   m_LocalScale: {x: 0.25072688, y: 0.2507269, z: 0.25072685}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -15.79, y: 0, z: 90}
 --- !u!222 &3147063659765127005
 CanvasRenderer:
@@ -37411,7 +38522,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 16
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 69.533}
 --- !u!4 &3248213477841464052
 Transform:
@@ -37425,7 +38536,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 17
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 87.071}
 --- !u!1 &3259700480147645072
 GameObject:
@@ -37462,6 +38573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speech: {fileID: 1923863467}
+  vetro: {fileID: 8749197087518763342}
+  bevande: {fileID: 5928472769171502102}
   prefabBusta: {fileID: 3291374650979557229, guid: 61f9c2d2b5a667f4899ad1d6f7dd3437, type: 3}
   inventario: {fileID: 1826811331}
 --- !u!1 &3260341973804006762
@@ -38530,7 +39643,7 @@ Transform:
   m_LocalScale: {x: 0.0019840137, y: 0.0019840137, z: 0.001984014}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 70.46}
 --- !u!1 &3396020572698328483
 GameObject:
@@ -41772,6 +42885,10 @@ GameObject:
   - component: {fileID: 4578677885400496702}
   - component: {fileID: 586981783148737947}
   - component: {fileID: 3441198284547572049}
+  - component: {fileID: 3801438220735733896}
+  - component: {fileID: 3801438220735733895}
+  - component: {fileID: 3801438220735733894}
+  - component: {fileID: 3801438220735733893}
   m_Layer: 0
   m_Name: aranciata
   m_TagString: Untagged
@@ -41779,6 +42896,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3801438220735733893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438220735733892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 29c790a03d2c12341bc66adede094a26, type: 3}
+--- !u!114 &3801438220735733894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438220735733892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &3801438220735733895
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438220735733892}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &3801438220735733896
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438220735733892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5150173129531014221, guid: dd39b25bee945cd4a8073eb742ab9c72, type: 3}
 --- !u!1 &3801438221216282881
 GameObject:
   m_ObjectHideFlags: 0
@@ -41790,6 +42969,10 @@ GameObject:
   - component: {fileID: 4578677885891519419}
   - component: {fileID: 586981781627939870}
   - component: {fileID: 3441198286250170580}
+  - component: {fileID: 3801438221216282885}
+  - component: {fileID: 3801438221216282884}
+  - component: {fileID: 3801438221216282883}
+  - component: {fileID: 3801438221216282882}
   m_Layer: 0
   m_Name: aranciata (1)
   m_TagString: Untagged
@@ -41797,6 +42980,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3801438221216282882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221216282881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 29c790a03d2c12341bc66adede094a26, type: 3}
+--- !u!114 &3801438221216282883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221216282881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &3801438221216282884
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221216282881}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &3801438221216282885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221216282881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5150173129531014221, guid: dd39b25bee945cd4a8073eb742ab9c72, type: 3}
 --- !u!1 &3801438221596500908
 GameObject:
   m_ObjectHideFlags: 0
@@ -41808,6 +43053,10 @@ GameObject:
   - component: {fileID: 4578677886594742550}
   - component: {fileID: 586981782262740659}
   - component: {fileID: 3441198285609861753}
+  - component: {fileID: 3801438221596500912}
+  - component: {fileID: 3801438221596500911}
+  - component: {fileID: 3801438221596500910}
+  - component: {fileID: 3801438221596500909}
   m_Layer: 0
   m_Name: aranciata (2)
   m_TagString: Untagged
@@ -41815,6 +43064,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3801438221596500909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221596500908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 29c790a03d2c12341bc66adede094a26, type: 3}
+--- !u!114 &3801438221596500910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221596500908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: aranciata
+  listName: aranciata
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &3801438221596500911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221596500908}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &3801438221596500912
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801438221596500908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5150173129531014221, guid: dd39b25bee945cd4a8073eb742ab9c72, type: 3}
 --- !u!23 &3801919408630690680
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43151,7 +44462,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 22
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 89.504}
 --- !u!4 &3969947952264720959
 Transform:
@@ -43165,7 +44476,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 23
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 98.533}
 --- !u!23 &3970410246168931364
 MeshRenderer:
@@ -47164,7 +48475,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 36
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: -89.972, y: 0, z: -181.489}
 --- !u!4 &4363347220373355721
 Transform:
@@ -47178,7 +48489,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 38
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -182.572}
 --- !u!222 &4363565208301627445
 CanvasRenderer:
@@ -47397,7 +48708,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 28
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -186.259}
 --- !u!4 &4411050037144646238
 Transform:
@@ -47411,7 +48722,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 29
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -149.021}
 --- !u!1 &4414909357698239681
 GameObject:
@@ -49735,7 +51046,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 34
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -169.305}
 --- !u!4 &4737179407261582424
 Transform:
@@ -49749,7 +51060,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 35
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -186.399}
 --- !u!23 &4737436750766206300
 MeshRenderer:
@@ -52163,7 +53474,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 72
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -66.991}
 --- !u!4 &5057856900499023106
 Transform:
@@ -52177,7 +53488,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 73
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5057856901797592946
 Transform:
@@ -52191,7 +53502,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 71
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -3.82}
 --- !u!1 &5058217283513982060
 GameObject:
@@ -53378,7 +54689,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 37
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -174.95}
 --- !u!4 &5208554942466830757
 Transform:
@@ -53392,7 +54703,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 39
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -173.518}
 --- !u!4 &5217616147084980358
 Transform:
@@ -54126,7 +55437,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 52
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -172.759}
 --- !u!4 &5284047232317056729
 Transform:
@@ -54140,7 +55451,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 53
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 163.339}
 --- !u!1 &5286346530092427575
 GameObject:
@@ -54666,7 +55977,7 @@ Transform:
   m_LocalScale: {x: 0.0021251934, y: 0.0021251931, z: 0.0021251936}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 67.92}
 --- !u!1 &5346923223227354649
 GameObject:
@@ -56511,6 +57822,10 @@ GameObject:
   - component: {fileID: 5057856900368464181}
   - component: {fileID: 8187198432876131984}
   - component: {fileID: 6231348908508283482}
+  - component: {fileID: 5583001879057015699}
+  - component: {fileID: 5583001879057015698}
+  - component: {fileID: 5583001879057015697}
+  - component: {fileID: 5583001879057015696}
   m_Layer: 0
   m_Name: frizzante (1)
   m_TagString: Untagged
@@ -56518,6 +57833,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5583001879057015696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879057015695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: a5620cf1103ebaf488b8e9d85ac5e0c8, type: 3}
+--- !u!114 &5583001879057015697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879057015695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &5583001879057015698
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879057015695}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &5583001879057015699
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879057015695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6260681015133551264, guid: 2488d424a2b21ce4880f989f3b82f046, type: 3}
 --- !u!1 &5583001879999217592
 GameObject:
   m_ObjectHideFlags: 0
@@ -56529,6 +57906,10 @@ GameObject:
   - component: {fileID: 5057856900499023106}
   - component: {fileID: 8187198433007741607}
   - component: {fileID: 6231348907836661357}
+  - component: {fileID: 5583001879999217596}
+  - component: {fileID: 5583001879999217595}
+  - component: {fileID: 5583001879999217594}
+  - component: {fileID: 5583001879999217593}
   m_Layer: 0
   m_Name: frizzante
   m_TagString: Untagged
@@ -56536,6 +57917,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5583001879999217593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879999217592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: a5620cf1103ebaf488b8e9d85ac5e0c8, type: 3}
+--- !u!114 &5583001879999217594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879999217592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &5583001879999217595
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879999217592}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &5583001879999217596
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001879999217592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6260681015133551264, guid: 2488d424a2b21ce4880f989f3b82f046, type: 3}
 --- !u!1 &5583001880823817672
 GameObject:
   m_ObjectHideFlags: 0
@@ -56547,6 +57990,10 @@ GameObject:
   - component: {fileID: 5057856901797592946}
   - component: {fileID: 8187198432225013975}
   - component: {fileID: 6231348909134365725}
+  - component: {fileID: 5583001880823817676}
+  - component: {fileID: 5583001880823817675}
+  - component: {fileID: 5583001880823817674}
+  - component: {fileID: 5583001880823817673}
   m_Layer: 0
   m_Name: frizzante (2)
   m_TagString: Untagged
@@ -56554,6 +58001,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5583001880823817673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001880823817672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: a5620cf1103ebaf488b8e9d85ac5e0c8, type: 3}
+--- !u!114 &5583001880823817674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001880823817672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua frizzante
+  listName: 
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &5583001880823817675
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001880823817672}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &5583001880823817676
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583001880823817672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6260681015133551264, guid: 2488d424a2b21ce4880f989f3b82f046, type: 3}
 --- !u!23 &5586139034192780523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59526,6 +61035,7 @@ GameObject:
   - component: {fileID: 5280143881665811904}
   - component: {fileID: 1611349204}
   - component: {fileID: 1611349207}
+  - component: {fileID: 5928472769171502102}
   m_Layer: 0
   m_Name: RepartoBevande
   m_TagString: Untagged
@@ -59533,6 +61043,19 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!114 &5928472769171502102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5928472769171502101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf07589b827ae543bd3e0391c5062c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialStepStart: 0
 --- !u!33 &5934356757063607559
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -60460,7 +61983,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 48
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180.033}
 --- !u!4 &6001198173036108610
 Transform:
@@ -60474,7 +61997,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 49
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -152.854}
 --- !u!224 &6001732920193946648
 RectTransform:
@@ -62115,7 +63638,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 32
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -188.344}
 --- !u!4 &6236706700678254823
 Transform:
@@ -62129,7 +63652,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 33
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -186.709}
 --- !u!23 &6237160417450815197
 MeshRenderer:
@@ -62726,7 +64249,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 61
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6315607037822042520
 Transform:
@@ -62740,7 +64263,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 60
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -54.457}
 --- !u!4 &6315607039138350488
 Transform:
@@ -62754,7 +64277,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 58
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 35.859}
 --- !u!33 &6316532475713964407
 MeshFilter:
@@ -63600,6 +65123,30 @@ Transform:
   - {fileID: 707017595244570645}
   - {fileID: 707017594236525110}
   - {fileID: 707017594465504818}
+  - {fileID: 7894043681590378688}
+  - {fileID: 7894043680938942838}
+  - {fileID: 6315607039138350488}
+  - {fileID: 7894043680865177386}
+  - {fileID: 6315607037822042520}
+  - {fileID: 6315607037793895373}
+  - {fileID: 2097010162699629145}
+  - {fileID: 2097010161714224608}
+  - {fileID: 2097010162560657223}
+  - {fileID: 8196133576201359241}
+  - {fileID: 8196133576293929696}
+  - {fileID: 8196133576915896174}
+  - {fileID: 1849973893432875653}
+  - {fileID: 1849973893040744046}
+  - {fileID: 1849973892373717689}
+  - {fileID: 5057856901797592946}
+  - {fileID: 5057856900368464181}
+  - {fileID: 5057856900499023106}
+  - {fileID: 8708636110899163072}
+  - {fileID: 8708636112447430317}
+  - {fileID: 8708636112266334398}
+  - {fileID: 1246172077927430717}
+  - {fileID: 1246172078056569794}
+  - {fileID: 1246172078611082975}
   - {fileID: 7266078497049769387}
   - {fileID: 7266078495907530903}
   - {fileID: 7266078497301458425}
@@ -63643,30 +65190,6 @@ Transform:
   - {fileID: 5284047232317056729}
   - {fileID: 2423524714407912517}
   - {fileID: 2423524714036795985}
-  - {fileID: 7894043681590378688}
-  - {fileID: 7894043680938942838}
-  - {fileID: 6315607039138350488}
-  - {fileID: 7894043680865177386}
-  - {fileID: 6315607037822042520}
-  - {fileID: 6315607037793895373}
-  - {fileID: 2097010162699629145}
-  - {fileID: 2097010161714224608}
-  - {fileID: 2097010162560657223}
-  - {fileID: 8196133576201359241}
-  - {fileID: 8196133576293929696}
-  - {fileID: 8196133576915896174}
-  - {fileID: 1849973893432875653}
-  - {fileID: 1849973893040744046}
-  - {fileID: 1849973892373717689}
-  - {fileID: 5057856901797592946}
-  - {fileID: 5057856900368464181}
-  - {fileID: 5057856900499023106}
-  - {fileID: 8708636110899163072}
-  - {fileID: 8708636112447430317}
-  - {fileID: 1246172077927430717}
-  - {fileID: 1246172078056569794}
-  - {fileID: 1246172078611082975}
-  - {fileID: 8708636112266334398}
   m_Father: {fileID: 6782218300226170476}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -65922,7 +67445,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 30
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -170.589}
 --- !u!4 &6693694780891563623
 Transform:
@@ -65936,7 +67459,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 31
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -183.77}
 --- !u!23 &6695961075154974780
 MeshRenderer:
@@ -66031,6 +67554,10 @@ GameObject:
   - component: {fileID: 6315607037822042520}
   - component: {fileID: 6920432523920543293}
   - component: {fileID: 5183264934846855927}
+  - component: {fileID: 6696390366572534566}
+  - component: {fileID: 6696390366572534565}
+  - component: {fileID: 6696390366572534564}
+  - component: {fileID: 6696390366572534563}
   m_Layer: 0
   m_Name: te_verde (1)
   m_TagString: Untagged
@@ -66038,6 +67565,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6696390366572534563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366572534562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: d437b59890b13ff4393d99e62ace7d38, type: 3}
+--- !u!114 &6696390366572534564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366572534562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &6696390366572534565
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366572534562}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &6696390366572534566
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366572534562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6297466234568271170, guid: 62b103e15d2679640b1f59d62aef9331, type: 3}
 --- !u!1 &6696390366592620919
 GameObject:
   m_ObjectHideFlags: 0
@@ -66049,6 +67638,10 @@ GameObject:
   - component: {fileID: 6315607037793895373}
   - component: {fileID: 6920432523959241832}
   - component: {fileID: 5183264934820477090}
+  - component: {fileID: 6696390366592620923}
+  - component: {fileID: 6696390366592620922}
+  - component: {fileID: 6696390366592620921}
+  - component: {fileID: 6696390366592620920}
   m_Layer: 0
   m_Name: te_verde
   m_TagString: Untagged
@@ -66056,6 +67649,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6696390366592620920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366592620919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: d437b59890b13ff4393d99e62ace7d38, type: 3}
+--- !u!114 &6696390366592620921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366592620919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &6696390366592620922
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366592620919}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &6696390366592620923
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390366592620919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6297466234568271170, guid: 62b103e15d2679640b1f59d62aef9331, type: 3}
 --- !u!1 &6696390367404367650
 GameObject:
   m_ObjectHideFlags: 0
@@ -66067,6 +67722,10 @@ GameObject:
   - component: {fileID: 6315607039138350488}
   - component: {fileID: 6920432523155819069}
   - component: {fileID: 5183264936164572919}
+  - component: {fileID: 6696390367404367654}
+  - component: {fileID: 6696390367404367653}
+  - component: {fileID: 6696390367404367652}
+  - component: {fileID: 6696390367404367651}
   m_Layer: 0
   m_Name: te_verde (2)
   m_TagString: Untagged
@@ -66074,6 +67733,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6696390367404367651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390367404367650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: d437b59890b13ff4393d99e62ace7d38, type: 3}
+--- !u!114 &6696390367404367652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390367404367650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &6696390367404367653
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390367404367650}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &6696390367404367654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696390367404367650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6297466234568271170, guid: 62b103e15d2679640b1f59d62aef9331, type: 3}
 --- !u!222 &6702448377263244825
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -66615,7 +68336,7 @@ BoxCollider:
   m_GameObject: {fileID: 9018306280111033113}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.024917914, y: 0.0015623516, z: 0.027101642}
   m_Center: {x: 0.000000014901161, y: -0.00027770354, z: -0.000010325573}
@@ -66626,7 +68347,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9018306280111033113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50262fea69948f74f8df90d72b5cc9f8, type: 3}
   m_Name: 
@@ -66638,7 +68359,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9018306279395578797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50262fea69948f74f8df90d72b5cc9f8, type: 3}
   m_Name: 
@@ -66652,7 +68373,7 @@ BoxCollider:
   m_GameObject: {fileID: 9018306279395578797}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.024917914, y: 0.0015623516, z: 0.027101642}
   m_Center: {x: -0.000000007450581, y: -0.00027770354, z: -0.000010325573}
@@ -66725,7 +68446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9018306278945994329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50262fea69948f74f8df90d72b5cc9f8, type: 3}
   m_Name: 
@@ -66739,7 +68460,7 @@ BoxCollider:
   m_GameObject: {fileID: 9018306278945994329}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.024917914, y: 0.0015623516, z: 0.027101642}
   m_Center: {x: -0.000000007450581, y: -0.000277711, z: -0.000010325573}
@@ -70878,7 +72599,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 14
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90.353}
 --- !u!4 &7266078497049769387
 Transform:
@@ -70892,7 +72613,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 13
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7266078497301458425
 Transform:
@@ -70906,7 +72627,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 15
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 100.58}
 --- !u!33 &7270870713207444711
 MeshFilter:
@@ -71366,6 +73087,10 @@ GameObject:
   - component: {fileID: 7997569475032492698}
   - component: {fileID: 6436427294509540671}
   - component: {fileID: 9130555440580415989}
+  - component: {fileID: 7329260656138514466}
+  - component: {fileID: 7329260656138514468}
+  - component: {fileID: 7329260656138514467}
+  - component: {fileID: 7329260656138514465}
   m_Layer: 0
   m_Name: salmone (1)
   m_TagString: Untagged
@@ -71373,6 +73098,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7329260656138514465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329260656138514464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: aa793009d19ecae4382144208dd4aba8, type: 3}
+--- !u!114 &7329260656138514466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329260656138514464}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: salmone
+  listName: salmone
+  season: 00000000000000000000000000000000
+  price: 3
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7329260656138514467
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329260656138514464}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7329260656138514468
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329260656138514464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6257402361467227479, guid: 57a88a52568984542b730ea20bdfb5aa, type: 3}
 --- !u!224 &7329398510728534145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72255,6 +74042,10 @@ GameObject:
   - component: {fileID: 7894043680865177386}
   - component: {fileID: 6494926727610744975}
   - component: {fileID: 9063048104239772741}
+  - component: {fileID: 7405771888906114452}
+  - component: {fileID: 7405771888906114451}
+  - component: {fileID: 7405771888906114450}
+  - component: {fileID: 7405771888906114449}
   m_Layer: 0
   m_Name: te_verde_mini
   m_TagString: Untagged
@@ -72262,6 +74053,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7405771888906114449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771888906114448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 362c98d6d77268440920222538635a6d, type: 3}
+--- !u!114 &7405771888906114450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771888906114448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7405771888906114451
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771888906114448}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7405771888906114452
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771888906114448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7374382570137700094, guid: e95d9408f32fd8448b863e655b6f7e0d, type: 3}
 --- !u!1 &7405771889772608460
 GameObject:
   m_ObjectHideFlags: 0
@@ -72273,6 +74126,10 @@ GameObject:
   - component: {fileID: 7894043680938942838}
   - component: {fileID: 6494926725670465235}
   - component: {fileID: 9063048105789200921}
+  - component: {fileID: 7405771889772608464}
+  - component: {fileID: 7405771889772608463}
+  - component: {fileID: 7405771889772608462}
+  - component: {fileID: 7405771889772608461}
   m_Layer: 0
   m_Name: te_verde_mini (1)
   m_TagString: Untagged
@@ -72280,6 +74137,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7405771889772608461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771889772608460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 362c98d6d77268440920222538635a6d, type: 3}
+--- !u!114 &7405771889772608462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771889772608460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7405771889772608463
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771889772608460}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7405771889772608464
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771889772608460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7374382570137700094, guid: e95d9408f32fd8448b863e655b6f7e0d, type: 3}
 --- !u!1 &7405771890153544314
 GameObject:
   m_ObjectHideFlags: 0
@@ -72291,6 +74210,10 @@ GameObject:
   - component: {fileID: 7894043681590378688}
   - component: {fileID: 6494926726321377125}
   - component: {fileID: 9063048105095822255}
+  - component: {fileID: 7405771890153544318}
+  - component: {fileID: 7405771890153544317}
+  - component: {fileID: 7405771890153544316}
+  - component: {fileID: 7405771890153544315}
   m_Layer: 0
   m_Name: te_verde_mini (2)
   m_TagString: Untagged
@@ -72298,6 +74221,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7405771890153544315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771890153544314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 362c98d6d77268440920222538635a6d, type: 3}
+--- !u!114 &7405771890153544316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771890153544314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 verde"
+  listName: "t\xE8 verde"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7405771890153544317
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771890153544314}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7405771890153544318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405771890153544314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7374382570137700094, guid: e95d9408f32fd8448b863e655b6f7e0d, type: 3}
 --- !u!224 &7407960920529710333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72370,6 +74355,10 @@ GameObject:
   - component: {fileID: 7895066439154027607}
   - component: {fileID: 6502971972176921586}
   - component: {fileID: 9069059720714499896}
+  - component: {fileID: 7411581057785534193}
+  - component: {fileID: 7411581057785534192}
+  - component: {fileID: 7411581057785534191}
+  - component: {fileID: 7411581057785534190}
   m_Layer: 0
   m_Name: acqua
   m_TagString: Untagged
@@ -72377,6 +74366,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7411581057785534190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581057785534189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: b1f04cede31c25e459b19bf7842feb9b, type: 3}
+--- !u!114 &7411581057785534191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581057785534189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7411581057785534192
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581057785534189}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7411581057785534193
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581057785534189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7566519953533335100, guid: 96657efce9327ca4d9cccdd678610f4a, type: 3}
 --- !u!1 &7411581058265964215
 GameObject:
   m_ObjectHideFlags: 0
@@ -72388,6 +74439,10 @@ GameObject:
   - component: {fileID: 7895066439613449229}
   - component: {fileID: 6502971970622819240}
   - component: {fileID: 9069059722381590370}
+  - component: {fileID: 7411581058265964219}
+  - component: {fileID: 7411581058265964218}
+  - component: {fileID: 7411581058265964217}
+  - component: {fileID: 7411581058265964216}
   m_Layer: 0
   m_Name: acqua
   m_TagString: Untagged
@@ -72395,6 +74450,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7411581058265964216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581058265964215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: b1f04cede31c25e459b19bf7842feb9b, type: 3}
+--- !u!114 &7411581058265964217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581058265964215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7411581058265964218
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581058265964215}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7411581058265964219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581058265964215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7566519953533335100, guid: 96657efce9327ca4d9cccdd678610f4a, type: 3}
 --- !u!1 &7411581059016025134
 GameObject:
   m_ObjectHideFlags: 0
@@ -72406,6 +74523,10 @@ GameObject:
   - component: {fileID: 7895066440030076564}
   - component: {fileID: 6502971970971676977}
   - component: {fileID: 9069059721319040507}
+  - component: {fileID: 7411581059016025138}
+  - component: {fileID: 7411581059016025137}
+  - component: {fileID: 7411581059016025136}
+  - component: {fileID: 7411581059016025135}
   m_Layer: 0
   m_Name: acqua
   m_TagString: Untagged
@@ -72413,6 +74534,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7411581059016025135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581059016025134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: b1f04cede31c25e459b19bf7842feb9b, type: 3}
+--- !u!114 &7411581059016025136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581059016025134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: acqua
+  listName: acqua
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &7411581059016025137
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581059016025134}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &7411581059016025138
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411581059016025134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7566519953533335100, guid: 96657efce9327ca4d9cccdd678610f4a, type: 3}
 --- !u!114 &7416030928204352963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77299,7 +79482,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 59
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7894043680938942838
 Transform:
@@ -77313,7 +79496,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 57
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -8.097}
 --- !u!4 &7894043681590378688
 Transform:
@@ -77327,7 +79510,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 56
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 28.582}
 --- !u!4 &7895066439154027607
 Transform:
@@ -78077,7 +80260,7 @@ Transform:
   m_LocalScale: {x: 0.20761982, y: 0.20761985, z: 0.20761983}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 12
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -12.463, y: 0, z: 90}
 --- !u!23 &7998439880582399289
 MeshRenderer:
@@ -79150,7 +81333,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 65
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 45.282}
 --- !u!4 &8196133576293929696
 Transform:
@@ -79164,7 +81347,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 66
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 60.34}
 --- !u!4 &8196133576915896174
 Transform:
@@ -79178,7 +81361,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 67
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8196199032190527926
 MeshRenderer:
@@ -79372,16 +81555,16 @@ Transform:
   - {fileID: 8533377273640519959}
   - {fileID: 8533377272989641955}
   - {fileID: 8533377274131583395}
-  - {fileID: 931421474961431313}
+  - {fileID: 7997569475032492698}
   - {fileID: 3270016922625218735}
   - {fileID: 668372614692937623}
+  - {fileID: 931421474961431313}
   - {fileID: 9210549943177727742}
   - {fileID: 2358938499775032809}
   - {fileID: 3144086031534266421}
   - {fileID: 2358938498797549865}
   - {fileID: 3389468984183061192}
   - {fileID: 5345299270361225617}
-  - {fileID: 7997569475032492698}
   - {fileID: 3964824440071403441}
   - {fileID: 3909919808014359801}
   - {fileID: 5788903201731545474}
@@ -80108,6 +82291,10 @@ GameObject:
   - component: {fileID: 8708636110899163072}
   - component: {fileID: 5725361496109064293}
   - component: {fileID: 7534635132625835183}
+  - component: {fileID: 8327325910209983870}
+  - component: {fileID: 8327325910209983869}
+  - component: {fileID: 8327325910209983868}
+  - component: {fileID: 8327325910209983867}
   m_Layer: 0
   m_Name: cola (2)
   m_TagString: Untagged
@@ -80115,6 +82302,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8327325910209983867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325910209983866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: c988dd06a8124ec42ba539f400809f8e, type: 3}
+--- !u!114 &8327325910209983868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325910209983866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8327325910209983869
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325910209983866}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8327325910209983870
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325910209983866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7263812793886772434, guid: b1e2f3f81d707a5499371d2c437914ea, type: 3}
 --- !u!1 &8327325911023503876
 GameObject:
   m_ObjectHideFlags: 0
@@ -80126,6 +82375,10 @@ GameObject:
   - component: {fileID: 8708636112266334398}
   - component: {fileID: 5725361495329021723}
   - component: {fileID: 7534635133993348049}
+  - component: {fileID: 8327325911023503880}
+  - component: {fileID: 8327325911023503879}
+  - component: {fileID: 8327325911023503878}
+  - component: {fileID: 8327325911023503877}
   m_Layer: 0
   m_Name: cola
   m_TagString: Untagged
@@ -80133,6 +82386,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8327325911023503877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911023503876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: c988dd06a8124ec42ba539f400809f8e, type: 3}
+--- !u!114 &8327325911023503878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911023503876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8327325911023503879
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911023503876}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8327325911023503880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911023503876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7263812793886772434, guid: b1e2f3f81d707a5499371d2c437914ea, type: 3}
 --- !u!1 &8327325911739335703
 GameObject:
   m_ObjectHideFlags: 0
@@ -80144,6 +82459,10 @@ GameObject:
   - component: {fileID: 8708636112447430317}
   - component: {fileID: 5725361495644983560}
   - component: {fileID: 7534635133233440194}
+  - component: {fileID: 8327325911739335707}
+  - component: {fileID: 8327325911739335706}
+  - component: {fileID: 8327325911739335705}
+  - component: {fileID: 8327325911739335704}
   m_Layer: 0
   m_Name: cola (1)
   m_TagString: Untagged
@@ -80151,6 +82470,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8327325911739335704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911739335703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: c988dd06a8124ec42ba539f400809f8e, type: 3}
+--- !u!114 &8327325911739335705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911739335703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: cola
+  listName: cola
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8327325911739335706
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911739335703}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8327325911739335707
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327325911739335703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7263812793886772434, guid: b1e2f3f81d707a5499371d2c437914ea, type: 3}
 --- !u!4 &8328522402568435352
 Transform:
   m_ObjectHideFlags: 0
@@ -80163,7 +82544,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 21
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 109.532}
 --- !u!4 &8328522403862215059
 Transform:
@@ -80177,7 +82558,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 18
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 86.249}
 --- !u!1 &8330289503051127742
 GameObject:
@@ -80390,7 +82771,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 20
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 85.19}
 --- !u!4 &8346515184709864014
 Transform:
@@ -80404,7 +82785,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 19
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 99.983}
 --- !u!4 &8346515185366347833
 Transform:
@@ -80418,7 +82799,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 24
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -45.494}
 --- !u!33 &8346682838756241933
 MeshFilter:
@@ -81215,7 +83596,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 46
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -176.643}
 --- !u!4 &8436489716028873483
 Transform:
@@ -81229,7 +83610,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 47
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -159.52}
 --- !u!1 &8437676436912553487
 GameObject:
@@ -83269,7 +85650,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 74
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -12.057}
 --- !u!4 &8708636112266334398
 Transform:
@@ -83283,7 +85664,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 79
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8708636112447430317
 Transform:
@@ -83297,7 +85678,7 @@ Transform:
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 75
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 61.737}
 --- !u!1 &8709691556867157026
 GameObject:
@@ -83647,6 +86028,7 @@ GameObject:
   - component: {fileID: 5388168777730515106}
   - component: {fileID: 6782218300558477630}
   - component: {fileID: 1217009810736681340}
+  - component: {fileID: 8749197087518763342}
   m_Layer: 0
   m_Name: RepartoPesceCarne
   m_TagString: Untagged
@@ -83654,6 +86036,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!114 &8749197087518763342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8749197087518763341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c409aa31597f14c8bcdc911deabda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialStepVetroStart: 0
+  tutorialStepVetroDone: 0
+  tutorialStepSalmoneStart: 0
+  tutorialStepSalmoneDone: 0
 --- !u!1 &8752200073359350761
 GameObject:
   m_ObjectHideFlags: 0
@@ -84410,6 +86808,10 @@ GameObject:
   - component: {fileID: 8196133576293929696}
   - component: {fileID: 5048921683380526405}
   - component: {fileID: 7058733587897067919}
+  - component: {fileID: 8860081010769299550}
+  - component: {fileID: 8860081010769299549}
+  - component: {fileID: 8860081010769299548}
+  - component: {fileID: 8860081010769299547}
   m_Layer: 0
   m_Name: te_pesca (1)
   m_TagString: Untagged
@@ -84417,6 +86819,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8860081010769299547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081010769299546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 197c835c41cc6dc40927da2f20a73bf1, type: 3}
+--- !u!114 &8860081010769299548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081010769299546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8860081010769299549
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081010769299546}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8860081010769299550
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081010769299546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1008922672153001881, guid: b45f16d05f805ff4daf5eabc0ba6ebed, type: 3}
 --- !u!1 &8860081011029054771
 GameObject:
   m_ObjectHideFlags: 0
@@ -84428,6 +86892,10 @@ GameObject:
   - component: {fileID: 8196133576201359241}
   - component: {fileID: 5048921683221364780}
   - component: {fileID: 7058733587939308774}
+  - component: {fileID: 8860081011029054775}
+  - component: {fileID: 8860081011029054774}
+  - component: {fileID: 8860081011029054773}
+  - component: {fileID: 8860081011029054772}
   m_Layer: 0
   m_Name: te_pesca (2)
   m_TagString: Untagged
@@ -84435,6 +86903,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8860081011029054772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011029054771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 197c835c41cc6dc40927da2f20a73bf1, type: 3}
+--- !u!114 &8860081011029054773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011029054771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8860081011029054774
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011029054771}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8860081011029054775
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011029054771}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1008922672153001881, guid: b45f16d05f805ff4daf5eabc0ba6ebed, type: 3}
 --- !u!1 &8860081011389177300
 GameObject:
   m_ObjectHideFlags: 0
@@ -84446,6 +86976,10 @@ GameObject:
   - component: {fileID: 8196133576915896174}
   - component: {fileID: 5048921683867879627}
   - component: {fileID: 7058733587308657665}
+  - component: {fileID: 8860081011389177304}
+  - component: {fileID: 8860081011389177303}
+  - component: {fileID: 8860081011389177302}
+  - component: {fileID: 8860081011389177301}
   m_Layer: 0
   m_Name: te_pesca
   m_TagString: Untagged
@@ -84453,6 +86987,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8860081011389177301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011389177300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726cf9436f1a6f348ab4d1e60a2105be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myIcon: {fileID: 2800000, guid: 197c835c41cc6dc40927da2f20a73bf1, type: 3}
+--- !u!114 &8860081011389177302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011389177300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1be47aae0502104397f570c552c9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "t\xE8 alla pesca"
+  listName: "t\xE8 alla pesca"
+  season: 00000000000000000000000000000000
+  price: 1.5
+  counter: 0
+  quality: 0
+  expirationDate: 0
+--- !u!54 &8860081011389177303
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011389177300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &8860081011389177304
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860081011389177300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1008922672153001881, guid: b45f16d05f805ff4daf5eabc0ba6ebed, type: 3}
 --- !u!33 &8865373622193475534
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -86173,7 +88769,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 44
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -161.416}
 --- !u!4 &9072444686629179780
 Transform:
@@ -86187,7 +88783,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6417060188833672879}
-  m_RootOrder: 45
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -184.034}
 --- !u!23 &9075705117907687536
 MeshRenderer:
@@ -87333,7 +89929,7 @@ Transform:
   m_LocalScale: {x: 0.001984014, y: 0.0019840132, z: 0.0019840132}
   m_Children: []
   m_Father: {fileID: 8223771698411893751}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 2.194, y: -90, z: -90}
 --- !u!222 &9212736829499135823
 CanvasRenderer:
