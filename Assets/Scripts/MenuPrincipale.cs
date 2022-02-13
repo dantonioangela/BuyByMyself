@@ -28,6 +28,8 @@ public class MenuPrincipale : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player.UI_active = true;
+        StartCoroutine(InizioGame());
         resolutions = Screen.resolutions;
         MAINResolutionDropdownUI.ClearOptions();
         List<string> options = new List<string>();
@@ -44,7 +46,6 @@ public class MenuPrincipale : MonoBehaviour
         MAINResolutionDropdownUI.AddOptions(options);
         MAINResolutionDropdownUI.value = currentResolutionIndex;
         MAINResolutionDropdownUI.RefreshShownValue();
-        StartCoroutine(InizioGame());
     }
 
     IEnumerator InizioGame()
