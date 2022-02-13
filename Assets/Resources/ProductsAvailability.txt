@@ -1,7 +1,7 @@
 verdura/zucca:1 2
 verdura/zucca_old:0 2
 verdura/zucca_striata:1 2
-verdura_zucca_striata_old:0 2
+verdura/zucca_striata_old:0 2
 verdura/cipolla:1 6
 verdura/cipolla_old:0 4
 verdura/zucchina:1 7

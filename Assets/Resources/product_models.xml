@@ -1111,7 +1111,7 @@
   </product>
   <product>
     <name>fagioli</name>
-    <listname>legumi (confezione piccola)/fagioli_max</listname>
+    <listname>legumi (confezione grande)/fagioli_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>6 lattine</size>
@@ -1131,7 +1131,7 @@
   </product>
   <product>
     <name>mais</name>
-    <listname>mais (confezione piccola)/mais_max</listname>
+    <listname>mais (confezione grande)/mais_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>6 lattine</size>
@@ -1321,7 +1321,7 @@
   </product>
   <product>
     <name>Noodles di pollo</name>
-    <listname>noodles/noodels_pollo</listname>
+    <listname>noodles/noodles_pollo</listname>
     <sustainable>null</sustainable>
     <packaging>0</packaging>
     <size>250g</size>
@@ -2051,7 +2051,7 @@
   </product>
   <product>
     <name>Latte di soia</name>
-    <listname>latte (confezione grande)/latte_soia_mini_eco</listname>
+    <listname>latte (confezione piccola)/latte_soia_mini_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
     <size>0.5l</size>
@@ -2061,7 +2061,7 @@
   </product>
   <product>
     <name>Latte di soia</name>
-    <listname>latte (confezione grande)/latte_soia_mini</listname>
+    <listname>latte (confezione piccola)/latte_soia_mini</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>0.5l</size>
@@ -3231,7 +3231,7 @@
   </product>
   <product>
     <name>Alluminio RotoCuki</name>
-    <listname>alluminio (confezione grande)/alluminio_max</listname>
+    <listname>carta stagnola (confezione grande)/alluminio_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>60 metri</size>
@@ -3241,7 +3241,7 @@
   </product>
   <product>
     <name>Alluminio Kasa</name>
-    <listname>alluminio (confezione piccola)/alluminio_mini</listname>
+    <listname>carta stagnola (confezione piccola)/alluminio_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>20 metri</size>
@@ -3251,7 +3251,7 @@
   </product>
   <product>
     <name>Carta forno RotoCuki</name>
-    <listname>carta forno (confezione grande)/cartaforno_max</listname>
+    <listname>carta forno (confezione grande)/carta_forno_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>6 metri</size>
@@ -3261,7 +3261,7 @@
   </product>
   <product>
     <name>Carta forno Kasa</name>
-    <listname>carta forno (confezione piccola)/cartaforno_mini</listname>
+    <listname>carta forno (confezione piccola)/carta_forno_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>(50 fogli) 3 metri</size>
@@ -3351,7 +3351,7 @@
   </product>
   <product>
     <name>Tè alla pesca</name>
-    <listname>è (bottiglia piccola)/te_pesca_mini</listname>
+    <listname>tè (bottiglia piccola)/te_pesca_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>500 ml</size>
