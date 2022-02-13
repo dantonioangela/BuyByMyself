@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_girasole
+  listName: olio (confezione piccola)/olio_girasole_mini
 --- !u!1 &108666165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: barretta di cioccolato (confezione grande)/cioccolato_nocciola_ax
+  listName: barretta di cioccolato (confezione grande)/cioccolato_nocciola_max
 --- !u!1 &300446448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,7 +3669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: farina (confezione piccola)/farina_mais_max
+  listName: farina (confezione piccola)/farina_mais_mini
 --- !u!1 &584531764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: riso(confezione piccola)/riso_mini
+  listName: riso (confezione piccola)/riso_mini
 --- !u!1 &876267661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,7 +5692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_oliva_mini
+  listName: olio (confezione piccola)/olio_oliva_mini
 --- !u!1 &928535064
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,7 +5879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_mais
+  listName: olio (confezione piccola)/olio_mais_mini
 --- !u!1 &957769474
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,7 +6403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_arachidi
+  listName: olio (confezione piccola)/olio_arachidi_mini
 --- !u!1 &1027737604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,7 +6739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: 
+  listName: pasta (confezione piccola)/spaghetti_mini
 --- !u!1 &1071289844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7066,7 +7066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: 
+  listName: pasta (confezione grande)/spaghetti_max
 --- !u!1 &1118612164
 GameObject:
   m_ObjectHideFlags: 0
@@ -9158,7 +9158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_oliva_max
+  listName: olio (confezione grande)/olio_oliva_max
 --- !u!1 &1421474974
 GameObject:
   m_ObjectHideFlags: 0
@@ -10434,7 +10434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9559254f84f458c4a80806b9ce8fee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listName: olio/olio_frittura
+  listName: olio (confezione piccola)/olio_frittura_mini
 --- !u!1 &1611361980
 GameObject:
   m_ObjectHideFlags: 0

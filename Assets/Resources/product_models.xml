@@ -1,2172 +1,3532 @@
 <products>
-	<product>
-		<id>mela_1</id>
-		<name>Mela Verde</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 1 1 1</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>mela_2</id>
-		<name>Mela Gialla</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 1 1 1</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>mela_3</id>
-		<name>Mela Rossa</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 1 1 1</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>Arancia_1</id>
-		<name>Arancia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 1 0 0</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>pera_1</id>
-		<name>Pera</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 1 1 1</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>carota_1</id>
-		<name>Carota</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>1 0 0 1</season>
-		<price>0</price>
-
-	</product>
-	<product>
-		<id>bistecca_1</id>
-		<name>Bistecca</name>
-		<sustainable>0</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>bistecca_2</id>
-		<name>Bistecca da allevamento sostenibile</name>
-		<sustainable>1</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_1</id>
-		<name>cereali al cioccolato 250g</name>
-		<size>250</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_2</id>
-		<name>cereali al cioccolato 500g</name>
-		<size>500</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_3</id>
-		<name>cereali al mais 250g</name>
-		<size>250</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_4</id>
-		<name>cereali al mais 500g</name>
-		<size>500</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_5</id>
-		<name>cereali integrali 250g</name>
-		<size>250</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_6</id>
-		<name>cereali integrali 500g</name>
-		<size>500</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_7</id>
-		<name>cereali al miele 250g</name>
-		<size>250</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>cereali_8</id>
-		<name>cereali al miele 500g</name>
-		<size>500</size>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_1</id>
-		<name>forma intera sustainable</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_2</id>
-		<name>forma intera non sustainable</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_3</id>
-		<name>mezza forma sustainable</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_4</id>
-		<name>mezza forma non sustainable</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_5</id>
-		<name>quarto di forma sustainable</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_6</id>
-		<name>quarto di forma non sustainable</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_7</id>
-		<name>spicchio sustainable</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>formaggio_8</id>
-		<name>spicchio non sustainable</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_1</id>
-		<name>giaccioli 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_2</id>
-		<name>giaccioli 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_3</id>
-		<name>mix 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_4</id>
-		<name>mix 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_5</id>
-		<name>gelato alla fragola</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_6</id>
-		<name>gelato alla fragola 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_7</id>
-		<name>gelato alla nocciola 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>gelati_8</id>
-		<name>gelato alla nocciola 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_1</id>
-		<name>latte intero 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_2</id>
-		<name>latte intero 1/2l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_3</id>
-		<name>latte di soia 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_4</id>
-		<name>latte di soia 1/2l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_5</id>
-		<name>latte parzialmente scremato 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>latte_6</id>
-		<name>latte parzialmente scremato 1/2l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_1</id>
-		<name>miele d'acacia 250g km0</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>sikm0</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_2</id>
-		<name>miele d'acacia 250g no km0</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>nokm0</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_3</id>
-		<name>miele d'acacia 500g km0</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>sikm0</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_4</id>
-		<name>miele d'acacia 500g no km0</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>nokm0</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_5</id>
-		<name>miele di castagno 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>miele_6</id>
-		<name>miele di castagno 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_1</id>
-		<name>patatine in sacchetto classica</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_2</id>
-		<name>patatine in sacchetto campagnolo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_3</id>
-		<name>patatine in sacchetto spicy</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_4</id>
-		<name>patatine in sacchetto nachos</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_5</id>
-		<name>patatine in tubo classica</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_6</id>
-		<name>patatine in tubo campagnolo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_7</id>
-		<name>patatine in tubo spicy</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>patatine_8</id>
-		<name>patatine in tubo nachos</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>pizze_1</id>
-		<name>pizza classica</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>pizze_2</id>
-		<name>spooky pizza</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_1</id>
-		<name>sapone liquido alla lavanda</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_2</id>
-		<name>sapone liquido all'arancia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_3</id>
-		<name>sapone liquido alla vaniglia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_4</id>
-		<name>sapone liquido all'olio d'oliva</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_5</id>
-		<name>saponetta alla lavanda</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_6</id>
-		<name>saponetta all'arancia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>saponi_7</id>
-		<name>saponetta alla vaniglia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product> 
-		<id>saponi_8</id>
-		<name>saponetta all'olio d'oliva</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>tagliatelle_1</id>
-		<name>tagliatelle 250g carta</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id>tagliatelle_2</id>
-		<name>tagliatelle 250g plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id>tagliatelle_3</id>
-		<name>tagliatelle 500g carta</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id>tagliatelle_4</id>
-		<name>tagliatelle 500g plastica</name>
-		<sustainable>500</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id>zucca_1</id>
-		<name>zucca classica</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>zucca_2</id>
-		<name>zucca classica marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>zucca_3</id>
-		<name>zucca striata</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>zucca_4</id>
-		<name>zucca striata marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-	</product>
-	<product>
-		<id>banana_1</id>
-		<name>banana</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>banana_2</id>
-		<name>banana marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fragola_1</id>
-		<name>fragola</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fragola_2</id>
-		<name>fragola marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>peperone_1</id>
-		<name>peperone giallo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>peperone_2</id>
-		<name>peperone giallo marcio</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>peperone_3</id>
-		<name>peperone rosso</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>peperone_4</id>
-		<name>peperone rosso marcio</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>uva_1</id>
-		<name>uva gialla</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>uva_2</id>
-		<name>uva gialla marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>uva_3</id>
-		<name>uva rossa</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>uva_4</id>
-		<name>uva rossa marcia</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_1</id>
-		<name>biscogolosi mini</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_2</id>
-		<name>biscogolosi medium</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_3</id>
-		<name>biscogolosi maxi</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_4</id>
-		<name>biscogolosi eco mini</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_5</id>
-		<name>biscogolosi eco medium</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_6</id>
-		<name>biscogolosi eco maxi</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_7</id>
-		<name>biscottimi mini</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_8</id>
-		<name>biscottimi medium</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_9</id>
-		<name>biscottimi maxi</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_10</id>
-		<name>biscottimi eco mini</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_11</id>
-		<name>biscottimi eco medium</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_12</id>
-		<name>biscottimi eco maxi</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_13</id>
-		<name>naturini eco mini</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_14</id>
-		<name>naturini eco medium</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>biscotti_15</id>
-		<name>naturini eco maxi</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_1</id>
-		<name>acqua frizzante 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_2</id>
-		<name>acqua frizzante 0.75l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_3</id>
-		<name>acqua naturale sete 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_4</id>
-		<name>acqua naturale sete 0.75</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_5</id>
-		<name>buona cola 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_6</id>
-		<name>buona cola 0.75l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_7</id>
-		<name>aranciotta 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_8</id>
-		<name>aranciotta 0.75l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_9</id>
-		<name>the verde 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_10</id>
-		<name>the verde 0.75l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_11</id>
-		<name>the alla pesca 1.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>bevanda_12</id>
-		<name>the alla pesca 0.75l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.75</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_1</id>
-		<name>ciòcolato fondente medium</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_2</id>
-		<name>ciòcolato fondente maxi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_3</id>
-		<name>ciòcolato pistacchio medium</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_4</id>
-		<name>ciòcolato pistacchio maxi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_5</id>
-		<name>ciòcolato caramello medium</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_6</id>
-		<name>ciòcolato caramello maxi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_7</id>
-		<name>ciòcolato nocciole medium</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_8</id>
-		<name>ciòcolato nocciole maxi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_9</id>
-		<name>ciòcolato latte medium</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>cioccolato_10</id>
-		<name>ciòcolato latte maxi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>2</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>detersivo_1</id>
-		<name>detersivo lavatrice</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>detersivo_2</id>
-		<name>detersì</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>detersivo_3</id>
-		<name>candeggina</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>noodles_1</id>
-		<name>noodles al pollo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>noodles_2</id>
-		<name>noodles al manzo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesto_1</id>
-		<name>pesto rosso</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesto_2</id>
-		<name>pesto alla genovese</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesto_3</id>
-		<name>pesto ricotta e noci</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_1</id>
-		<name>piadina integrale pacco da 3</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_2</id>
-		<name>piadina integrale pacco da 5</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_3</id>
-		<name>piadina integrale pacco da 10</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>10</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_4</id>
-		<name>piadina all'olio pacco da 3</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_5</id>
-		<name>piadina all'olio pacco da 5</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_6</id>
-		<name>piadina all'olio pacco da 10</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>10</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_7</id>
-		<name>piadina leggera pacco da 3</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_8</id>
-		<name>piadina leggera pacco da 5</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>piadina_9</id>
-		<name>piadina leggera pacco da 10</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>10</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pollo_1</id>
-		<name>pollo intero</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pollo_2</id>
-		<name>cosce di pollo</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_1</id>
-		<name>succo di cocco 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_2</id>
-		<name>succo di cocco 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_3</id>
-		<name>succo di ananas 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_4</id>
-		<name>succo di ananas 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_5</id>
-		<name>succo ace 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_6</id>
-		<name>succo ace 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_7</id>
-		<name>succo ai frutti rossi 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_8</id>
-		<name>succo ai frutti rossi 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_9</id>
-		<name>succo di pesca 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_10</id>
-		<name>succo di pesca 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_11</id>
-		<name>succo di pera 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_12</id>
-		<name>succo di pera 0.5l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_13</id>
-		<name>succo di mela 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>succhi_14</id>
-		<name>succo di mela 1l</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>0.5</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>limone_1</id>
-		<name>limone</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>limone_2</id>
-		<name>limone marcio</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesce_1</id>
-		<name>pesce intero</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesce_2</id>
-		<name>astice</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesce_3</id>
-		<name>salmone</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pesce_4</id>
-		<name>sushi</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>mozzarella_1</id>
-		<name>mozzarella grande in busta di plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id>mozzarella_2</id>
-		<name>mozzarella grande in busta di carta</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>1</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id>mozzarella_3</id>
-		<name>pacco 6 mozzarelle in busta di plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id>mozzarella_4</id>
-		<name>pacco 6 mozzarelle in busta di carta</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id>yogurt_1</id>
-		<name>pacco da 4 yogurt in plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>4</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id/>
-		<name>pacco da 4 yogurt in carta</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id/>
-		<name>pacco da 6 yogurt in plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>plastica</packaging>
-	</product>
-	<product>
-		<id/>
-		<name>pacco da 6 yogurt in carta</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>carta</packaging>
-	</product>
-	<product>
-		<id>affettato_1</id>
-		<name>prosciutto crudo in packaging riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>affettato_2</id>
-		<name>prosciutto crudo in plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>affettato_3</id>
-		<name>prosciutto cotto in packaging riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>affettato_4</id>
-		<name>prosciutto cotto in plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>tonno_1</id>
-		<name>tonno pacco da 3</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>3</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>tonno_2</id>
-		<name>tonno pacco da 6</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>zucchero_1</id>
-		<name>zucchero 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>zucchero_2</id>
-		<name>zucchero 1kg</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1000</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>sale_1</id>
-		<name>sale 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>sale_2</id>
-		<name>sale 1kg</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>1000</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>lievito_1</id>
-		<name>lievito per dolci</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>lievito_2</id>
-		<name>lievito per pane e pizza</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>nutella_1</id>
-		<name>nutella 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_1</id>
-		<name>marmellata amarena 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_2</id>
-		<name>marmellata amarena 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_3</id>
-		<name>marmellata fragola 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_4</id>
-		<name>marmellata fragola 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_5</id>
-		<name>marmellata pesche 250g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>250</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>marmellata_6</id>
-		<name>marmellata pesche 500g</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>500</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_1</id>
-		<name>rotolo carta forno kasa 50 fogli</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>50</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_2</id>
-		<name>rotolo carta forno rotocuki 6 metri</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>6</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_3</id>
-		<name>rotolo pellicola kasa 25 metri</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>25</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_4</id>
-		<name>rotolo pellicola rotocuki 30 metri</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>30</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_5</id>
-		<name>rotolo carta stagnola kasa 20 metri</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>20</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>carta_da_cucina_6</id>
-		<name>rotolo carta stagnola rotocuki 60 metri</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>60</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fette_biscottate_1</id>
-		<name>fette biscottate dorate in packaging riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fette_biscottate_2</id>
-		<name>fette biscottate dorate in packaging plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fette_biscottate_3</id>
-		<name>fette biscottate integrali in packaging riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>fette_biscottate_4</id>
-		<name>fette biscottate integrali in packaging plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>merendine_1</id>
-		<name>plumcake in packaging riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>merendine_2</id>
-		<name>pan goccioli in packaging plastica</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_1</id>
-		<name>pancarrè integrale</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_2</id>
-		<name>pancarre integrale materiale riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_3</id>
-		<name>pancarre classico</name>
-		<sustainable>null</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_4</id>
-		<name>pancarre classico materiale riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_5</id>
-		<name>pancarre ai cereali</name>
-		<sustainable>no</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
-	<product>
-		<id>pancarre_6</id>
-		<name>pancarre ai cereali materiale riciclato</name>
-		<sustainable>si</sustainable>
-		<packaging>null</packaging>
-		<size>null</size>
-		<origin>null</origin>
-		<season>null</season>
-		<price>0</price>
-		<packaging>null</packaging>
-	</product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 0 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 0 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>zucca</name>
+    <listname>verdura/zucca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 0 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 0 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>zucca striata</name>
+    <listname>verdura/zucca_striata_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 0 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,30</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,30</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,30</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>cipolla</name>
+    <listname>verdura/cipolla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 0 1 0</season>
+    <price>0,30</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,90</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,90</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,90</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>zucchina</name>
+    <listname>verdura/zucchina_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,90</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,80</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,80</price>
+  </product>
+  <product>
+    <name>pomodoro</name>
+    <listname>verdura/pomodoro_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,20</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,20</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,20</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>carota</name>
+    <listname>verdura/carota_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,20</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_giallo_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>peperone</name>
+    <listname>verdura/peperone_rosso</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,88</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>1,10</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,88</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,88</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>1,10</price>
+  </product>
+  <product>
+    <name>banana</name>
+    <listname>frutta/banana_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,88</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,80</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,80</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_verde_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,80</price>
+  </product>
+   <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>mela</name>
+    <listname>frutta/mela_gialla_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 0 0 0</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 0 0 0</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 0 0 0</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 0 0 0</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 0 0 0</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>fragola</name>
+    <listname>frutta/fragola_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 0 0 0</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 0 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 0 0 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 0 1 1</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 0 0 0</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 0 0 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>arancia</name>
+    <listname>frutta/arancia_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 0 1 1</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,45</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,45</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>1 1 1 1</season>
+    <price>0,45</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>1 1 1 1</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>limone</name>
+    <listname>frutta/limone_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>1 1 1 1</season>
+    <price>0,45</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 0 0</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>pera</name>
+    <listname>frutta/pera_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 0 0</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>1,60</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>uva bianca</name>
+    <listname>frutta/uva_bianca_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>1,60</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>1,60</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>0 1 1 0</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>0 1 1 0</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>uva rossa</name>
+    <listname>frutta/uva_rossa_old</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>0 1 1 0</season>
+    <price>1,60</price>
+  </product>
+  <product>
+    <name>lenticchie</name>
+    <listname>legumi (confezione piccola)/lenticchie_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>3 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>lenticchie</name>
+    <listname>legumi (confezione grande)/lenticchie_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>6 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>fagioli</name>
+    <listname>legumi (confezione piccola)/fagioli_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>3 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>fagioli</name>
+    <listname>legumi (confezione piccola)/fagioli_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>6 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>mais</name>
+    <listname>mais (confezione piccola)/mais_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>3 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>mais</name>
+    <listname>mais (confezione piccola)/mais_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>6 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Tonno Mare Mio</name>
+    <listname>tonno (confezione piccola)/tonno_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>3 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Tonno Mare Mio</name>
+    <listname>tonno (confezione grande)/tonno_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>6 lattine</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Olio di semi di arachidi</name>
+    <listname>olio (confezione piccola)/olio_arachidi_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Olio per frittura</name>
+    <listname>olio (confezione piccola)/olio_frittura_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Olio di semi di girasole</name>
+    <listname>olio (confezione piccola)/olio_girasole_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Olio di semi di mais</name>
+    <listname>olio (confezione piccola)/olio_mais_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Olio extravergine d'oliva</name>
+    <listname>olio (confezione piccola)/olio_oliva_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Olio extravergine d'oliva</name>
+    <listname>olio (confezione grande)/olio_oliva_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Sugo al basilico</name>
+    <listname>sugo/sugo_basilico</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Sugo al pomodoro</name>
+    <listname>sugo/sugo_pomodoro</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Ragù Bolognese</name>
+    <listname>sugo/ragù</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Pesto alla Genovese</name>
+    <listname>pesto/pesto_genovese</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Pesto rosso</name>
+    <listname>pesto/pesto_rosso</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Pesto ricotta e noci</name>
+    <listname>pesto/pesto_ricotta_noci</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,50</price>
+  </product>
+  <product>
+    <name>Uova Fattoria Pulcino</name>
+    <listname>uova (confezione piccola)/uova_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>4 uova</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Uova Fattoria Pulcino</name>
+    <listname>uova (confezione grande)/uova_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>6 uova</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Uova Nella Vecchia Fattoria</name>
+    <listname>uova (confezione piccola)/uova_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>4 uova</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Uova Nella Vecchia Fattoria</name>
+    <listname>uova (confezione grande)/uova_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>6 uova</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Noodles di pollo</name>
+    <listname>noodles/noodels_pollo</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Noodles di manzo</name>
+    <listname>noodles/noodels_manzo</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Riso superfino Carnaroli</name>
+    <listname>riso (confezione grande)/riso_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Riso superfino Carnaroli</name>
+    <listname>riso (confezione piccola)/riso_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Riso superfino Carnaroli</name>
+    <listname>riso (confezione grande)/riso_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Riso superfino Carnaroli</name>
+    <listname>riso (confezione piccola)/riso_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Spaghetti</name>
+    <listname>pasta (confezione grande)/spaghetti_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Spaghetti</name>
+    <listname>pasta (confezione piccola)/spaghetti_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Spaghetti</name>
+    <listname>pasta (confezione grande)/spaghetti_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Spaghetti</name>
+    <listname>pasta (confezione piccola)/spaghetti_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Penne</name>
+    <listname>pasta (confezione piccola)/penne_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Penne</name>
+    <listname>pasta (confezione grande)/penne_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Penne</name>
+    <listname>pasta (confezione piccola)/penne_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Penne</name>
+    <listname>pasta (confezione grande)/penne_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Tagliatelle all'uovo</name>
+    <listname>pasta (confezione piccola)/tagliatelle_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Tagliatelle all'uovo</name>
+    <listname>pasta (confezione grande)/tagliatelle_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Tagliatelle all'uovo</name>
+    <listname>pasta (confezione piccola)/tagliatelle_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>0,5 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Tagliatelle all'uovo</name>
+    <listname>pasta (confezione grande)/tagliatelle_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>1 kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Gelato Gran Mix</name>
+    <listname>gelato (confezione piccola)/gelato_granmix_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>250 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Gelato Gran Mix</name>
+    <listname>gelato (confezione grande)/gelato_granmix_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>500 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Gelato Arcobaleno</name>
+    <listname>gelato (confezione piccola)/gelato_arcobaleno_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>250 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,80</price>
+  </product>
+  <product>
+    <name>Gelato Arcobaleno</name>
+    <listname>gelato (confezione grande)/gelato_arcobaleno_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>500 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,90</price>
+  </product>
+  <product>
+    <name>Gelato alla fragola</name>
+    <listname>gelato (confezione piccola)/gelato_fragola_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>250 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Gelato alla fragola</name>
+    <listname>gelato (confezione grande)/gelato_fragola_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>500 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Gelato alla nocciola</name>
+    <listname>gelato (confezione piccola)/gelato_nocciola_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>250 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Gelato alla nocciola</name>
+    <listname>gelato (confezione grande)/gelato_nocciola_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>500 g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Pizza Spooky</name>
+    <listname>pizza/pizza_spooky</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Pizza Spooky</name>
+    <listname>pizza/pizza_spooky</listname>
+    <sustainable>0</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Sofficini al pomodoro</name>
+    <listname>sofficini/sofficini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>4 sofficini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,20</price>
+  </product>
+  <product>
+    <name>Bastoncini findus</name>
+    <listname>bastoncini findus/bastoncini_findus</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>10 sofficini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,20</price>
+  </product>
+  <product>
+    <name>Asparagi</name>
+    <listname>verdure surgelate/asparagi</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Spinaci</name>
+    <listname>verdure surgelate/spinaci</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,30</price>
+  </product>
+  <product>
+    <name>Spinaci</name>
+    <listname>verdure surgelate/spinaci</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,10</price>
+  </product>
+  <product>
+    <name>Prosciutto crudo</name>
+    <listname>carne/prosciutto_crudo_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,10</price>
+  </product>
+  <product>
+    <name>Prosciutto crudo</name>
+    <listname>carne/prosciutto_crudo</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,30</price>
+  </product>
+  <product>
+    <name>Prosciutto cotto</name>
+    <listname>carne/prosciutto_cotto_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,10</price>
+  </product>
+  <product>
+    <name>Prosciutto cotto</name>
+    <listname>carne/prosciutto_cotto</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,30</price>
+  </product>
+  <product>
+    <name>Pollo</name>
+    <listname>carne/pollo_intero</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Cosce di pollo</name>
+    <listname>carne/cosce_pollo</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,70</price>
+  </product>
+  <product>
+    <name>Bistecca</name>
+    <listname>carne/bistecca_NoIntensivo_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Bistecca</name>
+    <listname>carne/bistecca_NoIntensivo</listname>
+    <sustainable>1</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>5,30</price>
+  </product>
+  <product>
+    <name>Bistecca</name>
+    <listname>carne/bistecca_Intensivo_eco</listname>
+    <sustainable>0</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>5,40</price>
+  </product>
+  <product>
+    <name>Bistecca</name>
+    <listname>carne/bistecca_Intensivo</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Spigola</name>
+    <listname>pesce/pesce_intero_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Spigola</name>
+    <listname>pesce/pesce_intero</listname>
+    <sustainable>1</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>5,70</price>
+  </product>
+  <product>
+    <name>Astice</name>
+    <listname>pesce/astice</listname>
+    <sustainable>1</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>5,90</price>
+  </product>
+  <product>
+    <name>salmone</name>
+    <listname>pesce/asalmone</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Sushi</name>
+    <listname>pesce/sushi</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>0</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Parmigiano</name>
+    <listname>formaggio (intera forma)/parmigiano_intera_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Forma intera</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>10</price>
+  </product>
+  <product>
+    <name>Parmigiano</name>
+    <listname>formaggio (mezza forma)/parmigiano_mezza_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Mezza forma</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Parmigiano</name>
+    <listname>formaggio (quarto forma)/parmigiano_quarto_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Un quarto</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Parmigiano</name>
+    <listname>formaggio (spicchio forma)/parmigiano_spicchio_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Spicchio</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Formaggio</name>
+    <listname>formaggio (intera forma)/formaggio_intera_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Forma intera</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>11</price>
+  </product>
+  <product>
+    <name>Formaggio</name>
+    <listname>formaggio (mezza forma)/formaggio_mezza_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Mezza forma</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Formaggio</name>
+    <listname>formaggio (quarto forma)/formaggio_quarto_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Un quarto</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Formaggio</name>
+    <listname>formaggio (spicchio forma)/formaggio_spicchio_forma</listname>
+    <sustainable>1</sustainable>
+    <packaging>null</packaging>
+    <size>Spicchio</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Formaggio stagionato</name>
+    <listname>formaggio (intera forma)/formaggio_stagionato_intera_forma</listname>
+    <sustainable>0</sustainable>
+    <packaging>null</packaging>
+    <size>Forma intera</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>12</price>
+  </product>
+  <product>
+    <name>Formaggio stagionato</name>
+    <listname>formaggio (mezza forma)/formaggio_stagionato_mezza_forma</listname>
+    <sustainable>0</sustainable>
+    <packaging>null</packaging>
+    <size>Mezza forma</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>8</price>
+  </product>
+  <product>
+    <name>Formaggio stagionato</name>
+    <listname>formaggio (quarto forma)/formaggio_stagionato_quarto_forma</listname>
+    <sustainable>0</sustainable>
+    <packaging>null</packaging>
+    <size>Un quarto</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Formaggio stagionato</name>
+    <listname>formaggio (spicchio forma)/formaggio_stagionato_spicchio_forma</listname>
+    <sustainable>0</sustainable>
+    <packaging>null</packaging>
+    <size>Spicchio</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Mozzarella</name>
+    <listname>mozzarella (confezione grande)/mozzarella_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>6</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Mozzarella Caseificio Dello Zio</name>
+    <listname>mozzarella (confezione piccola)/mozzarella_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>1</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>2,50</price>
+  </product>
+  <product>
+    <name>Mozzarella</name>
+    <listname>mozzarella (confezione piccola)/mozzarella_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>1</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>2,80</price>
+  </product>
+  <product>
+    <name>Mozzarella House</name>
+    <listname>mozzarella (confezione grande)/mozzarella_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>6</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>4,90</price>
+  </product>
+  <product>
+    <name>Latte Intero</name>
+    <listname>latte (confezione grande)/latte_intero_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>1l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Latte Intero</name>
+    <listname>latte (confezione grande)/latte_intero_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>1l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Latte Intero</name>
+    <listname>latte (confezione piccola)/latte_intero_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>0,5l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Latte Intero</name>
+    <listname>latte (confezione piccola)/latte_intero_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>0,5l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Latte parzialmente scremato</name>
+    <listname>latte (confezione grande)/latte_parzialmente_scremato_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>1l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Latte parzialmente scremato</name>
+    <listname>latte (confezione grande)/latte_parzialmente_scremato_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>1l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3,80</price>
+  </product>
+  <product>
+    <name>Latte parzialmente scremato</name>
+    <listname>latte (confezione piccola)/latte_parzialmente_scremato_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>0,5l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Latte parzialmente scremato</name>
+    <listname>latte (confezione piccola)/latte_parzialmente_scremato_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>0,5l</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>2,40</price>
+  </product>
+  <product>
+    <name>Latte di soia</name>
+    <listname>latte (confezione grande)/latte_soia_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>1l</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>3,60</price>
+  </product>
+  <product>
+    <name>Latte di soia</name>
+    <listname>latte (confezione grande)/latte_soia_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>1l</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>3,80</price>
+  </product>
+  <product>
+    <name>Latte di soia</name>
+    <listname>latte (confezione grande)/latte_soia_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>0.5l</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>2,20</price>
+  </product>
+  <product>
+    <name>Latte di soia</name>
+    <listname>latte (confezione grande)/latte_soia_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>0.5l</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>2,40</price>
+  </product>
+  <product>
+    <name>Budino cremoso cioccolato</name>
+    <listname>budino/budino_cioccolata</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>4</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Budino cremoso vaniglia</name>
+    <listname>budino/budino_vanigliacioccolata</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>4</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Yogurt più crema più gusto</name>
+    <listname>yogurt (confezione grande)/yogurt_max_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>6</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,20</price>
+  </product>
+  <product>
+    <name>Yogurt più crema più gusto</name>
+    <listname>yogurt (confezione piccola)/yogurt_mini_eco</listname>
+    <sustainable>1</sustainable>
+    <packaging>1</packaging>
+    <size>4</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Yogurt</name>
+    <listname>yogurt (confezione grande)/yogurt_max</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>6</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,90</price>
+  </product>
+  <product>
+    <name>Yogurt</name>
+    <listname>yogurt (confezione piccola)/yogurt_mini</listname>
+    <sustainable>0</sustainable>
+    <packaging>0</packaging>
+    <size>4</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,20</price>
+  </product>
+  <product>
+    <name>Pan carrè classico</name>
+    <listname>pan carrè/pancarre_classico_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Pan carrè ai 5 cereali</name>
+    <listname>pan carrè/pancarre_cereali_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Pan carrè integrale</name>
+    <listname>pan carrè/pancarre_integrale_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Pan carrè classico</name>
+    <listname>pan carrè/pancarre_classico</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Pan carrè integrale</name>
+    <listname>pan carrè/pancarre_integrale</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,20</price>
+  </product>
+  <product>
+    <name>Pan carrè ai cereali</name>
+    <listname>pan carrè/pancarre_cereali</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,20</price>
+  </product>
+  <product>
+    <name>Farina tipo 00</name>
+    <listname>farina (confezione grande)/farina_00_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,99</price>
+  </product>
+  <product>
+    <name>Farina tipo 00</name>
+    <listname>farina (confezione piccola)/farina_00_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,55</price>
+  </product>
+  <product>
+    <name>Farina di mais</name>
+    <listname>farina (confezione grande)/farina_mais_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Farina di mais</name>
+    <listname>farina (confezione piccola)/farina_mais_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,88</price>
+  </product>
+  <product>
+    <name>Farina integrale</name>
+    <listname>farina (confezione grande)/farina_integrale_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,60</price>
+  </product>
+  <product>
+    <name>Farina integrale</name>
+    <listname>farina (confezione piccola)/farina_integrale_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,99</price>
+  </product>
+  <product>
+    <name>Lievito per dolci</name>
+    <listname>lievito per dolci/lievito_dolci</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>5x16g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Lievito per pane</name>
+    <listname>lievito per pane/lievito_pane</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>16g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Piadina all'olio</name>
+    <listname>piadine (confezione piccola)/piada_olio_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x3</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3</price>
+  </product>
+  <product>
+    <name>Piadina all'olio</name>
+    <listname>piadine (confezione media)/piada_olio</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x5</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Piadina all'olio</name>
+    <listname>piadine (confezione grande)/piada_olio_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x10</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>8</price>
+  </product>
+  <product>
+    <name>Piadina leggera</name>
+    <listname>piadine (confezione piccola)/piada_leggera_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x3</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Piadina leggera</name>
+    <listname>piadine (confezione media)/piada_leggera</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x5</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Piadina legera</name>
+    <listname>piadine (confezione grande)/piada_leggera_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x10</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>8,50</price>
+  </product>
+  <product>
+    <name>Piadina integrale</name>
+    <listname>piadine (confezione piccola)/piada_integ_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x3</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Piadina integrale</name>
+    <listname>piadine (confezione media)/piada_integ</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x5</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Piadina integrale</name>
+    <listname>piadine (confezione grande)/piada_integ_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>x10</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>9</price>
+  </product>
+  <product>
+    <name>Cracker Salato</name>
+    <listname>crackers/crackers_salati_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Cracker ai cereali</name>
+    <listname>crackers/crackers_cereali_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Cracker integrali</name>
+    <listname>crackers/crackers_integrali_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Cracker Salato</name>
+    <listname>crackers/crackers_salati</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Cracker ai cereali</name>
+    <listname>crackers/crackers_cereali</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Cracker integrali</name>
+    <listname>crackers/crackers_integrali</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Sale</name>
+    <listname>sale (confezione grande)/sale_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>Sale</name>
+    <listname>sale (confezione piccola)/sale_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>Fette biscottate dorate</name>
+    <listname>fette biscottate/fette_dorate_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Fette biscottate integrali</name>
+    <listname>fette biscottate/fette_integrali_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Fette biscottate dorate</name>
+    <listname>fette biscottate/fette_dorate</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Fette biscottate integrali</name>
+    <listname>fette biscottate/fette_integrali</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Plum Cake classico</name>
+    <listname>merendina/merendine_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>x10</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Pan Goccioli</name>
+    <listname>merendina/merendine</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>x8</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Biscottini Naturini</name>
+    <listname>biscotti (confezione grande)/naturini_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Biscottini Naturini</name>
+    <listname>biscotti (confezione piccola)/naturini_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>mini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Biscottini Naturini</name>
+    <listname>biscotti (confezione media)/naturini_medi_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>medi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione grande)/biscottimi_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione piccola)/biscottimi_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>mini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione media)/biscottimi_medi_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>medi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione grande)/biscottimi_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,50</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione piccola)/biscottimi_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>mini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>BiscOttimi</name>
+    <listname>biscotti (confezione media)/biscottimi_medi</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>medi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione grande)/biscogolosi_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione piccola)/biscogolosi_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>mini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione media)/biscogolosi_medi_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>1</packaging>
+    <size>medi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione grande)/biscogolosi_max_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,50</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione piccola)/biscogolosi_mini_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>mini</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>BiscoGolosi</name>
+    <listname>biscotti (confezione media)/biscogolosi_medi_eco</listname>
+    <sustainable>null</sustainable>
+    <packaging>0</packaging>
+    <size>medi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Zucchero</name>
+    <listname>zucchero (confezione grande)/zucchero_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1kg</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>Zucchero</name>
+    <listname>zucchero (confezione piccola)/zucchero_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,44</price>
+  </product>
+  <product>
+    <name>Nutella</name>
+    <listname>nutella/nutella</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Miele di castagno</name>
+    <listname>miele (confezione grande)/miele_castagno_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+    <product>
+    <name>Miele di castagno</name>
+    <listname>miele (confezione piccola)/miele_castagno_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>1</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Miele d'acacia</name>
+    <listname>miele (confezione grande)/miele_acacia_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Miele d'acacia</name>
+    <listname>miele (confezione piccola)/miele_acacia_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>0,5</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Miele millefiori</name>
+    <listname>miele (confezione grande)/miele_millefiori_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>0</origin>
+    <season>null</season>
+    <price>6</price>
+  </product>
+  <product>
+    <name>Miele millefiori</name>
+    <listname>miele (confezione piccola)/miele_millefiori_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>0</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Marmellata di amarene</name>
+    <listname>marmellata (confezione piccola)/marmellata_amarene_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Marmellata di amarene</name>
+    <listname>marmellata (confezione grande)/marmellata_amarene_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Marmellata di fragole</name>
+    <listname>marmellata (confezione piccola)/marmellata_fragole_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Marmellata di fragole</name>
+    <listname>marmellata (confezione grande)/marmellata_fragole_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Marmellata di pesche</name>
+    <listname>marmellata (confezione piccola)/marmellata_pesche_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Marmellata di pesche</name>
+    <listname>marmellata (confezione grande)/marmellata_pesche_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Ciocco Cereali</name>
+    <listname>cereali (confezione piccola)/cereali_cioccolato_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciocco Cereali</name>
+    <listname>cereali (confezione grande)/cereali_cioccolato_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7</price>
+  </product>
+  <product>
+    <name>Cereali integrali</name>
+    <listname>cereali (confezione piccola)/cereali_integrali_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>6,50</price>
+  </product>
+  <product>
+    <name>Cereali integrali</name>
+    <listname>cereali (confezione grande)/cereali_integrali_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7,30</price>
+  </product>
+  <product>
+    <name>Cereali grow up miele</name>
+    <listname>cereali (confezione piccola)/cereali_miele_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,50</price>
+  </product>
+  <product>
+    <name>Cereali grow up miele</name>
+    <listname>cereali (confezione grande)/cereali_miele_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7,40</price>
+  </product>
+  <product>
+    <name>Cereali di mais</name>
+    <listname>cereali (confezione piccola)/cereali_mais_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>250g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5,80</price>
+  </product>
+  <product>
+    <name>Cereali di mais</name>
+    <listname>cereali (confezione grande)/cereali_mais_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500g</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>7,70</price>
+  </product>
+  <product>
+    <name>Ciòcolato al pistacchio</name>
+    <listname>barretta di cioccolato (confezione grande)/cioccolato_pistacchio_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciòcolato al pistacchio</name>
+    <listname>barretta di cioccolato (confezione piccola)/cioccolato_pistacchio_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciòcolato alla nocciola</name>
+    <listname>barretta di cioccolato (confezione grande)/cioccolato_nocciola_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Ciòcolato alla nocciola</name>
+    <listname>barretta di cioccolato (confezione piccola)/cioccolato_nocciola_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Ciòcolato al latte</name>
+    <listname>barretta di cioccolato (confezione grande)/cioccolato_latte_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciòcolato al latte</name>
+    <listname>barretta di cioccolato (confezione piccola)/cioccolato_latte_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Ciòcolato fondente</name>
+    <listname>barretta di cioccolato (confezione grande)/cioccolato_fondente_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciòcolato fondente</name>
+    <listname>barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Ciòcolato al caramello</name>
+    <listname>barretta di cioccolato (confezione grande)/cioccolato_caramello_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Ciòcolato al caramello</name>
+    <listname>barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>maxi</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,50</price>
+  </product>
+  <product>
+    <name>Patatine classiche</name>
+    <listname>patatine/patatine_classiche</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>sacchetto</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Patatine campagnole</name>
+    <listname>patatine/patatine_campagnole</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>sacchetto</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,20</price>
+  </product>
+  <product>
+    <name>Patatine spicy</name>
+    <listname>patatine/patatine_spicy</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>sacchetto</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,20</price>
+  </product>
+  <product>
+    <name>Nachos</name>
+    <listname>patatine/patatine_nachos</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>sacchetto</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Patatine classiche</name>
+    <listname>patatine/patatine_classiche</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>tubo</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,50</price>
+  </product>
+  <product>
+    <name>Patatine campagnole</name>
+    <listname>patatine/patatine_campagnole</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>tubo</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>Patatine spicy</name>
+    <listname>patatine/patatine_spicy</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>tubo</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,70</price>
+  </product>
+  <product>
+    <name>Nachos</name>
+    <listname>patatine/patatine_nachos</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>tubo</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Candeggina</name>
+    <listname>candeggina/candeggina</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Detersivo per lavatrice</name>
+    <listname>detersivo/detersivo</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Detersì lavatrice</name>
+    <listname>detersivo/detersì</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,40</price>
+  </product>
+  <product>
+    <name>Sapone liquidio all'arancia</name>
+    <listname>sapone liquido/sapone_liquido_arancia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,20</price>
+  </product>
+    <product>
+    <name>Sapone liquidio alla lavanda</name>
+    <listname>sapone liquido/sapone_liquido_lavanda</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,20</price>
+  </product>
+  <product>
+    <name>Sapone liquidio all'oliva</name>
+    <listname>sapone liquido/sapone_liquido_oliva</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,20</price>
+  </product>
+  <product>
+    <name>Sapone liquidio alla vaniglia</name>
+    <listname>sapone liquido/sapone_liquido_vaniglia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>3,20</price>
+  </product>
+  <product>
+    <name>Saponetta all' arancia</name>
+    <listname>saponetta/saponetta_arancia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,20</price>
+  </product>
+  <product>
+    <name>Saponetta alla lavanda</name>
+    <listname>saponetta/saponetta_lavanda</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,20</price>
+  </product>
+  <product>
+    <name>Saponetta all'oliva</name>
+    <listname>saponetta/saponetta_oliva</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,20</price>
+  </product>
+    <product>
+    <name>Saponetta alla vaniglia</name>
+    <listname>saponetta/saponetta_vaniglia</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>null</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2,20</price>
+  </product>
+   <product>
+    <name>Carta Igienica</name>
+    <listname>carta igienica (confezione piccola)/carta_igienica_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>4 rotoli</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Carta Igienica</name>
+    <listname>carta igienica (confezione grande)/carta_igienica_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>8 rotoli</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Scottex</name>
+    <listname>scottex (confezione piccola)/scottex_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>2 rotoli</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>2</price>
+  </product>
+  <product>
+    <name>Scottex</name>
+    <listname>scottex (confezione grande)/scottex_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>4 rotoli</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4</price>
+  </product>
+  <product>
+    <name>Pellicola Kasa</name>
+    <listname>pellicola (confezione grande)/pellicola_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>30 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Pellicola RotoCuki</name>
+    <listname>pellicola (confezione piccola)/pellicola_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>25 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Alluminio RotoCuki</name>
+    <listname>alluminio (confezione grande)/alluminio_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>60 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Alluminio Kasa</name>
+    <listname>alluminio (confezione piccola)/alluminio_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>20 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>4,50</price>
+  </product>
+  <product>
+    <name>Cartaforno RotoCuki</name>
+    <listname>cartaforno (confezione grande)/cartaforno_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>6 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Acqua sete</name>
+    <listname>acqua (bottiglia piccola)/acqua_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,35</price>
+  </product>
+  <product>
+    <name>Acqua sete</name>
+    <listname>acqua (bottiglia grande)/acqua_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>Acqua frizzante</name>
+    <listname>acqua (bottiglia piccola)/acqua_frizzante_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,55</price>
+  </product>
+  <product>
+    <name>Acqua frizzante</name>
+    <listname>acqua (bottiglia grande)/acqua_frizzante_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Aranciotta aranciata</name>
+    <listname>aranciata (bottiglia piccola)/aranciata_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,50</price>
+  </product>
+  <product>
+    <name>Aranciotta aranciata</name>
+    <listname>aranciata (bottiglia grande)/aranciata_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Buona Cola</name>
+    <listname>cola (bottiglia piccola)/cola_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,70</price>
+  </product>
+  <product>
+    <name>Buona Cola</name>
+    <listname>cola (bottiglia grande)/cola_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,20</price>
+  </product>
+  <product>
+    <name>Tè alla pesca</name>
+    <listname>è (bottiglia piccola)/te_pesca_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>Tè alla pesca</name>
+    <listname>è (bottiglia grande)/te_pesca_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,10</price>
+  </product>
+  <product>
+    <name>Tè verde</name>
+    <listname>tè (bottiglia piccola)/te_verde_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,60</price>
+  </product>
+  <product>
+    <name>Tè verde</name>
+    <listname>tè (bottiglia grande)/te_verde_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1,10</price>
+  </product>
+  <product>
+    <name>Succo ace</name>
+    <listname>succo (confezione piccola)/succo_ace_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo ace</name>
+    <listname>succo (confezione grande)/succo_ace_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo ananas</name>
+    <listname>succo (confezione piccola)/succo_ananas_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo ananas</name>
+    <listname>succo (confezione grande)/succo_ananas_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo cocco</name>
+    <listname>succo (confezione piccola)/succo_cocco_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo cocco</name>
+    <listname>succo (confezione grande)/succo_cocco_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo frutti rossi</name>
+    <listname>succo (confezione piccola)/succo_rossi_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo frutti rossi</name>
+    <listname>succo (confezione grande)/succo_rossi_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo mela</name>
+    <listname>succo (confezione piccola)/succo_mela_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo mela</name>
+    <listname>succo (confezione grande)/succo_mela_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo pera</name>
+    <listname>succo (confezione piccola)/succo_pera_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo pera</name>
+    <listname>succo (confezione grande)/succo_pera_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
+  <product>
+    <name>Succo pesca</name>
+    <listname>succo (confezione piccola)/succo_pesca_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>500 ml</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>0,40</price>
+  </product>
+  <product>
+    <name>Succo pesca</name>
+    <listname>succo (confezione grande)/succo_pesca_max</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>1l</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>1</price>
+  </product>
 </products>
-
-
