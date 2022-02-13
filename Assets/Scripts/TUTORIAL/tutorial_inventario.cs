@@ -6,6 +6,10 @@ public class tutorial_inventario : MonoBehaviour
 {
     private int i;
     private int flag = -1;
+    public bool tutorialStepViaBananeStart = false;
+    private bool tutorialStepDone = false;
+    public tutorial_canvas_controller speech;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,13 @@ public class tutorial_inventario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(tutorialStepViaBananeStart && transform.GetChild(1).GetComponent<tutorial_slot_inventario>().slotEmpty && !tutorialStepDone)
+        {
+            tutorialStepDone = true;
+            tutorialStepViaBananeStart = false;
+            speech.ChangeSpeech(11);
+            speech.tutorialStepBananaInventarioDone = true;
+        }
     }
 
     public void AddProduct(GameObject product)
@@ -23,7 +33,7 @@ public class tutorial_inventario : MonoBehaviour
         flag = -1;
         for (i = 0; i < 15; i++)
         {
-            if (transform.GetChild(i * 2).GetComponent<tutorial_slot_inventario>().productInThisSlot == product)
+            if (transform.GetChild(i).GetComponent<tutorial_slot_inventario>().productInThisSlot == product)
             {
                 flag = i;
                 break;
@@ -33,9 +43,9 @@ public class tutorial_inventario : MonoBehaviour
         {
             for (i = 0; i < 15; i++)
             {
-                if (transform.GetChild(i * 2).GetComponent<tutorial_slot_inventario>().slotEmpty)
+                if (transform.GetChild(i).GetComponent<tutorial_slot_inventario>().slotEmpty)
                 {
-                    transform.GetChild(i * 2).GetComponent<tutorial_slot_inventario>().AddProductInSlot(product);
+                    transform.GetChild(i).GetComponent<tutorial_slot_inventario>().AddProductInSlot(product);
                     break;
                 }
             }

@@ -21,6 +21,7 @@ public class tutorial_vetro_controller : MonoBehaviour
     public bool tutorialStepSalmoneStart = false;
     public bool tutorialStepSalmoneDone = false;
     private bool alreadyEnabled = false;
+    public tutorial_canvas_controller speech;
 
     // Start is called before the first frame update
     void Start()
@@ -67,8 +68,12 @@ public class tutorial_vetro_controller : MonoBehaviour
                         if (aperto == 1)
                         {
                             StartCoroutine(ToLeft());
-                            tutorialStepVetroDone = true;
-                            tutorialStepSalmoneStart = true;
+                            if (!tutorialStepVetroDone)
+                            {
+                                tutorialStepVetroDone = true;
+                                speech.ChangeSpeech(8);
+                                tutorialStepSalmoneStart = true;
+                            }
                         }
                         if (aperto == 2)
                         {

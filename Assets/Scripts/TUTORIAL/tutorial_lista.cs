@@ -55,7 +55,7 @@ public class tutorial_lista : MonoBehaviour
     {
         string s = "";
 
-        s = s + "banane" + "  " + "10" + "\n";
+        s = s + "banane" + "\n" + "bibita" + "\t\t1" + "\n" + "salmone" + "\t1" + "\n";
 
         TestoLista.text = s;
     }

@@ -11,6 +11,8 @@ public class tutorial_player_controller : MonoBehaviour
     public bool tutorialStepInventarioStart = false;
     public bool tutorialStepOpenInventarioDone = false;
     private Vector2 playerMouseInput;
+    public tutorial_canvas_controller speech;
+    public tutorial_inventario tutorialInventario;
 
     private Transform playerCamera;
     private Rigidbody playerRB;
@@ -87,7 +89,12 @@ public class tutorial_player_controller : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && tutorialStepInventarioStart)
             {
                 inventario = true;
-                tutorialStepOpenInventarioDone = true;
+                if (!tutorialStepOpenInventarioDone)
+                {
+                    speech.ChangeSpeech(10);
+                    tutorialStepOpenInventarioDone = true;
+                }
+                tutorialInventario.tutorialStepViaBananeStart = true;
             }
         }
         else if (xRot <= 18f && tutorial_carrello_controller.selected && tutorialStepBananeStart)

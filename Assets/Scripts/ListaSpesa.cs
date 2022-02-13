@@ -46,6 +46,11 @@ public class ListaSpesa : MonoBehaviour
         string productNameList;
         int quantity;
 
+        if (listaSpesa.Count > 0)
+        {
+            listaSpesa.Clear();
+        }
+
         itemsNumber = Random.Range((int)(itemsNumber * 0.7), itemsNumber + 1);
 
         for (int i = 0; i < itemsNumber; i++) {

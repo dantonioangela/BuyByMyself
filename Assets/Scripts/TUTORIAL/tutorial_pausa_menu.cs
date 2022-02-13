@@ -57,7 +57,6 @@ public class tutorial_pausa_menu : MonoBehaviour
                     Pause();
                 }
             }
-
             if (inOptions)
             {
                 Indietro();
@@ -91,10 +90,9 @@ public class tutorial_pausa_menu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        PauseMenuUI.SetActive(false);
-        MainMenuUI.SetActive(true);
-        MenuPrincipale.MainMenuActive = true;
-        MenuPrincipale.inGame = false;
+        Debug.Log("what");
+        GiocoInPausa = false;
+        SceneManager.LoadScene(0);
     }
 
     public void Indietro()

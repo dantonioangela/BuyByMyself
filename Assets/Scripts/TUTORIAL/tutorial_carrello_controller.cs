@@ -14,6 +14,7 @@ public class tutorial_carrello_controller : MonoBehaviour
     public tutorial_canvas_controller speech;
     public tutorial_vetro_controller vetro;
     public tutorial_bevande bevande;
+    public GameObject banana2;
 
 
     private GameObject[] busta = new GameObject[3];
@@ -182,6 +183,11 @@ public class tutorial_carrello_controller : MonoBehaviour
     {
         if (numeroOggetti < 15)
         {
+            if (numeroOggetti == 0)
+            {
+                banana2.GetComponent<MeshCollider>().enabled = true;
+                banana2.GetComponent<tutorial_product>().enabled = true;
+            }
             if (numeroOggetti == 1 && !tutorialStepBananeDone)
             {
                 speech.ChangeSpeech(5);
