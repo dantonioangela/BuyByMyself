@@ -441,7 +441,7 @@
   </product>
   <product>
     <name>peperone</name>
-    <listname>verdura/peperone_rosso_old</listname>
+    <listname>verdura/peperone_rosso</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -471,7 +471,7 @@
   </product>
   <product>
     <name>peperone</name>
-    <listname>verdura/peperone_rosso</listname>
+    <listname>verdura/peperone_rosso_old</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -2631,7 +2631,7 @@
   </product>
   <product>
     <name>BiscoGolosi</name>
-    <listname>biscotti (confezione grande)/biscogolosi_max_eco</listname>
+    <listname>biscotti (confezione grande)/biscogolosi_max</listname>
     <sustainable>null</sustainable>
     <packaging>0</packaging>
     <size>maxi</size>
@@ -2641,7 +2641,7 @@
   </product>
   <product>
     <name>BiscoGolosi</name>
-    <listname>biscotti (confezione piccola)/biscogolosi_mini_eco</listname>
+    <listname>biscotti (confezione piccola)/biscogolosi_mini</listname>
     <sustainable>null</sustainable>
     <packaging>0</packaging>
     <size>mini</size>
@@ -2651,7 +2651,7 @@
   </product>
   <product>
     <name>BiscoGolosi</name>
-    <listname>biscotti (confezione media)/biscogolosi_medi_eco</listname>
+    <listname>biscotti (confezione media)/biscogolosi_medi</listname>
     <sustainable>null</sustainable>
     <packaging>0</packaging>
     <size>medi</size>

@@ -45,7 +45,6 @@ public class ListaSpesa : MonoBehaviour
         string productName;
         string productNameList;
         int quantity;
-
         if (listaSpesa.Count > 0)
         {
             listaSpesa.Clear();
