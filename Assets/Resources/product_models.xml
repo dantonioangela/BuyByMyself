@@ -3031,7 +3031,7 @@
   </product>
   <product>
     <name>Patatine classiche</name>
-    <listname>patatine/patatine_classiche</listname>
+    <listname>patatine/patatine_classiche_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
@@ -3041,7 +3041,7 @@
   </product>
   <product>
     <name>Patatine campagnole</name>
-    <listname>patatine/patatine_campagnole</listname>
+    <listname>patatine/patatine_campagnole_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
@@ -3051,7 +3051,7 @@
   </product>
   <product>
     <name>Patatine spicy</name>
-    <listname>patatine/patatine_spicy</listname>
+    <listname>patatine/patatine_spicy_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
@@ -3061,7 +3061,7 @@
   </product>
   <product>
     <name>Nachos</name>
-    <listname>patatine/patatine_nachos</listname>
+    <listname>patatine/patatine_nachos_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
