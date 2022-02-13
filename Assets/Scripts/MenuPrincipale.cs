@@ -22,13 +22,12 @@ public class MenuPrincipale : MonoBehaviour
     Resolution[] resolutions;
     public Dropdown MAINResolutionDropdownUI;
 
+    public Animator LevelTransition;
+    public float TransitionTime = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
-        player.UI_active = true;
-        MainMenuUI.SetActive(true);
-        MainMenuActive = true;
-
         resolutions = Screen.resolutions;
         MAINResolutionDropdownUI.ClearOptions();
         List<string> options = new List<string>();
@@ -45,6 +44,17 @@ public class MenuPrincipale : MonoBehaviour
         MAINResolutionDropdownUI.AddOptions(options);
         MAINResolutionDropdownUI.value = currentResolutionIndex;
         MAINResolutionDropdownUI.RefreshShownValue();
+        StartCoroutine(InizioGame());
+    }
+
+    IEnumerator InizioGame()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        player.UI_active = true;
+        MainMenuUI.SetActive(true);
+        MainMenuActive = true;
+        LevelTransition.SetTrigger("End");
     }
 
     private void Update()
@@ -109,7 +119,6 @@ public class MenuPrincipale : MonoBehaviour
         player.UI_active = false;
         MainMenuActive = false;
         inGame = true;
-
         SceneManager.LoadScene(1);
     }
 
@@ -127,29 +136,50 @@ public class MenuPrincipale : MonoBehaviour
     }
 
     public void PartitaFacile()
-    {
-        player.UI_active = false;
+    {       
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+        StartCoroutine(LoadFacile());
+    }
+
+    IEnumerator LoadFacile()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        player.UI_active = false;
     }
 
     public void PartitaMedia()
     {
-        player.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+        StartCoroutine(LoadMedia());
+    }
+
+    IEnumerator LoadMedia()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        player.UI_active = false;
     }
     public void PartitaDifficile()
     {
-        player.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+        StartCoroutine(LoadDifficile());
+    }
+
+    IEnumerator LoadDifficile()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        player.UI_active = false;
     }
 
 }

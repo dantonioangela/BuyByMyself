@@ -4259,7 +4259,7 @@ MonoBehaviour:
   OptionsMenuUI: {fileID: 465583292179493417}
   MainMenuUI: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
-  ResolutionDropdownUI: {fileID: 7807967653323456548}
+  ResolutionDropdownUI: {fileID: 0}
 --- !u!114 &7540371192540200386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4305,6 +4305,8 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
   SceltaDiffUI: {fileID: 0}
   MAINResolutionDropdownUI: {fileID: 0}
+  LevelTransition: {fileID: 0}
+  TransitionTime: 2
 --- !u!1 &7540371192554913277
 GameObject:
   m_ObjectHideFlags: 0
