@@ -925,30 +925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 254340312, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: carta forno (confezione grande)/carta_forno_max
-      objectReference: {fileID: 0}
-    - target: {fileID: 1009548479, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: gelato (confezione piccola)/gelato_arcobaleno_mini
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281177357, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: noodles/noodles_pollo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1598895585, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: "detersivo/deters\xEC"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709342064, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: biscotti (confezione piccola)/naturini_mini_eco
-      objectReference: {fileID: 0}
-    - target: {fileID: 1742805225, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: listName
-      value: mozzarella (confezione piccola)/mozzarella_mini
-      objectReference: {fileID: 0}
     - target: {fileID: 7759360335022010568, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -996,10 +972,6 @@ PrefabInstance:
     - target: {fileID: 7759360335022010573, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
       propertyPath: m_Name
       value: Scene_manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7759360335843306687, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}
-      propertyPath: season
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1db3de5426eaa754a9b3bcde15210e6f, type: 3}

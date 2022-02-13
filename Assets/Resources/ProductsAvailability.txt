@@ -34,148 +34,10 @@ frutta/uva_bianca:1 8
 frutta/uva_bianca_old:1 5
 frutta/uva_rossa:1 9
 frutta/uva_rossa_old:1 8
-tè (bottiglia grande)/te_verde_max:1 3
-tè (bottiglia piccola)/te_verde_mini:1 3
-tè (bottiglia piccola)/te_pesca_mini:1 3
-tè (bottiglia grande)/te_pesca_max:1 3
-cola (bottiglia piccola)/cola_mini:1 3
-cola (bottiglia grande)/cola_max:1 3
-aranciata (bottiglia piccola)/aranciata_mini:1 4
-aranciata (bottiglia grande)/aranciata_max:1 3
-acqua (bottiglia piccola)/acqua_mini:2 3
-acqua (bottiglia grande)/acqua_max:2 3
-acqua (bottiglia grande)/acqua_frizzante_max:2 3
-acqua (bottiglia piccola)/acqua_frizzante_mini:2 3
-succo (confezione grande)/succo_ace_max:1 2
-succo (confezione piccola)/succo_ace_mini:1 2
-succo (confezione grande)/succo_ananas_max:1 2
-succo (confezione piccola)/succo_ananas_mini:1 2
-succo (confezione grande)/succo_cocco_max:1 2
-succo (confezione piccola)/succo_cocco_mini:1 2
-succo (confezione grande)/succo_rossi_max:1 2
-succo (confezione piccola)/succo_rossi_mini:1 2
-succo (confezione grande)/succo_mela_max:1 2
-succo (confezione piccola)/succo_mela_mini:1 2
-succo (confezione grande)/succo_pera_max:1 2
-succo (confezione piccola)/succo_pera_mini:1 2
-succo (confezione grande)/succo_pesca_max:1 2
-succo (confezione piccola)/succo_pesca_mini:1 2
-latte (confezione grande)/latte_intero_max:2 2
-latte (confezione piccola)/latte_intero_mini:2 2
-latte (confezione grande)/latte_ps_max:2 3
-latte (confezione piccola)/latte_ps_mini:2 3
-latte (confezione grande)/latte_soia_max:2 3
-latte (confezione piccola)/latte_soia_mini:2 3
-fette biscottate/fette_integrali_eco:2 2
-fette biscottate/fette_integrali:2 2
-fette biscottate/fette_dorate:2 2
-fette biscottate/fette_dorate_eco:2 2
-merendina/merendine:1 3
-merendina/merendine_eco:1 3
-biscotti (confezione piccola)/naturini_mini_eco:3 2
-biscotti (confezione media)/naturini_medi_eco:3 2
-biscotti (confezione grande)/naturini_max_eco:3 2
-biscotti (confezione piccola)/biscottimi_mini_eco:3 2
-biscotti (confezione media)/biscottimi_medi_eco:3 2
-biscotti (confezione grande)/biscottimi_max_eco:3 2
-biscotti (confezione piccola)/biscottimi_mini:3 2
-biscotti (confezione media)/biscottimi_medi:3 2
-biscotti (confezione grande)/biscottimi_max:3 2
-biscotti (confezione piccola)/biscogolosi_mini_eco:3 2
-biscotti (confezione media)/biscogolosi_medi_eco:3 2
-biscotti (confezione grande)/biscogolosi_max_eco:3 2
-biscotti (confezione piccola)/biscogolosi_mini:3 2
-biscotti (confezione media)/biscogolosi_medi:3 2
-biscotti (confezione grande)/biscogolosi_max:3 2
-carta forno (confezione piccola)/carta_forno_mini:1 4
-carta forno (confezione grande)/carta_forno_max:1 4
-carta stagnola (confezione piccola)/alluminio_mini:1 4
-carta stagnola (confezione grande)/alluminio_max:1 4
-pellicola (confezione piccola)/pellicola_mini:1 4
-pellicola (confezione grande)/pellicola_max:1 4
-scottex (confezione grande)/scottex_max:1 2
-scottex (confezione piccola)/scottex_mini:1 2
-carta igienica (confezione grande)/carta_igienica_max:1 1
-carta igienica (confezione piccola)/carta_igienica_mini:1 2
-saponetta/saponetta_vaniglia:4 2 
-saponetta/saponetta_oliva:4 2
-saponetta/saponetta_lavanda:4 2
-saponetta/saponetta_arancia:4 2
-sapone liquido/sapone_liquido_vaniglia:4 2
-sapone liquido/sapone_liquido_oliva:4 2
-sapone liquido/sapone_liquido_lavanda:4 2
-sapone liquido/sapone_liquido_arancia:4 2
-detersivo/detersì:1 2
-detersivo/detersivo:1 2
-candeggina/candeggina:1 2
-barretta di cioccolato (confezione grande)/cioccolato_pistacchio_max:5 4
-barretta di cioccolato (confezione piccola)/cioccolato_pistacchio_mini:5 4
-barretta di cioccolato (confezione grande)/cioccolato_nocciola_max:5 4
-barretta di cioccolato (confezione piccola)/cioccolato_nocciola_mini:5 4
-barretta di cioccolato (confezione grande)/cioccolato_latte_max:5 4
-barretta di cioccolato (confezione piccola)/cioccolato_latte_mini:5 4
-barretta di cioccolato (confezione grande)/cioccolato_fondente_max:5 4
-barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini:5 4
-barretta di cioccolato (confezione grande)/cioccolato_caramello_max:5 4 
-barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini:5 4
-cereali (confezione piccola)/cereali_cioccolato_mini:1 3
-cereali (confezione grande)/cereali_cioccolato_max:1 3
-cereali (confezione piccola)/cereali_integrali_mini:1 3
-cereali (confezione grande)/cereali_integrali_max:1 3
-cereali (confezione piccola)/cereali_mais_mini:1 3
-cereali (confezione grande)/cereali_mais_max:1 3
-cereali (confezione piccola)/cereali_miele_mini:1 3
-cereali (confezione grande)/cereali_miele_max:1 3
-marmellata (confezione piccola)/marmellata_amarene_mini:3 2
-marmellata (confezione grande)/marmellata_amarene_max:3 2
-marmellata (confezione piccola)/marmellata_fragole_mini:3 2
-marmellata (confezione grande)/marmellata_fragole_max:3 2
-marmellata (confezione piccola)/marmellata_pesche_mini:3 2
-marmellata (confezione grande)/marmellata_pesche_max:3 2
-miele (confezione grande)/miele_castagno_max:1 2
-miele (confezione piccola)/miele_castagno_mini:1 2
-miele (confezione grande)/miele_acacia_max:1 2
-miele (confezione piccola)/miele_acacia_mini:1 2
-miele (confezione grande)/miele_millefiori_max:1 2
-miele (confezione piccola)/miele_millefiori_mini:1 2
-sale (confezione piccola)/sale_mini:1 4
-sale (confezione grande)/sale_max:1 3
-lievito per pane/lievito_pane:1 4
-lievito per dolci/lievito_dolci:1 5
-zucchero (confezione piccola)/zucchero_mini:1 4
-zucchero (confezione grande)/zucchero_max:1 4
-nutella/nutella:1 2
-crackers/crackers_integrali_eco:3 3
-crackers/crackers_integrali:3 3
-crackers/crackers_cereali_eco:3 3
-crackers/crackers_cereali:3 3
-crackers/crackers_salati_eco:3 3
-crackers/crackers_salati:3 3
-piadine (confezione grande)/piada_olio_max:1 3
-piadine (confezione media)/piada_olio:1 3
-piadine (confezione piccola)/piada_olio_mini:1 3
-piadine (confezione grande)/piada_leggera_max:1 3
-piadine (confezione media)/piada_leggera:1 3
-piadine (confezione piccola)/piada_leggera_mini:1 3
-piadine (confezione grande)/piada_integ_max:1 3
-piadine (confezione media)/piada_integ:1 3
-piadine (confezione piccola)/piada_integ_mini:1 3
-farina (confezione piccola)/farina_mais_mini:1 2
-farina (confezione grande)/farina_mais_max:1 2
-farina (confezione piccola)/farina_00_mini:1 2
-farina (confezione grande)/farina_00_max:1 2
-farina (confezione piccola)/farina_integrale_mini:1 2
-farina (confezione grande)/farina_integrale_max:1 2
-pan carrè/pancarre_cereali_eco:1 3
-pan carrè/pancarre_cereali:1 3
-pan carrè/pancarre_integrale_eco:1 3
-pan carrè/pancarre_integrale:1 3
-pan carrè/pancarre_classico_eco:1 3
-pan carrè/pancarre_classico:1 3
-legumi (confezione piccola)/fagioli_mini:2 3
-legumi (confezione grande)/fagioli_max:2 3
 legumi (confezione piccola)/lenticchie_mini:2 4
 legumi (confezione grande)/lenticchie_max:2 3
+legumi (confezione piccola)/fagioli_mini:2 3
+legumi (confezione grande)/fagioli_max:2 3
 mais (confezione piccola)/mais_mini:1 4
 mais (confezione grande)/mais_max:1 3
 tonno (confezione piccola)/tonno_mini:1 2
@@ -192,36 +54,36 @@ sugo/ragù:2 3
 pesto/pesto_genovese:2 3
 pesto/pesto_ricotta_noci:2 3
 pesto/pesto_rosso:2 3
-uova (confezione grande)/uova_max:1 4
-uova (confezione piccola)/uova_mini:1 8
-uova (confezione grande)/uova_max_eco:1 4
 uova (confezione piccola)/uova_mini_eco:1 8
-noodles/noodles_manzo:1 4
+uova (confezione grande)/uova_max_eco:1 4
+uova (confezione piccola)/uova_mini:1 8
+uova (confezione grande)/uova_max:1 4
 noodles/noodles_pollo:1 4
+noodles/noodles_manzo:1 4
 riso (confezione grande)/riso_max_eco:1 3
 riso (confezione piccola)/riso_mini_eco:1 3
 riso (confezione grande)/riso_max:1 3
 riso (confezione piccola)/riso_mini:1 3
-pasta (confezione grande)/spaghetti_max:3 3
-pasta (confezione piccola)/spaghetti_mini:3 3
 pasta (confezione grande)/spaghetti_max_eco:3 3
 pasta (confezione piccola)/spaghetti_mini_eco:3 3
-pasta (confezione grande)/penne_max:3 3
-pasta (confezione piccola)/penne_mini:3 3
-pasta (confezione grande)/penne_max_eco:3 3
+pasta (confezione grande)/spaghetti_max:3 3
+pasta (confezione piccola)/spaghetti_mini:3 3
 pasta (confezione piccola)/penne_mini_eco:3 3
-pasta (confezione grande)/tagliatelle_max:3 2
-pasta (confezione piccola)/tagliatelle_mini:3 3
-pasta (confezione grande)/tagliatelle_max_eco:3 2
+pasta (confezione grande)/penne_max_eco:3 3
+pasta (confezione piccola)/penne_mini:3 3
+pasta (confezione grande)/penne_max:3 3
 pasta (confezione piccola)/tagliatelle_mini_eco:3 3
-gelato (confezione piccola)/gelato_fragola_mini:1 2
-gelato (confezione grande)/gelato_fragola_max:1 2
-gelato (confezione piccola)/gelato_nocciola_mini:1 2
-gelato (confezione grande)/gelato_nocciola_max:1 2
+pasta (confezione grande)/tagliatelle_max_eco:3 2
+pasta (confezione piccola)/tagliatelle_mini:3 3
+pasta (confezione grande)/tagliatelle_max:3 2
 gelato (confezione piccola)/gelato_granmix_mini:1 2
 gelato (confezione grande)/gelato_granmix_max:1 2
 gelato (confezione piccola)/gelato_arcobaleno_mini:1 2
 gelato (confezione grande)/gelato_arcobaleno_max:1 2
+gelato (confezione piccola)/gelato_fragola_mini:1 2
+gelato (confezione grande)/gelato_fragola_max:1 2
+gelato (confezione piccola)/gelato_nocciola_mini:1 2
+gelato (confezione grande)/gelato_nocciola_max:1 2
 pizza/pizza_classica:1 2
 pizza/pizza_spooky:1 3
 sofficini/sofficini:1 3
@@ -230,19 +92,19 @@ verdure surgelate/asparagi:1 3
 verdure surgelate/spinaci:1 3
 carne/prosciutto_crudo_eco:3 3
 carne/prosciutto_crudo:3 3
-carne/prosciutto_cotto:3 3
 carne/prosciutto_cotto_eco:3 3
+carne/prosciutto_cotto:3 3
 carne/pollo_intero:3 3
 carne/cosce_pollo:3 3
-carne/bistecca_intensivo:3 3
-carne/bistecca_intensivo_eco:3 3
-carne/bistecca_NoIntensivo:3 3
 carne/bistecca_NoIntensivo_eco:3 3
-pesce/sushi:1 3
-pesce/astice:1 3
-pesce/pesce_intero:1 3
+carne/bistecca_NoIntensivo:3 3
+carne/bistecca_intensivo_eco:3 3
+carne/bistecca_intensivo:3 3
 pesce/pesce_intero_eco:1 3
+pesce/pesce_intero:1 3
+pesce/astice:1 3
 pesce/salmone:1 3
+pesce/sushi:1 3
 formaggio (intera forma)/parmigiano_intera_forma:1 2
 formaggio (mezza forma)/parmigiano_mezza_forma:1 2
 formaggio (quarto forma)/parmigiano_quarto_forma:1 2
@@ -255,27 +117,165 @@ formaggio (intera forma)/formaggio_stagionato_intera_forma:1 2
 formaggio (mezza forma)/formaggio_stagionato_mezza_forma:1 2
 formaggio (quarto forma)/formaggio_stagionato_quarto_forma:1 2
 formaggio (spicchio forma)/formaggio_stagionato_spicchio_forma:1 2
-mozzarella (confezione piccola)/mozzarella_mini_eco:1 6
 mozzarella (confezione grande)/mozzarella_max_eco:1 4
-mozzarella (confezione piccola)/mozzarella_mini:1 6
+mozzarella (confezione piccola)/mozzarella_mini_eco:1 6
 mozzarella (confezione grande)/mozzarella_max:1 4
+mozzarella (confezione piccola)/mozzarella_mini:1 6
 latte (confezione grande)/latte_intero_max_eco:2 2
+latte (confezione grande)/latte_intero_max:2 2
 latte (confezione piccola)/latte_intero_mini_eco:2 2
+latte (confezione piccola)/latte_intero_mini:2 2
 latte (confezione grande)/latte_parzialmente_scremato_max_eco:2 2
+latte (confezione grande)/latte_ps_max:2 3
 latte (confezione piccola)/latte_parzialmente_scremato_mini_eco:2 2
+latte (confezione piccola)/latte_ps_mini:2 3
 latte (confezione grande)/latte_soia_max_eco:2 2
+latte (confezione grande)/latte_soia_max:2 3
 latte (confezione piccola)/latte_soia_mini_eco:2 2
+latte (confezione piccola)/latte_soia_mini:2 3
 budino/budino_cioccolata:2 2
 budino/budino_vaniglia:2 3
 yogurt (confezione grande)/yogurt_max_eco:1 2
 yogurt (confezione piccola)/yogurt_mini_eco:1 2
 yogurt (confezione grande)/yogurt_max:1 3
 yogurt (confezione piccola)/yogurt_mini:1 2
-patatine/patatine_campagnole:1 3
+pan carrè/pancarre_classico_eco:1 3
+pan carrè/pancarre_cereali_eco:1 3
+pan carrè/pancarre_integrale_eco:1 3
+pan carrè/pancarre_classico:1 3
+pan carrè/pancarre_cereali:1 3
+pan carrè/pancarre_integrale:1 3
+farina (confezione grande)/farina_00_max:1 2
+farina (confezione piccola)/farina_00_mini:1 2
+farina (confezione grande)/farina_mais_max:1 2
+farina (confezione piccola)/farina_mais_mini:1 2
+farina (confezione grande)/farina_integrale_max:1 2
+farina (confezione piccola)/farina_integrale_mini:1 2
+lievito per dolci/lievito_dolci:1 5
+lievito per pane/lievito_pane:1 4
+piadine (confezione piccola)/piada_olio_mini:1 3
+piadine (confezione media)/piada_olio:1 3
+piadine (confezione grande)/piada_olio_max:1 3
+piadine (confezione piccola)/piada_leggera_mini:1 3
+piadine (confezione media)/piada_leggera:1 3
+piadine (confezione grande)/piada_leggera_max:1 3
+piadine (confezione piccola)/piada_integ_mini:1 3
+piadine (confezione media)/piada_integ:1 3
+piadine (confezione grande)/piada_integ_max:1 3
+crackers/crackers_salati_eco:3 3
+crackers/crackers_cereali_eco:3 3
+crackers/crackers_integrali_eco:3 3
+crackers/crackers_salati:3 3
+crackers/crackers_cereali:3 3
+crackers/crackers_integrali:3 3
+sale (confezione grande)/sale_max:1 3
+sale (confezione piccola)/sale_mini:1 4
+fette biscottate/fette_dorate_eco:2 2
+fette biscottate/fette_integrali_eco:2 2
+fette biscottate/fette_dorate:2 2
+fette biscottate/fette_integrali:2 2
+merendina/merendine_eco:1 3
+merendina/merendine:1 3
+biscotti (confezione grande)/naturini_max_eco:3 2
+biscotti (confezione piccola)/naturini_mini_eco:3 2
+biscotti (confezione media)/naturini_medi_eco:3 2
+biscotti (confezione grande)/biscottimi_max_eco:3 2
+biscotti (confezione piccola)/biscottimi_mini_eco:3 2
+biscotti (confezione media)/biscottimi_medi_eco:3 2
+biscotti (confezione grande)/biscottimi_max:3 2
+biscotti (confezione piccola)/biscottimi_mini:3 2
+biscotti (confezione media)/biscottimi_medi:3 2
+biscotti (confezione grande)/biscogolosi_max_eco:3 2
+biscotti (confezione piccola)/biscogolosi_mini_eco:3 2
+biscotti (confezione media)/biscogolosi_medi_eco:3 2
+biscotti (confezione grande)/biscogolosi_max:3 2
+biscotti (confezione piccola)/biscogolosi_mini:3 2
+biscotti (confezione media)/biscogolosi_medi:3 2
+zucchero (confezione piccola)/zucchero_mini:1 4
+zucchero (confezione grande)/zucchero_max:1 4
+nutella/nutella:1 2
+miele (confezione grande)/miele_castagno_max:1 2
+miele (confezione piccola)/miele_castagno_mini:1 2
+miele (confezione grande)/miele_acacia_max:1 2
+miele (confezione piccola)/miele_acacia_mini:1 2
+miele (confezione grande)/miele_millefiori_max:1 2
+miele (confezione piccola)/miele_millefiori_mini:1 2
+marmellata (confezione piccola)/marmellata_amarene_mini:3 2
+marmellata (confezione grande)/marmellata_amarene_max:3 2
+marmellata (confezione piccola)/marmellata_fragole_mini:3 2
+marmellata (confezione grande)/marmellata_fragole_max:3 2
+marmellata (confezione piccola)/marmellata_pesche_mini:3 2
+marmellata (confezione grande)/marmellata_pesche_max:3 2
+cereali (confezione piccola)/cereali_cioccolato_mini:1 3
+cereali (confezione grande)/cereali_cioccolato_max:1 3
+cereali (confezione piccola)/cereali_integrali_mini:1 3
+cereali (confezione grande)/cereali_integrali_max:1 3
+cereali (confezione piccola)/cereali_miele_mini:1 3
+cereali (confezione grande)/cereali_miele_max:1 3
+cereali (confezione piccola)/cereali_mais_mini:1 3
+cereali (confezione grande)/cereali_mais_max:1 3
+barretta di cioccolato (confezione grande)/cioccolato_pistacchio_max:5 4
+barretta di cioccolato (confezione piccola)/cioccolato_pistacchio_mini:5 4
+barretta di cioccolato (confezione grande)/cioccolato_nocciola_max:5 4
+barretta di cioccolato (confezione piccola)/cioccolato_nocciola_mini:5 4
+barretta di cioccolato (confezione grande)/cioccolato_latte_max:5 4
+barretta di cioccolato (confezione piccola)/cioccolato_latte_mini:5 4
+barretta di cioccolato (confezione grande)/cioccolato_fondente_max:5 4
+barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini:5 4
+barretta di cioccolato (confezione grande)/cioccolato_caramello_max:5 4 
+barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini:5 4
 patatine/patatine_classiche:1 3
-patatine/patatine_nachos:1 3
+patatine/patatine_campagnole:1 3
 patatine/patatine_piccanti:1 3
-patatine/patatine_piccanti_tubo:1 4
-patatine/patatine_campagnolo_tubo:1 4
+patatine/patatine_nachos:1 3
 patatine/patatine_classiche_tubo:1 4
+patatine/patatine_campagnolo_tubo:1 4
+patatine/patatine_piccanti_tubo:1 4
 patatine/patatine_nachos_tubo:1 4
+candeggina/candeggina:1 2
+detersivo/detersivo:1 2
+detersivo/detersì:1 2
+sapone liquido/sapone_liquido_arancia:4 2
+sapone liquido/sapone_liquido_lavanda:4 2
+sapone liquido/sapone_liquido_oliva:4 2
+sapone liquido/sapone_liquido_vaniglia:4 2
+saponetta/saponetta_arancia:4 2
+saponetta/saponetta_lavanda:4 2
+saponetta/saponetta_oliva:4 2
+saponetta/saponetta_vaniglia:4 2
+carta igienica (confezione piccola)/carta_igienica_mini:1 2
+carta igienica (confezione grande)/carta_igienica_max:1 1
+scottex (confezione piccola)/scottex_mini:1 2
+scottex (confezione grande)/scottex_max:1 2
+pellicola (confezione grande)/pellicola_max:1 4
+pellicola (confezione piccola)/pellicola_mini:1 4
+carta stagnola (confezione grande)/alluminio_max:1 4
+carta stagnola (confezione piccola)/alluminio_mini:1 4
+carta forno (confezione grande)/carta_forno_max:1 4
+carta forno (confezione piccola)/carta_forno_mini:1 4
+acqua (bottiglia piccola)/acqua_mini:2 3
+acqua (bottiglia grande)/acqua_max:2 3
+acqua (bottiglia piccola)/acqua_frizzante_mini:2 3
+acqua (bottiglia grande)/acqua_frizzante_max:2 3
+aranciata (bottiglia piccola)/aranciata_mini:1 4
+aranciata (bottiglia grande)/aranciata_max:1 3
+cola (bottiglia piccola)/cola_mini:1 3
+cola (bottiglia grande)/cola_max:1 3
+tè (bottiglia piccola)/te_pesca_mini:1 3
+tè (bottiglia grande)/te_pesca_max:1 3
+tè (bottiglia grande)/te_verde_max:1 3
+tè (bottiglia piccola)/te_verde_mini:1 3
+succo (confezione piccola)/succo_ace_mini:1 2
+succo (confezione grande)/succo_ace_max:1 2
+succo (confezione piccola)/succo_ananas_mini:1 2
+succo (confezione grande)/succo_ananas_max:1 2
+succo (confezione piccola)/succo_cocco_mini:1 2
+succo (confezione grande)/succo_cocco_max:1 2
+succo (confezione piccola)/succo_rossi_mini:1 2
+succo (confezione grande)/succo_rossi_max:1 2
+succo (confezione piccola)/succo_mela_mini:1 2
+succo (confezione grande)/succo_mela_max:1 2
+succo (confezione piccola)/succo_pera_mini:1 2
+succo (confezione grande)/succo_pera_max:1 2
+succo (confezione piccola)/succo_pesca_mini:1 2
+succo (confezione grande)/succo_pesca_max:1 2

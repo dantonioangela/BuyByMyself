@@ -1580,14 +1580,14 @@
     <price>5,50</price>
   </product>
   <product>
-    <name>Pizza Spooky</name>
-    <listname>pizza/pizza_spooky</listname>
+    <name>Pizza Classica</name>
+    <listname>pizza/pizza_classica</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
     <size>null</size>
     <origin>null</origin>
     <season>null</season>
-    <price>5</price>
+    <price>4,50</price>
   </product>
   <product>
     <name>Pizza Spooky</name>
