@@ -106,6 +106,10 @@ public class MenuPrincipale : MonoBehaviour
 
     public void Tutorial()
     {
+        player.UI_active = false;
+        MainMenuActive = false;
+        inGame = true;
+
         SceneManager.LoadScene(1);
     }
 

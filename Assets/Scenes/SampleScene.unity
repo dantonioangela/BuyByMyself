@@ -662,6 +662,10 @@ PrefabInstance:
       propertyPath: SceltaDiffUI
       value: 
       objectReference: {fileID: 7925764409104134188}
+    - target: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: MAINResolutionDropdownUI
+      value: 
+      objectReference: {fileID: 7955802432000069369}
     - target: {fileID: 7540371192540200411, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_Name
       value: Canvas
