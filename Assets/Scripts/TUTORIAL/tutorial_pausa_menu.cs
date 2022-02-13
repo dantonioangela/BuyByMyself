@@ -21,6 +21,9 @@ public class tutorial_pausa_menu : MonoBehaviour
 
     bool inOptions = false;
 
+    public Animator LevelTransition;
+    public float TransitionTime = 2f;
+
     private void Start()
     {
         resolutions = Screen.resolutions;
@@ -90,8 +93,16 @@ public class tutorial_pausa_menu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        Debug.Log("what");
         GiocoInPausa = false;
+        PauseMenuUI.SetActive(false);
+        StartCoroutine(ReturnMainMenu());
+    }
+        
+
+    IEnumerator ReturnMainMenu()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
         SceneManager.LoadScene(0);
     }
 
