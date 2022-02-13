@@ -674,6 +674,7 @@ MonoBehaviour:
   PauseMenuUI: {fileID: 1834030600}
   OptionsMenuUI: {fileID: 7985676191590109563}
   MainMenuUI: {fileID: 3110465160490631541}
+  MessaggiCassieraUI: {fileID: 1923863462}
   audioMixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
   ResolutionDropdownUI: {fileID: 360216023022379894}
   LevelTransition: {fileID: 968057697}

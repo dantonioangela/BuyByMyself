@@ -13,6 +13,7 @@ public class tutorial_pausa_menu : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject OptionsMenuUI;
     public GameObject MainMenuUI;
+    public GameObject MessaggiCassieraUI;
 
     public AudioMixer audioMixer;
 
@@ -95,6 +96,7 @@ public class tutorial_pausa_menu : MonoBehaviour
         Time.timeScale = 1f;
         GiocoInPausa = false;
         PauseMenuUI.SetActive(false);
+        MessaggiCassieraUI.SetActive(false);
         StartCoroutine(ReturnMainMenu());
     }
         
