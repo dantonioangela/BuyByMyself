@@ -1,39 +1,39 @@
-frutta/arancia_old:1 4
-frutta/arancia:1 5
-frutta/mela_rossa:1 8
-frutta/mela_rossa_old:1 7
-frutta/mela_verde:1 8
-frutta/mela_verde_old:1 5
-frutta/banana:1 3
-frutta/banana_old:1 2
-frutta/fragola:1 12
-frutta/fragola_old:1 9
-frutta/mela_gialla:1 7
-frutta/mela_gialla_old:1 6
-frutta/limone:1 7
-frutta/limone_old:1 5
-frutta/pera:1 11
-frutta/pera_old:1 6
-frutta/uva_bianca:1 8
-frutta/uva_rossa_old:1 8
-frutta/uva_rossa:1 9
-frutta/uva_bianca_old:1 5
-verdura/pomodoro:1 12
-verdura/pomodoro_old:1 7
-verdura/zucchina:1 7
-verdura/zucchina_old:1 6
-verdura/cipolla:1 6
-verdura/cipolla_old:1 4
+verdura/zucca:2 2
+verdura/zucca_old:2 2
 verdura/zucca_striata:1 2
 verdura_zucca_striata_old:1 2
+verdura/cipolla:1 6
+verdura/cipolla_old:1 4
+verdura/zucchina:1 7
+verdura/zucchina_old:1 6
+verdura/pomodoro:1 12
+verdura/pomodoro_old:1 7
 verdura/carota:1 6
 verdura/carota_old:1 5
 verdura/peperone_giallo:1 5
 verdura/peperone_giallo_old:1 4
 verdura/peperone_rosso:1 5
 verdura/peperone_rosso_old:1 4
-verdura/zucca:2 2
-verdura/zucca_old:2 2
+frutta/banana:1 3
+frutta/banana_old:1 2
+frutta/mela_rossa:1 8
+frutta/mela_rossa_old:1 7
+frutta/mela_verde:1 8
+frutta/mela_verde_old:1 5
+frutta/mela_gialla:1 7
+frutta/mela_gialla_old:1 6
+frutta/fragola:1 12
+frutta/fragola_old:1 9
+frutta/arancia:1 5
+frutta/arancia_old:1 4
+frutta/limone:1 7
+frutta/limone_old:1 5
+frutta/pera:1 11
+frutta/pera_old:1 6
+frutta/uva_bianca:1 8
+frutta/uva_bianca_old:1 5
+frutta/uva_rossa:1 9
+frutta/uva_rossa_old:1 8
 tè (bottiglia grande)/te_verde_max:1 3
 tè (bottiglia piccola)/te_verde_mini:1 3
 tè (bottiglia piccola)/te_pesca_mini:1 3
@@ -72,7 +72,7 @@ fette biscottate/fette_dorate:2 2
 fette biscottate/fette_dorate_eco:2 2
 merendina/merendine:1 3
 merendina/merendine_eco:1 3
-biscotti (confezione media)/naturini_mini_eco:3 2
+biscotti (confezione piccola)/naturini_mini_eco:3 2
 biscotti (confezione media)/naturini_medi_eco:3 2
 biscotti (confezione grande)/naturini_max_eco:3 2
 biscotti (confezione piccola)/biscottimi_mini_eco:3 2
@@ -88,7 +88,7 @@ biscotti (confezione piccola)/biscogolosi_mini:3 2
 biscotti (confezione media)/biscogolosi_medi:3 2
 biscotti (confezione grande)/biscogolosi_max:3 2
 carta forno (confezione piccola)/carta_forno_mini:1 4
-carta forno (confezione grande/carta_forno_max:1 4
+carta forno (confezione grande)/carta_forno_max:1 4
 carta stagnola (confezione piccola)/alluminio_mini:1 4
 carta stagnola (confezione grande)/alluminio_max:1 4
 pellicola (confezione piccola)/pellicola_mini:1 4
@@ -197,7 +197,7 @@ uova (confezione piccola)/uova_mini:1 8
 uova (confezione grande)/uova_max_eco:1 4
 uova (confezione piccola)/uova_mini_eco:1 8
 noodles/noodles_manzo:1 4
-noodles/noodels_pollo:1 4
+noodles/noodles_pollo:1 4
 riso (confezione grande)/riso_max_eco:1 3
 riso (confezione piccola)/riso_mini_eco:1 3
 riso (confezione grande)/riso_max:1 3
@@ -220,7 +220,7 @@ gelato (confezione piccola)/gelato_nocciola_mini:1 2
 gelato (confezione grande)/gelato_nocciola_max:1 2
 gelato (confezione piccola)/gelato_granmix_mini:1 2
 gelato (confezione grande)/gelato_granmix_max:1 2
-gelato (confrzione piccola)/gelato_arcobaleno_mini:1 2
+gelato (confezione piccola)/gelato_arcobaleno_mini:1 2
 gelato (confezione grande)/gelato_arcobaleno_max:1 2
 pizza/pizza_classica:1 2
 pizza/pizza_spooky:1 3
@@ -257,7 +257,7 @@ formaggio (quarto forma)/formaggio_stagionato_quarto_forma:1 2
 formaggio (spicchio forma)/formaggio_stagionato_spicchio_forma:1 2
 mozzarella (confezione piccola)/mozzarella_mini_eco:1 6
 mozzarella (confezione grande)/mozzarella_max_eco:1 4
-mozzarella (confezione grande)/mozzarella_mini:1 6
+mozzarella (confezione piccola)/mozzarella_mini:1 6
 mozzarella (confezione grande)/mozzarella_max:1 4
 latte (confezione grande)/latte_intero_max_eco:2 2
 latte (confezione piccola)/latte_intero_mini_eco:2 2

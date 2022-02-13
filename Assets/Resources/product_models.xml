@@ -141,7 +141,7 @@
   </product>
   <product>
     <name>cipolla</name>
-    <listname>verdura/cipolla_old</listname>
+    <listname>verdura/cipolla</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>null</size>
@@ -1331,7 +1331,7 @@
   </product>
   <product>
     <name>Noodles di manzo</name>
-    <listname>noodles/noodels_manzo</listname>
+    <listname>noodles/noodles_manzo</listname>
     <sustainable>null</sustainable>
     <packaging>0</packaging>
     <size>250g</size>
@@ -1640,16 +1640,6 @@
     <price>4,30</price>
   </product>
   <product>
-    <name>Spinaci</name>
-    <listname>verdure surgelate/spinaci</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
-    <size>null</size>
-    <origin>null</origin>
-    <season>null</season>
-    <price>4,10</price>
-  </product>
-  <product>
     <name>Prosciutto crudo</name>
     <listname>carne/prosciutto_crudo_eco</listname>
     <sustainable>1</sustainable>
@@ -1731,7 +1721,7 @@
   </product>
   <product>
     <name>Bistecca</name>
-    <listname>carne/bistecca_Intensivo_eco</listname>
+    <listname>carne/bistecca_intensivo_eco</listname>
     <sustainable>0</sustainable>
     <packaging>1</packaging>
     <size>null</size>
@@ -1741,7 +1731,7 @@
   </product>
   <product>
     <name>Bistecca</name>
-    <listname>carne/bistecca_Intensivo</listname>
+    <listname>carne/bistecca_intensivo</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>null</size>
@@ -1781,7 +1771,7 @@
   </product>
   <product>
     <name>salmone</name>
-    <listname>pesce/asalmone</listname>
+    <listname>pesce/salmone</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>null</size>
@@ -2011,7 +2001,7 @@
   </product>
   <product>
     <name>Latte parzialmente scremato</name>
-    <listname>latte (confezione grande)/latte_parzialmente_scremato_max</listname>
+    <listname>latte (confezione grande)/latte_ps_max</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>1l</size>
@@ -2031,7 +2021,7 @@
   </product>
   <product>
     <name>Latte parzialmente scremato</name>
-    <listname>latte (confezione piccola)/latte_parzialmente_scremato_mini</listname>
+    <listname>latte (confezione piccola)/latte_ps_mini</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>0,5l</size>
@@ -2091,7 +2081,7 @@
   </product>
   <product>
     <name>Budino cremoso vaniglia</name>
-    <listname>budino/budino_vanigliacioccolata</listname>
+    <listname>budino/budino_vaniglia</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>4</size>
@@ -3011,7 +3001,7 @@
   </product>
   <product>
     <name>Patatine spicy</name>
-    <listname>patatine/patatine_spicy</listname>
+    <listname>patatine/patatine_piccanti</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>sacchetto</size>
@@ -3041,7 +3031,7 @@
   </product>
   <product>
     <name>Patatine campagnole</name>
-    <listname>patatine/patatine_campagnole_tubo</listname>
+    <listname>patatine/patatine_campagnolo_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
@@ -3051,7 +3041,7 @@
   </product>
   <product>
     <name>Patatine spicy</name>
-    <listname>patatine/patatine_spicy_tubo</listname>
+    <listname>patatine/patatine_piccanti_tubo</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>tubo</size>
@@ -3260,11 +3250,21 @@
     <price>4,50</price>
   </product>
   <product>
-    <name>Cartaforno RotoCuki</name>
-    <listname>cartaforno (confezione grande)/cartaforno_max</listname>
+    <name>Carta forno RotoCuki</name>
+    <listname>carta forno (confezione grande)/cartaforno_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>6 metri</size>
+    <origin>null</origin>
+    <season>null</season>
+    <price>5</price>
+  </product>
+  <product>
+    <name>Carta forno Kasa</name>
+    <listname>carta forno (confezione piccola)/cartaforno_mini</listname>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
+    <size>(50 fogli) 3 metri</size>
     <origin>null</origin>
     <season>null</season>
     <price>5</price>
@@ -3361,7 +3361,7 @@
   </product>
   <product>
     <name>Tè alla pesca</name>
-    <listname>è (bottiglia grande)/te_pesca_max</listname>
+    <listname>tè (bottiglia grande)/te_pesca_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
     <size>1l</size>
