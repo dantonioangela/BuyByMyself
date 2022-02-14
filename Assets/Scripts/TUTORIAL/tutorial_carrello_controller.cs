@@ -5,10 +5,16 @@ using UnityEngine.AI;
 
 public class tutorial_carrello_controller : MonoBehaviour
 {
-    // Start is called before the first frame update
 
-    private bool tutorialStepDone = false;
+
+    public static bool tutorialStepBananeStart = false;
+    private bool tutorialStepBananeDone = false;
+    private bool tutorialStepBibitaDone = false;
+    private bool tutorialStepSalmoneDone = false;
     public tutorial_canvas_controller speech;
+    public tutorial_vetro_controller vetro;
+    public tutorial_bevande bevande;
+    public GameObject banana2;
 
 
     private GameObject[] busta = new GameObject[3];
@@ -34,13 +40,12 @@ public class tutorial_carrello_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        budget = 5f;
+        budget = 7f;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();
         navObstacle = GetComponent<NavMeshObstacle>();
         prezzo_totale_carrello = 0.0f;
         numeroOggetti = 0;
-        budget = 8f;
         conBusta[0] = false;
         conBusta[1] = false;
         conBusta[2] = false;
@@ -65,7 +70,7 @@ public class tutorial_carrello_controller : MonoBehaviour
                 //DA CAMBIARE
             }
         }
-        else if (mode == 1)                             //non ho il carrello
+        else if (mode == 1 && tutorialStepBananeStart)                             //non ho il carrello
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 5.0f))
@@ -178,10 +183,31 @@ public class tutorial_carrello_controller : MonoBehaviour
     {
         if (numeroOggetti < 15)
         {
-            if(numeroOggetti == 1 && !tutorialStepDone)
+            if (numeroOggetti == 0)
+            {
+                banana2.GetComponent<MeshCollider>().enabled = true;
+                banana2.GetComponent<tutorial_product>().enabled = true;
+            }
+            if (numeroOggetti == 1 && !tutorialStepBananeDone)
             {
                 speech.ChangeSpeech(5);
-                tutorialStepDone = true ;
+                bevande.tutorialStepStart = true;
+                tutorialStepBananeDone = true;
+            }
+            if (numeroOggetti == 2 && !tutorialStepBibitaDone)
+            {
+                speech.ChangeSpeech(6);
+                tutorialStepBibitaDone = true;
+                bevande.tutorialStepStart = false;
+                vetro.tutorialStepVetroStart = true;
+                vetro.tutorialStepSalmoneStart = true;
+            }
+            if (numeroOggetti == 3 && !tutorialStepSalmoneDone)
+            {
+                speech.ChangeSpeech(9);
+                tutorialStepSalmoneDone = true;
+                parent.GetComponent<tutorial_player_controller>().tutorialStepInventarioStart = true;
+                vetro.tutorialStepSalmoneDone = true;
             }
             numeroOggetti++;
             prezzo_totale_carrello += product.GetComponent<tutorial_product>().price;

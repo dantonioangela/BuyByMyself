@@ -34,7 +34,7 @@ public class tutorial_grabbable : Grabbable
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);
             //GetComponent<Product>().transform.SetParent(Camera.main.gameObject.transform.parent.GetChild(1));
-            Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<tutorial_carrello_controller>().AddProductToChart(gameObject);
+            Camera.main.gameObject.transform.parent.GetComponent<tutorial_player_controller>().carrello.GetComponent<tutorial_carrello_controller>().AddProductToChart(gameObject);
         }
     }
 }

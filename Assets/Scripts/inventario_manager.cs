@@ -23,7 +23,7 @@ public class inventario_manager : MonoBehaviour
         flag = -1;
         for(i=0; i < 15; i++)
         {
-            if( transform.GetChild(i*2).GetComponent<slot_inventario_controller>().productInThisSlot == product )
+            if( transform.GetChild(i).GetComponent<slot_inventario_controller>().productInThisSlot == product )
             {
                 flag = i;
                 break;
@@ -33,9 +33,9 @@ public class inventario_manager : MonoBehaviour
         {
             for (i = 0; i < 15; i++)
             {
-                if (transform.GetChild(i * 2).GetComponent<slot_inventario_controller>().slotEmpty )
+                if (transform.GetChild(i).GetComponent<slot_inventario_controller>().slotEmpty )
                 {
-                    transform.GetChild(i * 2).GetComponent<slot_inventario_controller>().AddProductInSlot(product);
+                    transform.GetChild(i).GetComponent<slot_inventario_controller>().AddProductInSlot(product);
                     break;
                 }
             }

@@ -7,7 +7,12 @@ public class tutorial_player_controller : MonoBehaviour
     public bool inventario;
     public bool UI_active = false;
     private Vector3 playerMovementInput;
+    public static bool tutorialStepBananeStart = false;
+    public bool tutorialStepInventarioStart = false;
+    public bool tutorialStepOpenInventarioDone = false;
     private Vector2 playerMouseInput;
+    public tutorial_canvas_controller speech;
+    public tutorial_inventario tutorialInventario;
 
     private Transform playerCamera;
     private Rigidbody playerRB;
@@ -77,19 +82,26 @@ public class tutorial_player_controller : MonoBehaviour
     {
         xRot -= playerMouseInput.y * sensitivityY;
         xRot = Mathf.Clamp(xRot, -10f, 20f);
-        if (tutorial_carrello_controller.mode == 0 && xRot > 18f)
+        if (tutorial_carrello_controller.mode == 0 && xRot > 18f && tutorialStepBananeStart)
         {
             carrello.GetComponent<isSelectable>().Select();
             tutorial_carrello_controller.selected = true;
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && tutorialStepInventarioStart)
             {
                 inventario = true;
+                if (!tutorialStepOpenInventarioDone)
+                {
+                    speech.ChangeSpeech(10);
+                    tutorialStepOpenInventarioDone = true;
+                }
+                tutorialInventario.tutorialStepViaBananeStart = true;
             }
         }
-        else if (xRot <= 18f && tutorial_carrello_controller.selected)
+        else if (xRot <= 18f && tutorial_carrello_controller.selected && tutorialStepBananeStart)
         {
             carrello.GetComponent<isSelectable>().Deselect();
             tutorial_carrello_controller.selected = false;
+
         }
         transform.Rotate(0f, playerMouseInput.x * sensitivityX, 0f);
         playerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);

@@ -91,13 +91,15 @@ public class MenuInGioco : MonoBehaviour
 
     public void MainMenu()
     {
+        //PauseMenuUI.SetActive(false);
+        //MainMenuUI.SetActive(true);
+        //MenuPrincipale.MainMenuActive = true;
+        //MenuPrincipale.inGame = false;
         Time.timeScale = 1f;
-        PauseMenuUI.SetActive(false);
-        MainMenuUI.SetActive(true);
-        MenuPrincipale.MainMenuActive = true;
-        MenuPrincipale.inGame = false;
+        SceneManager.LoadScene(0);
     }
 
+    
     public void Indietro()
     {
         OptionsMenuUI.SetActive(false);

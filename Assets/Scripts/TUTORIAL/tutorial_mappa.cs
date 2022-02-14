@@ -9,7 +9,6 @@ public class tutorial_mappa : MonoBehaviour
     private bool tutorialStepDone = false;
 
     public GameObject banana1;
-    public GameObject banana2;
 
     public GameObject MappaUI;
 
@@ -29,10 +28,9 @@ public class tutorial_mappa : MonoBehaviour
                 {
                     speech.ChangeSpeech(4);
                     banana1.GetComponent<MeshCollider>().enabled = true;
-                    banana2.GetComponent<MeshCollider>().enabled = true;
                     banana1.GetComponent<tutorial_product>().enabled = true;
-                    banana2.GetComponent<tutorial_product>().enabled = true;
-
+                    tutorial_carrello_controller.tutorialStepBananeStart = true;
+                    tutorial_player_controller.tutorialStepBananeStart = true;
                     tutorialStepDone = true;
                 }
             }

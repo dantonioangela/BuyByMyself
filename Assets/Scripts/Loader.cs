@@ -17,10 +17,9 @@ class Loader : MonoBehaviour
     public static Dictionary<string, int[]> modelsAvailability = new Dictionary<string, int[]>(); //nome + numProdottiFullStats + numTotaleProdotti con   quel nome
     public static Dictionary<string, int[]> NamesToIndex = new Dictionary<string, int[]>();       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
 
-    private String xmlPath = "Assets/Resources/prova.xml";
-    //xmlPath = "Assets/Resources/product_models.xml";
+    //private String xmlPath = "Assets/Resources/prova.xml";
+    private String xmlPath = "Assets/Resources/product_models.xml";
     //private XmlTextReader reader; 
-    bool finishedLoading = false;
 
     void Start() {
 
@@ -43,6 +42,15 @@ class Loader : MonoBehaviour
     {
         // Loading from a file, you can also load from a stream
         XDocument xml = XDocument.Load(xmlPath);
+
+        if (productModels.Count > 0)
+        {
+            productModels.Clear();
+        }
+        if (NamesToIndex.Count > 0)
+        {
+            NamesToIndex.Clear();
+        }
 
         // Query the data and write out a subset of contacts
         var products = from product in xml.Descendants("product")
@@ -93,9 +101,6 @@ class Loader : MonoBehaviour
             productModels.Add(new ProductModel(product.xmlName, nomeLista, sustainable, packaging, size, origin, season, price));
             i++;
         }
-
-        finishedLoading = true; //tell the program that we’ve finished loading data. yield return null;
-
     }
 
     private int? ToNullableInt(string str) {
@@ -116,12 +121,17 @@ class Loader : MonoBehaviour
     }
 
     void createDictionary(){
+        if (modelsAvailability.Count > 0)
+        {
+            modelsAvailability.Clear();
+        }
         string name;
         string[] lines = System.IO.File.ReadAllLines("Assets/Resources/ProductsAvailability.txt");
         foreach(string line in lines){
             string[] strings = line.Split(':');
             name = strings[0].ToLower();
             string[] substrings = strings[1].Split(' ');
+            Debug.Log(name);
             modelsAvailability.Add(name, new int[2] { int.Parse(substrings[0]), int.Parse(substrings[1]) });
         }
     }

@@ -28,8 +28,7 @@ public class ListaSpesa : MonoBehaviour
     public void StartMe()
     {
         listaSpesa = new Dictionary<string, int>();
-        //itemsNumber = 15;
-        itemsNumber = 7;
+        itemsNumber = 15;
         CreateList();
         CalculateBudget();
         UpdateProductModelsCounter();
@@ -45,6 +44,10 @@ public class ListaSpesa : MonoBehaviour
         string productName;
         string productNameList;
         int quantity;
+        if (listaSpesa.Count > 0)
+        {
+            listaSpesa.Clear();
+        }
 
         itemsNumber = Random.Range((int)(itemsNumber * 0.7), itemsNumber + 1);
 
@@ -63,9 +66,23 @@ public class ListaSpesa : MonoBehaviour
                 index = Random.Range(0, Loader.modelsAvailability.Count);
                 productName = Loader.modelsAvailability.ElementAt(index).Key;
                 productNameList = productName.Split('/')[0];
+                while (listaSpesa.ContainsKey(productNameList))
+                {
+                    index = Random.Range(0, Loader.modelsAvailability.Count);
+                    productName = Loader.modelsAvailability.ElementAt(index).Key;
+                    productNameList = productName.Split('/')[0];
+                }
                 quantity = Loader.modelsAvailability[productName][0];
             }
-            quantity = Random.Range(1, (int)(quantity * 0.8));
+            if(quantity > 4)
+            {
+                quantity = Random.Range(1, (int)(quantity*0.7f));
+            }
+            else
+            {
+                quantity = Random.Range(1, quantity);
+            }
+            
             listaSpesa.Add(productNameList, quantity);
         }
 

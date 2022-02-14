@@ -13,6 +13,7 @@ public class tutorial_pausa_menu : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject OptionsMenuUI;
     public GameObject MainMenuUI;
+    public GameObject MessaggiCassieraUI;
 
     public AudioMixer audioMixer;
 
@@ -20,6 +21,9 @@ public class tutorial_pausa_menu : MonoBehaviour
     public Dropdown ResolutionDropdownUI;
 
     bool inOptions = false;
+
+    public Animator LevelTransition;
+    public float TransitionTime = 2f;
 
     private void Start()
     {
@@ -57,7 +61,6 @@ public class tutorial_pausa_menu : MonoBehaviour
                     Pause();
                 }
             }
-
             if (inOptions)
             {
                 Indietro();
@@ -91,10 +94,18 @@ public class tutorial_pausa_menu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
+        GiocoInPausa = false;
         PauseMenuUI.SetActive(false);
-        MainMenuUI.SetActive(true);
-        MenuPrincipale.MainMenuActive = true;
-        MenuPrincipale.inGame = false;
+        MessaggiCassieraUI.SetActive(false);
+        StartCoroutine(ReturnMainMenu());
+    }
+        
+
+    IEnumerator ReturnMainMenu()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        SceneManager.LoadScene(0);
     }
 
     public void Indietro()
