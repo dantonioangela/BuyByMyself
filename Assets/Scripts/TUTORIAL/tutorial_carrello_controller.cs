@@ -11,6 +11,7 @@ public class tutorial_carrello_controller : MonoBehaviour
     private bool tutorialStepBananeDone = false;
     private bool tutorialStepBibitaDone = false;
     private bool tutorialStepSalmoneDone = false;
+    private bool tutorialStepChartDone = false;
     public tutorial_canvas_controller speech;
     public tutorial_vetro_controller vetro;
     public tutorial_bevande bevande;
@@ -61,8 +62,13 @@ public class tutorial_carrello_controller : MonoBehaviour
 
         if (mode == 0)                                  //ho il carrello agganciato
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && tutorialStepBananeStart)
             {
+                if (!tutorialStepChartDone)
+                {
+                    speech.ChangeSpeech(15);
+                    tutorialStepChartDone = true;
+                }
                 mode = 1;
                 carrelloCollider.enabled = true;
                 navObstacle.enabled = true;

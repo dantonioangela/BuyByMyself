@@ -35,10 +35,6 @@ public class ListaSpesa : MonoBehaviour
         CalculateBudget();
         UpdateProductModelsCounter();
         season = Random.Range(0, 3);
-        foreach(var i in listaSpesa)
-        {
-            Debug.Log("lista spesa: " + i.Key + i.Value);
-        }
     }
 
     void CreateList(){
@@ -86,6 +82,7 @@ public class ListaSpesa : MonoBehaviour
             }
             
             listaSpesa.Add(productNameList, quantity);
+            budget += quantity*(Loader.productModels[ Loader.NamesToIndex[productName][0]].price);
         }
 
     }
@@ -118,7 +115,7 @@ public class ListaSpesa : MonoBehaviour
 
     private void CalculateBudget()
     {
-        budget = 10f;
+        budget += 5f;
     }
 
 }

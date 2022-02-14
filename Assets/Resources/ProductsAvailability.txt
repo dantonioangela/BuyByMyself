@@ -122,15 +122,15 @@ mozzarella (confezione piccola)/mozzarella_mini_eco:6 6
 mozzarella (confezione grande)/mozzarella_max:0 4
 mozzarella (confezione piccola)/mozzarella_mini:0 6
 latte (confezione grande)/latte_intero_max_eco:2 2
-latte (confezione grande)/latte_intero_max:0 2
+latte (confezione grande)/latte_intero_max:0 3
 latte (confezione piccola)/latte_intero_mini_eco:2 2
 latte (confezione piccola)/latte_intero_mini:0 2
 latte (confezione grande)/latte_parzialmente_scremato_max_eco:2 2
 latte (confezione grande)/latte_ps_max:0 3
 latte (confezione piccola)/latte_parzialmente_scremato_mini_eco:2 2
-latte (confezione piccola)/latte_ps_mini:0 3
+latte (confezione piccola)/latte_ps_mini:0 2
 latte (confezione grande)/latte_soia_max_eco:2 2
-latte (confezione grande)/latte_soia_max:0 3
+latte (confezione grande)/latte_soia_max:0 2
 latte (confezione piccola)/latte_soia_mini_eco:2 2
 latte (confezione piccola)/latte_soia_mini:0 3
 budino/budino_cioccolata:2 2
@@ -151,8 +151,8 @@ farina (confezione grande)/farina_mais_max:2 2
 farina (confezione piccola)/farina_mais_mini:2 2
 farina (confezione grande)/farina_integrale_max:2 2
 farina (confezione piccola)/farina_integrale_mini:2 2
-lievito per dolci/lievito_dolci:5 5
-lievito per pane/lievito_pane:4 4
+lievito per dolci/lievito_dolci:4 4
+lievito per pane/lievito_pane:6 6
 piadine (confezione piccola)/piada_olio_mini:3 3
 piadine (confezione media)/piada_olio:3 3
 piadine (confezione grande)/piada_olio_max:3 3
@@ -225,7 +225,7 @@ barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini:4 4
 barretta di cioccolato (confezione grande)/cioccolato_caramello_max:4 4 
 barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini:4 4
 patatine/patatine_classiche:3 3
-patatine/patatine_campagnole:3 3
+patatine/patatine_campagnole:4 4
 patatine/patatine_piccanti:3 3
 patatine/patatine_nachos:3 3
 patatine/patatine_classiche_tubo:4 4

@@ -9,7 +9,12 @@ public class scene_manager : MonoBehaviour
     {
         transform.GetChild(0).gameObject.GetComponent<Loader>().StartMe();
         transform.GetChild(1).gameObject.GetComponent<ListaSpesa>().StartMe();
-        transform.GetChild(2).gameObject.GetComponent<Label_assigner>().StartMe();
+        for (int i =2; i< transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.GetComponent<Label_assigner>().StartMe();
+        }
+
+        //transform.GetChild(2).gameObject.GetComponent<Label_assigner>().StartMe();
         //transform.GetChild(3).gameObject.GetComponent<Label_assigner>().StartMe();
         //transform.GetChild(4).gameObject.GetComponent<Label_assigner>().StartMe();
     }

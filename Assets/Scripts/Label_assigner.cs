@@ -58,7 +58,7 @@ public class Label_assigner : MonoBehaviour
             while (Loader.productModels[j].counter <= 0)
             {
                 j++;
-                if (j == first_occurrance_index + Loader.NamesToIndex[listName][1] - 1) break;
+                if (j == first_occurrance_index + Loader.NamesToIndex[listName][1]) break;// - 1) break;
             }
             Loader.productModels[j].counter--;
             //assegnare tutto al figlio index_child
@@ -81,11 +81,5 @@ public class Label_assigner : MonoBehaviour
             }
 
         }
-
-        foreach (var i in child)
-        {
-            Debug.Log(i.GetComponent<Product>().model.listName + ", " + i.GetComponent<Product>().model.name + ":: " + "counter = " + i.GetComponent<Product>().model.counter);
-        }
-
     }
 }
