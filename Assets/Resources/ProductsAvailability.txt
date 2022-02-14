@@ -1,7 +1,7 @@
 verdura/zucca:2 2
 verdura/zucca_old:0 2
 verdura/zucca_striata:2 2
-verdura_zucca_striata_old:0 2
+verdura/zucca_striata_old:0 2
 verdura/cipolla:6 6
 verdura/cipolla_old:0 4
 verdura/zucchina:7 7
@@ -195,7 +195,7 @@ zucchero (confezione piccola)/zucchero_mini:1 4
 zucchero (confezione grande)/zucchero_max:1 4
 nutella/nutella:2 2
 miele (confezione grande)/miele_castagno_max:2 2
-miele (confezione piccola)/miele_castagno_mini: 2
+miele (confezione piccola)/miele_castagno_mini:2 2
 miele (confezione grande)/miele_acacia_max:2 2
 miele (confezione piccola)/miele_acacia_mini:2 2
 miele (confezione grande)/miele_millefiori_max:2 2

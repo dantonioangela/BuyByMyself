@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.46977246, g: 0.46977246, b: 0.46977246, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.5
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
+  m_AmbientSkyColor: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
+  m_AmbientEquatorColor: {r: 1.424084, g: 1.424084, b: 1.424084, a: 1}
+  m_AmbientGroundColor: {r: 0.09411765, g: 0.08627451, b: 0.07058824, a: 1}
+  m_AmbientIntensity: 1.73
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -820,6 +820,14 @@ PrefabInstance:
       propertyPath: MAINResolutionDropdownUI
       value: 
       objectReference: {fileID: 7955802432000069369}
+    - target: {fileID: 422091942, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422091942, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7540371192540200411, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_Name
       value: Canvas

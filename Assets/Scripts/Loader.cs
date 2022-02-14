@@ -131,6 +131,7 @@ class Loader : MonoBehaviour
             string[] strings = line.Split(':');
             name = strings[0].ToLower();
             string[] substrings = strings[1].Split(' ');
+            Debug.Log(name);
             modelsAvailability.Add(name, new int[2] { int.Parse(substrings[0]), int.Parse(substrings[1]) });
         }
     }
