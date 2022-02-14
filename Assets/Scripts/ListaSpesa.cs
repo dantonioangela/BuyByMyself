@@ -74,7 +74,15 @@ public class ListaSpesa : MonoBehaviour
                 }
                 quantity = Loader.modelsAvailability[productName][0];
             }
-            quantity = Random.Range(1, (int)(quantity * 0.8));
+            if(quantity > 4)
+            {
+                quantity = Random.Range(1, (int)(quantity*0.7f));
+            }
+            else
+            {
+                quantity = Random.Range(1, quantity);
+            }
+            
             listaSpesa.Add(productNameList, quantity);
         }
 

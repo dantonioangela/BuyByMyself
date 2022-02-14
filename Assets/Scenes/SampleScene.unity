@@ -820,14 +820,6 @@ PrefabInstance:
       propertyPath: MAINResolutionDropdownUI
       value: 
       objectReference: {fileID: 7955802432000069369}
-    - target: {fileID: 422091942, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_Maskable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 422091942, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7540371192540200411, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_Name
       value: Canvas
