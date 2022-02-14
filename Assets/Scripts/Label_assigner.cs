@@ -68,16 +68,16 @@ public class Label_assigner : MonoBehaviour
             {
                 if (j == first_occurrance_index && Loader.productModels[j].counter <= ListaSpesa.listaSpesa[listName])
                 {
-                    child[index_child].gameObject.GetComponent<Product>().expirationDate = 0;
+                    child[index_child].gameObject.GetComponent<Product>().expirated = false;
                 }
                 else
                 {
-                    child[index_child].gameObject.GetComponent<Product>().expirationDate = Random.Range(0, 2);
+                    child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 1) == 0 ? true : false;
                 }
             }
             else
             {
-                child[index_child].gameObject.GetComponent<Product>().expirationDate = Random.Range(0, 2);
+                child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 1) == 0 ? true : false;
             }
 
         }

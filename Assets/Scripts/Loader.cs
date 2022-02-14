@@ -70,7 +70,7 @@ class Loader : MonoBehaviour
         bool? packaging;
         int? size;
         int? origin;
-        int[]? season;
+        List<int> season;
         string nomeLista;
         string nomeListaBefore = " ";
         float price;
@@ -80,7 +80,7 @@ class Loader : MonoBehaviour
             packaging = ToNullableBool(product.xmlPackaging);
             size = ToNullableInt(product.xmlSize);
             origin = ToNullableInt(product.xmlOrigin);
-            season = ToNullableIntArray(product.xmlSeason);
+            season = product.xmlSeason.Equals("null") ? null : product.xmlSeason.Split(' ').Select(n => Convert.ToInt32(n)).ToList();
             price = float.Parse(product.xmlPrice);
             nomeLista = product.xmlListName;
             if (nomeLista != nomeListaBefore)

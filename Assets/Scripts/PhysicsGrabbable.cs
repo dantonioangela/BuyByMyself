@@ -31,24 +31,28 @@ public class PhysicsGrabbable : Grabbable
                 gameObject.transform.position = originalPosition;
                 gameObject.transform.rotation = originalRotation;
                 _collider.enabled = true;
+				_rigidBody.isKinematic = true;							  
                 dropped = false;
-                timeLeft = 30;
+                timeLeft = 10;
             } 
         }
     }
 
     public override void Grab(GameObject grabber)
     {
+		_collider.enabled = false;						  
         if (dropped)
         {
+			_rigidBody.isKinematic = true;							  
             dropped = false;
-            timeLeft = 30;
+            timeLeft = 10;
         }
 
     }
 
     public override void Drop()
     {        
+		_collider.enabled = true;						 
         if ( Carrello_controller.selected)
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);

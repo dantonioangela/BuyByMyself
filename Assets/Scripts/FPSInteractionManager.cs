@@ -6,7 +6,7 @@ public class FPSInteractionManager : MonoBehaviour
 {
     [SerializeField] private Transform _fpsCameraT;
     [SerializeField] private bool _debugRay;
-    [SerializeField] private float _interactionDistance;
+    private float _interactionDistance = 7;
 
     [SerializeField] private Image _target;
 

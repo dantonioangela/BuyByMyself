@@ -14,7 +14,7 @@ verdura/peperone_giallo:5 5
 verdura/peperone_giallo_old:0 4
 verdura/peperone_rosso:5 5
 verdura/peperone_rosso_old:0 4
-frutta/banana:3 3
+frutta/banana:4 4
 frutta/banana_old:0 2
 frutta/mela_rossa:8 8
 frutta/mela_rossa_old:0 7
@@ -170,24 +170,24 @@ crackers/crackers_cereali:0 3
 crackers/crackers_integrali:0 3
 sale (confezione grande)/sale_max:3 3
 sale (confezione piccola)/sale_mini:4 4
-fette biscottate/fette_dorate_eco:2 2
-fette biscottate/fette_integrali_eco:2 2
-fette biscottate/fette_dorate:0 2
-fette biscottate/fette_integrali:0 2
-merendina/merendine_eco:3 3
+fette biscottate/fette_dorate_eco:4 4
+fette biscottate/fette_integrali_eco:4 4
+fette biscottate/fette_dorate:0 3
+fette biscottate/fette_integrali:0 3
+merendina/merendine_eco:4 4
 merendina/merendine:0 3
-biscotti (confezione grande)/naturini_max_eco:2 2
-biscotti (confezione piccola)/naturini_mini_eco:2 2
-biscotti (confezione media)/naturini_medi_eco:2 2
-biscotti (confezione grande)/biscottimi_max_eco:2 2
-biscotti (confezione piccola)/biscottimi_mini_eco:2 2
-biscotti (confezione media)/biscottimi_medi_eco:2 2
+biscotti (confezione grande)/naturini_max_eco:3 3
+biscotti (confezione piccola)/naturini_mini_eco:4 4
+biscotti (confezione media)/naturini_medi_eco:3 3
+biscotti (confezione grande)/biscottimi_max_eco:3 3
+biscotti (confezione piccola)/biscottimi_mini_eco:4 4
+biscotti (confezione media)/biscottimi_medi_eco:3 3
 biscotti (confezione grande)/biscottimi_max:0 2
 biscotti (confezione piccola)/biscottimi_mini:0 2
 biscotti (confezione media)/biscottimi_medi:0 2
-biscotti (confezione grande)/biscogolosi_max_eco:2 2
-biscotti (confezione piccola)/biscogolosi_mini_eco:2 2
-biscotti (confezione media)/biscogolosi_medi_eco:2 2
+biscotti (confezione grande)/biscogolosi_max_eco:3 3
+biscotti (confezione piccola)/biscogolosi_mini_eco:4 4
+biscotti (confezione media)/biscogolosi_medi_eco:3 3
 biscotti (confezione grande)/biscogolosi_max:0 2
 biscotti (confezione piccola)/biscogolosi_mini:0 2
 biscotti (confezione media)/biscogolosi_medi:0 2
@@ -235,16 +235,16 @@ patatine/patatine_nachos_tubo:4 4
 candeggina/candeggina:2 2
 detersivo/detersivo:2 2
 detersivo/detersì:2 2
-sapone liquido/sapone_liquido_arancia:2 2
-sapone liquido/sapone_liquido_lavanda:2 2
-sapone liquido/sapone_liquido_oliva:2 2
-sapone liquido/sapone_liquido_vaniglia:2 2
+sapone liquido/sapone_liquido_arancia:4 4
+sapone liquido/sapone_liquido_lavanda:4 4
+sapone liquido/sapone_liquido_oliva:4 4
+sapone liquido/sapone_liquido_vaniglia:3 3
 saponetta/saponetta_arancia:2 2
 saponetta/saponetta_lavanda:2 2
 saponetta/saponetta_oliva:2 2
 saponetta/saponetta_vaniglia:2 2
-carta igienica (confezione piccola)/carta_igienica_mini:2 2
-carta igienica (confezione grande)/carta_igienica_max:1 1
+carta igienica (confezione piccola)/carta_igienica_mini:3 3
+carta igienica (confezione grande)/carta_igienica_max:2 2
 scottex (confezione piccola)/scottex_mini:2 2
 scottex (confezione grande)/scottex_max:2 2
 pellicola (confezione grande)/pellicola_max:4 4
