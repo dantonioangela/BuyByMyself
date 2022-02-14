@@ -12,10 +12,14 @@ public class Product : PhysicsGrabbable {
     [HideInInspector]
     public bool expirated;
     private ProductLabel productLabel;
+    public  Vector3 position;
+    public Quaternion rotation;
 
     protected override void Start() {
         base.Start();
         productLabel = FindObjectOfType<ProductLabel>();
+        position = transform.position;
+        rotation = transform.rotation;
     }
 	
     public override void Grab(GameObject grabber)

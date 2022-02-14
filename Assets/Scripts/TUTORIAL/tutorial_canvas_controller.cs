@@ -22,7 +22,7 @@ public class tutorial_canvas_controller : MonoBehaviour
                                   "Adesso metti il salmone nel carrello!",
                                   "Oops! Abbiamo sforato il budget... Clicca sul carrello per vedere cosa contengono le buste!",
                                   "Quelle banane non sembrano molto buone... Trascinale fuori dalla busta per eliminarle dal carrello!",
-                                  "Perfetto, clicca la freccia per tornare indietro",
+                                  "Perfetto, clicca la X per tornare indietro",
                                   "Abbiamo finito la nostra spesa, clicca su di me, alla cassa",
                                   "Super! Hai imparato tutto, ma torna nel tutorial se avrai bisogno di ricordare i comandi",
                                   "Grazie mille e alla prossima, buon divertimento!",

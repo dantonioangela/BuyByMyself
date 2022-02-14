@@ -76,4 +76,12 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
         productInThisSlot = null;
 
     }
+
+    public void ReplaceProduct()
+    {
+        transform.GetComponent<RawImage>().texture = emptyTexture;
+        slotEmpty = true;
+        productInThisSlot = null;
+    }
+
 }

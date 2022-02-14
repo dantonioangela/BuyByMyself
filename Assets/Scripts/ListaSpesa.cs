@@ -30,11 +30,12 @@ public class ListaSpesa : MonoBehaviour
     public void StartMe()
     {
         listaSpesa = new Dictionary<string, int>();
-        itemsNumber = 15;
+        itemsNumber = 8;
         CreateList();
         CalculateBudget();
         UpdateProductModelsCounter();
         season = Random.Range(0, 3);
+        Debug.Log(budget);
     }
 
     void CreateList(){
@@ -82,6 +83,7 @@ public class ListaSpesa : MonoBehaviour
             }
             
             listaSpesa.Add(productNameList, quantity);
+            Debug.Log(productNameList + " quantità " + quantity + " costo =" + Loader.productModels[Loader.NamesToIndex[productName][0]].price);
             budget += quantity*(Loader.productModels[ Loader.NamesToIndex[productName][0]].price);
         }
 

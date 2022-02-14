@@ -12,7 +12,11 @@ public class UI_controller : MonoBehaviour
     private bool inventarioActive = false;
     //private GameObject[] productsInInventario = new GameObject[15];
     private List<GameObject> productsInInventario = new List<GameObject>();
+    private List<GameObject> productsInInventarioNextPage = new List<GameObject>();
     private int counter = 0;
+    private int counterNextPage = 0;
+    private int totSlotPerPage = 15;
+    private GameObject productReplacement;
     private int i = 0;
 
 
@@ -36,11 +40,31 @@ public class UI_controller : MonoBehaviour
             if (!inventarioActive)
             {
                 UI_inventario.gameObject.SetActive(true);
+                transform.GetChild(0).GetChild(5).gameObject.SetActive(true);
+                transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
+                transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
                 inventarioActive = true;
-                for (i = 0; i < counter; i++)
+               /*if (counter < totSlotPerPage)
                 {
-                    transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
+                    for (i = 0; i < counter; i++)
+                    {
+                        transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
+                    }
                 }
+                else
+                {*/
+                    for (i = 0; i < productsInInventario.Count; i++)
+                    {
+                        transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
+                    }
+                    for(i = 0; i < productsInInventarioNextPage.Count; i++)
+                    {
+                        transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().AddProduct(productsInInventarioNextPage[i]);
+                    }
+                //}
+                transform.GetChild(0).GetChild(6).gameObject.SetActive(false);
+                transform.GetChild(0).GetChild(5).gameObject.SetActive(false);
+
             }
         }
         else if(inventarioActive)
@@ -70,20 +94,40 @@ public class UI_controller : MonoBehaviour
     public void AddProductToInventario( GameObject product)
     {
         
-        if (counter < 14)
+        if (productsInInventario.Count < 15)
         {
             productsInInventario.Add(product);
             counter++;
         }
-        else
+        else if (productsInInventarioNextPage.Count < 15)
         {
-            Debug.Log("Inventario pieno");
+            productsInInventarioNextPage.Add(product);
+            counter++;
         }
     }
 
     public void RemoveProductFromInventario (GameObject product)
     {
-        productsInInventario.Remove(product);
-        counter--;
+        if (productsInInventario.Contains(product))
+        {
+            productsInInventario.Remove(product);
+            counter--;
+            if (productsInInventarioNextPage.Count > 0)
+            {
+                productReplacement = productsInInventarioNextPage[productsInInventarioNextPage.Count - 1];
+                productsInInventario.Add( productReplacement );
+                productsInInventarioNextPage.Remove(productReplacement);
+                counterNextPage--;
+                transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().ReplaceProduct(productsInInventarioNextPage.Count, productReplacement );
+                transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productReplacement);
+
+            }
+        }
+        else
+        {
+            productsInInventarioNextPage.Remove(product);
+            counterNextPage--;
+        }
+        
     }
 }

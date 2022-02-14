@@ -52,13 +52,14 @@ public class PhysicsGrabbable : Grabbable
 
     public override void Drop()
     {        
-		_collider.enabled = true;						 
+								 
         if ( Carrello_controller.selected)
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);
             Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject );
         }
         else{
+            _collider.enabled = true;
             dropped = true;
             _rigidBody.isKinematic = false;
         }
