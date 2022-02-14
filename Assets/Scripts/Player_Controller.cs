@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
     public bool inventario;
-    public bool UI_active = false;
+    static public bool UI_active = false;
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
 

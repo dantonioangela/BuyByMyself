@@ -677,7 +677,7 @@ MonoBehaviour:
   MessaggiCassieraUI: {fileID: 1923863462}
   audioMixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
   ResolutionDropdownUI: {fileID: 360216023022379894}
-  LevelTransition: {fileID: 968057697}
+  LevelTransition: {fileID: 2316699459359259248}
   TransitionTime: 2
 --- !u!114 &21012112
 MonoBehaviour:
@@ -2585,11 +2585,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26bb1313ee91f434aa1bc74b2a59bd0f, type: 3}
---- !u!95 &968057697 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2316699460320745744, guid: 26bb1313ee91f434aa1bc74b2a59bd0f, type: 3}
-  m_PrefabInstance: {fileID: 968057696}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &986170824
 GameObject:
   m_ObjectHideFlags: 0
@@ -16212,6 +16207,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089062640635977994}
   m_Mesh: {fileID: -5804655299724751162, guid: 35e548d056d34a748b828da2d24539dd, type: 3}
+--- !u!95 &2316699459359259248 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2316699460320745744, guid: 26bb1313ee91f434aa1bc74b2a59bd0f, type: 3}
+  m_PrefabInstance: {fileID: 968057696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &2325285304526062723
 MeshFilter:
   m_ObjectHideFlags: 0

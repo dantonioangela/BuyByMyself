@@ -23,7 +23,7 @@ public class tutorial_pausa_menu : MonoBehaviour
     bool inOptions = false;
 
     public Animator LevelTransition;
-    public float TransitionTime = 2f;
+    public float TransitionTime = 0.8f;
 
     private void Start()
     {
@@ -97,14 +97,6 @@ public class tutorial_pausa_menu : MonoBehaviour
         GiocoInPausa = false;
         PauseMenuUI.SetActive(false);
         MessaggiCassieraUI.SetActive(false);
-        StartCoroutine(ReturnMainMenu());
-    }
-        
-
-    IEnumerator ReturnMainMenu()
-    {
-        LevelTransition.SetTrigger("Start");
-        yield return new WaitForSeconds(TransitionTime);
         SceneManager.LoadScene(0);
     }
 

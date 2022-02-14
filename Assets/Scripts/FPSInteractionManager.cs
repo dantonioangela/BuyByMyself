@@ -85,7 +85,7 @@ public class FPSInteractionManager : MonoBehaviour
     {
         //if (_pointingInteractable)
         //    _target.color = Color.green;
-        if(playerController.UI_active){
+        if(Player_Controller.UI_active){
             _target.enabled = false;
         }
         else{

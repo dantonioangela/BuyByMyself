@@ -10,11 +10,6 @@ public class EndAnimationDoors : StateMachineBehaviour
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Player_Controller.UI_active = false;
-        if (MenuPrincipale.inTutorial)
-        {
-            MenuPrincipale.inTutorial = false;
-            SceneManager.LoadScene(1);
-        }
     }
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
