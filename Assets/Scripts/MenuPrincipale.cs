@@ -12,6 +12,8 @@ public class MenuPrincipale : MonoBehaviour
     public GameObject MainMenuUI;
     public AudioMixer audioMixer;
     public GameObject SceltaDiffUI;
+	public static int levelDifficulty; //0 = facile, 1 = normale, 3 = difficile;
+																			
 
     static public bool MainMenuActive = false;
 
@@ -150,6 +152,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+		levelDifficulty = 0;
         StartCoroutine(LoadFacile());
     }
 
@@ -166,6 +169,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+		levelDifficulty = 1;
         StartCoroutine(LoadMedia());
     }
 
@@ -181,6 +185,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
         inGame = true;
+		levelDifficulty = 2;
         StartCoroutine(LoadDifficile());
     }
 

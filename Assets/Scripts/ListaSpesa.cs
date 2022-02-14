@@ -9,8 +9,10 @@ public class ListaSpesa : MonoBehaviour
 
     [System.NonSerialized] public static Dictionary<string, int> listaSpesa;
     private int itemsNumber;
-    public int season;
+	public static float idealBudget;
     public static float budget = 0.0f;
+	[HideInInspector]
+    public static int season;
 
 
     // Start is called before the first frame update

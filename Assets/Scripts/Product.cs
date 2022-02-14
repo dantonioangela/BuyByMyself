@@ -9,13 +9,27 @@ public class Product : PhysicsGrabbable {
 
     public ProductModel model;
     public int quality { get; }
-    public int expirationDate;      // = 0 significa tra un anno. ecc..
-    private string[] expiration = { "tra un anno", "dopodomani", "il mese scorso" };
+    [HideInInspector]
+    public bool expirated;
+    private ProductLabel productLabel;
 
     protected override void Start() {
         base.Start();
-        //TODO: generare qualità e data di scadenza in base a determinati parametri
+        productLabel = FindObjectOfType<ProductLabel>();
     }
-    
+	
+    public override void Grab(GameObject grabber)
+    {
+        base.Grab(grabber);
+        productLabel.active = true;
+        productLabel.product = this;
+    }
+
+    public override void Drop()
+    {
+        base.Drop();
+        productLabel.active = false;
+    }
+	
 }
 
