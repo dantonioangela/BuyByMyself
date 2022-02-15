@@ -76,7 +76,7 @@ public class MenuInGioco : MonoBehaviour
     void Pause()
     {
         PauseMenuUI.SetActive(true);
-        Player_Controller.UI_active = false;
+        Player_Controller.UI_active = true;
         Time.timeScale = 0f;
         GiocoInPausa = true;
     }
