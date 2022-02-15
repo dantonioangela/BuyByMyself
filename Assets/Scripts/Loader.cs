@@ -10,6 +10,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.ComponentModel;
 
 class Loader : MonoBehaviour
 {
@@ -68,8 +69,8 @@ class Loader : MonoBehaviour
 
         bool? sustainable;
         bool? packaging;
-        int? size;
-        int? origin;
+        string size;
+        float? origin;
         List<int> season;
         string nomeLista;
         string nomeListaBefore = " ";
@@ -78,10 +79,21 @@ class Loader : MonoBehaviour
         foreach (var product in products) {
             sustainable = ToNullableBool(product.xmlSustainable);
             packaging = ToNullableBool(product.xmlPackaging);
-            size = ToNullableInt(product.xmlSize);
-            origin = ToNullableInt(product.xmlOrigin);
+            size = (product.xmlSize == "null" ? "" : product.xmlSize);
+            origin = ToNullableFloat(product.xmlOrigin);
             season = product.xmlSeason.Equals("null") ? null : product.xmlSeason.Split(' ').Select(n => Convert.ToInt32(n)).ToList();
             price = float.Parse(product.xmlPrice);
+
+            /*Debug.Log("MODEL: [" + 
+                      "Nome: " + product.xmlListName + " " +
+                      "Sustainable: " + (sustainable.HasValue ? sustainable.Value.ToString() : "NO") + " " +
+                      "Packaging : " + (packaging.HasValue ? packaging.Value.ToString() : "NO") + " " +
+                      "Size : " + (size.HasValue ? size.Value.ToString() : "NO") + " " +
+                      "Origin : " + (origin.HasValue ? origin.Value.ToString() : "NO") + " " +
+                      "Season : " + (season != null ? "SI" : "NO") + " " +
+                      "Price : " + price + "]");
+            */
+
             nomeLista = product.xmlListName;
             if (nomeLista != nomeListaBefore)
             {
@@ -105,13 +117,23 @@ class Loader : MonoBehaviour
 
     private int? ToNullableInt(string str) {
         int temp;
-        if (int.TryParse(str, out temp)) return temp;
+        if (int.TryParse(str, out temp))
+            return temp;
+        return null;
+    }
+    private float? ToNullableFloat(string str)
+    {
+        float temp;
+        if (float.TryParse(str, out temp))
+            return temp;
         return null;
     }
 
     private bool? ToNullableBool(string str) {
-        bool temp;
-        if (bool.TryParse(str, out temp)) return temp;
+        if (str == "0")
+            return false;
+        if (str == "1")
+            return true;
         return null;
     }
 
@@ -135,4 +157,22 @@ class Loader : MonoBehaviour
         }
     }
 
+}
+
+public static class LoaderUtility
+{
+    public static Nullable<T> ToNullable<T>(this string s) where T : struct
+    {
+        Nullable<T> result = new Nullable<T>();
+        try
+        {
+            if (!string.IsNullOrEmpty(s) && s.Trim().Length > 0)
+            {
+                TypeConverter conv = TypeDescriptor.GetConverter(typeof(T));
+                result = (T)conv.ConvertFrom(s);
+            }
+        }
+        catch { }
+        return result;
+    }
 }

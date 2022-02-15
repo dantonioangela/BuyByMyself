@@ -7,7 +7,7 @@ using System;
 public class ProductLabel : MonoBehaviour
 {
     [SerializeField] private GameObject labelUI;
-    [SerializeField]private Text productName;
+    [SerializeField] private Text productName;
     [SerializeField] private Text productSize;
     [SerializeField] private Text productPrice;
     [SerializeField] private Text productPackaging;
@@ -25,7 +25,7 @@ public class ProductLabel : MonoBehaviour
     private Vector3 originalPosition;
     private Vector3 targetPosition;
     private float speed = 1000f; 
-    private float offset = 300f;
+    private float offset = 250f;
 
     // Start is called before the first frame update
     void Start()
@@ -49,33 +49,33 @@ public class ProductLabel : MonoBehaviour
                 labelUI.SetActive(true);
 
                 productName.text = product.model.name;
-                
-                productPrice.text = product.model.price.ToString() + " \u20AC";
-                
-                productSize.text = (product.model.size == null ? "" : product.model.size.ToString());
 
-                if (product.model.packaging != null)
-                    productPackaging.text = (product.model.packaging == false ? "" : "Imballaggio ecologico");
+                productPrice.text = product.model.price.ToString() + " \u20AC";
+
+                productSize.text = product.model.size;
+
+                if (product.model.packaging.HasValue)
+                    productPackaging.text = (product.model.packaging.Value == false ? "" : "Imballaggio ecologico");
                 else
                     productPackaging.text = "";
-                
-                if (product.model.sustainable != null && MenuPrincipale.levelDifficulty == 2)
-                    productSustainability.text = (product.model.sustainable == false ? "" : "Produzione sostenibile");
+
+                if (product.model.sustainable.HasValue && MenuPrincipale.levelDifficulty == 2)
+                    productSustainability.text = (product.model.sustainable.Value == false ? "" : "Produzione sostenibile");
                 else
                     productSustainability.text = "";
-                
-                if (product.model.origin != null && MenuPrincipale.levelDifficulty >= 1)
+
+                if (product.model.origin.HasValue && MenuPrincipale.levelDifficulty >= 1)
                 {
-                    if (product.model.origin == 1)
+                    if (product.model.origin.Value == 1)
                         productOrigin.text = "Prodotto kilometro zero";
-                    else if (product.model.origin == 0.5)
+                    else if (product.model.origin.Value == 0.5)
                         productOrigin.text = "Prodotto nostrano";
-                    else if(product.model.origin == 0)
+                    else if(product.model.origin.Value == 0)
                         productOrigin.text = "Prodotto estero";
                 }
                 else
                     productOrigin.text = "";
-                
+
                 if (product.expirated)
                     expiredLabel.enabled = true;
                 else
