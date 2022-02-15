@@ -12,13 +12,13 @@ public class ProductModel {
     public string listName;
     public bool? sustainable;
     public bool? packaging;
-    public int? size;
+    public string size;
     public float? origin;
     public List<int> season;
     public float price;
     public int counter; //numero dei modelli di questo tipo necessari nella scena
 
-    public ProductModel(string name, string listName, bool? sustainable, bool? packaging, int? size, float? origin, List<int> season, float price)
+    public ProductModel(string name, string listName, bool? sustainable, bool? packaging, string size, float? origin, List<int> season, float price)
     {
         this.listName = listName;
         this.name = name;

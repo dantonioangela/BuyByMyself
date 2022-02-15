@@ -72,12 +72,12 @@ public class Label_assigner : MonoBehaviour
                 }
                 else
                 {
-                    child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 1) == 0 ? true : false;
+                    child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 2) == 0 ? true : false;
                 }
             }
             else
             {
-                child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 1) == 0 ? true : false;
+                child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 2) == 0 ? true : false;
             }
 
         }
