@@ -234,12 +234,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa2544e8c4b5f140a092d21856719d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1659188939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2316699460320745750, guid: 26bb1313ee91f434aa1bc74b2a59bd0f, type: 3}
+  m_PrefabInstance: {fileID: 2316699459288050421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1797764760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7540371192540200411, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+  m_PrefabInstance: {fileID: 7540371192519254866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1820791569 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
   m_PrefabInstance: {fileID: 7540371192519254866}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1797764760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35b22f2ace634b84e94f6e6b5c1ddc68, type: 3}
@@ -250,7 +260,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7540371192540200412, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
   m_PrefabInstance: {fileID: 7540371192519254866}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1797764760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e72be3b41d79734793cd80c6f8a1d3a, type: 3}
@@ -805,6 +815,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1797764760}
+    - target: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1523095169}
@@ -824,6 +838,10 @@ PrefabInstance:
       propertyPath: LevelTransition
       value: 
       objectReference: {fileID: 1039528933}
+    - target: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: GestionTransizione
+      value: 
+      objectReference: {fileID: 1659188939}
     - target: {fileID: 49546519, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: MAINResolutionDropdownUI
       value: 
