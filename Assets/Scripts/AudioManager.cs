@@ -54,4 +54,19 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
+
+    public void setGeneralVolume(int volume)
+    {
+        float value = volume;
+        float from1 = 0;
+        float to1 = 1;
+        float from2 = 0;
+        
+        foreach(Sound sound in sounds)
+        {
+            float to2 = sound.volume;
+            sound.source.volume = (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+        }
+    }
+
 }

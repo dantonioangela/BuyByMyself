@@ -13,7 +13,7 @@ public class MenuPrincipale : MonoBehaviour
     public AudioMixer audioMixer;
     public GameObject SceltaDiffUI;
 	public static int levelDifficulty; //0 = facile, 1 = normale, 3 = difficile;
-																			
+    private AudioManager audioManager;													
 
     static public bool MainMenuActive = false;
 
@@ -30,6 +30,8 @@ public class MenuPrincipale : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+        audioManager.Play("MainMenuMusic");
         Player_Controller.UI_active = true;
         MainMenuUI.SetActive(true);
         MainMenuActive = true;
@@ -155,6 +157,7 @@ public class MenuPrincipale : MonoBehaviour
         LevelTransition.SetTrigger("Start");
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
+        audioManager.Play("GameplayMusic");
     }
 
     public void PartitaMedia()
@@ -172,6 +175,7 @@ public class MenuPrincipale : MonoBehaviour
         LevelTransition.SetTrigger("Start");
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
+        audioManager.Play("GameplayMusic");
     }
     public void PartitaDifficile()
     {
@@ -188,6 +192,7 @@ public class MenuPrincipale : MonoBehaviour
         LevelTransition.SetTrigger("Start");
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
+        audioManager.Play("GameplayMusic");
     }
 
 }
