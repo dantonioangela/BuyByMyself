@@ -113,6 +113,15 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuActive = false;
         inGame = true;
         MainMenuUI.SetActive(false);
+        StartCoroutine(StartTutorial());
+    }
+
+    IEnumerator StartTutorial()
+    {
+        LevelTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(TransitionTime);
+        LevelTransition.SetTrigger("End");
+        yield return new WaitForSeconds(1.3f);
         SceneManager.LoadScene(1);
     }
 
