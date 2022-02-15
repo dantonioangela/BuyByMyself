@@ -5,16 +5,16 @@ using UnityEngine;
 public class Result
 {
     public float totalPoints;
-    public float qualityPoints;
-    public float ecoPoints; //packaging
+    public float? qualityPoints;
+    public float? ecoPoints; //packaging
     public float? sustainablePoints;
     public float? originPoints;
     public float? seasonPoints;
     public float pricePoints;
 
     public Result(float totalPoints,
-                  float qualityPoints,
-                  float ecoPoints,
+                  float? qualityPoints,
+                  float? ecoPoints,
                   float? originPoints,
                   float? sustainablePoints,
                   float? seasonPoints,
@@ -45,18 +45,23 @@ public class FinalResultCalculator
 
         int qualityProducts = 0; //numero di prodotti nella lista che hanno il campo qualità (frutta e verdura)
         float qualityPoints = 0;
+        float? finalQualityPoints;
 
         int ecoProducts = 0; //numero di prodotti nella lista che hanno la versione eco
         float ecoPoints = 0;
+        float? finalEcoPoints;
 
         int originProducts = 0; //numero di prodotti nella lista che hanno origine
         float originPoints = 0;
+        float? finalOriginPoints;
 
         int sustainableProducts = 0; //numero di prodotti nella lista che hanno la versione sostenibile
         float sustainablePoints = 0;
+        float? finalSustainablePoints;
 
         int seasonProducts = 0; //numero di prodotti nella lista che sono stagionali
         float seasonPoints = 0;
+        float? finalSeasonPoints;
 
         float pricePoints = 0;
 
@@ -154,9 +159,19 @@ public class FinalResultCalculator
                     pricePoints *= 10; //per mapparlo su una scala da 0 a 100 invece che da 0 a 10 come ho fatto per tutti gli altri parametri
                 }
 
+                if (qualityProducts == 0)
+                    finalQualityPoints = null;
+                else
+                    finalQualityPoints = (qualityPoints / qualityProducts) * 100;
+
+                if (ecoProducts == 0)
+                    finalEcoPoints = null;
+                else
+                    finalEcoPoints = (ecoPoints / ecoProducts) * 100;
+
                 return new Result(totalPoints,
-                                  (qualityPoints / qualityProducts) * 100,
-                                  (ecoPoints / ecoProducts) * 100,
+                                  finalQualityPoints,
+                                  finalEcoPoints,
                                   null,
                                   null,
                                   null,
@@ -250,10 +265,25 @@ public class FinalResultCalculator
                     pricePoints *= 10; //per mapparlo su una scala da 0 a 100 invece che da 0 a 10 come ho fatto per tutti gli altri parametri
                 }
 
-                return new Result(totalPoints, 
-                                  (qualityPoints/qualityProducts)*100, 
-                                  (ecoPoints/ ecoProducts) *100, 
-                                  (originPoints/ originProducts) *100, 
+                if (qualityProducts == 0)
+                    finalQualityPoints = null;
+                else
+                    finalQualityPoints = (qualityPoints / qualityProducts) * 100;
+
+                if (ecoProducts == 0)
+                    finalEcoPoints = null;
+                else
+                    finalEcoPoints = (ecoPoints / ecoProducts) * 100;
+
+                if (originProducts == 0)
+                    finalOriginPoints = null;
+                else
+                    finalOriginPoints = (originPoints / originProducts) * 100;
+
+                return new Result(totalPoints,
+                                  finalQualityPoints, 
+                                  finalEcoPoints,
+                                  finalOriginPoints, 
                                   null, 
                                   null,
                                   pricePoints);
@@ -344,7 +374,7 @@ public class FinalResultCalculator
                                         totalPoints += (maxProductPoints / 6);
                                     }
                                 }
-                                else //caso in cui il prodotto non ha versione sostenibile
+                                else //caso in cui il prodotto non è stagionale
                                 {
                                     totalPoints += maxProductPoints / 6;
                                 }
@@ -361,10 +391,13 @@ public class FinalResultCalculator
                     }
                 }
 
+                Debug.Log("PUNTEGGIO TOTALE PRODOTTI = " + totalPoints);
+
                 //controllo prezzo (6)
                 listCompleted = true;
                 foreach (KeyValuePair<string, int> entry in cartListQuantities) //controllo se la lista è stata completata
                 {
+                    Debug.Log("Prodotto carrello: " + entry.Key + " " + entry.Value + "(lista spesa = " + ListaSpesa.listaSpesa[entry.Key]);
                     if (entry.Value < ListaSpesa.listaSpesa[entry.Key])
                     {
                         listCompleted = false;
@@ -374,16 +407,45 @@ public class FinalResultCalculator
                 if (listCompleted)
                 {
                     pricePoints = Remap(Carrello_controller.prezzo_totale_carrello, ListaSpesa.idealBudget, ListaSpesa.budget, maxPricePoints, 0);
+                    Debug.Log("PUNTEGGIO TOTALE PREZZO = " + pricePoints);
                     totalPoints += pricePoints;
                     pricePoints *= 10; //per mapparlo su una scala da 0 a 100 invece che da 0 a 10 come ho fatto per tutti gli altri parametri
                 }
 
+                if (qualityProducts == 0)
+                    finalQualityPoints = null;
+                else
+                    finalQualityPoints = (qualityPoints / qualityProducts) * 100;
+
+                if (ecoProducts == 0)
+                    finalEcoPoints = null;
+                else
+                    finalEcoPoints = (ecoPoints / ecoProducts) * 100;
+
+                if (originProducts == 0)
+                    finalOriginPoints = null;
+                else
+                    finalOriginPoints = (originPoints / originProducts) * 100;
+
+                if (sustainableProducts == 0)
+                    finalSustainablePoints = null;
+                else
+                {
+                    finalSustainablePoints = (sustainablePoints / sustainableProducts) * 100;
+                }
+
+                if (seasonProducts == 0)
+                    finalSeasonPoints = null;
+                else
+                    finalSeasonPoints = (seasonPoints / seasonProducts) * 100;
+
+
                 return new Result(totalPoints,
-                                  (qualityPoints / qualityProducts) * 100,
-                                  (ecoPoints / ecoProducts) * 100,
-                                  (originPoints / originProducts) * 100,
-                                  (sustainablePoints / sustainableProducts) * 100,
-                                  (seasonPoints / seasonProducts) * 100,
+                                  finalQualityPoints,
+                                  finalEcoPoints,
+                                  finalOriginPoints,
+                                  finalSustainablePoints,
+                                  finalSeasonPoints,
                                   pricePoints);
         }
 

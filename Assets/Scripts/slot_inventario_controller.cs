@@ -10,7 +10,7 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     private RectTransform icon;
     private Vector2 initialPos;
     [System.NonSerialized] public bool slotEmpty = true;
-    public GameObject productInThisSlot;
+    public Product productInThisSlot;
     [SerializeField] private Texture emptyTexture;
     [SerializeField] private Canvas canvas;
 
@@ -60,7 +60,7 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
         }
     }
 
-    public void AddProductInSlot( GameObject product)
+    public void AddProductInSlot(Product product)
     {
         productInThisSlot = product;
         transform.GetComponent<RawImage>().texture = product.GetComponent<icon>().myIcon;

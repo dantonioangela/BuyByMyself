@@ -11,12 +11,12 @@ public class UI_controller : MonoBehaviour
     private Transform UI_cassiera_notPay;
     private bool inventarioActive = false;
     //private GameObject[] productsInInventario = new GameObject[15];
-    private List<GameObject> productsInInventario = new List<GameObject>();
-    private List<GameObject> productsInInventarioNextPage = new List<GameObject>();
+    private List<Product> productsInInventario = new List<Product>();
+    private List<Product> productsInInventarioNextPage = new List<Product>();
     private int counter = 0;
     private int counterNextPage = 0;
     private int totSlotPerPage = 15;
-    private GameObject productReplacement;
+    private Product productReplacement;
     private int i = 0;
 
 
@@ -91,7 +91,7 @@ public class UI_controller : MonoBehaviour
     }
 
 
-    public void AddProductToInventario( GameObject product)
+    public void AddProductToInventario(Product product)
     {
         
         if (productsInInventario.Count < 15)
@@ -106,7 +106,7 @@ public class UI_controller : MonoBehaviour
         }
     }
 
-    public void RemoveProductFromInventario (GameObject product)
+    public void RemoveProductFromInventario (Product product)
     {
         if (productsInInventario.Contains(product))
         {

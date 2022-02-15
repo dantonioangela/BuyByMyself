@@ -53,10 +53,10 @@ public class PhysicsGrabbable : Grabbable
     public override void Drop()
     {        
 								 
-        if ( Carrello_controller.selected)
+        if ( Carrello_controller.selected && gameObject.GetComponent<Product>() != null)
         {
             gameObject.transform.position -= new Vector3(0f, 10f, 0f);
-            Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject );
+            Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject.GetComponent<Product>() );
         }
         else{
             _collider.enabled = true;

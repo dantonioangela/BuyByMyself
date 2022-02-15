@@ -22,7 +22,7 @@ public class inventario_manager : MonoBehaviour
         
     }
 
-    public void AddProduct(GameObject product)
+    public void AddProduct(Product product)
     {
         flag = -1;
         for(i=0; i < transform.childCount; i++)
@@ -55,7 +55,7 @@ public class inventario_manager : MonoBehaviour
         gameObject.SetActive(false) ;
     }
 
-    public void ReplaceProduct(int child, GameObject productReplace)
+    public void ReplaceProduct(int child, Product productReplace)
     {
         transform.GetChild(child).GetComponent<slot_inventario_controller>().ReplaceProduct();
 

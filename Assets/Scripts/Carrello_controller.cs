@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Carrello_controller : MonoBehaviour
 {
     private GameObject[] busta = new GameObject[3];
-    public List<GameObject> prodottiNelCarrello = new List<GameObject>();
+    public static List<Product> prodottiNelCarrello = new List<Product>();
     public static int mode = 0;
     private Ray ray;
     private RaycastHit hit;
@@ -169,7 +169,7 @@ public class Carrello_controller : MonoBehaviour
         }
     }
 
-    public void AddProductToChart (GameObject product)
+    public void AddProductToChart (Product product)
     {
         prezzo_totale_carrello += product.GetComponent<Product>().model.price;
         prodottiNelCarrello.Add(product);
@@ -178,7 +178,7 @@ public class Carrello_controller : MonoBehaviour
         
     }
 
-    public void RemoveProductFromChart (GameObject product)
+    public void RemoveProductFromChart (Product product)
     {
         prodottiNelCarrello.Remove(product);
         prezzo_totale_carrello -= product.GetComponent<Product>().model.price;
