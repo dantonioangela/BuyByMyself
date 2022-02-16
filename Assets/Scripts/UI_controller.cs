@@ -15,7 +15,6 @@ public class UI_controller : MonoBehaviour
     private List<Product> productsInInventarioNextPage = new List<Product>();
     private int counter = 0;
     private int counterNextPage = 0;
-    private int totSlotPerPage = 15;
     private Product productReplacement;
     public Lista lista;
     public Mappa mappa;
