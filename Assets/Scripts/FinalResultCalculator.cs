@@ -91,20 +91,20 @@ public class FinalResultCalculator
         foreach(var product in ListaSpesa.listaSpesa)
         {
             if (product.Key.Contains("frutta") || product.Key.Contains("verdura"))
-                qualityProducts++;
+                qualityProducts += product.Value;
             for(int i = 0; i < Loader.productModels.Count && firstFound == false; i++)
             {            
                 if (Loader.productModels[i].listName.Contains(product.Key))
                 {
                     firstFound = true;
                     if (Loader.productModels[i].packaging.HasValue)
-                        ecoProducts++;
+                        ecoProducts += product.Value;
                     if (Loader.productModels[i].origin.HasValue)
-                        originProducts++;
+                        originProducts += product.Value;
                     if (Loader.productModels[i].sustainable.HasValue)
-                        sustainableProducts++;
+                        sustainableProducts += product.Value;
                     if (Loader.productModels[i].season != null)
-                        seasonProducts++;
+                        seasonProducts += product.Value;
                 }
             }
             firstFound = false;
