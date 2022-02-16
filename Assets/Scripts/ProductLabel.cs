@@ -25,7 +25,7 @@ public class ProductLabel : MonoBehaviour
     private Vector3 originalPosition;
     private Vector3 targetPosition;
     private float speed = 1000f; 
-    private float offset = 250f;
+    private float offset = 450f;
 
     // Start is called before the first frame update
     void Start()
@@ -83,10 +83,10 @@ public class ProductLabel : MonoBehaviour
 
                 if (product.model.season != null && MenuPrincipale.levelDifficulty == 2)
                 {
-                    winter.enabled = Convert.ToBoolean(product.model.season[0]);
-                    spring.enabled = Convert.ToBoolean(product.model.season[1]);
-                    summer.enabled = Convert.ToBoolean(product.model.season[2]);
-                    autumn.enabled = Convert.ToBoolean(product.model.season[3]);
+                    winter.enabled = Convert.ToBoolean(product.model.season[3]);
+                    spring.enabled = Convert.ToBoolean(product.model.season[0]);
+                    summer.enabled = Convert.ToBoolean(product.model.season[1]);
+                    autumn.enabled = Convert.ToBoolean(product.model.season[2]);
                 }
                 else
                 {
