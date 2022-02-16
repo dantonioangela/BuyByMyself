@@ -82,6 +82,37 @@ public class FinalResultCalculator
                 cartListQuantities.Add(productName, 0);
         }
 
+        //conto il numero di prodotti nella lista della spesa che possono 
+        //soddisfare quality, eco, origin, sustainability e season
+        bool firstFound = false;
+        foreach(var product in ListaSpesa.listaSpesa)
+        {
+            if (product.Key.Contains("frutta") || product.Key.Contains("verdura"))
+                qualityProducts++;
+            for(int i = 0; i < Loader.productModels.Count && firstFound == false; i++)
+            {            
+                if (Loader.productModels[i].listName.Contains(product.Key))
+                {
+                    firstFound = true;
+                    if (Loader.productModels[i].packaging.HasValue)
+                        ecoProducts++;
+                    if (Loader.productModels[i].origin.HasValue)
+                        originProducts++;
+                    if (Loader.productModels[i].sustainable.HasValue)
+                        sustainableProducts++;
+                    if (Loader.productModels[i].season != null)
+                        seasonProducts++;
+                }
+            }
+            firstFound = false;
+        }
+
+        Debug.Log("Quality products = " + qualityProducts + " " +
+                  "Eco products = " + ecoProducts + " " +
+                  "Origin products = " + originProducts + " " +
+                  "Sustainable products = " + sustainableProducts + " " +
+                  "Season products = " + seasonProducts);
+
         switch (levelDifficuly)
         {
             case 0: //facile
@@ -107,7 +138,6 @@ public class FinalResultCalculator
                                 if (product.model.listName.Contains("frutta") || 
                                     product.model.listName.Contains("verdura")) //caso in cui il prodotto ha il campo qualità
                                 {
-                                    qualityProducts++;
                                     if (!product.model.listName.Contains("_old")) //se non è marcio aggiungo punti
                                     {
                                         qualityPoints++;
@@ -121,8 +151,7 @@ public class FinalResultCalculator
 
                                 //controllo eco (5)
                                 if (product.model.packaging.HasValue) //caso in cui il prodotto ha versione eco
-                                {
-                                    ecoProducts++;
+                                {                                 
                                     if(product.model.packaging.Value == true) //se è stata presa la versione eco aggiungo punti
                                     {
                                         ecoPoints++;
@@ -202,8 +231,7 @@ public class FinalResultCalculator
                                 //controllo qualità (4)
                                 if (product.model.listName.Contains("frutta") ||
                                     product.model.listName.Contains("verdura")) //caso in cui il prodotto ha il campo qualità
-                                {
-                                    qualityProducts++;
+                                {                                  
                                     if (!product.model.listName.Contains("_old")) //se non è marcio aggiungo punti
                                     {
                                         qualityPoints++;
@@ -218,7 +246,6 @@ public class FinalResultCalculator
                                 //controllo eco (5)
                                 if (product.model.packaging.HasValue) //caso in cui il prodotto ha versione eco
                                 {
-                                    ecoProducts++;
                                     if (product.model.packaging.Value == true) //se è stata presa la versione eco aggiungo punti
                                     {
                                         ecoPoints++;
@@ -234,10 +261,8 @@ public class FinalResultCalculator
 
                                 if (product.model.origin.HasValue) //caso in cui il prodotto ha origine
                                 {
-                                    originProducts++;
                                     originPoints += product.model.origin.Value;
-                                    totalPoints += (maxProductPoints / 4) * product.model.origin.Value;
-                                    
+                                    totalPoints += (maxProductPoints / 4) * product.model.origin.Value;                                 
                                 }
                                 else //caso in cui il prodotto non ha origine
                                 {
@@ -316,7 +341,6 @@ public class FinalResultCalculator
                                 if (product.model.listName.Contains("frutta") ||
                                     product.model.listName.Contains("verdura")) //caso in cui il prodotto ha il campo qualità
                                 {
-                                    qualityProducts++;
                                     if (!product.model.listName.Contains("_old")) //se non è marcio aggiungo punti
                                     {
                                         qualityPoints++;
@@ -331,7 +355,6 @@ public class FinalResultCalculator
                                 //controllo eco (5)
                                 if (product.model.packaging.HasValue) //caso in cui il prodotto ha versione eco
                                 {
-                                    ecoProducts++;
                                     if (product.model.packaging.Value == true) //se è stata presa la versione eco aggiungo punti
                                     {
                                         ecoPoints++;
@@ -347,10 +370,8 @@ public class FinalResultCalculator
 
                                 if (product.model.origin.HasValue) //caso in cui il prodotto ha origine
                                 {
-                                    originProducts++;
                                     originPoints += product.model.origin.Value;
                                     totalPoints += (maxProductPoints / 6) * product.model.origin.Value;
-
                                 }
                                 else //caso in cui il prodotto non ha origine
                                 {
@@ -361,7 +382,6 @@ public class FinalResultCalculator
 
                                 if (product.model.sustainable.HasValue) //caso in cui il prodotto ha versione sostenibile
                                 {
-                                    sustainableProducts++;
                                     if(product.model.sustainable.Value == true)
                                     {
                                         sustainablePoints++;
@@ -377,7 +397,6 @@ public class FinalResultCalculator
 
                                 if (product.model.season != null) //caso in cui il prodotto è stagionale
                                 {
-                                    seasonProducts++;
                                     if (product.model.season[ListaSpesa.season] == 1)
                                     {
                                         seasonPoints++;
