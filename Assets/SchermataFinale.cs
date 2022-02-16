@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SchermataFinale : MonoBehaviour
 {
@@ -18,5 +19,11 @@ public class SchermataFinale : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }
