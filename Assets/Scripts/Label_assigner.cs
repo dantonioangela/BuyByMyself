@@ -60,13 +60,15 @@ public class Label_assigner : MonoBehaviour
                 j++;
                 if (j == first_occurrance_index + Loader.NamesToIndex[listName][1]) break;// - 1) break;
             }
-            Loader.productModels[j].counter--;
+
             //assegnare tutto al figlio index_child
             child[index_child].gameObject.AddComponent<Product>();
             child[index_child].gameObject.GetComponent<Product>().model = Loader.productModels[j];
-            if (ListaSpesa.listaSpesa.ContainsKey(listName))
+
+            if (ListaSpesa.listaSpesa.ContainsKey(listName.Split('/')[0]))
             {
-                if (j == first_occurrance_index && Loader.productModels[j].counter <= ListaSpesa.listaSpesa[listName])
+
+                if (j == first_occurrance_index && Loader.productModels[j].counter <= ListaSpesa.listaSpesa[listName.Split('/')[0]])
                 {
                     child[index_child].gameObject.GetComponent<Product>().expirated = false;
                 }
@@ -79,6 +81,7 @@ public class Label_assigner : MonoBehaviour
             {
                 child[index_child].gameObject.GetComponent<Product>().expirated = (int)Random.Range(0, 2) == 0 ? true : false;
             }
+            Loader.productModels[j].counter--;
 
         }
     }

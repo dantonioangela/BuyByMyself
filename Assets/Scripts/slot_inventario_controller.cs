@@ -13,11 +13,13 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     public Product productInThisSlot;
     [SerializeField] private Texture emptyTexture;
     [SerializeField] private Canvas canvas;
+    private ProductLabel productLabel;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        productLabel = FindObjectOfType<ProductLabel>();
         icon = GetComponent<RectTransform>();
         //transform.GetComponent<RawImage>().texture = emptyTexture;
         initialPos = icon.anchoredPosition;
@@ -33,6 +35,8 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     {
         if (!slotEmpty)
         {
+            productLabel.active = true;
+            productLabel.product = productInThisSlot;
             if (icon.anchoredPosition.x < 20 || icon.anchoredPosition.x > 450)
             {
                 icon.GetComponent<RawImage>().color = new Color(0f, 0f, 0f);
@@ -47,6 +51,7 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     {
         if (!slotEmpty)
         {
+            productLabel.active = false;
             if (icon.anchoredPosition.x > 20 && icon.anchoredPosition.x < 450)
             {
                 icon.anchoredPosition = initialPos;

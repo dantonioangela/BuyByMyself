@@ -14,6 +14,7 @@ public class vetri_surgelati_controller : MonoBehaviour
     private RaycastHit hit;
     private float speed_z = 1f;
     private float speed_x = 3f;
+    public AudioManager audioMan;
 
     // Start is called before the first frame update
     void Start()
