@@ -15,6 +15,7 @@ public class tutorial_FPS : MonoBehaviour
     private CapsuleCollider playerCollider;
     private tutorial_player_controller playerController;
     private Vector3 _rayOrigin;
+    private Ray ray;
 
     private Grabbable _grabbedObject = null;
 
@@ -31,7 +32,7 @@ public class tutorial_FPS : MonoBehaviour
 
     void Update()
     {
-        _rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
+        //_rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
 
         if (_grabbedObject == null)
             CheckInteraction();
@@ -47,7 +48,8 @@ public class tutorial_FPS : MonoBehaviour
 
     private void CheckInteraction()
     {
-        Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
+        //Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, _interactionDistance))

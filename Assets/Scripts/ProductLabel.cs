@@ -25,7 +25,7 @@ public class ProductLabel : MonoBehaviour
     private Vector3 originalPosition;
     private Vector3 targetPosition;
     private float speed = 1000f; 
-    private float offset = 200f;
+    private float offset = 300f;
 
     // Start is called before the first frame update
     void Start()

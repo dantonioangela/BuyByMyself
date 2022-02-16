@@ -18,6 +18,8 @@ public class FPSInteractionManager : MonoBehaviour
     private Vector3 _rayOrigin;
 
     private Grabbable _grabbedObject = null;
+    private Ray ray;
+    private RaycastHit hit;
 
     [SerializeField] private Sprite _targetDefaultIcon;
     [SerializeField] private Sprite _targetGrabIcon;
@@ -32,9 +34,10 @@ public class FPSInteractionManager : MonoBehaviour
 
     void Update()
     {
-        _rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
+        //_rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
+        
 
-        if(_grabbedObject == null)
+        if (_grabbedObject == null)
             CheckInteraction();
 
         if (_grabbedObject != null && Input.GetMouseButtonUp(0))
@@ -48,8 +51,8 @@ public class FPSInteractionManager : MonoBehaviour
 
     private void CheckInteraction()
     {
-        Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
-        RaycastHit hit;
+        //Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (Physics.Raycast(ray, out hit, _interactionDistance))
         {
