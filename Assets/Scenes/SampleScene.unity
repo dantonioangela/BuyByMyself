@@ -1514,38 +1514,6 @@ PrefabInstance:
       propertyPath: MAINResolutionDropdownUI
       value: 
       objectReference: {fileID: 7955802432000069369}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -114.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 1547138205, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 90.15
-      objectReference: {fileID: 0}
     - target: {fileID: 7540371192540200411, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_Name
       value: Canvas

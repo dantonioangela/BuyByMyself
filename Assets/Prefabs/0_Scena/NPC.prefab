@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &433421862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -160,6 +160,87 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2.27
   m_Text: VUOI PAGARE LA TUA SPESA?
+--- !u!1 &959699690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959699691}
+  - component: {fileID: 959699693}
+  - component: {fileID: 959699692}
+  m_Layer: 5
+  m_Name: Hai superato il budget!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &959699691
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959699690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.28, y: -0.28, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2052676986}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.5, y: -1.8}
+  m_SizeDelta: {x: 263.9, y: 83.76}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &959699693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959699690}
+  m_CullTransparentMesh: 1
+--- !u!114 &959699692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959699690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b6c88b8f9de1ff344a7bff65fca7a736, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.28
+  m_Text: 'HAI SUPERATO IL BUDGET,
+
+    NON PUOI PAGARE!'
 --- !u!1 &1220575429
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +466,7 @@ RectTransform:
   m_LocalScale: {x: 0.48, y: -0.55, z: 0}
   m_Children:
   - {fileID: 433421862}
+  - {fileID: 959699691}
   m_Father: {fileID: 1220575430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 90, z: 161.2}
@@ -2572,14 +2654,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
---- !u!4 &1892446073712569588 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8512459596652802512, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
-  m_PrefabInstance: {fileID: 7809529051124768036}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1227372743889532494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9036899582502153066, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
+  m_PrefabInstance: {fileID: 7809529051124768036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1892446073712569588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8512459596652802512, guid: 697d60a9e87f18c4a812a4ffbc3e55ce, type: 3}
   m_PrefabInstance: {fileID: 7809529051124768036}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &1874863739
@@ -3269,14 +3351,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4176aca539f5cb341a5532cf12d2b1e2, type: 3}
---- !u!4 &5486620012469746951 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2325377617212206350, guid: 4176aca539f5cb341a5532cf12d2b1e2, type: 3}
-  m_PrefabInstance: {fileID: 7809529051308953609}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5147530228804790205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3102617526688004020, guid: 4176aca539f5cb341a5532cf12d2b1e2, type: 3}
+  m_PrefabInstance: {fileID: 7809529051308953609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5486620012469746951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2325377617212206350, guid: 4176aca539f5cb341a5532cf12d2b1e2, type: 3}
   m_PrefabInstance: {fileID: 7809529051308953609}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &1948648231
@@ -5393,9 +5475,9 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1312547771048413756, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
   m_PrefabInstance: {fileID: 8793235554197440510}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1525965974017666821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8010365323006044411, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
+--- !u!4 &7168343809697519480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1836566579318493318, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
   m_PrefabInstance: {fileID: 8793235554197440510}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &9193860787039670566 stripped
@@ -5403,9 +5485,9 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 401100232670222040, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
   m_PrefabInstance: {fileID: 8793235554197440510}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7168343809697519480 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1836566579318493318, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
+--- !u!1 &1525965974017666821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8010365323006044411, guid: 53c98b31f854d6a4e9660c5ed79bc6a7, type: 3}
   m_PrefabInstance: {fileID: 8793235554197440510}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1315458353
