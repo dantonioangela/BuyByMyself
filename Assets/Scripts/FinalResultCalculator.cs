@@ -151,7 +151,7 @@ public class FinalResultCalculator
                 }
 
                 //controllo prezzo (6)
-                listCompleted = true;
+                listCompleted = cartList.Count > 0 ? true : false;
                 foreach (KeyValuePair<string, int> entry in cartListQuantities) //controllo se la lista è stata completata
                 {
                     if (entry.Value < ListaSpesa.listaSpesa[entry.Key])
@@ -259,7 +259,7 @@ public class FinalResultCalculator
                 }
 
                 //controllo prezzo (7)
-                listCompleted = true;
+                listCompleted = cartList.Count > 0 ? true : false;
                 foreach (KeyValuePair<string, int> entry in cartListQuantities) //controllo se la lista è stata completata
                 {
                     if (entry.Value < ListaSpesa.listaSpesa[entry.Key])
@@ -404,7 +404,7 @@ public class FinalResultCalculator
                 }
 
                 //controllo prezzo (6)
-                listCompleted = true;
+                listCompleted = cartList.Count > 0 ? true : false;
                 foreach (KeyValuePair<string, int> entry in cartListQuantities) //controllo se la lista è stata completata
                 {
                     if (entry.Value < ListaSpesa.listaSpesa[entry.Key])
