@@ -181,11 +181,14 @@ public class Carrello_controller : MonoBehaviour
 
     public void RemoveProductFromChart (Product product)
     {
-        prodottiNelCarrello.Remove(product);
-        prezzo_totale_carrello -= product.GetComponent<Product>().model.price;
-        product.transform.position = product.GetComponent<Product>().position;
-        product.transform.rotation = product.GetComponent<Product>().rotation;
-        product.GetComponent<Collider>().enabled = true;
+        if (prodottiNelCarrello.Contains(product))
+        {
+            prodottiNelCarrello.Remove(product);
+            prezzo_totale_carrello -= product.GetComponent<Product>().model.price;
+            product.transform.position = product.GetComponent<Product>().position;
+            product.transform.rotation = product.GetComponent<Product>().rotation;
+            product.GetComponent<Collider>().enabled = true;
+        }
         //product.transform.parent = null;
     }
 

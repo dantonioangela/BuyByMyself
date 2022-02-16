@@ -13,10 +13,10 @@ public class Lista : MonoBehaviour
 
     public TextMeshProUGUI TestoBudget;
 
-    private void Start()
+    /*private void Start()
     {
         InizializzaLista();
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -45,7 +45,7 @@ public class Lista : MonoBehaviour
         ListaAttiva = true;
     }
 
-    void InizializzaLista()
+    public void InizializzaLista()
     {
         string s = "";        
         float budget = ListaSpesa.budget;

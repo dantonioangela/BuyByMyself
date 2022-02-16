@@ -7,7 +7,7 @@ using System.Linq;
 public class ListaSpesa : MonoBehaviour
 {
 
-    [System.NonSerialized] public static Dictionary<string, int> listaSpesa;
+    [System.NonSerialized] public static Dictionary<string, int> listaSpesa = new Dictionary<string, int>();
     private int itemsNumber;
 	public static float idealBudget;
     public static float budget;
@@ -32,14 +32,14 @@ public class ListaSpesa : MonoBehaviour
     {
 
         budget = 0.0f;
-        listaSpesa = new Dictionary<string, int>();
+        //listaSpesa = new Dictionary<string, int>();
         itemsNumber = 8;
         CreateList();
         CalculateBudgets();
         UpdateProductModelsCounter();
         season = Random.Range(0, 4);
         setSeason = true;
-        
+        FindObjectOfType<Lista>().InizializzaLista();
     }
 
     void CreateList(){
