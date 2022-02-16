@@ -84,6 +84,7 @@ public class Player_Controller : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 inventario = true;
+                UI_active = true;
             }
         }
         else if (xRot <= 18f && Carrello_controller.selected)
@@ -97,9 +98,10 @@ public class Player_Controller : MonoBehaviour
         transform.position = new Vector3(transform.position.x, 1.65f, transform.position.z);
     }
 
-    public void SetInventario(bool status)
+    public void CloseInventario()
     {
-        inventario = status;
+        inventario = false;
+        UI_active = false;
     }
 
 }
