@@ -19,7 +19,7 @@ public class tutorial_carrello_controller : MonoBehaviour
 
 
     private GameObject[] busta = new GameObject[3];
-    public static int mode = 0;
+    public static int mode;
     private Ray ray;
     private RaycastHit hit;
     private Ray rayCarrello;
@@ -30,7 +30,7 @@ public class tutorial_carrello_controller : MonoBehaviour
     private bool[] conBusta = new bool[3];
     private int numeroOggetti;
     private Transform parent;
-    public static bool selected = false;
+    public static bool selected;
     public static float prezzo_totale_carrello;
     [SerializeField] private tutorial_UI inventario;
     //DA CAMBIARE
@@ -41,7 +41,9 @@ public class tutorial_carrello_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mode = 0;
         budget = 7f;
+        selected = false;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();
         navObstacle = GetComponent<NavMeshObstacle>();
@@ -187,44 +189,37 @@ public class tutorial_carrello_controller : MonoBehaviour
 
     public void AddProductToChart(GameObject product)
     {
-        if (numeroOggetti < 15)
+        numeroOggetti++;
+        if (numeroOggetti == 1)
         {
-            if (numeroOggetti == 0)
-            {
-                banana2.GetComponent<MeshCollider>().enabled = true;
-                banana2.GetComponent<tutorial_product>().enabled = true;
-            }
-            if (numeroOggetti == 1 && !tutorialStepBananeDone)
-            {
-                speech.ChangeSpeech(5);
-                bevande.tutorialStepStart = true;
-                tutorialStepBananeDone = true;
-            }
-            if (numeroOggetti == 2 && !tutorialStepBibitaDone)
-            {
-                speech.ChangeSpeech(6);
-                tutorialStepBibitaDone = true;
-                bevande.tutorialStepStart = false;
-                vetro.tutorialStepVetroStart = true;
-                vetro.tutorialStepSalmoneStart = true;
-            }
-            if (numeroOggetti == 3 && !tutorialStepSalmoneDone)
-            {
-                speech.ChangeSpeech(9);
-                tutorialStepSalmoneDone = true;
-                parent.GetComponent<tutorial_player_controller>().tutorialStepInventarioStart = true;
-                vetro.tutorialStepSalmoneDone = true;
-            }
-            numeroOggetti++;
-            prezzo_totale_carrello += product.GetComponent<tutorial_product>().price;
-
-            inventario.AddProductToInventario(product);
+            banana2.GetComponent<MeshCollider>().enabled = true;
+            banana2.GetComponent<tutorial_product>().enabled = true;
         }
-        else
+        if (numeroOggetti == 2 && !tutorialStepBananeDone)
         {
-            Debug.Log("inventario pieno");
+            speech.ChangeSpeech(5);
+            bevande.tutorialStepStart = true;
+            tutorialStepBananeDone = true;
+        }
+        if (numeroOggetti == 3 && !tutorialStepBibitaDone)
+        {
+            speech.ChangeSpeech(6);
+            tutorialStepBibitaDone = true;
+            bevande.tutorialStepStart = false;
+            vetro.tutorialStepVetroStart = true;
+            vetro.tutorialStepSalmoneStart = true;
+        }
+        if (numeroOggetti == 4 && !tutorialStepSalmoneDone)
+        {
+            speech.ChangeSpeech(9);
+            tutorialStepSalmoneDone = true;
+            parent.GetComponent<tutorial_player_controller>().tutorialStepInventarioStart = true;
+            vetro.tutorialStepSalmoneDone = true;
         }
 
+        prezzo_totale_carrello += product.GetComponent<tutorial_product>().price;
+
+        inventario.AddProductToInventario(product);
     }
 
     public void RemoveProductFromChart(GameObject product)
