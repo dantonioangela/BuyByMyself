@@ -104,4 +104,9 @@ public class Player_Controller : MonoBehaviour
         UI_active = false;
     }
 
+    public void setUIactive()
+    {
+        UI_active = true;
+    }
+
 }

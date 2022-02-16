@@ -14,6 +14,7 @@ public class Cassiera_controller : MonoBehaviour
     private GameObject speechCloud;
     private bool selected = false;
     public bool canPay = true;
+    bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,70 +28,73 @@ public class Cassiera_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!isTalking)
+        if (!gameOver)
         {
-            if (Physics.Raycast(ray, out hit, 5.0f))
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (!isTalking)
             {
-                if (hit.collider.tag == "cassiera")
+                if (Physics.Raycast(ray, out hit, 5.0f))
                 {
-                    GetComponentInChildren<isSelectable>().Select();
-                    selected = true;
-                    if (Input.GetMouseButtonDown(0))
+                    if (hit.collider.tag == "cassiera")
                     {
-                        GetComponentInChildren<isSelectable>().Deselect();
-                        selected = false;
-                        if (Carrello_controller.mode == 0)      //se ha il carrello
+                        GetComponentInChildren<isSelectable>().Select();
+                        selected = true;
+                        if (Input.GetMouseButtonDown(0))
                         {
-                            animator.SetTrigger("click");
-                            isTalking = true;
-                            if (Carrello_controller.prezzo_totale_carrello > ListaSpesa.budget)
+                            GetComponentInChildren<isSelectable>().Deselect();
+                            selected = false;
+                            if (Carrello_controller.mode == 0)      //se ha il carrello
                             {
-                                canPay = false;
-                                speechCloud = cantPay.gameObject;
-                                speechCloud.SetActive(true);
-                                speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
-                                speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+                                animator.SetTrigger("click");
+                                isTalking = true;
+                                if (Carrello_controller.prezzo_totale_carrello > ListaSpesa.budget)
+                                {
+                                    canPay = false;
+                                    speechCloud = cantPay.gameObject;
+                                    speechCloud.SetActive(true);
+                                    speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+                                    speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+                                }
+                                else
+                                {
+                                    canPay = true;
+                                    speechCloud = wantTopay.gameObject;
+                                    speechCloud.SetActive(true);
+                                }
+                                speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
+                                Player_Controller.UI_active = true;
                             }
                             else
                             {
-                                canPay = true;
-                                speechCloud = wantTopay.gameObject;
+                                canPay = false;
+                                animator.SetTrigger("click");
+                                isTalking = true;
+                                speechCloud = cantPay.gameObject;
                                 speechCloud.SetActive(true);
+                                speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+                                speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+                                speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
+                                Player_Controller.UI_active = true;
                             }
-                            speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
-                            Player_Controller.UI_active = true;
-                        }
-                        else
-                        {
-                            canPay = false;
-                            animator.SetTrigger("click");
-                            isTalking = true;
-                            speechCloud = cantPay.gameObject;
-                            speechCloud.SetActive(true);
-                            speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
-                            speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
-                            speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
-                            Player_Controller.UI_active = true;
                         }
                     }
+                    else if (selected)
+                    {
+                        GetComponentInChildren<isSelectable>().Deselect();
+                        selected = false;
+                    }
+
                 }
                 else if (selected)
                 {
                     GetComponentInChildren<isSelectable>().Deselect();
                     selected = false;
                 }
-                
             }
-            else if (selected)
+            if (isTalking)
             {
-                GetComponentInChildren<isSelectable>().Deselect();
-                selected = false;
+                speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
             }
-        }
-        if (isTalking)
-        {
-            speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation( player.gameObject.transform.right, transform.up  ));
         }
     }
 
@@ -126,5 +130,10 @@ public class Cassiera_controller : MonoBehaviour
         speechCloud.SetActive(false);
         Player_Controller.UI_active = false;
         animator.SetTrigger("click");
+    }
+
+    public void GameOver()
+    {
+        gameOver = true; 
     }
 }
