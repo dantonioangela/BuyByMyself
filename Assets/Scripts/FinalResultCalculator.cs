@@ -39,7 +39,12 @@ public class FinalResultCalculator
         //quindi non vengono dati se mancano dei prodotti
 
         float maxPricePoints = 10; //massimo punteggio che si può ottenere valutando il prezzo della spesa complessiva
-        float maxProductPoints = (100 - maxPricePoints) / ListaSpesa.listaSpesa.Count; //massimo punteggio che un singolo prodotto può dare
+
+        int totalShoppingListCount = 0; //numero total di prodotti richiesti nella lista
+        foreach(var entry in ListaSpesa.listaSpesa)
+            totalShoppingListCount += entry.Value;
+
+        float maxProductPoints = (100 - maxPricePoints) / totalShoppingListCount; //massimo punteggio che un singolo prodotto può dare
 
         float totalPoints = 0;
 
@@ -140,6 +145,7 @@ public class FinalResultCalculator
                     {
                         //tolgo punti per ogni prodotto che non è presente nella lista
                     }
+                    
                 }
 
                 //controllo prezzo (6)
@@ -391,13 +397,10 @@ public class FinalResultCalculator
                     }
                 }
 
-                Debug.Log("PUNTEGGIO TOTALE PRODOTTI = " + totalPoints);
-
                 //controllo prezzo (6)
                 listCompleted = true;
                 foreach (KeyValuePair<string, int> entry in cartListQuantities) //controllo se la lista è stata completata
                 {
-                    Debug.Log("Prodotto carrello: " + entry.Key + " " + entry.Value + "(lista spesa = " + ListaSpesa.listaSpesa[entry.Key]);
                     if (entry.Value < ListaSpesa.listaSpesa[entry.Key])
                     {
                         listCompleted = false;
@@ -407,7 +410,6 @@ public class FinalResultCalculator
                 if (listCompleted)
                 {
                     pricePoints = Remap(Carrello_controller.prezzo_totale_carrello, ListaSpesa.idealBudget, ListaSpesa.budget, maxPricePoints, 0);
-                    Debug.Log("PUNTEGGIO TOTALE PREZZO = " + pricePoints);
                     totalPoints += pricePoints;
                     pricePoints *= 10; //per mapparlo su una scala da 0 a 100 invece che da 0 a 10 come ho fatto per tutti gli altri parametri
                 }
