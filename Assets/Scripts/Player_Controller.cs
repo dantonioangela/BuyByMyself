@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {
+    public AudioManager audioMan;
     public bool inventario;
     static public bool UI_active = false;
     private Vector3 playerMovementInput;
@@ -23,6 +24,7 @@ public class Player_Controller : MonoBehaviour
 
     void Start()
     {
+        UI_active = false;
         playerCamera = transform.GetChild(0);
         carrello = transform.GetChild(1).GetComponent<Carrello_controller>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -83,6 +85,7 @@ public class Player_Controller : MonoBehaviour
             Carrello_controller.selected = true;
             if (Input.GetMouseButtonDown(0))
             {
+                
                 inventario = true;
                 UI_active = true;
             }

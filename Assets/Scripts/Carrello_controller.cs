@@ -29,6 +29,7 @@ public class Carrello_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mode = 0;
         budget = ListaSpesa.budget;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();
