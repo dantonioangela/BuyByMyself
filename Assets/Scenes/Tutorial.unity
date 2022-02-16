@@ -352,8 +352,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: audio_controller, Assembly-CSharp
+      - m_Target: {fileID: 368488879}
+        m_TargetAssemblyTypeName: tutorial_audio, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
@@ -520,8 +520,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: audio_controller, Assembly-CSharp
+      - m_Target: {fileID: 368488879}
+        m_TargetAssemblyTypeName: tutorial_audio, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
@@ -2815,8 +2815,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: audio_controller, Assembly-CSharp
+      - m_Target: {fileID: 368488879}
+        m_TargetAssemblyTypeName: tutorial_audio, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
@@ -13237,7 +13237,7 @@ MonoBehaviour:
   _debugRay: 0
   _interactionDistance: 3
   _target: {fileID: 7540371192937086964}
-  _targetDefaultIcon: {fileID: 21300000, guid: 24ff3eaaea1f9f44b957533fd1c012e2, type: 3}
+  _targetDefaultIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _targetGrabIcon: {fileID: 21300000, guid: 2a233acb8cd8ff746a0044afed81dd28, type: 3}
 --- !u!114 &1628359478900077704
 MonoBehaviour:
@@ -36634,7 +36634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
