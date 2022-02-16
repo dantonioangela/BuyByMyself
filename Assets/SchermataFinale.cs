@@ -6,19 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class SchermataFinale : MonoBehaviour
 {
-    public float Massimo;
-    public float TotaleGiocatore=50;
-    public float PackagingGiocatore = 30;
-    public float QualityGiocatore = 70;
-    public float StagioneGiocatore = 10;
-    public float ProvenienzaGiocatore = 90;
-    public float PrezzoGiocatore = 20;
+    public float Massimo=100;
     public Image MaskTotale;
     public Image MaskPackaging;
     public Image MaskQuality;
     public Image MaskStagione;
     public Image MaskProvenienza;
     public Image MaskPrezzo;
+
+    private Result result;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,21 +30,24 @@ public class SchermataFinale : MonoBehaviour
 
     void GetCurrentFill()
     {
-        float fillAmountTotale = (float)TotaleGiocatore / (float)Massimo;
+        result = FinalResultCalculator.calculateFinalResult(Carrello_controller.prodottiNelCarrello, MenuPrincipale.levelDifficulty);
+
+        float fillAmountTotale = (float)result.totalPoints/ (float)Massimo;
         MaskTotale.fillAmount = fillAmountTotale;
 
-        float fillAmountPackaging = (float)PackagingGiocatore / (float)Massimo;
+        float fillAmountPackaging = (float)result.ecoPoints / (float)Massimo;
         MaskPackaging.fillAmount = fillAmountPackaging;
 
-        float fillAmountQuality = (float)QualityGiocatore / (float)Massimo;
+        float fillAmountQuality = (float)result.qualityPoints/ (float)Massimo;
         MaskQuality.fillAmount = fillAmountQuality;
 
-        float fillAmountStagione = (float)StagioneGiocatore / (float)Massimo;
+        float fillAmountStagione = (float)result.seasonPoints/ (float)Massimo;
         MaskStagione.fillAmount = fillAmountStagione;
 
-        float fillAmountProvenienza = (float)ProvenienzaGiocatore / (float)Massimo;
+        float fillAmountProvenienza = (float)result.originPoints / (float)Massimo;
         MaskProvenienza.fillAmount = fillAmountProvenienza;
-        float fillAmountPrezzo = (float)PrezzoGiocatore / (float)Massimo;
+
+        float fillAmountPrezzo = (float)result.pricePoints / (float)Massimo;
         MaskPrezzo.fillAmount = fillAmountPrezzo;
     }
 
