@@ -5529,3 +5529,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTalking: 0
   player: {fileID: 0}
+  canPay: 1

@@ -13,6 +13,7 @@ public class Cassiera_controller : MonoBehaviour
     private Transform cantPay;
     private GameObject speechCloud;
     private bool selected = false;
+    public bool canPay = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,17 +44,32 @@ public class Cassiera_controller : MonoBehaviour
                         {
                             animator.SetTrigger("click");
                             isTalking = true;
-                            speechCloud = wantTopay.gameObject;
-                            speechCloud.SetActive(true);
+                            if (Carrello_controller.prezzo_totale_carrello > ListaSpesa.budget)
+                            {
+                                canPay = false;
+                                speechCloud = cantPay.gameObject;
+                                speechCloud.SetActive(true);
+                                speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+                                speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+                            }
+                            else
+                            {
+                                canPay = true;
+                                speechCloud = wantTopay.gameObject;
+                                speechCloud.SetActive(true);
+                            }
                             speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
                             Player_Controller.UI_active = true;
                         }
                         else
                         {
+                            canPay = false;
                             animator.SetTrigger("click");
                             isTalking = true;
                             speechCloud = cantPay.gameObject;
                             speechCloud.SetActive(true);
+                            speechCloud.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+                            speechCloud.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
                             speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
                             Player_Controller.UI_active = true;
                         }
@@ -81,7 +97,8 @@ public class Cassiera_controller : MonoBehaviour
     public void dontPay()
     {
         isTalking = false;
-        wantTopay.gameObject.SetActive(false);
+        //wantTopay.gameObject.SetActive(false);
+        speechCloud.SetActive(false);
         animator.SetTrigger("click");
         Player_Controller.UI_active = false;
     }
@@ -89,7 +106,8 @@ public class Cassiera_controller : MonoBehaviour
     public void pay()
     {
         isTalking = false;
-        wantTopay.gameObject.SetActive(false);
+        //wantTopay.gameObject.SetActive(false);
+        speechCloud.SetActive(false);
         Player_Controller.UI_active = false;
         animator.SetTrigger("payed");
         Result result = FinalResultCalculator.calculateFinalResult(Carrello_controller.prodottiNelCarrello, MenuPrincipale.levelDifficulty);

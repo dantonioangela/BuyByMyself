@@ -1752,6 +1752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_controller: {fileID: 0}
   cassiera_controller: {fileID: 0}
+  lista: {fileID: 0}
+  mappa: {fileID: 0}
 --- !u!1 &1158325047998965865
 GameObject:
   m_ObjectHideFlags: 0
