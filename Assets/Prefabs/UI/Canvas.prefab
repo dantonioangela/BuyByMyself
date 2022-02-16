@@ -452,7 +452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PORTAFOGLIO:'
+  m_text: budget
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
   m_sharedMaterial: {fileID: 7048159749325758348, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -5429,6 +5429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ListaUI: {fileID: 7540371193579761632}
   TestoLista: {fileID: 704536130400665570}
+  TestoBudget: {fileID: 713486127}
 --- !u!114 &7540371192540200413
 MonoBehaviour:
   m_ObjectHideFlags: 0

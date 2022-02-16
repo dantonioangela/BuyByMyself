@@ -11,6 +11,8 @@ public class Lista : MonoBehaviour
 
     public TextMeshProUGUI TestoLista;
 
+    public TextMeshProUGUI TestoBudget;
+
     private void Start()
     {
         InizializzaLista();
@@ -46,11 +48,14 @@ public class Lista : MonoBehaviour
     void InizializzaLista()
     {
         string s = "";
+        string b = "PORTAFOGLIO: ";
+        float budget = ListaSpesa.budget;
         foreach (var i in ListaSpesa.listaSpesa)
         {
             //stampi i.Key e i.Value
             s = s + i.Value + "  " + i.Key + "\n";
         }
         TestoLista.text = s;
+        TestoBudget.text = b;
     }
 }
