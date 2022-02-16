@@ -18,6 +18,10 @@ public class Cassiera_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isTalking = false;
+        selected = false;
+        canPay = true;
+        gameOver = false;
         animator = GetComponent<Animator>();
         wantTopay = transform.GetChild(2);
         cantPay = transform.GetChild(3);

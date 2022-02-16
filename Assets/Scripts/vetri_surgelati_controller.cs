@@ -176,6 +176,7 @@ public class vetri_surgelati_controller : MonoBehaviour
 
     private IEnumerator ToRight (int i)
     {
+        audioMan.PlayInstance("frigo");
         while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
             child[i].transform.position += child[i].transform.up * Time.deltaTime * speed_z;
@@ -191,6 +192,7 @@ public class vetri_surgelati_controller : MonoBehaviour
 
     private IEnumerator ToLeft(int i)
     {
+        audioMan.PlayInstance("frigo");
         while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
             child[i].transform.position += child[i].transform.up * Time.deltaTime * speed_z;
@@ -206,6 +208,7 @@ public class vetri_surgelati_controller : MonoBehaviour
 
     private IEnumerator GoBack(int i)
     {
+        audioMan.PlayInstance("frigo");
         if(i != 1)
         {
             while (child[i].transform.localPosition.x < pos_init[i].x)

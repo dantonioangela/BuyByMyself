@@ -29,6 +29,7 @@ public class ListaSpesa : MonoBehaviour
 
     public void StartMe()
     {
+        budget = 0;
         listaSpesa = new Dictionary<string, int>();
         itemsNumber = 8;
         CreateList();
