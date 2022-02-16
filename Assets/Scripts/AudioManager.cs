@@ -55,7 +55,7 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-    public void setGeneralVolume(int volume)
+    public void setGeneralVolume(float volume)
     {
         float value = volume;
         float from1 = 0;

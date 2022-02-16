@@ -93,9 +93,9 @@ public class MenuPrincipale : MonoBehaviour
         Application.Quit();
     }
 
-    public void Volume(float volume)
+    public void onValueChanged(System.Single value)
     {
-        audioMixer.SetFloat("MasterVolume", volume);
+        audioManager.setGeneralVolume(value);
     }
 
     public void Indietro()

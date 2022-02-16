@@ -3714,6 +3714,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1827315911}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1820791569}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onValueChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907421550102820973, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipale, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7540371192414545560, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4162,8 +4186,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1827315911}
     - target: {fileID: 8263001081044813520, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8263001081044813520, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8263001081044813520, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
+      propertyPath: m_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8263001081044813520, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1820791569}
+    - target: {fileID: 8263001081044813520, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onValueChanged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
