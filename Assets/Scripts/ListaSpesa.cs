@@ -32,7 +32,7 @@ public class ListaSpesa : MonoBehaviour
         listaSpesa = new Dictionary<string, int>();
         itemsNumber = 8;
         CreateList();
-        CalculateBudget();
+        CalculateBudgets();
         UpdateProductModelsCounter();
         season = Random.Range(0, 3);
         Debug.Log(budget);
@@ -115,9 +115,10 @@ public class ListaSpesa : MonoBehaviour
         }
     }
 
-    private void CalculateBudget()
+    private void CalculateBudgets()
     {
-        budget += 5f;
+        idealBudget = budget;
+        budget += 10f;
     }
 
 }
