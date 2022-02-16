@@ -23,7 +23,7 @@ public class Mappa : MonoBehaviour
             }
         }
     }
-    void Resume()
+    public void Resume()
     {
         MappaUI.SetActive(false);
         MappaAttiva = false;

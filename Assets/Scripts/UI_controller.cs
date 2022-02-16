@@ -17,6 +17,8 @@ public class UI_controller : MonoBehaviour
     private int counterNextPage = 0;
     private int totSlotPerPage = 15;
     private Product productReplacement;
+    public Lista lista;
+    public Mappa mappa;
     private int i = 0;
 
 
@@ -39,20 +41,20 @@ public class UI_controller : MonoBehaviour
         {
             if (!inventarioActive)
             {
+                if (Lista.ListaAttiva)
+                {
+                    lista.Resume();
+                }
+                if (Mappa.MappaAttiva)
+                {
+                    mappa.Resume();
+                }
                 UI_inventario.gameObject.SetActive(true);
                 transform.GetChild(0).GetChild(5).gameObject.SetActive(true);
                 transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
                 transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
                 inventarioActive = true;
-               /*if (counter < totSlotPerPage)
-                {
-                    for (i = 0; i < counter; i++)
-                    {
-                        transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
-                    }
-                }
-                else
-                {*/
+
                     for (i = 0; i < productsInInventario.Count; i++)
                     {
                         transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
@@ -61,7 +63,6 @@ public class UI_controller : MonoBehaviour
                     {
                         transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().AddProduct(productsInInventarioNextPage[i]);
                     }
-                //}
                 transform.GetChild(0).GetChild(6).gameObject.SetActive(false);
                 transform.GetChild(0).GetChild(5).gameObject.SetActive(false);
 
@@ -72,17 +73,33 @@ public class UI_controller : MonoBehaviour
             UI_inventario.gameObject.SetActive(false);
             inventarioActive = false;
         }
-        if (cassiera_controller.isTalking && Carrello_controller.mode == 0)
+        if (cassiera_controller.isTalking && cassiera_controller.canPay)
         {
             UI_cassiera_pay.gameObject.SetActive(true);
+            if (Lista.ListaAttiva)
+            {
+                lista.Resume();
+            }
+            if(Mappa.MappaAttiva)
+            {
+                mappa.Resume();
+            }
         }
-        else if(!cassiera_controller.isTalking && Carrello_controller.mode == 0)
+        else if(!cassiera_controller.isTalking && cassiera_controller.canPay)
         {
             UI_cassiera_pay.gameObject.SetActive(false);
         }
-        else if(cassiera_controller.isTalking && Carrello_controller.mode == 1)
+        else if(cassiera_controller.isTalking && !cassiera_controller.canPay)
         {
             UI_cassiera_notPay.gameObject.SetActive(true);
+            if (Lista.ListaAttiva)
+            {
+                lista.Resume();
+            }
+            if (Mappa.MappaAttiva)
+            {
+                mappa.Resume();
+            }
         }
         else
         {

@@ -31,7 +31,7 @@ public class Lista : MonoBehaviour
             }
         }
     }
-    void Resume()
+    public void Resume()
     {
         ListaUI.SetActive(false);
         ListaAttiva = false;
