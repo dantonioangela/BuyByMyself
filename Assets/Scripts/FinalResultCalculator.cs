@@ -12,6 +12,7 @@ public class Result
     public float? seasonPoints;
     public float pricePoints;
 
+
     public Result(float totalPoints,
                   float? qualityPoints,
                   float? ecoPoints,
@@ -33,12 +34,14 @@ public class FinalResultCalculator
 {
     public static Result calculateFinalResult(List<Product> cartList, int levelDifficuly)
     {
-        //90% dei punti sono dati dai prodotti, 10% dal prezzo finale della spesa
-        //i punti del prezzo finale vengono dati solo se sono presenti nel carrello 
-        //tutti i prodotti richiesti nella lista della spesa, almeno nella quantità indicata
-        //quindi non vengono dati se mancano dei prodotti
 
-        float maxPricePoints = 10; //massimo punteggio che si può ottenere valutando il prezzo della spesa complessiva
+
+    //90% dei punti sono dati dai prodotti, 10% dal prezzo finale della spesa
+    //i punti del prezzo finale vengono dati solo se sono presenti nel carrello 
+    //tutti i prodotti richiesti nella lista della spesa, almeno nella quantità indicata
+    //quindi non vengono dati se mancano dei prodotti
+
+    float maxPricePoints = 10; //massimo punteggio che si può ottenere valutando il prezzo della spesa complessiva
 
         int totalShoppingListCount = 0; //numero total di prodotti richiesti nella lista
         foreach(var entry in ListaSpesa.listaSpesa)
@@ -106,12 +109,6 @@ public class FinalResultCalculator
             }
             firstFound = false;
         }
-
-        Debug.Log("Quality products = " + qualityProducts + " " +
-                  "Eco products = " + ecoProducts + " " +
-                  "Origin products = " + originProducts + " " +
-                  "Sustainable products = " + sustainableProducts + " " +
-                  "Season products = " + seasonProducts);
 
         switch (levelDifficuly)
         {

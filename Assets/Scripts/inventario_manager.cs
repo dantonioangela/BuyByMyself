@@ -48,7 +48,6 @@ public class inventario_manager : MonoBehaviour
 
     public void NextPage()
     {
-        Debug.Log("aa");
         myButton.gameObject.SetActive(false);
         nextButton.gameObject.SetActive(true);
         otherPage.gameObject.SetActive(true);

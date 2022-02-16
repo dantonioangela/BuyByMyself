@@ -12,7 +12,7 @@ public class MenuPrincipale : MonoBehaviour
     public GameObject MainMenuUI;
     public AudioMixer audioMixer;
     public GameObject SceltaDiffUI;
-	public static int levelDifficulty; //0 = facile, 1 = normale, 3 = difficile;
+	public static int levelDifficulty; //0 = facile, 1 = normale, 2 = difficile;
     private AudioManager audioManager;													
 
     static public bool MainMenuActive = false;
@@ -89,7 +89,6 @@ public class MenuPrincipale : MonoBehaviour
 
     public void Esci()
     {
-        Debug.Log("Uscita applicazione...");
         Application.Quit();
     }
 

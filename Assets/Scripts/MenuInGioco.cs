@@ -96,7 +96,8 @@ public class MenuInGioco : MonoBehaviour
         //MenuPrincipale.MainMenuActive = true;
         //MenuPrincipale.inGame = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        StartCoroutine(Reload());
     }
 
     
@@ -127,6 +128,13 @@ public class MenuInGioco : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    private IEnumerator Reload()
+    {
+        Resources.UnloadUnusedAssets();
+        SceneManager.LoadScene(0);
+        yield return null;
     }
 
 }

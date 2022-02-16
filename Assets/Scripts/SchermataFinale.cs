@@ -129,7 +129,8 @@ public class SchermataFinale : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        StartCoroutine(Reload());
     }
 
     public void ScelataSchermata()
@@ -145,5 +146,12 @@ public class SchermataFinale : MonoBehaviour
         {
             SchermataDifficile.SetActive(true);
         }
+    }
+
+    private IEnumerator Reload()
+    {
+        Resources.UnloadUnusedAssets();
+        SceneManager.LoadScene(0);
+        yield return null;
     }
 }

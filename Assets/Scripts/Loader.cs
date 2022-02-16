@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 
 class Loader : MonoBehaviour
 {
+
     public static List<ProductModel> productModels = new List<ProductModel>();
     public static Dictionary<string, int[]> modelsAvailability = new Dictionary<string, int[]>(); //nome + numProdottiFullStats + numTotaleProdotti con   quel nome
     public static Dictionary<string, int[]> NamesToIndex = new Dictionary<string, int[]>();       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
@@ -83,15 +84,6 @@ class Loader : MonoBehaviour
             season = product.xmlSeason.Equals("null") ? null : product.xmlSeason.Split(' ').Select(n => Convert.ToInt32(n)).ToList();
             price = float.Parse(product.xmlPrice);
 
-            /*Debug.Log("MODEL: [" + 
-                      "Nome: " + product.xmlListName + " " +
-                      "Sustainable: " + (sustainable.HasValue ? sustainable.Value.ToString() : "NO") + " " +
-                      "Packaging : " + (packaging.HasValue ? packaging.Value.ToString() : "NO") + " " +
-                      "Size : " + (size.HasValue ? size.Value.ToString() : "NO") + " " +
-                      "Origin : " + (origin.HasValue ? origin.Value.ToString() : "NO") + " " +
-                      "Season : " + (season != null ? "SI" : "NO") + " " +
-                      "Price : " + price + "]");
-            */
 
             nomeLista = product.xmlListName;
             if (nomeLista != nomeListaBefore)

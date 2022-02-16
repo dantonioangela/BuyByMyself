@@ -15,7 +15,7 @@ public class NPC_controller : MonoBehaviour
     private Ray rayCam;
     private RaycastHit hitCam;
     private bool alreadyWaiting = false;
-    private int seed = 1;
+    //private int seed = 1;
     private float smooth = 0.3f;
     private bool isWalking;
     public float animationSpeed;
@@ -25,7 +25,7 @@ public class NPC_controller : MonoBehaviour
 
     private void Awake()
     {
-        UnityEngine.Random.InitState(seed);
+        //UnityEngine.Random.InitState(seed);
     }
 
     // Start is called before the first frame update

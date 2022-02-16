@@ -119,13 +119,6 @@ public class Cassiera_controller : MonoBehaviour
         Player_Controller.UI_active = false;
         animator.SetTrigger("payed");
         Result result = FinalResultCalculator.calculateFinalResult(Carrello_controller.prodottiNelCarrello, MenuPrincipale.levelDifficulty);
-        Debug.Log("[Total points: " + result.totalPoints + " " +
-                   "Quality points: " + (result.qualityPoints.HasValue ? result.qualityPoints.Value.ToString() : "NO") + " " +
-                   "Eco points: " + (result.ecoPoints.HasValue ? result.ecoPoints.Value.ToString() : "NO") + " " +
-                   "Price points: " + result.pricePoints + " " +
-                   "Sustainability points: " + (result.sustainablePoints.HasValue ? result.sustainablePoints.Value.ToString() : "NO") + " " +
-                   "Origin points: " + (result.originPoints.HasValue ? result.originPoints.Value.ToString() : "NO") + " " +
-                   "Season points: " + (result.seasonPoints.HasValue ? result.seasonPoints.Value.ToString() : "NO"));
     }
 
     public void ok()

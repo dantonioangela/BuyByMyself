@@ -10,15 +10,16 @@ public class ListaSpesa : MonoBehaviour
     [System.NonSerialized] public static Dictionary<string, int> listaSpesa;
     private int itemsNumber;
 	public static float idealBudget;
-    public static float budget = 0.0f;
+    public static float budget;
 	[HideInInspector]
     public static int season;
-
+    public static bool setSeason;
 
     // Start is called before the first frame update
     void Start()
     {
 
+        setSeason = false;
     }
 
     // Update is called once per frame
@@ -29,14 +30,16 @@ public class ListaSpesa : MonoBehaviour
 
     public void StartMe()
     {
-        budget = 0;
+
+        budget = 0.0f;
         listaSpesa = new Dictionary<string, int>();
         itemsNumber = 8;
         CreateList();
         CalculateBudgets();
         UpdateProductModelsCounter();
-        season = Random.Range(0, 3);
-        Debug.Log(budget);
+        season = Random.Range(0, 4);
+        setSeason = true;
+        
     }
 
     void CreateList(){
@@ -44,10 +47,8 @@ public class ListaSpesa : MonoBehaviour
         string productName;
         string productNameList;
         int quantity;
-        if (listaSpesa.Count > 0)
-        {
-            listaSpesa.Clear();
-        }
+
+        listaSpesa.Clear();
 
         itemsNumber = Random.Range((int)(itemsNumber * 0.7), itemsNumber + 1);
 
@@ -84,7 +85,6 @@ public class ListaSpesa : MonoBehaviour
             }
             
             listaSpesa.Add(productNameList, quantity);
-            Debug.Log(productNameList + " quantità " + quantity + " costo =" + Loader.productModels[Loader.NamesToIndex[productName][0]].price);
             budget += quantity*(Loader.productModels[ Loader.NamesToIndex[productName][0]].price);
         }
 
