@@ -863,9 +863,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc3e2a21998a4e468d7649fefc5415b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Massimo: 0
-  ValoreCorrente: 0
-  Mask: {fileID: 0}
+  Massimo: 100
+  TotaleGiocatore: 50
+  PackagingGiocatore: 30
+  QualityGiocatore: 70
+  StagioneGiocatore: 10
+  ProvenienzaGiocatore: 90
+  PrezzoGiocatore: 20
+  MaskTotale: {fileID: 768116255}
+  MaskPackaging: {fileID: 724364683}
+  MaskQuality: {fileID: 814565902}
+  MaskStagione: {fileID: 1374920445}
+  MaskProvenienza: {fileID: 1825228113}
+  MaskPrezzo: {fileID: 315012412}
 --- !u!114 &613417664 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1158325047971902085, guid: 62914d740d8c63945a2f3a993c78a871, type: 3}
