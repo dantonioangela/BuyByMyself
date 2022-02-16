@@ -138,12 +138,14 @@ public class FinalResultCalculator
                         else
                         {
                             //tolgo punti per ogni prodotto extra
+                            totalPoints -= maxProductPoints / 2;
                         }
                         
                     }
                     else
                     {
                         //tolgo punti per ogni prodotto che non è presente nella lista
+                        totalPoints -= maxProductPoints / 2;
                     }
                     
                 }
@@ -245,12 +247,14 @@ public class FinalResultCalculator
                         }
                         else
                         {
-                            //tolgo punti per ogni prodotto extra?
+                            //tolgo punti per ogni prodotto extra
+                            totalPoints -= maxProductPoints / 2;
                         }
                     }
                     else
                     {
-                        //TODO: tolgo punti per ogni prodotto che non è presente nella lista?
+                        //tolgo punti per ogni prodotto che non è presente nella lista
+                        totalPoints -= maxProductPoints / 2;
                     }
                 }
 
@@ -388,12 +392,14 @@ public class FinalResultCalculator
                         }
                         else
                         {
-                            //TODO: tolgo punti per ogni prodotto extra?
+                            //TODO: tolgo punti per ogni prodotto extra
+                            totalPoints -= maxProductPoints / 2;
                         }
                     }
                     else
                     {
-                        //TODO: tolgo punti per ogni prodotto che non è presente nella lista?
+                        //tolgo punti per ogni prodotto che non è presente nella lista
+                        totalPoints -= maxProductPoints / 2;
                     }
                 }
 
