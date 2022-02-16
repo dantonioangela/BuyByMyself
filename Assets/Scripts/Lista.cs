@@ -47,15 +47,15 @@ public class Lista : MonoBehaviour
 
     void InizializzaLista()
     {
-        string s = "";
-        string b = "PORTAFOGLIO: ";
+        string s = "";        
         float budget = ListaSpesa.budget;
+        string b = budget.ToString();
         foreach (var i in ListaSpesa.listaSpesa)
         {
             //stampi i.Key e i.Value
             s = s + i.Value + "  " + i.Key + "\n";
         }
         TestoLista.text = s;
-        TestoBudget.text = b;
+        TestoBudget.text = "PORTAFOGLIO:  " + b + " €";
     }
 }
