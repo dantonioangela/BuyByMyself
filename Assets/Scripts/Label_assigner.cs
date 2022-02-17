@@ -5,18 +5,11 @@ using UnityEngine;
 public class Label_assigner : MonoBehaviour
 {
     public string listName;
-    private Transform[] child = new Transform[15];
-    private bool[] hasLabel = new bool[15];
+    private Transform[] child;
+    private bool[] hasLabel;
     int i, j;
     int first_occurrance_index;
     int index_child;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
- 
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,19 +17,21 @@ public class Label_assigner : MonoBehaviour
         
     }
 
-    public void StartMe()
+    public void Start()
     {
         listName = listName.ToLower();
         if (!Loader.NamesToIndex.ContainsKey(listName))
         {
-            Debug.LogError("LABEL_ASSIGNER: " + listName + "non è contenuto nella NamesToIndex!");
+            Debug.LogError("LABEL_ASSIGNER: " + listName + " non è contenuto nella NamesToIndex!");
         }
         first_occurrance_index = Loader.NamesToIndex[listName][0];
 
+        hasLabel = new bool[transform.childCount];
         for (i = 0; i < transform.childCount; i++)
         {
             hasLabel[i] = false;
         }
+        child = new Transform[transform.childCount];
         for (i = 0; i < transform.childCount; i++)
         {
             child[i] = transform.GetChild(i);

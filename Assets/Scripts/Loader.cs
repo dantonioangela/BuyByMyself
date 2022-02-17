@@ -19,7 +19,7 @@ class Loader : MonoBehaviour
     public static Dictionary<string, int[]> NamesToIndex = new Dictionary<string, int[]>();       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
 
     //private String xmlPath = "Assets/Resources/prova.xml";
-    private String xmlPath = "Assets/Resources/product_models.xml";
+    private string xmlPath;
     //private XmlTextReader reader; 
 
     void Start() {
@@ -30,13 +30,12 @@ class Loader : MonoBehaviour
 
     }
 
-    public void StartMe()
+    void Awake()
     {
-
-        XmlTextReader reader = new XmlTextReader(xmlPath);
+        xmlPath = Path.Combine(Application.streamingAssetsPath, "product_models.xml");
         LoadXML();
         createDictionary();
-        FindObjectOfType<ListaSpesa>().StartMe();
+        ListaSpesa.InitList();
     }
 
     void LoadXML()
@@ -52,7 +51,6 @@ class Loader : MonoBehaviour
         {
             NamesToIndex.Clear();
         }
-
         // Query the data and write out a subset of contacts
         var products = from product in xml.Descendants("product")
             select new {
@@ -64,9 +62,8 @@ class Loader : MonoBehaviour
                 xmlOrigin = product.Element("origin").Value,
                 xmlSeason = product.Element("season").Value,
                 xmlPrice =  product.Element("price").Value
-            };
+    };
         int i = 0;
-
         bool? sustainable;
         bool? packaging;
         string size;
@@ -76,6 +73,7 @@ class Loader : MonoBehaviour
         string nomeListaBefore = " ";
         float price;
         int[] elemento = new int[2];
+
         foreach (var product in products) {
             sustainable = ToNullableBool(product.xmlSustainable);
             packaging = ToNullableBool(product.xmlPackaging);
@@ -139,7 +137,7 @@ class Loader : MonoBehaviour
             modelsAvailability.Clear();
         }
         string name;
-        string[] lines = System.IO.File.ReadAllLines("Assets/Resources/ProductsAvailability.txt");
+        string[] lines = System.IO.File.ReadAllLines(Path.Combine(Application.streamingAssetsPath, "ProductsAvailability.txt"));
         foreach(string line in lines){
             string[] strings = line.Split(':');
             name = strings[0].ToLower();

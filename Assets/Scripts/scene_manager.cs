@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class scene_manager : MonoBehaviour
 {
-    int i;
+    private int seed;
     // Start is called before the first frame update
 
     /*private void Awake()
@@ -15,13 +15,13 @@ public class scene_manager : MonoBehaviour
 
     void Start()
     {
-        i = 0;
-        transform.GetChild(0).gameObject.GetComponent<Loader>().StartMe();
+
+        //transform.GetChild(0).gameObject.GetComponent<Loader>().StartMe();
         //transform.GetChild(1).gameObject.GetComponent<ListaSpesa>().StartMe();
-        /*for (int i =2; i< transform.childCount; i++)
-        {
-            transform.GetChild(i).gameObject.GetComponent<Label_assigner>().StartMe();
-        }*/
+        //for (int i =2; i< transform.childCount; i++)
+        //{
+        //    transform.GetChild(i).gameObject.GetComponent<Label_assigner>().StartMe();
+        //}
 
     }
 
@@ -29,13 +29,6 @@ public class scene_manager : MonoBehaviour
     void Update()
     {
         
-    }
-    public void StartObjects()
-    {
-        for (i = 2; i < transform.childCount; i++)
-        {
-            transform.GetChild(i).gameObject.GetComponent<Label_assigner>().StartMe();
-        }
     }
 
 

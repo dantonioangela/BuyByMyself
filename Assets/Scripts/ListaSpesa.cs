@@ -4,46 +4,30 @@ using System.Collections.Specialized;
 using UnityEngine;
 using System.Linq;
 
-public class ListaSpesa : MonoBehaviour
+public class ListaSpesa
 {
 
-    [System.NonSerialized] public static Dictionary<string, int> listaSpesa = new Dictionary<string, int>();
-    private int itemsNumber;
+    public static Dictionary<string, int> listaSpesa;
+    private static int itemsNumber;
 	public static float idealBudget;
     public static float budget;
-	[HideInInspector]
     public static int season;
-    public season_panel_controller panel;
+    public static bool setSeason = false;
 
-    // Start is called before the first frame update
-    void Start()
+    public static void InitList()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void StartMe()
-    {
-        season = 0;
-
-        budget = 0.0f;
-        //listaSpesa = new Dictionary<string, int>();
         itemsNumber = 8;
+        budget = 0.0f;
+        listaSpesa = new Dictionary<string, int>();
         CreateList();
         CalculateBudgets();
         UpdateProductModelsCounter();
         season = Random.Range(0, 4);
-        FindObjectOfType<Lista>().InizializzaLista();
-        panel.ActiveLavagna();
-        transform.parent.GetComponent<scene_manager>().StartObjects();
+        setSeason = true;
+        //FindObjectOfType<Lista>().InizializzaLista();
     }
 
-    void CreateList(){
+    private static void CreateList(){
         int index;
         string productName;
         string productNameList;
@@ -52,7 +36,6 @@ public class ListaSpesa : MonoBehaviour
         listaSpesa.Clear();
 
         itemsNumber = Random.Range((int)(itemsNumber * 0.7), itemsNumber + 1);
-
         for (int i = 0; i < itemsNumber; i++) {
             index = Random.Range(0, Loader.modelsAvailability.Count);
             productName = Loader.modelsAvailability.ElementAt(index).Key;
@@ -91,7 +74,7 @@ public class ListaSpesa : MonoBehaviour
 
     }
 
-    private void UpdateProductModelsCounter()
+    private static void UpdateProductModelsCounter()
     {
         int index;
         int numProd;
@@ -117,11 +100,10 @@ public class ListaSpesa : MonoBehaviour
         }
     }
 
-    private void CalculateBudgets()
+    private static void CalculateBudgets()
     {
         idealBudget = budget;
         budget += 10f;
     }
-
 
 }
