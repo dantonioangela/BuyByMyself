@@ -28,6 +28,9 @@ public class FPSInteractionManager : MonoBehaviour
 
     void Start()
     {
+        _interactionDistance = 7;
+        _grabbedObject = null;
+
         playerCollider = GetComponent<CapsuleCollider>();
         playerController = GetComponent<Player_Controller>();
     }

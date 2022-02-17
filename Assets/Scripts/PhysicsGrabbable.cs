@@ -15,9 +15,13 @@ public class PhysicsGrabbable : Grabbable
     protected override void Start ()
     {
         base.Start();
+        timeLeft = 30;
+        dropped = false;
         _collider = gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;
         _rigidBody = gameObject.AddComponent(typeof(Rigidbody)) as Rigidbody;
         _rigidBody.isKinematic = true;
+        _collider.enabled = true;
+
         originalPosition = gameObject.transform.position;
         originalRotation = gameObject.transform.rotation;
     }

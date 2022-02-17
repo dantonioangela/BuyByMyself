@@ -5,8 +5,8 @@ using UnityEngine;
 public class Label_assigner : MonoBehaviour
 {
     public string listName;
-    private Transform[] child;
-    private bool[] hasLabel;
+    private Transform[] child = new Transform[15];
+    private bool[] hasLabel = new bool[15];
     int i, j;
     int first_occurrance_index;
     int index_child;
@@ -33,12 +33,10 @@ public class Label_assigner : MonoBehaviour
         }
         first_occurrance_index = Loader.NamesToIndex[listName][0];
 
-        hasLabel = new bool[transform.childCount];
         for (i = 0; i < transform.childCount; i++)
         {
             hasLabel[i] = false;
         }
-        child = new Transform[transform.childCount];
         for (i = 0; i < transform.childCount; i++)
         {
             child[i] = transform.GetChild(i);

@@ -30,6 +30,7 @@ public class Carrello_controller : MonoBehaviour
     void Start()
     {
         mode = 0;
+        selected = false;
         budget = ListaSpesa.budget;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();

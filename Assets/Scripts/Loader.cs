@@ -36,7 +36,7 @@ class Loader : MonoBehaviour
         XmlTextReader reader = new XmlTextReader(xmlPath);
         LoadXML();
         createDictionary();
-
+        FindObjectOfType<ListaSpesa>().StartMe();
     }
 
     void LoadXML()

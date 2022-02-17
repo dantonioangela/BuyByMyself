@@ -18,12 +18,17 @@ public class season_panel_controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (MenuPrincipale.levelDifficulty == 2 && ListaSpesa.setSeason)
         {
             transform.GetChild(ListaSpesa.season).gameObject.SetActive(true);
             ListaSpesa.setSeason = false;
         }
+    }*/
+
+    public void ActiveLavagna()
+    {
+        transform.GetChild(ListaSpesa.season).gameObject.SetActive(true);
     }
 }

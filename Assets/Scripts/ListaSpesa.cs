@@ -13,13 +13,12 @@ public class ListaSpesa : MonoBehaviour
     public static float budget;
 	[HideInInspector]
     public static int season;
-    public static bool setSeason;
+    public season_panel_controller panel;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        setSeason = false;
     }
 
     // Update is called once per frame
@@ -30,6 +29,7 @@ public class ListaSpesa : MonoBehaviour
 
     public void StartMe()
     {
+        season = 0;
 
         budget = 0.0f;
         //listaSpesa = new Dictionary<string, int>();
@@ -38,8 +38,9 @@ public class ListaSpesa : MonoBehaviour
         CalculateBudgets();
         UpdateProductModelsCounter();
         season = Random.Range(0, 4);
-        setSeason = true;
         FindObjectOfType<Lista>().InizializzaLista();
+        panel.ActiveLavagna();
+        transform.parent.GetComponent<scene_manager>().StartObjects();
     }
 
     void CreateList(){
@@ -121,5 +122,6 @@ public class ListaSpesa : MonoBehaviour
         idealBudget = budget;
         budget += 10f;
     }
+
 
 }
