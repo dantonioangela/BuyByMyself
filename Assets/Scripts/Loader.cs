@@ -19,7 +19,7 @@ class Loader : MonoBehaviour
     public static Dictionary<string, int[]> NamesToIndex = new Dictionary<string, int[]>();       //int[0] è l'indice della prima occorrenza e int[1] è il numero di elelementi con nome = key
 
     //private String xmlPath = "Assets/Resources/prova.xml";
-    private string xmlPath;
+    private string? xmlPath;
     //private XmlTextReader reader; 
 
     void Start() {
@@ -68,7 +68,7 @@ class Loader : MonoBehaviour
         bool? packaging;
         string size;
         float? origin;
-        List<int> season;
+        List<int>? season;
         string nomeLista;
         string nomeListaBefore = " ";
         float price;

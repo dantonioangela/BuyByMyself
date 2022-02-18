@@ -16,7 +16,6 @@ public class Carrello_controller : MonoBehaviour
     private NavMeshObstacle navObstacle;
     [SerializeField] private GameObject prefabBusta;
     private bool[] conBusta = new bool[3];
-    private int numeroOggetti;
     private Transform parent;
     public static bool selected = false;
     public static float prezzo_totale_carrello;
@@ -36,7 +35,6 @@ public class Carrello_controller : MonoBehaviour
         carrelloCollider = GetComponent<Collider>();
         navObstacle = GetComponent<NavMeshObstacle>();
         prezzo_totale_carrello = 0.0f;
-        numeroOggetti = 0;
         budget = 8f;
         conBusta[0] = false;
         conBusta[1] = false;
@@ -81,7 +79,6 @@ public class Carrello_controller : MonoBehaviour
                         mode = 0;
                         carrelloCollider.enabled = false;
                         navObstacle.enabled = false;
-                        //DA CAMBIARE
                         transform.parent = parent;
                         transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
                         transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);
@@ -104,20 +101,20 @@ public class Carrello_controller : MonoBehaviour
 
     void UpdateBuste()
     {
-        if (numeroOggetti > 0)
+        if ( prodottiNelCarrello.Count > 0)
         {
             if (!conBusta[0])
             {
                 AddBusta(0);
             }
-            if (numeroOggetti > 5)
+            if (prodottiNelCarrello.Count > 5)
             {
                 if (!conBusta[1])
                 {
                     AddBusta(1);
                 }
             }
-            if (numeroOggetti > 10)
+            if (prodottiNelCarrello.Count > 10)
             {
                 if (!conBusta[2])
                 {
@@ -126,15 +123,15 @@ public class Carrello_controller : MonoBehaviour
             }
 
         }
-        if (conBusta[2] && numeroOggetti <= 10)
+        if (conBusta[2] && prodottiNelCarrello.Count <= 10)
         {
             RemoveBusta(2);
         }
-        if (conBusta[1] && numeroOggetti <= 5)
+        if (conBusta[1] && prodottiNelCarrello.Count <= 5)
         {
             RemoveBusta(1);
         }
-        if (conBusta[0] && numeroOggetti <= 0)
+        if (conBusta[0] && prodottiNelCarrello.Count <= 0)
         {
             RemoveBusta(0);
         }
@@ -190,7 +187,6 @@ public class Carrello_controller : MonoBehaviour
             product.transform.rotation = product.GetComponent<Product>().rotation;
             product.GetComponent<Collider>().enabled = true;
         }
-        //product.transform.parent = null;
     }
 
 }

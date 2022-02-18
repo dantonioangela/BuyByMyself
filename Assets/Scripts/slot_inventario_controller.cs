@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragHandler
+public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
-
+    private Ray ray;
+    private RaycastHit hit;
     private RectTransform icon;
     private Vector2 initialPos;
     [System.NonSerialized] public bool slotEmpty = true;
@@ -14,16 +15,17 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     [SerializeField] private Texture emptyTexture;
     [SerializeField] private Canvas canvas;
     private ProductLabel productLabel;
+    public RawImage ics;
 
 
     // Start is called before the first frame update
     void Start()
     {
+
         productLabel = FindObjectOfType<ProductLabel>();
         icon = GetComponent<RectTransform>();
-        //transform.GetComponent<RawImage>().texture = emptyTexture;
-        initialPos = icon.anchoredPosition;
-        //number.text = "0";
+        icon.position = new Vector3(icon.position.x, icon.position.y, 1f);
+        initialPos = transform.position;
     }
 
     // Update is called once per frame
@@ -39,27 +41,38 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
             productLabel.product = productInThisSlot;
             if (icon.anchoredPosition.x < 20 || icon.anchoredPosition.x > 450)
             {
-                icon.GetComponent<RawImage>().color = new Color(0f, 0f, 0f);
+                //icon.GetComponent<RawImage>().color = new Color(0f, 0f, 0f);
+                ics.gameObject.SetActive(true);
+                ics.transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             }
-            else icon.GetComponent<RawImage>().color = new Color(1f, 1f, 1f);
+            else
+            {
+                icon.GetComponent<RawImage>().color = new Color(1f, 1f, 1f);
+                ics.gameObject.SetActive(false);
+            }
 
-            icon.anchoredPosition += eventData.delta / canvas.scaleFactor;
+            //icon.anchoredPosition += eventData.delta / canvas.scaleFactor;
+            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            icon.position = new Vector3( icon.position.x, icon.position.y, -1f );
+
         }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        icon.position = new Vector3(icon.position.x, icon.position.y, 1f);
+        ics.gameObject.SetActive(false);
         if (!slotEmpty)
         {
             productLabel.active = false;
             if (icon.anchoredPosition.x > 20 && icon.anchoredPosition.x < 450)
             {
-                icon.anchoredPosition = initialPos;
+                transform.position = initialPos;
             }
             else
             {
-                icon.anchoredPosition = initialPos;
-                icon.GetComponent<RawImage>().color = new Color(1f, 1f, 1f);
+                transform.position = initialPos;
+                //icon.GetComponent<RawImage>().color = new Color(1f, 1f, 1f);
                 RemoveProduct();
             }
         }
@@ -89,4 +102,13 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
         productInThisSlot = null;
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        icon.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        icon.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+    }
 }

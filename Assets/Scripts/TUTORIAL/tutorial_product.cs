@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class tutorial_product : tutorial_grabbable
 {
-    public string name;
+    public new string name;
     public string listName;
     public bool? sustainable;
     public bool? packaging;

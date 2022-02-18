@@ -14,7 +14,7 @@ public class ProductModel {
     public bool? packaging;
     public string size;
     public float? origin;
-    public List<int> season;
+    public List<int>? season;
     public float price;
     public int counter; //numero dei modelli di questo tipo necessari nella scena
 
