@@ -13,7 +13,13 @@ public class MenuPrincipale : MonoBehaviour
     public AudioMixer audioMixer;
     public GameObject SceltaDiffUI;
 	public static int levelDifficulty; //0 = facile, 1 = normale, 2 = difficile;
-    private AudioManager audioManager;													
+    private AudioManager audioManager;
+
+    public GameObject CreditsUI;
+    public GameObject ComandiUI;
+
+    bool inCredits = false;
+    bool inComandi = false;
 
     static public bool MainMenuActive = false;
 
@@ -68,6 +74,16 @@ public class MenuPrincipale : MonoBehaviour
                 {
                     BackToMainMenu();
                 }
+
+                if (inCredits)
+                {
+                    RitornoDaCredits();
+                }
+
+                if (inComandi)
+                {
+                    RitornoDaComandi();
+                }
             }
 
         }
@@ -106,7 +122,30 @@ public class MenuPrincipale : MonoBehaviour
 
     public void Credits()
     {
-        Debug.Log("Credits...");
+        MainMenuUI.SetActive(false);
+        CreditsUI.SetActive(true);
+        inCredits = true;
+    }
+
+    public void Comandi()
+    {
+        MainMenuUI.SetActive(false);
+        ComandiUI.SetActive(true);
+        inComandi = true;
+    }
+
+    public void RitornoDaCredits()
+    {
+        CreditsUI.SetActive(false);
+        MainMenuUI.SetActive(true);
+        inCredits = false;
+    }
+
+    public void RitornoDaComandi()
+    {
+        ComandiUI.SetActive(false);
+        MainMenuUI.SetActive(true);
+        inComandi = false;
     }
 
     public void Tutorial()
