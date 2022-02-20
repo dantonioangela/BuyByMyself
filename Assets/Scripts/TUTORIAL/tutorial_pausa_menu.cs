@@ -70,7 +70,7 @@ public class tutorial_pausa_menu : MonoBehaviour
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         Time.timeScale = 1f;
         GiocoInPausa = false;
     }
@@ -78,7 +78,7 @@ public class tutorial_pausa_menu : MonoBehaviour
     void Pause()
     {
         PauseMenuUI.SetActive(true);
-        player.UI_active = true;
+        tutorial_player_controller.UI_active = true;
         Time.timeScale = 0f;
         GiocoInPausa = true;
     }

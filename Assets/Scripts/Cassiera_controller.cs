@@ -32,7 +32,7 @@ public class Cassiera_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameOver)
+        if (!gameOver && !Player_Controller.UI_active)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!isTalking)

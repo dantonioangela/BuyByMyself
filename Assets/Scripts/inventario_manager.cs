@@ -10,10 +10,11 @@ public class inventario_manager : MonoBehaviour
     public inventario_manager otherPage;
     public Button myButton;
     public Button nextButton;
+    [System.NonSerialized] public bool isDragging;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isDragging = false;
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class inventario_manager : MonoBehaviour
     public void AddProduct(Product product)
     {
         flag = -1;
-        for(i=0; i < transform.childCount; i++)
+        for(i=0; i < transform.childCount -1; i++)
         {
             if( transform.GetChild(i).GetComponent<slot_inventario_controller>().productInThisSlot == product )
             {
@@ -35,7 +36,7 @@ public class inventario_manager : MonoBehaviour
         }
         if(flag == -1)
         {
-            for (i = 0; i < transform.childCount; i++)
+            for (i = 0; i < transform.childCount -1; i++)
             {
                 if (transform.GetChild(i).GetComponent<slot_inventario_controller>().slotEmpty )
                 {
@@ -54,7 +55,7 @@ public class inventario_manager : MonoBehaviour
         gameObject.SetActive(false) ;
     }
 
-    public void ReplaceProduct(int child, Product productReplace)
+    public void ReplaceProduct(int child)//, Product productReplace)
     {
         transform.GetChild(child).GetComponent<slot_inventario_controller>().ReplaceProduct();
 

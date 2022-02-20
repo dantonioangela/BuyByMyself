@@ -23,6 +23,7 @@ public class FPSInteractionManager : MonoBehaviour
 
     [SerializeField] private Sprite _targetDefaultIcon;
     [SerializeField] private Sprite _targetGrabIcon;
+    
    
 
 
@@ -38,18 +39,18 @@ public class FPSInteractionManager : MonoBehaviour
     void Update()
     {
         //_rayOrigin = _fpsCameraT.position + playerCollider.radius * _fpsCameraT.forward;
-        
-
-        if (_grabbedObject == null)
-            CheckInteraction();
-
-        if (_grabbedObject != null && Input.GetMouseButtonUp(0))
-            Drop();
-
         UpdateUITarget();
+        if (!Player_Controller.UI_active)
+        {
+            if (_grabbedObject == null)
+                CheckInteraction();
 
-        if (_debugRay)
-            DebugRaycast();
+            if (_grabbedObject != null && Input.GetMouseButtonUp(0))
+                Drop();
+
+            if (_debugRay)
+                DebugRaycast();
+        }
     }
 
     private void CheckInteraction()

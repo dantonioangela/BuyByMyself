@@ -5,7 +5,7 @@ using UnityEngine;
 public class tutorial_player_controller : MonoBehaviour
 {
     public bool inventario;
-    public bool UI_active;
+    public static bool UI_active;
     private Vector3 playerMovementInput;
     public static bool tutorialStepBananeStart;
     public bool tutorialStepInventarioStart;

@@ -71,7 +71,7 @@ public class tutorial_cassiera : MonoBehaviour
                                     speechCloud = cantPay.gameObject;
                                     speechCloud.SetActive(true);
                                     speechCloud.transform.SetPositionAndRotation(transform.position, Quaternion.LookRotation(player.gameObject.transform.right, transform.up));
-                                    player.UI_active = true;
+                                    tutorial_player_controller.UI_active = true;
                                 }
                             }
                         }
@@ -101,7 +101,7 @@ public class tutorial_cassiera : MonoBehaviour
         isTalking = false;
         wantTopay.gameObject.SetActive(false);
         animator.SetTrigger("click");
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
     }
 
     public void pay()
@@ -110,7 +110,7 @@ public class tutorial_cassiera : MonoBehaviour
         StartCoroutine(TutorialOver());
         isTalking = false;
         wantTopay.gameObject.SetActive(false);
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         animator.SetTrigger("payed");
     }
 
@@ -118,7 +118,7 @@ public class tutorial_cassiera : MonoBehaviour
     {
         isTalking = false;
         speechCloud.SetActive(false);
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         animator.SetTrigger("click");
     }
 

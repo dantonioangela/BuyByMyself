@@ -39,46 +39,54 @@ public class tutorial_vetro_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tutorialStepVetroDone && tutorialStepSalmoneStart && !alreadyEnabled)
+        if (!tutorial_player_controller.UI_active)
         {
-            transform.GetChild(3).GetComponent<MeshCollider>().enabled = true;
-            transform.GetChild(3).GetComponent<tutorial_product>().enabled = true;
-            alreadyEnabled = true;
-        }
-        if (tutorialStepVetroStart)
-        {
-            if (!tutorialVetroEnabled)
+            if (tutorialStepVetroDone && tutorialStepSalmoneStart && !alreadyEnabled)
             {
-                vetro.GetComponent<BoxCollider>().enabled = true;
-                vetro.GetComponent<isSelectable>().enabled = true;
+                transform.GetChild(3).GetComponent<MeshCollider>().enabled = true;
+                transform.GetChild(3).GetComponent<tutorial_product>().enabled = true;
+                alreadyEnabled = true;
             }
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 5.0f))
+            if (tutorialStepVetroStart)
             {
-                if (hit.collider == vetro.GetComponent<Collider>())
+                if (!tutorialVetroEnabled)
                 {
-                    if (!isSelected)
+                    vetro.GetComponent<BoxCollider>().enabled = true;
+                    vetro.GetComponent<isSelectable>().enabled = true;
+                }
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, 5.0f))
+                {
+                    if (hit.collider == vetro.GetComponent<Collider>())
                     {
-                        isSelected = true;
-                        vetro.GetComponent<isSelectable>().Select();
-                    }
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        aperto++;
-                        if (aperto == 1)
+                        if (!isSelected)
                         {
-                            StartCoroutine(ToLeft());
-                            if (!tutorialStepVetroDone)
+                            isSelected = true;
+                            vetro.GetComponent<isSelectable>().Select();
+                        }
+                        if (Input.GetMouseButtonDown(0))
+                        {
+                            aperto++;
+                            if (aperto == 1)
                             {
-                                tutorialStepVetroDone = true;
-                                speech.ChangeSpeech(8);
-                                tutorialStepSalmoneStart = true;
+                                StartCoroutine(ToLeft());
+                                if (!tutorialStepVetroDone)
+                                {
+                                    tutorialStepVetroDone = true;
+                                    speech.ChangeSpeech(8);
+                                    tutorialStepSalmoneStart = true;
+                                }
+                            }
+                            if (aperto == 2)
+                            {
+                                StartCoroutine(GoBack());
                             }
                         }
-                        if (aperto == 2)
-                        {
-                            StartCoroutine(GoBack());
-                        }
+                    }
+                    else if (isSelected)
+                    {
+                        vetro.GetComponent<isSelectable>().Deselect();
+                        isSelected = false;
                     }
                 }
                 else if (isSelected)
@@ -86,11 +94,6 @@ public class tutorial_vetro_controller : MonoBehaviour
                     vetro.GetComponent<isSelectable>().Deselect();
                     isSelected = false;
                 }
-            }
-            else if (isSelected)
-            {
-                vetro.GetComponent<isSelectable>().Deselect();
-                isSelected = false;
             }
         }
     }

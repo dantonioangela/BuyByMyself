@@ -26,7 +26,7 @@ public class tutorial_menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         MainMenuUI.SetActive(false);
         MainMenuActive = false;
         inGame = true;
@@ -126,7 +126,7 @@ public class tutorial_menu : MonoBehaviour
 
     public void PartitaFacile()
     {
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
@@ -135,7 +135,7 @@ public class tutorial_menu : MonoBehaviour
 
     public void PartitaMedia()
     {
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);
@@ -143,7 +143,7 @@ public class tutorial_menu : MonoBehaviour
     }
     public void PartitaDifficile()
     {
-        player.UI_active = false;
+        tutorial_player_controller.UI_active = false;
         MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
         MainMenuUI.SetActive(false);

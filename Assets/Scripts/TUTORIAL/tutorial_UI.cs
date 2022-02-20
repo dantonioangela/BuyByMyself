@@ -38,7 +38,7 @@ public class tutorial_UI : MonoBehaviour
         {
             if (!inventarioActive)
             {
-                player_controller.UI_active = true;
+                tutorial_player_controller.UI_active = true;
                 UI_inventario.gameObject.SetActive(true);
                 inventarioActive = true;
                 for (i = 0; i < counter; i++)
@@ -49,7 +49,7 @@ public class tutorial_UI : MonoBehaviour
         }
         else if (inventarioActive)
         {
-            player_controller.UI_active = false;
+            tutorial_player_controller.UI_active = false;
             UI_inventario.gameObject.SetActive(false);
             inventarioActive = false;
         }

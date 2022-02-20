@@ -9,11 +9,12 @@ public class tutorial_inventario : MonoBehaviour
     public bool tutorialStepViaBananeStart = false;
     private bool tutorialStepDone = false;
     public tutorial_canvas_controller speech;
+    public bool isDragging;
     
     // Start is called before the first frame update
     void Start()
     {
-
+        isDragging = false;
     }
 
     // Update is called once per frame

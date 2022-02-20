@@ -16,12 +16,12 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     [SerializeField] private Canvas canvas;
     private ProductLabel productLabel;
     public RawImage ics;
+    public RawImage grabbedObject;
 
 
     // Start is called before the first frame update
     void Start()
-    {
-
+    { 
         productLabel = FindObjectOfType<ProductLabel>();
         icon = GetComponent<RectTransform>();
         icon.position = new Vector3(icon.position.x, icon.position.y, 1f);
@@ -35,6 +35,12 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     
     public void OnDrag(PointerEventData eventData)
     {
+        if(!transform.GetComponentInParent<inventario_manager>().isDragging)
+        {
+            transform.GetComponentInParent<inventario_manager>().isDragging = true;
+        }
+        grabbedObject.transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        grabbedObject.texture = icon.GetComponent<RawImage>().texture;
         if (!slotEmpty)
         {
             productLabel.active = true;
@@ -60,6 +66,9 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        transform.GetComponentInParent<inventario_manager>().isDragging = false;
+        grabbedObject.texture = emptyTexture;
+        icon.localScale = new Vector3(0.9f, 0.9f, 0.9f);
         icon.position = new Vector3(icon.position.x, icon.position.y, 1f);
         ics.gameObject.SetActive(false);
         if (!slotEmpty)
@@ -104,11 +113,17 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        icon.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+        if (!transform.GetComponentInParent<inventario_manager>().isDragging)
+        {
+            icon.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        icon.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+        if (!transform.GetComponentInParent<inventario_manager>().isDragging)
+        {
+            icon.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+        }
     }
 }

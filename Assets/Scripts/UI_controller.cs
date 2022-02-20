@@ -25,6 +25,8 @@ public class UI_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        productsInInventario.Clear();
+        productsInInventarioNextPage.Clear();
         UI_inventario = transform.GetChild(0);
         UI_cassiera_pay = transform.GetChild(1);
         UI_cassiera_notPay = transform.GetChild(2);
@@ -49,21 +51,31 @@ public class UI_controller : MonoBehaviour
                     mappa.Resume();
                 }
                 UI_inventario.gameObject.SetActive(true);
-                transform.GetChild(0).GetChild(5).gameObject.SetActive(true);
-                transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
                 transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
+                transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
+                transform.GetChild(0).GetChild(5).gameObject.SetActive(true);
                 inventarioActive = true;
 
-                    for (i = 0; i < productsInInventario.Count; i++)
-                    {
-                        transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
-                    }
-                    for(i = 0; i < productsInInventarioNextPage.Count; i++)
-                    {
-                        transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().AddProduct(productsInInventarioNextPage[i]);
-                    }
+                for (i = 0; i < productsInInventario.Count; i++)
+                {
+                    transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
+                }
+                while (i < 15)
+                {
+                    transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().ReplaceProduct(i);
+                    i++;
+                }
+                for(i = 0; i < productsInInventarioNextPage.Count; i++)
+                {
+                    transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventarioNextPage[i]);
+                }
+                while (i < 15)
+                {
+                    transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().ReplaceProduct(i);
+                    i++;
+                }
                 transform.GetChild(0).GetChild(6).gameObject.SetActive(false);
-                transform.GetChild(0).GetChild(5).gameObject.SetActive(false);
+                transform.GetChild(0).GetChild(4).gameObject.SetActive(false);
 
             }
         }
@@ -118,7 +130,7 @@ public class UI_controller : MonoBehaviour
         else if (productsInInventarioNextPage.Count < 15)
         {
             productsInInventarioNextPage.Add(product);
-            counter++;
+            counterNextPage++;
         }
     }
 
@@ -132,10 +144,11 @@ public class UI_controller : MonoBehaviour
             {
                 productReplacement = productsInInventarioNextPage[productsInInventarioNextPage.Count - 1];
                 productsInInventario.Add( productReplacement );
-                productsInInventarioNextPage.Remove(productReplacement);
+                //productsInInventarioNextPage.Remove(productReplacement);
+                productsInInventarioNextPage.RemoveAt(productsInInventarioNextPage.Count - 1);
                 counterNextPage--;
-                transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().ReplaceProduct(productsInInventarioNextPage.Count, productReplacement );
-                transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productReplacement);
+                //transform.GetChild(0).GetChild(5).GetComponent<inventario_manager>().ReplaceProduct(productsInInventarioNextPage.Count, productReplacement );
+                //transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productReplacement);
 
             }
         }

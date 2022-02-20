@@ -28,6 +28,7 @@ public class Carrello_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        prodottiNelCarrello.Clear();
         mode = 0;
         selected = false;
         budget = ListaSpesa.budget;

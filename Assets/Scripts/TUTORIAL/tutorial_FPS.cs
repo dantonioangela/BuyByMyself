@@ -86,7 +86,7 @@ public class tutorial_FPS : MonoBehaviour
     {
         //if (_pointingInteractable)
         //    _target.color = Color.green;
-        if (playerController.UI_active)
+        if (tutorial_player_controller.UI_active)
         {
             _target.enabled = false;
         }
