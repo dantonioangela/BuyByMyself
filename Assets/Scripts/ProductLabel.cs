@@ -24,18 +24,12 @@ public class ProductLabel : MonoBehaviour
     public bool active = false;
     private Vector3 originalPosition;
     private Vector3 targetPosition;
-    private float speed = 1000f; 
-    private float offset = 300f;
+    private float speed; 
+    private float offset;
 
     // Start is called before the first frame update
     void Start()
-    {
-        originalPosition = new Vector3(labelUI.transform.position.x,
-                                       labelUI.transform.position.y,
-                                       labelUI.transform.position.z); 
-        targetPosition = new Vector3(labelUI.transform.position.x,
-                                     labelUI.transform.position.y - offset,
-                                     labelUI.transform.position.z); 
+    {   
         labelUI.SetActive(false);
     }
 
@@ -47,6 +41,16 @@ public class ProductLabel : MonoBehaviour
             if (product != null && !labelUI.activeSelf)
             {
                 labelUI.SetActive(true);
+
+                originalPosition = new Vector3(labelUI.transform.position.x,
+                               labelUI.transform.position.y,
+                               labelUI.transform.position.z);
+
+                offset = 0.3f * Screen.height;
+                speed = 0.8f * Screen.height;
+                targetPosition = new Vector3(labelUI.transform.position.x,
+                                     labelUI.transform.position.y - offset,
+                                     labelUI.transform.position.z);
 
                 productName.text = product.model.name;
 
