@@ -26,11 +26,16 @@ public class ProductLabel : MonoBehaviour
     private Vector3 targetPosition;
     private float speed; 
     private float offset;
+    private float previousScreenHeight;
 
     // Start is called before the first frame update
     void Start()
     {   
         labelUI.SetActive(false);
+        originalPosition = new Vector3(labelUI.transform.position.x,
+                                       labelUI.transform.position.y,
+                                       labelUI.transform.position.z);
+        previousScreenHeight = Screen.height;
     }
 
     // Update is called once per frame
@@ -42,15 +47,19 @@ public class ProductLabel : MonoBehaviour
             {
                 labelUI.SetActive(true);
 
-                originalPosition = new Vector3(labelUI.transform.position.x,
-                               labelUI.transform.position.y,
-                               labelUI.transform.position.z);
+                if (previousScreenHeight != Screen.height)
+                {
+                    originalPosition = new Vector3(labelUI.transform.position.x,
+                                                   labelUI.transform.position.y,
+                                                   labelUI.transform.position.z);
+                    previousScreenHeight = Screen.height;
+                }
 
                 offset = 0.3f * Screen.height;
                 speed = 0.8f * Screen.height;
-                targetPosition = new Vector3(labelUI.transform.position.x,
-                                     labelUI.transform.position.y - offset,
-                                     labelUI.transform.position.z);
+                targetPosition = new Vector3(originalPosition.x,
+                                             originalPosition.y - offset,
+                                             originalPosition.z);
 
                 productName.text = product.model.name;
 
