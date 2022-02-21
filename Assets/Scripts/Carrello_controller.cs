@@ -13,7 +13,7 @@ public class Carrello_controller : MonoBehaviour
     private Ray rayCarrello;
     private RaycastHit hitCarrello;
     private Collider carrelloCollider;
-    private NavMeshObstacle navObstacle;
+    //private NavMeshObstacle navObstacle;
     [SerializeField] private GameObject prefabBusta;
     private bool[] conBusta = new bool[3];
     private Transform parent;
@@ -34,7 +34,7 @@ public class Carrello_controller : MonoBehaviour
         budget = ListaSpesa.budget;
         parent = transform.parent;
         carrelloCollider = GetComponent<Collider>();
-        navObstacle = GetComponent<NavMeshObstacle>();
+        //navObstacle = GetComponent<NavMeshObstacle>();
         prezzo_totale_carrello = 0.0f;
         budget = 8f;
         conBusta[0] = false;
@@ -56,7 +56,7 @@ public class Carrello_controller : MonoBehaviour
             {
                 mode = 1;
                 carrelloCollider.enabled = true;
-                navObstacle.enabled = true;
+                //navObstacle.enabled = true;
                 transform.parent = null;
                 //DA CAMBIARE
             }
@@ -79,7 +79,7 @@ public class Carrello_controller : MonoBehaviour
                         selected = false;
                         mode = 0;
                         carrelloCollider.enabled = false;
-                        navObstacle.enabled = false;
+                        //navObstacle.enabled = false;
                         transform.parent = parent;
                         transform.position = new Vector3(parent.position.x, 0f, parent.position.z) + 1.4f * parent.forward;
                         transform.rotation = Quaternion.LookRotation(-parent.right, transform.up);

@@ -30,6 +30,8 @@ public class Player_Controller : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         playerRB = GetComponent<Rigidbody>();
         carrelloCollider = GetComponent<BoxCollider>();
+        GetComponent<BoxCollider>().enabled = true;
+        GetComponent<CapsuleCollider>().enabled = true;
         inventario = false;
     }
 
@@ -110,6 +112,12 @@ public class Player_Controller : MonoBehaviour
     public void setUIactive()
     {
         UI_active = true;
+    }
+
+    public void setImmobile()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
     }
 
 }
