@@ -5460,6 +5460,8 @@ MonoBehaviour:
   MainMenuUI: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
   SceltaDiffUI: {fileID: 0}
+  CreditsUI: {fileID: 0}
+  ComandiUI: {fileID: 0}
   MAINResolutionDropdownUI: {fileID: 0}
   LevelTransition: {fileID: 0}
   TransitionTime: 2
