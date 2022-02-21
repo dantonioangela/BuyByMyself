@@ -6,27 +6,42 @@ public class Result
 {
     public float totalPoints;
     public float? qualityPoints;
+    public string qualityFeedback;
     public float? ecoPoints; //packaging
+    public string ecoFeedback;
     public float? sustainablePoints;
+    public string sustainableFeedback;
     public float? originPoints;
+    public string originFeedback;
     public float? seasonPoints;
+    public string seasonFeedback;
     public float pricePoints;
 
 
     public Result(float totalPoints,
                   float? qualityPoints,
+                  string qualityFeedback,
                   float? ecoPoints,
+                  string ecoFeedback,
                   float? originPoints,
+                  string originFeedback,
                   float? sustainablePoints,
+                  string sustainableFeedback,
                   float? seasonPoints,
+                  string seasonFeedback,
                   float pricePoints)
     {
         this.totalPoints = totalPoints;
         this.qualityPoints = qualityPoints;
+        this.qualityFeedback = qualityFeedback;
         this.ecoPoints = ecoPoints;
+        this.ecoFeedback = ecoFeedback;
         this.sustainablePoints = sustainablePoints;
+        this.sustainableFeedback = sustainableFeedback;
         this.originPoints = originPoints;
+        this.originFeedback = originFeedback;
         this.seasonPoints = seasonPoints;
+        this.seasonFeedback = seasonFeedback;
         this.pricePoints = pricePoints;
     }
 }
@@ -54,22 +69,27 @@ public class FinalResultCalculator
         int qualityProducts = 0; //numero di prodotti nella lista che hanno il campo qualità (frutta e verdura)
         float qualityPoints = 0;
         float? finalQualityPoints;
+        string qualityFeedback = "";
 
         int ecoProducts = 0; //numero di prodotti nella lista che hanno la versione eco
         float ecoPoints = 0;
         float? finalEcoPoints;
+        string ecoFeedback = "";
 
         int originProducts = 0; //numero di prodotti nella lista che hanno origine
         float originPoints = 0;
         float? finalOriginPoints;
+        string originFeedback = "";
 
         int sustainableProducts = 0; //numero di prodotti nella lista che hanno la versione sostenibile
         float sustainablePoints = 0;
         float? finalSustainablePoints;
+        string sustainableFeedback = "";
 
         int seasonProducts = 0; //numero di prodotti nella lista che sono stagionali
         float seasonPoints = 0;
         float? finalSeasonPoints;
+        string seasonFeedback = "";
 
         float pricePoints = 0;
 
@@ -140,6 +160,12 @@ public class FinalResultCalculator
                                         qualityPoints++;
                                         totalPoints += maxProductPoints / 3;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (qualityFeedback == "")
+                                            qualityFeedback += "Prodotti presi marci: ";
+                                        qualityFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha campo qualità
                                 {
@@ -153,6 +179,12 @@ public class FinalResultCalculator
                                     {
                                         ecoPoints++;
                                         totalPoints += maxProductPoints / 3;
+                                    }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (ecoFeedback == "")
+                                            ecoFeedback += "Prodotti di cui non è stata presa la versione ecologica: ";
+                                        ecoFeedback += productShoppingListName;
                                     }
                                 }
                                 else //caso in cui il prodotto non ha versione eco
@@ -205,10 +237,15 @@ public class FinalResultCalculator
 
                 return new Result(totalPoints,
                                   finalQualityPoints,
+                                  qualityFeedback,
                                   finalEcoPoints,
+                                  ecoFeedback,
                                   null,
+                                  originFeedback,
                                   null,
+                                  sustainableFeedback,
                                   null,
+                                  seasonFeedback,
                                   pricePoints);
 
             case 1: //normale
@@ -234,6 +271,12 @@ public class FinalResultCalculator
                                         qualityPoints++;
                                         totalPoints += maxProductPoints / 4;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (qualityFeedback == "")
+                                            qualityFeedback += "Prodotti presi marci: ";
+                                        qualityFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha campo qualità
                                 {
@@ -248,6 +291,12 @@ public class FinalResultCalculator
                                         ecoPoints++;
                                         totalPoints += maxProductPoints / 4;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (ecoFeedback == "")
+                                            ecoFeedback += "Prodotti di cui non è stata presa la versione ecologica: ";
+                                        ecoFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha versione eco
                                 {
@@ -259,7 +308,11 @@ public class FinalResultCalculator
                                 if (product.model.origin.HasValue) //caso in cui il prodotto ha origine
                                 {
                                     originPoints += product.model.origin.Value;
-                                    totalPoints += (maxProductPoints / 4) * product.model.origin.Value;                                 
+                                    totalPoints += (maxProductPoints / 4) * product.model.origin.Value;
+                                    if (product.model.origin.Value != 1)
+                                        if (originFeedback == "")
+                                            originFeedback += "Prodotti non kilometro zero: ";
+                                        originFeedback += productShoppingListName;
                                 }
                                 else //caso in cui il prodotto non ha origine
                                 {
@@ -314,10 +367,15 @@ public class FinalResultCalculator
 
                 return new Result(totalPoints,
                                   finalQualityPoints, 
+                                  qualityFeedback,
                                   finalEcoPoints,
-                                  finalOriginPoints, 
+                                  ecoFeedback,
+                                  finalOriginPoints,
+                                  originFeedback,
                                   null, 
+                                  sustainableFeedback,
                                   null,
+                                  seasonFeedback,
                                   pricePoints);
 
             case 2: //difficile
@@ -343,6 +401,12 @@ public class FinalResultCalculator
                                         qualityPoints++;
                                         totalPoints += maxProductPoints / 6;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (qualityFeedback == "")
+                                            qualityFeedback += "Prodotti presi marci: ";
+                                        qualityFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha campo qualità
                                 {
@@ -357,6 +421,12 @@ public class FinalResultCalculator
                                         ecoPoints++;
                                         totalPoints += maxProductPoints / 6;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (ecoFeedback == "")
+                                            ecoFeedback += "Prodotti di cui non è stata presa la versione ecologica: ";
+                                        ecoFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha versione eco
                                 {
@@ -369,6 +439,10 @@ public class FinalResultCalculator
                                 {
                                     originPoints += product.model.origin.Value;
                                     totalPoints += (maxProductPoints / 6) * product.model.origin.Value;
+                                    if (product.model.origin.Value != 1)
+                                        if (originFeedback == "")
+                                            originFeedback += "Prodotti non kilometro zero: ";
+                                    originFeedback += productShoppingListName;
                                 }
                                 else //caso in cui il prodotto non ha origine
                                 {
@@ -384,6 +458,12 @@ public class FinalResultCalculator
                                         sustainablePoints++;
                                         totalPoints += (maxProductPoints / 6) * product.model.origin.Value;
                                     }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (sustainableFeedback == "")
+                                            sustainableFeedback += "Prodotti di cui non è stata presa la versione sostenibile: ";
+                                        sustainableFeedback += productShoppingListName;
+                                    }
                                 }
                                 else //caso in cui il prodotto non ha versione sostenibile
                                 {
@@ -398,6 +478,12 @@ public class FinalResultCalculator
                                     {
                                         seasonPoints++;
                                         totalPoints += (maxProductPoints / 6);
+                                    }
+                                    else //altrimenti aggiungo feedback testuale per la schermata finale
+                                    {
+                                        if (seasonFeedback == "")
+                                            seasonFeedback += "Prodotti presi non stagionali: ";
+                                        seasonFeedback += productShoppingListName;
                                     }
                                 }
                                 else //caso in cui il prodotto non è stagionale
@@ -466,10 +552,15 @@ public class FinalResultCalculator
 
                 return new Result(totalPoints,
                                   finalQualityPoints,
+                                  qualityFeedback,
                                   finalEcoPoints,
+                                  ecoFeedback,
                                   finalOriginPoints,
+                                  originFeedback,
                                   finalSustainablePoints,
+                                  sustainableFeedback,
                                   finalSeasonPoints,
+                                  seasonFeedback,
                                   pricePoints);
         }
 
