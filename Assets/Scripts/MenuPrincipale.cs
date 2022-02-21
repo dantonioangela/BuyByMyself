@@ -33,6 +33,8 @@ public class MenuPrincipale : MonoBehaviour
     public Animator LevelTransition;
     public float TransitionTime = 0.8f;
 
+    private List<string> options = new List<string>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,7 @@ public class MenuPrincipale : MonoBehaviour
         MainMenuActive = true;
         resolutions = Screen.resolutions;
         MAINResolutionDropdownUI.ClearOptions();
-        List<string> options = new List<string>();
+        options.Clear();
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {

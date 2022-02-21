@@ -126,13 +126,6 @@ public class SchermataFinale : MonoBehaviour
         
     }
 
-    public void MainMenu()
-    {
-        Time.timeScale = 1f;
-        //SceneManager.LoadScene(0);
-        StartCoroutine(Reload());
-    }
-
     public void ScelataSchermata()
     {
         if (MenuPrincipale.levelDifficulty == 0)
@@ -148,10 +141,21 @@ public class SchermataFinale : MonoBehaviour
         }
     }
 
-    private IEnumerator Reload()
+ 
+
+    public void Resoconto()
     {
-        Resources.UnloadUnusedAssets();
-        SceneManager.LoadScene(0);
-        yield return null;
+        if (MenuPrincipale.levelDifficulty == 0)
+        {
+            SchermataFacile.SetActive(false);
+        } else if (MenuPrincipale.levelDifficulty == 1)
+        {
+            SchermataMedia.SetActive(false);
+        } else
+        {
+            SchermataDifficile.SetActive(false);
+        }
+
+        Resoconti.ResocontoActive = true;
     }
 }

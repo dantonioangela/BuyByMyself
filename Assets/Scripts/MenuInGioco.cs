@@ -22,11 +22,13 @@ public class MenuInGioco : MonoBehaviour
 
     bool inOptions = false;
 
+    private List<string> options = new List<string>();
+
     private void Start()
     {
         resolutions = Screen.resolutions;
         ResolutionDropdownUI.ClearOptions();
-        List<string> options = new List<string>();
+        options.Clear();
         int currentResolutionIndex = 0;
         for(int i=0; i<resolutions.Length; i++)
         {
