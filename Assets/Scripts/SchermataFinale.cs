@@ -30,6 +30,10 @@ public class SchermataFinale : MonoBehaviour
     public Image MaskPrezzoMedia;
     public Image MaskPrezzoDifficile;
 
+    public Image MaskScadenzeFacile;
+    public Image MaskScadenzeMedia;
+    public Image MaskScadenzeDifficile;
+
     private Result result;
 
     public GameObject SchermataFacile;
@@ -42,6 +46,7 @@ public class SchermataFinale : MonoBehaviour
     private float fillAmountQuality = 0f;
     private float fillAmountProvenienza = 0f;
     private float fillAmountStagione = 0f;
+    private float fillAmountScadenze = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +70,7 @@ public class SchermataFinale : MonoBehaviour
         fillAmountQuality = 0f;
         fillAmountProvenienza = 0f;
         fillAmountStagione = 0f;
+        fillAmountScadenze = 0f;
 
         if (MenuPrincipale.levelDifficulty == 0)
         {
