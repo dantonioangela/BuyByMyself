@@ -499,7 +499,7 @@ public class FinalResultCalculator
                                   finalSustainablePoints,
                                   finalSeasonPoints,
                                   pricePoints,
-                                  expirationPoints);
+                                  finalExpirationPoints);
         }
 
         return null;
