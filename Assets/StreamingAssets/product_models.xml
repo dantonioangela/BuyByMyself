@@ -1214,7 +1214,7 @@
     <listname>olio (confezione grande)/olio_oliva_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>3</price>
@@ -1323,7 +1323,7 @@
     <name>Noodles di pollo</name>
     <listname>noodles/noodles_pollo</listname>
     <sustainable>null</sustainable>
-    <packaging>0</packaging>
+    <packaging>null</packaging>
     <size>250g</size>
     <origin>null</origin>
     <season>null</season>
@@ -1333,7 +1333,7 @@
     <name>Noodles di manzo</name>
     <listname>noodles/noodles_manzo</listname>
     <sustainable>null</sustainable>
-    <packaging>0</packaging>
+    <packaging>null</packaging>
     <size>250g</size>
     <origin>null</origin>
     <season>null</season>
@@ -1582,8 +1582,8 @@
   <product>
     <name>Pizza Classica</name>
     <listname>pizza/pizza_classica</listname>
-    <sustainable>1</sustainable>
-    <packaging>1</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>null</size>
     <origin>null</origin>
     <season>null</season>
@@ -1592,8 +1592,8 @@
   <product>
     <name>Pizza Spooky</name>
     <listname>pizza/pizza_spooky</listname>
-    <sustainable>0</sustainable>
-    <packaging>1</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>null</size>
     <origin>null</origin>
     <season>null</season>
@@ -1602,8 +1602,8 @@
   <product>
     <name>Sofficini al pomodoro</name>
     <listname>sofficini/sofficini</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>4 sofficini</size>
     <origin>null</origin>
     <season>null</season>
@@ -1612,8 +1612,8 @@
   <product>
     <name>Bastoncini findus</name>
     <listname>bastoncini findus/bastoncini_findus</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>10 sofficini</size>
     <origin>null</origin>
     <season>null</season>
@@ -1622,8 +1622,8 @@
   <product>
     <name>Asparagi</name>
     <listname>verdure surgelate/asparagi</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>null</size>
     <origin>null</origin>
     <season>null</season>
@@ -1632,8 +1632,8 @@
   <product>
     <name>Spinaci</name>
     <listname>verdure surgelate/spinaci</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>null</size>
     <origin>null</origin>
     <season>null</season>
@@ -1954,7 +1954,7 @@
     <listname>latte (confezione grande)/latte_intero_max_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>1</origin>
     <season>null</season>
     <price>1,70</price>
@@ -1964,7 +1964,7 @@
     <listname>latte (confezione grande)/latte_intero_max</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>1</origin>
     <season>null</season>
     <price>2,50</price>
@@ -1994,7 +1994,7 @@
     <listname>latte (confezione grande)/latte_parzialmente_scremato_max_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
-    <size>1l</size>
+    <size>     1 litro</size>
     <origin>1</origin>
     <season>null</season>
     <price>2</price>
@@ -2004,7 +2004,7 @@
     <listname>latte (confezione grande)/latte_ps_max</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
-    <size>1l</size>
+    <size>      1 litro</size>
     <origin>1</origin>
     <season>null</season>
     <price>2,10</price>
@@ -2014,7 +2014,7 @@
     <listname>latte (confezione piccola)/latte_parzialmente_scremato_mini_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
-    <size>0,5l</size>
+    <size>      0,5l</size>
     <origin>1</origin>
     <season>null</season>
     <price>1</price>
@@ -2024,7 +2024,7 @@
     <listname>latte (confezione piccola)/latte_ps_mini</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
-    <size>0,5l</size>
+    <size>      0,5l</size>
     <origin>1</origin>
     <season>null</season>
     <price>1,20</price>
@@ -2034,7 +2034,7 @@
     <listname>latte (confezione grande)/latte_soia_max_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>0,5</origin>
     <season>null</season>
     <price>2,30</price>
@@ -2044,7 +2044,7 @@
     <listname>latte (confezione grande)/latte_soia_max</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>0,5</origin>
     <season>null</season>
     <price>2,50</price>
@@ -2072,8 +2072,8 @@
   <product>
     <name>Budino cremoso cioccolato</name>
     <listname>budino/budino_cioccolata</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>4</size>
     <origin>null</origin>
     <season>null</season>
@@ -2082,8 +2082,8 @@
   <product>
     <name>Budino cremoso vaniglia</name>
     <listname>budino/budino_vaniglia</listname>
-    <sustainable>0</sustainable>
-    <packaging>0</packaging>
+    <sustainable>null</sustainable>
+    <packaging>null</packaging>
     <size>4</size>
     <origin>null</origin>
     <season>null</season>
@@ -2880,7 +2880,7 @@
     <price>2,50</price>
   </product>
   <product>
-    <name>Ciòcolato al pistacchio</name>
+    <name>Cioccolato al pistacchio</name>
     <listname>barretta di cioccolato (confezione grande)/cioccolato_pistacchio_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2890,7 +2890,7 @@
     <price>2</price>
   </product>
   <product>
-    <name>Ciòcolato al pistacchio</name>
+    <name>Cioccolato al pistacchio</name>
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_pistacchio_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2900,7 +2900,7 @@
     <price>1</price>
   </product>
   <product>
-    <name>Ciòcolato alla nocciola</name>
+    <name>Cioccolato alla nocciola</name>
     <listname>barretta di cioccolato (confezione grande)/cioccolato_nocciola_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2910,7 +2910,7 @@
     <price>2</price>
   </product>
   <product>
-    <name>Ciòcolato alla nocciola</name>
+    <name>Cioccolato alla nocciola</name>
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_nocciola_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2920,7 +2920,7 @@
     <price>1</price>
   </product>
   <product>
-    <name>Ciòcolato al latte</name>
+    <name>Cioccolato al latte</name>
     <listname>barretta di cioccolato (confezione grande)/cioccolato_latte_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2930,7 +2930,7 @@
     <price>2</price>
   </product>
   <product>
-    <name>Ciòcolato al latte</name>
+    <name>Cioccolato al latte</name>
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_latte_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2940,7 +2940,7 @@
     <price>1</price>
   </product>
   <product>
-    <name>Ciòcolato fondente</name>
+    <name>Cioccolato fondente</name>
     <listname>barretta di cioccolato (confezione grande)/cioccolato_fondente_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2950,7 +2950,7 @@
     <price>2</price>
   </product>
   <product>
-    <name>Ciòcolato fondente</name>
+    <name>Cioccolato fondente</name>
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2960,7 +2960,7 @@
     <price>1</price>
   </product>
   <product>
-    <name>Ciòcolato al caramello</name>
+    <name>Cioccolato al caramello</name>
     <listname>barretta di cioccolato (confezione grande)/cioccolato_caramello_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -2970,7 +2970,7 @@
     <price>2</price>
   </product>
   <product>
-    <name>Ciòcolato al caramello</name>
+    <name>Cioccolato al caramello</name>
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
@@ -3284,7 +3284,7 @@
     <listname>acqua (bottiglia grande)/acqua_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>0,70</price>
@@ -3324,7 +3324,7 @@
     <listname>aranciata (bottiglia grande)/aranciata_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3344,7 +3344,7 @@
     <listname>cola (bottiglia grande)/cola_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1,20</price>
@@ -3364,7 +3364,7 @@
     <listname>tè (bottiglia grande)/te_pesca_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1,10</price>
@@ -3384,7 +3384,7 @@
     <listname>tè (bottiglia grande)/te_verde_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1,10</price>
@@ -3404,7 +3404,7 @@
     <listname>succo (confezione grande)/succo_ace_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3424,7 +3424,7 @@
     <listname>succo (confezione grande)/succo_ananas_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3444,7 +3444,7 @@
     <listname>succo (confezione grande)/succo_cocco_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3464,7 +3464,7 @@
     <listname>succo (confezione grande)/succo_rossi_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3484,7 +3484,7 @@
     <listname>succo (confezione grande)/succo_mela_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3504,7 +3504,7 @@
     <listname>succo (confezione grande)/succo_pera_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -3524,7 +3524,7 @@
     <listname>succo (confezione grande)/succo_pesca_max</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>1l</size>
+    <size>1 litro</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
