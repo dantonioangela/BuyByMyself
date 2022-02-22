@@ -41,6 +41,8 @@ public class Resoconti : MonoBehaviour
     {
         string productShoppingListName;
         Transform productInTable;
+        Transform extraProductsList = ResocontoUI.transform.GetChild(5).GetChild(0).GetChild(1).GetChild(0);
+        int extraProductCounter = 0;
         Transform slot;
 
         for (int i = 0; i < ListaSpesa.listaSpesa.Count; i++)
@@ -125,10 +127,6 @@ public class Resoconti : MonoBehaviour
                     }
                     productCounter ++;
                 }
-                else
-                {
-                    //TODO: aggiungere prodotto a  lista prodotti extra
-                }
             }
 
             if(productCounter < ListaSpesa.listaSpesa.ElementAt(i).Value)
@@ -142,7 +140,19 @@ public class Resoconti : MonoBehaviour
             }
 
         }
-    
+
+        foreach (var product in Carrello_controller.prodottiNelCarrello)
+        {
+            productShoppingListName = product.model.listName.Split('/')[0].ToLower();
+            if (!ListaSpesa.listaSpesa.ContainsKey(productShoppingListName))
+            {
+                extraProductsList.GetChild(extraProductCounter).GetComponent<RawImage>().texture = product.GetComponent<icon>().myIcon;
+                //extraProductsList.GetChild(extraProductCounter).GetComponent<RawImage>().enabled = true;
+                extraProductCounter++;
+            }
+        }
+
+
     }
 
     public void MainMenu()

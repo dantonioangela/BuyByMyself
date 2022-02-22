@@ -382,7 +382,7 @@ public class FinalResultCalculator
                                     if(product.model.sustainable.Value == true)
                                     {
                                         sustainablePoints++;
-                                        totalPoints += (maxProductPoints / 6) * product.model.origin.Value;
+                                        totalPoints += (maxProductPoints / 6);
                                     }
                                 }
                                 else //caso in cui il prodotto non ha versione sostenibile
