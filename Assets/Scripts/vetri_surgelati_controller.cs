@@ -9,6 +9,7 @@ public class vetri_surgelati_controller : MonoBehaviour
     private float z_spostamento = 0.002f;
     private float x_spostamento;
     private bool[] isSelected = new bool[3];
+    private bool[] isMoving = new bool[3];
     private int[] aperto = new int[3];
     private Ray ray;
     private RaycastHit hit;
@@ -22,6 +23,9 @@ public class vetri_surgelati_controller : MonoBehaviour
         isSelected[0] = false;
         isSelected[1] = false;
         isSelected[2] = false;
+        isMoving[0] = false;
+        isMoving[1] = false;
+        isMoving[2] = false;
         aperto[0] = 0;
         aperto[1] = 0;
         aperto[2] = 0;
@@ -60,7 +64,7 @@ public class vetri_surgelati_controller : MonoBehaviour
                         isSelected[0] = true;
                         child[0].GetComponent<isSelectable>().Select();
                     }
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButtonDown(0) && !isMoving[0])
                     {
                         aperto[0]++;
                         if (aperto[0] == 1)
@@ -102,7 +106,7 @@ public class vetri_surgelati_controller : MonoBehaviour
                         isSelected[1] = true;
                         child[1].GetComponent<isSelectable>().Select();
                     }
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButtonDown(0) && !isMoving[1])
                     {
                         aperto[1]++;
                         if (aperto[1] == 1)
@@ -141,7 +145,7 @@ public class vetri_surgelati_controller : MonoBehaviour
                         isSelected[2] = true;
                         child[2].GetComponent<isSelectable>().Select();
                     }
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButtonDown(0) && !isMoving[2])
                     {
                         aperto[2]++;
                         if (aperto[2] == 1)
@@ -179,6 +183,7 @@ public class vetri_surgelati_controller : MonoBehaviour
 
     private IEnumerator ToRight (int i)
     {
+        isMoving[i] = true;
         audioMan.PlayInstance("frigo");
         while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
@@ -190,11 +195,13 @@ public class vetri_surgelati_controller : MonoBehaviour
             child[i].transform.position += -child[i].transform.right * Time.deltaTime * speed_x;
             yield return new WaitForEndOfFrame();
         }
+        isMoving[i] = false;
         yield return null;
     }
 
     private IEnumerator ToLeft(int i)
     {
+        isMoving[i] = true;
         audioMan.PlayInstance("frigo");
         while (child[i].transform.localPosition.y > pos_init[i].y - z_spostamento)
         {
@@ -206,11 +213,13 @@ public class vetri_surgelati_controller : MonoBehaviour
             child[i].transform.position -= -child[i].transform.right * Time.deltaTime * speed_x;
             yield return new WaitForEndOfFrame();
         }
+        isMoving[i] = false;
         yield return null;
     }
 
     private IEnumerator GoBack(int i)
     {
+        isMoving[i] = true;
         audioMan.PlayInstance("frigo");
         if(i != 1)
         {
@@ -244,6 +253,7 @@ public class vetri_surgelati_controller : MonoBehaviour
             StartCoroutine(ToLeft(1));
             aperto[1] = 1;
         }
+        isMoving[i] = false;
         yield return null;
     }
 }

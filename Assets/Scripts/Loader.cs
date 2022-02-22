@@ -78,7 +78,14 @@ class Loader : MonoBehaviour
             sustainable = ToNullableBool(product.xmlSustainable);
             packaging = ToNullableBool(product.xmlPackaging);
             size = (product.xmlSize == "null" ? "" : product.xmlSize);
-            origin = ToNullableFloat(product.xmlOrigin);
+            if ( product.xmlOrigin == "null"){
+                origin = null;
+            }
+            else
+            {
+                origin = float.Parse(product.xmlOrigin);
+            }
+            
             season = product.xmlSeason.Equals("null") ? null : product.xmlSeason.Split(' ').Select(n => Convert.ToInt32(n)).ToList();
             price = float.Parse(product.xmlPrice);
 

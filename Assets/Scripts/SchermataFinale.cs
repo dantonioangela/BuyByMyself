@@ -71,6 +71,7 @@ public class SchermataFinale : MonoBehaviour
         fillAmountProvenienza = 0f;
         fillAmountStagione = 0f;
         fillAmountScadenze = 0f;
+        fillAmountScadenze = (float)result.expirationPoints / (float)Massimo;
 
         if (MenuPrincipale.levelDifficulty == 0)
         {
@@ -98,6 +99,7 @@ public class SchermataFinale : MonoBehaviour
                 transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
             }
             MaskQualityFacile.fillAmount = fillAmountQuality;
+            MaskScadenzeFacile.fillAmount = fillAmountScadenze;
         } 
         
         else if (MenuPrincipale.levelDifficulty == 1)
@@ -136,6 +138,7 @@ public class SchermataFinale : MonoBehaviour
                 transform.GetChild(1).GetChild(2).gameObject.SetActive(false);
             }
             MaskProvenienzaMedia.fillAmount = fillAmountProvenienza;
+            MaskScadenzeMedia.fillAmount = fillAmountScadenze;
         }
 
         else
@@ -184,6 +187,7 @@ public class SchermataFinale : MonoBehaviour
                 transform.GetChild(0).GetChild(3).gameObject.SetActive(false);
             }
             MaskStagioneDifficile.fillAmount = fillAmountStagione;
+            MaskScadenzeDifficile.fillAmount = fillAmountScadenze;
         }       
         
     }

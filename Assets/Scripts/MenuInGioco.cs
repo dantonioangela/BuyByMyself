@@ -49,7 +49,7 @@ public class MenuInGioco : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!MenuPrincipale.MainMenuActive)
+            if (!MenuPrincipale.MainMenuActive && ! Player_Controller.UI_active)
             {
                 if (GiocoInPausa)
                 {

@@ -92,8 +92,6 @@ public class FinalResultCalculator
         }
         Debug.Log("}");*/
 
-        foreach (Product product in Carrello_controller.prodottiNelCarrello)
-            Debug.Log(product.ToString());
 
         //quantità presente nel carrello di ogni prodotto richiesto nella lista della spesa
         Dictionary<string, int> cartListQuantities = new Dictionary<string, int>();
