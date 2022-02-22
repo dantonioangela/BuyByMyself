@@ -45,10 +45,16 @@ public class Resoconti : MonoBehaviour
         int extraProductCounter = 0;
         Transform slot;
 
+        icons_listaspesa iconList = FindObjectOfType<icons_listaspesa>();
+
         for (int i = 0; i < ListaSpesa.listaSpesa.Count; i++)
         {
             int productCounter = 0;
             productInTable = ResocontoUI.transform.GetChild(3).GetChild(i);
+
+            Texture icon = iconList.listIcons[i];
+            productInTable.GetComponent<RawImage>().texture = icon;
+            productInTable.GetComponent<RawImage>().enabled = icon;
 
             foreach (var product in Carrello_controller.prodottiNelCarrello)
             {
@@ -61,8 +67,7 @@ public class Resoconti : MonoBehaviour
 
                     if (productCounter == 0)
                     {
-                        productInTable.GetComponent<RawImage>().texture = product.GetComponent<icon>().myIcon;
-                        productInTable.GetComponent<RawImage>().enabled = true;
+                        
                     }
 
                     //controllo scadenza

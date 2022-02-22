@@ -68,7 +68,7 @@ public class ProductLabel : MonoBehaviour
                 productSize.text = product.model.size;
 
                 if (product.model.packaging.HasValue)
-                    productPackaging.text = (product.model.packaging.Value == false ? "" : "Imballaggio ecologico");
+                    productPackaging.text = (product.model.packaging.Value == false ? "Imballaggio non ecologico" : "Imballaggio ecologico");
                 else
                     productPackaging.text = "";
 

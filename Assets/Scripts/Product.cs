@@ -34,6 +34,15 @@ public class Product : PhysicsGrabbable {
         base.Drop();
         productLabel.active = false;
     }
-	
+
+    public override string ToString()
+    {
+        return "List name: " + model.listName +
+               "/nExpirated: " + expirated +
+               "/nEco: " + (model.packaging.HasValue ? model.packaging.Value.ToString() : "-") +
+               "/nOrigin: " + (model.origin.HasValue ? model.origin.Value.ToString() : "-") +
+               "/nSustainable: " + (model.sustainable.HasValue ? model.sustainable.Value.ToString() : "-");
+    }
+
 }
 

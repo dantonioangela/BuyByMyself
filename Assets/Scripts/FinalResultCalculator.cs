@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Result
 {
@@ -11,7 +13,7 @@ public class Result
     public float? originPoints;
     public float? seasonPoints;
     public float pricePoints;
-
+    public float expirationPoints;
 
     public Result(float totalPoints,
                   float? qualityPoints,
@@ -19,7 +21,8 @@ public class Result
                   float? originPoints,
                   float? sustainablePoints,
                   float? seasonPoints,
-                  float pricePoints)
+                  float pricePoints,
+                  float expirationPoints)
     {
         this.totalPoints = totalPoints;
         this.qualityPoints = qualityPoints;
@@ -28,6 +31,7 @@ public class Result
         this.originPoints = originPoints;
         this.seasonPoints = seasonPoints;
         this.pricePoints = pricePoints;
+        this.expirationPoints = expirationPoints;
     }
 }
 public class FinalResultCalculator
@@ -36,15 +40,15 @@ public class FinalResultCalculator
     {
 
 
-    //90% dei punti sono dati dai prodotti, 10% dal prezzo finale della spesa
-    //i punti del prezzo finale vengono dati solo se sono presenti nel carrello 
-    //tutti i prodotti richiesti nella lista della spesa, almeno nella quantità indicata
-    //quindi non vengono dati se mancano dei prodotti
+        //90% dei punti sono dati dai prodotti, 10% dal prezzo finale della spesa
+        //i punti del prezzo finale vengono dati solo se sono presenti nel carrello 
+        //tutti i prodotti richiesti nella lista della spesa, almeno nella quantità indicata
+        //quindi non vengono dati se mancano dei prodotti
 
-    float maxPricePoints = 10; //massimo punteggio che si può ottenere valutando il prezzo della spesa complessiva
+        float maxPricePoints = 10; //massimo punteggio che si può ottenere valutando il prezzo della spesa complessiva
 
         int totalShoppingListCount = 0; //numero total di prodotti richiesti nella lista
-        foreach(var entry in ListaSpesa.listaSpesa)
+        foreach (var entry in ListaSpesa.listaSpesa)
             totalShoppingListCount += entry.Value;
 
         float maxProductPoints = (100 - maxPricePoints) / totalShoppingListCount; //massimo punteggio che un singolo prodotto può dare
@@ -73,7 +77,23 @@ public class FinalResultCalculator
 
         float pricePoints = 0;
 
+        float expirationPoints = 0;
+        float finalExpirationPoints;
+
         string productShoppingListName;
+
+        sortCartList();
+
+        /*Debug.Log("LISTA{");
+        foreach (var product in Carrello_controller.prodottiNelCarrello) 
+        { 
+            Debug.Log(product.ToString());
+            Debug.Log("RANK: " + productRank(product));
+        }
+        Debug.Log("}");*/
+
+        foreach (Product product in Carrello_controller.prodottiNelCarrello)
+            Debug.Log(product.ToString());
 
         //quantità presente nel carrello di ogni prodotto richiesto nella lista della spesa
         Dictionary<string, int> cartListQuantities = new Dictionary<string, int>();
@@ -130,6 +150,7 @@ public class FinalResultCalculator
                             if(!product.expirated) // (3), se è scaduto il prodotto non dà punti
                             {
                                 totalPoints += maxProductPoints / 3; //se non è scaduto aggiungo punti
+                                expirationPoints++;
 
                                 //controllo qualità (4)
                                 if (product.model.listName.Contains("frutta") || 
@@ -203,13 +224,16 @@ public class FinalResultCalculator
                 else
                     finalEcoPoints = (ecoPoints / ecoProducts) * 100;
 
+                finalExpirationPoints = (expirationPoints / totalShoppingListCount) * 100;
+
                 return new Result(totalPoints,
                                   finalQualityPoints,
                                   finalEcoPoints,
                                   null,
                                   null,
                                   null,
-                                  pricePoints);
+                                  pricePoints,
+                                  finalExpirationPoints);
 
             case 1: //normale
                 ////(1 + 2 + 3) + 4 + 5 + 6 = maxProductPoints
@@ -224,6 +248,7 @@ public class FinalResultCalculator
                             if (!product.expirated) // (3), se è scaduto il prodotto non dà punti
                             {
                                 totalPoints += maxProductPoints / 4; //se non è scaduto aggiungo punti
+                                expirationPoints++; 
 
                                 //controllo qualità (4)
                                 if (product.model.listName.Contains("frutta") ||
@@ -312,13 +337,16 @@ public class FinalResultCalculator
                 else
                     finalOriginPoints = (originPoints / originProducts) * 100;
 
+                finalExpirationPoints = (expirationPoints / totalShoppingListCount) * 100;
+
                 return new Result(totalPoints,
                                   finalQualityPoints, 
                                   finalEcoPoints,
                                   finalOriginPoints,
                                   null, 
                                   null,
-                                  pricePoints);
+                                  pricePoints,
+                                  finalExpirationPoints);
 
             case 2: //difficile
                 //(1 + 2 + 3) + 4 + 5 + 6 + 7 + 8 = maxProductPoints
@@ -333,6 +361,7 @@ public class FinalResultCalculator
                             if (!product.expirated) // (3), se è scaduto il prodotto non dà punti
                             {
                                 totalPoints += maxProductPoints / 6; //se non è scaduto aggiungo punti
+                                expirationPoints++;
 
                                 //controllo qualità (4)
                                 if (product.model.listName.Contains("frutta") ||
@@ -463,6 +492,7 @@ public class FinalResultCalculator
                 else
                     finalSeasonPoints = (seasonPoints / seasonProducts) * 100;
 
+                finalExpirationPoints = (expirationPoints / totalShoppingListCount) * 100;
 
                 return new Result(totalPoints,
                                   finalQualityPoints,
@@ -470,10 +500,41 @@ public class FinalResultCalculator
                                   finalOriginPoints,
                                   finalSustainablePoints,
                                   finalSeasonPoints,
-                                  pricePoints);
+                                  pricePoints,
+                                  expirationPoints);
         }
 
         return null;
+    }
+
+    private static void sortCartList()
+    {
+        Carrello_controller.prodottiNelCarrello = Carrello_controller.prodottiNelCarrello.OrderByDescending((product) => productRank(product)).ToList();
+    }
+
+    private static float productRank(Product product)
+    {
+        float rank = 0;
+        if (!product.expirated)
+            rank++;
+        if ((product.model.listName.Contains("frutta") || product.model.listName.Contains("verdura")) &&
+            !product.model.listName.Contains("_old"))
+            rank++;
+        if (product.model.packaging.HasValue && product.model.packaging.Value == true)
+            rank++;
+        if(MenuPrincipale.levelDifficulty >= 1)
+        {
+            if (product.model.origin.HasValue)
+                rank += product.model.origin.Value;
+        }
+        if(MenuPrincipale.levelDifficulty == 2)
+        {
+            if (product.model.sustainable.HasValue && product.model.sustainable.Value == true)
+                rank++;
+            if (product.model.season != null && product.model.season[ListaSpesa.season] == 1)
+                rank++;
+        }
+        return rank;
     }
 
     //questo metodo mappa un valore da un intervallo ad un altro 
