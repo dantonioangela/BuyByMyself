@@ -67,7 +67,7 @@ public class ListaSpesa
             {
                 quantity = Random.Range(1, quantity);
             }
-            
+            if (quantity > 3) quantity = 3;
             listaSpesa.Add(productNameList, quantity);
             budget += quantity*(Loader.productModels[ Loader.NamesToIndex[productName][0]].price);
         }

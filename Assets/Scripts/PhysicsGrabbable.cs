@@ -11,9 +11,11 @@ public class PhysicsGrabbable : Grabbable
     private Quaternion originalRotation;
     private float timeLeft = 30; //tempo prima che l'oggetto torni nella posizione originale
     private bool dropped = false;
+    private DisplayCarrello_controller display;
 
     protected override void Start ()
     {
+        display = FindObjectOfType<DisplayCarrello_controller>();
         base.Start();
         timeLeft = 30;
         dropped = false;
@@ -59,8 +61,21 @@ public class PhysicsGrabbable : Grabbable
 								 
         if ( Carrello_controller.selected && gameObject.GetComponent<Product>() != null)
         {
-            gameObject.transform.position -= new Vector3(0f, 10f, 0f);
-            Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart( gameObject.GetComponent<Product>() );
+            if (Carrello_controller.prodottiNelCarrello.Count < 30)
+            {
+                gameObject.transform.position -= new Vector3(0f, 10f, 0f);
+                Camera.main.gameObject.transform.parent.GetComponent<Player_Controller>().carrello.GetComponent<Carrello_controller>().AddProductToChart(gameObject.GetComponent<Product>());
+            }
+            else
+            {
+                gameObject.transform.position = originalPosition;
+                gameObject.transform.rotation = originalRotation;
+                _collider.enabled = true;
+                _rigidBody.isKinematic = true;
+                dropped = false;
+                timeLeft = 10;
+                display.DisplayInventarioPieno();
+            }
         }
         else{
             _collider.enabled = true;
