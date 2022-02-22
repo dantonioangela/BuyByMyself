@@ -60,10 +60,10 @@ public class Label_assigner : MonoBehaviour
 
             if (ListaSpesa.listaSpesa.ContainsKey(listName.Split('/')[0]))
             {
-
                 if (j == first_occurrance_index && Loader.productModels[j].counter <= ListaSpesa.listaSpesa[listName.Split('/')[0]])
                 {
                     child[index_child].gameObject.GetComponent<Product>().expirated = false;
+                    FindObjectOfType<icons_listaspesa>().addIcon(listName.Split('/')[0], child[index_child].gameObject.GetComponent<icon>().myIcon);
                 }
                 else
                 {
