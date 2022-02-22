@@ -35,6 +35,10 @@ public class MenuPrincipale : MonoBehaviour
 
     private List<string> options = new List<string>();
 
+    public GameObject SchermataFacileGame;
+    public GameObject SchermataMediaGame;
+    public GameObject SchermataDifficileGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -182,13 +186,30 @@ public class MenuPrincipale : MonoBehaviour
         inScelta = false;
     }
 
-    public void PartitaFacile()
-    {       
+    public void Skip()
+    {
         MainMenuActive = false;
-        SceltaDiffUI.SetActive(false);
-        MainMenuUI.SetActive(false);
         inGame = true;
-		levelDifficulty = 0;
+        MainMenuUI.SetActive(false);
+        MainMenuActive = false;
+        if (levelDifficulty == 0)
+        {
+            SchermataFacileGame.SetActive(false);
+        } else if (levelDifficulty == 1)
+        {
+            SchermataMediaGame.SetActive(false);
+        } else
+        {
+            SchermataDifficileGame.SetActive(false);
+        }
+        Player_Controller.UI_active = false;
+    }
+
+    public void PartitaFacile()
+    {
+        SceltaDiffUI.SetActive(false);
+        levelDifficulty = 0;
+        Player_Controller.UI_active = true;
         StartCoroutine(LoadFacile());
     }
 
@@ -198,15 +219,15 @@ public class MenuPrincipale : MonoBehaviour
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
         audioManager.Play("GameplayMusic");
+        yield return new WaitForSeconds(1.3f);
+        SchermataFacileGame.SetActive(true);        
     }
 
     public void PartitaMedia()
     {
-        MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
-        MainMenuUI.SetActive(false);
-        inGame = true;
 		levelDifficulty = 1;
+        Player_Controller.UI_active = true;
         StartCoroutine(LoadMedia());
     }
 
@@ -216,14 +237,14 @@ public class MenuPrincipale : MonoBehaviour
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
         audioManager.Play("GameplayMusic");
+        yield return new WaitForSeconds(1.3f);
+        SchermataMediaGame.SetActive(true);
     }
     public void PartitaDifficile()
     {
-        MainMenuActive = false;
         SceltaDiffUI.SetActive(false);
-        MainMenuUI.SetActive(false);
-        inGame = true;
 		levelDifficulty = 2;
+        Player_Controller.UI_active = true;
         StartCoroutine(LoadDifficile());
     }
 
@@ -233,6 +254,8 @@ public class MenuPrincipale : MonoBehaviour
         yield return new WaitForSeconds(TransitionTime);
         LevelTransition.SetTrigger("End");
         audioManager.Play("GameplayMusic");
+        yield return new WaitForSeconds(1.3f);
+        SchermataDifficileGame.SetActive(true);
     }
 
 }

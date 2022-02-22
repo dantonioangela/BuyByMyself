@@ -38789,6 +38789,18 @@ PrefabInstance:
       propertyPath: MAINResolutionDropdownUI
       value: 
       objectReference: {fileID: 7955802432000069369}
+    - target: {fileID: 498269157, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1827315911}
+    - target: {fileID: 828449168, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1827315911}
+    - target: {fileID: 1430543412, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1827315911}
     - target: {fileID: 2204434633309132031, guid: 0d5aa902120898c4bac548cd31b0f739, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
