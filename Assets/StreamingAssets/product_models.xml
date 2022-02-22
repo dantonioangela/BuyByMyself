@@ -1965,7 +1965,7 @@
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>1 litro</size>
-    <origin>1</origin>
+    <origin>0,5</origin>
     <season>null</season>
     <price>2,50</price>
   </product>
@@ -1985,7 +1985,7 @@
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>0,5l</size>
-    <origin>1</origin>
+    <origin>0,5</origin>
     <season>null</season>
     <price>1,33</price>
   </product>
@@ -2005,7 +2005,7 @@
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>      1 litro</size>
-    <origin>1</origin>
+    <origin>0,5</origin>
     <season>null</season>
     <price>2,10</price>
   </product>
@@ -2025,7 +2025,7 @@
     <sustainable>0</sustainable>
     <packaging>0</packaging>
     <size>      0,5l</size>
-    <origin>1</origin>
+    <origin>0,5</origin>
     <season>null</season>
     <price>1,20</price>
   </product>
@@ -2894,7 +2894,7 @@
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_pistacchio_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>maxi</size>
+    <size>mini</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -2914,7 +2914,7 @@
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_nocciola_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>maxi</size>
+    <size>mini</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -2934,7 +2934,7 @@
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_latte_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>maxi</size>
+    <size>mini</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -2954,7 +2954,7 @@
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_fondente_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>maxi</size>
+    <size>mini</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
@@ -2974,7 +2974,7 @@
     <listname>barretta di cioccolato (confezione piccola)/cioccolato_caramello_mini</listname>
     <sustainable>null</sustainable>
     <packaging>null</packaging>
-    <size>maxi</size>
+    <size>mini</size>
     <origin>null</origin>
     <season>null</season>
     <price>1</price>
