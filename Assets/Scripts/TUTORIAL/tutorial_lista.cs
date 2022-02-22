@@ -55,7 +55,7 @@ public class tutorial_lista : MonoBehaviour
     {
         string s = "";
 
-        s = s + "banane" + "\n" + "bibita" + "\t\t1" + "\n" + "salmone" + "\t1" + "\n";
+        s = s + "due caschi di banane" + "\n\n" + "una bibita"  + "\n\n" + "una confezione di salmone" + "\n"  + "\n" + "\n" + "\n" + "\n" + "\n" + "PORTAFOGLIO : € 7,00";
 
         TestoLista.text = s;
     }
