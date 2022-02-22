@@ -2054,7 +2054,7 @@
     <listname>latte (confezione piccola)/latte_soia_mini_eco</listname>
     <sustainable>1</sustainable>
     <packaging>1</packaging>
-    <size>0.5l</size>
+    <size>0,5l</size>
     <origin>0,5</origin>
     <season>null</season>
     <price>1,10</price>
@@ -2064,7 +2064,7 @@
     <listname>latte (confezione piccola)/latte_soia_mini</listname>
     <sustainable>0</sustainable>
     <packaging>0</packaging>
-    <size>0.5l</size>
+    <size>0,5l</size>
     <origin>0,5</origin>
     <season>null</season>
     <price>1,30</price>
