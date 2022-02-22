@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SchermataFinale : MonoBehaviour
 {
@@ -35,6 +36,13 @@ public class SchermataFinale : MonoBehaviour
     public GameObject SchermataMedia;
     public GameObject SchermataDifficile;
 
+    private float fillAmountTotale = 0f;
+    private float fillAmountPrezzo = 0f;
+    private float fillAmountPackaging = 0f;
+    private float fillAmountQuality = 0f;
+    private float fillAmountProvenienza = 0f;
+    private float fillAmountStagione = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,19 +52,19 @@ public class SchermataFinale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetCurrentFill();
+        //GetCurrentFill();
     }
 
     void GetCurrentFill()
     {
         result = FinalResultCalculator.calculateFinalResult(Carrello_controller.prodottiNelCarrello, MenuPrincipale.levelDifficulty);
 
-        float fillAmountTotale = 0;
-        float fillAmountPrezzo = 0;
-        float fillAmountPackaging = 0;
-        float fillAmountQuality = 0;
-        float fillAmountProvenienza = 0;
-        float fillAmountStagione = 0;
+        fillAmountTotale = 0f;
+        fillAmountPrezzo = 0f;
+        fillAmountPackaging = 0f;
+        fillAmountQuality = 0f;
+        fillAmountProvenienza = 0f;
+        fillAmountStagione = 0f;
 
         if (MenuPrincipale.levelDifficulty == 0)
         {
@@ -66,15 +74,27 @@ public class SchermataFinale : MonoBehaviour
             MaskPrezzoFacile.fillAmount = fillAmountPrezzo;
             if (result.ecoPoints.HasValue)
             {
+                transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
                 fillAmountPackaging = (float)result.ecoPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
             }
             MaskPackagingFacile.fillAmount = fillAmountPackaging;
             if (result.qualityPoints.HasValue)
             {
+                transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
                 fillAmountQuality = (float)result.qualityPoints.Value / (float)Massimo;
             }
+            else
+            {
+                transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
+            }
             MaskQualityFacile.fillAmount = fillAmountQuality;
-        } else if (MenuPrincipale.levelDifficulty == 1)
+        } 
+        
+        else if (MenuPrincipale.levelDifficulty == 1)
         {
             fillAmountTotale = (float)result.totalPoints / (float)Massimo;
             fillAmountPrezzo = (float)result.pricePoints / (float)Massimo;
@@ -82,20 +102,36 @@ public class SchermataFinale : MonoBehaviour
             MaskPrezzoMedia.fillAmount = fillAmountPrezzo;
             if (result.ecoPoints.HasValue)
             {
+                transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
                 fillAmountPackaging = (float)result.ecoPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
             }
             MaskPackagingMedia.fillAmount = fillAmountPackaging;
             if (result.qualityPoints.HasValue)
             {
+                transform.GetChild(1).GetChild(1).gameObject.SetActive(true);
                 fillAmountQuality = (float)result.qualityPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
             }
             MaskQualityMedia.fillAmount = fillAmountQuality;
             if (result.originPoints.HasValue)
             {
+                transform.GetChild(1).GetChild(2).gameObject.SetActive(true);
                 fillAmountProvenienza = (float)result.originPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(1).GetChild(2).gameObject.SetActive(false);
             }
             MaskProvenienzaMedia.fillAmount = fillAmountProvenienza;
         }
+
         else
         {
             fillAmountTotale = (float)result.totalPoints / (float)Massimo;
@@ -104,22 +140,42 @@ public class SchermataFinale : MonoBehaviour
             MaskPrezzoDifficile.fillAmount = fillAmountPrezzo;
             if (result.ecoPoints.HasValue)
             {
+                transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
                 fillAmountPackaging = (float)result.ecoPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
             }
             MaskPackagingDifficile.fillAmount = fillAmountPackaging;
             if (result.qualityPoints.HasValue)
             {
+                transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
                 fillAmountQuality = (float)result.qualityPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
             }
             MaskQualityDifficile.fillAmount = fillAmountQuality;
             if (result.originPoints.HasValue)
             {
+                transform.GetChild(0).GetChild(2).gameObject.SetActive(true);
                 fillAmountProvenienza = (float)result.originPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(0).GetChild(2).gameObject.SetActive(false);
             }
             MaskProvenienzaDifficile.fillAmount = fillAmountProvenienza;
             if (result.seasonPoints.HasValue)
             {
+                transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
                 fillAmountStagione = (float)result.seasonPoints.Value / (float)Massimo;
+            }
+            else
+            {
+                transform.GetChild(0).GetChild(3).gameObject.SetActive(false);
             }
             MaskStagioneDifficile.fillAmount = fillAmountStagione;
         }       
@@ -130,7 +186,8 @@ public class SchermataFinale : MonoBehaviour
     {
         if (MenuPrincipale.levelDifficulty == 0)
         {
-            SchermataFacile.SetActive(true);       
+            SchermataFacile.SetActive(true);
+            
         } else if(MenuPrincipale.levelDifficulty == 1)
         {
             SchermataMedia.SetActive(true);
@@ -139,6 +196,7 @@ public class SchermataFinale : MonoBehaviour
         {
             SchermataDifficile.SetActive(true);
         }
+        GetCurrentFill();
     }
 
  
