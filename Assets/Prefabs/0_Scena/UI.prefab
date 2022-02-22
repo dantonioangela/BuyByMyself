@@ -3569,6 +3569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2a9b53f21d7b04f8b50d859ae8c98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carrello: {fileID: 0}
   otherPage: {fileID: 818117249}
   myButton: {fileID: 1448555571}
   nextButton: {fileID: 121024916422038164}
@@ -4261,6 +4262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2a9b53f21d7b04f8b50d859ae8c98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carrello: {fileID: 0}
   otherPage: {fileID: 1117207937767132028}
   myButton: {fileID: 121024916422038164}
   nextButton: {fileID: 1448555571}

@@ -55,24 +55,15 @@ public class UI_controller : MonoBehaviour
                 transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
                 transform.GetChild(0).GetChild(5).gameObject.SetActive(true);
                 inventarioActive = true;
-
+                transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().CleanInventario();
+                transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().CleanInventario();
                 for (i = 0; i < productsInInventario.Count; i++)
                 {
                     transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().AddProduct(productsInInventario[i]);
                 }
-                while (i < 15)
-                {
-                    transform.GetChild(0).GetChild(3).GetComponent<inventario_manager>().ReplaceProduct(i);
-                    i++;
-                }
                 for(i = 0; i < productsInInventarioNextPage.Count; i++)
                 {
                     transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().AddProduct(productsInInventarioNextPage[i]);
-                }
-                while (i < 15)
-                {
-                    transform.GetChild(0).GetChild(4).GetComponent<inventario_manager>().ReplaceProduct(i);
-                    i++;
                 }
                 transform.GetChild(0).GetChild(6).gameObject.SetActive(false);
                 transform.GetChild(0).GetChild(4).gameObject.SetActive(false);

@@ -98,13 +98,14 @@ public class slot_inventario_controller : MonoBehaviour, IDragHandler, IEndDragH
     {
         transform.GetComponent<RawImage>().texture = emptyTexture;
         slotEmpty = true;
-        Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<Carrello_controller>().RemoveProductFromChart(productInThisSlot);
+        transform.parent.GetComponent<inventario_manager>().carrello.RemoveProductFromChart(productInThisSlot);
+        //Camera.main.gameObject.transform.parent.GetChild(1).GetComponent<Carrello_controller>().RemoveProductFromChart(productInThisSlot);
         transform.parent.parent.parent.GetComponent<UI_controller>().RemoveProductFromInventario(productInThisSlot);
         productInThisSlot = null;
 
     }
 
-    public void ReplaceProduct()
+    public void CleanSlot()
     {
         transform.GetComponent<RawImage>().texture = emptyTexture;
         slotEmpty = true;

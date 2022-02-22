@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class inventario_manager : MonoBehaviour
 {
+    public Carrello_controller carrello;
     private int i;
     private int flag = -1;
     public inventario_manager otherPage;
@@ -57,7 +58,15 @@ public class inventario_manager : MonoBehaviour
 
     public void ReplaceProduct(int child)//, Product productReplace)
     {
-        transform.GetChild(child).GetComponent<slot_inventario_controller>().ReplaceProduct();
+        transform.GetChild(child).GetComponent<slot_inventario_controller>().CleanSlot();
 
+    }
+
+    public void CleanInventario()
+    {
+        for(int i = 0; i< transform.childCount -1 ; i++)
+        {
+            transform.GetChild(i).GetComponent<slot_inventario_controller>().CleanSlot();
+        }
     }
 }

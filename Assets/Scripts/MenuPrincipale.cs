@@ -63,7 +63,6 @@ public class MenuPrincipale : MonoBehaviour
             currentResolutionIndex = i;
         }
 
-        Debug.Log(options);
         MAINResolutionDropdownUI.AddOptions(options);
         MAINResolutionDropdownUI.value = currentResolutionIndex;
         MAINResolutionDropdownUI.RefreshShownValue();
