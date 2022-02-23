@@ -232,7 +232,6 @@ public class MenuPrincipale : MonoBehaviour
     public void Skip()
     {
         MainMenuActive = false;
-        inGame = true;
         MainMenuUI.SetActive(false);
         MainMenuActive = false;
         if (levelDifficulty == 0)
@@ -256,6 +255,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
         levelDifficulty = 0;
         Player_Controller.UI_active = true;
+        inGame = true;
         StartCoroutine(LoadFacile());
     }
 
@@ -275,6 +275,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
 		levelDifficulty = 1;
         Player_Controller.UI_active = true;
+        inGame = true;
         StartCoroutine(LoadMedia());
     }
 
@@ -293,6 +294,7 @@ public class MenuPrincipale : MonoBehaviour
         SceltaDiffUI.SetActive(false);
 		levelDifficulty = 2;
         Player_Controller.UI_active = true;
+        inGame = true;
         StartCoroutine(LoadDifficile());
     }
 
