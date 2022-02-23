@@ -35166,6 +35166,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: schermata_difficile_audio
+    clip: {fileID: 8300000, guid: 5a92d08ac29c6d84ba6fa3239c59031d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: schermata_media_audio
+    clip: {fileID: 8300000, guid: 008f0c3594a77eb469094ddb3b69d7b4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: schermata_facile_audio
+    clip: {fileID: 8300000, guid: 570cc5796a947a345ac20e29d79c0496, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   audiomixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
 --- !u!4 &1869201865
 Transform:

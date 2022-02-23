@@ -237,12 +237,15 @@ public class MenuPrincipale : MonoBehaviour
         if (levelDifficulty == 0)
         {
             SchermataFacileGame.SetActive(false);
+            audioManager.Stop("schermata_facile_audio");
         } else if (levelDifficulty == 1)
         {
             SchermataMediaGame.SetActive(false);
+            audioManager.Stop("schermata_media_audio");
         } else
         {
             SchermataDifficileGame.SetActive(false);
+            audioManager.Stop("schermata_difficile_audio");
         }
         Player_Controller.UI_active = false;
     }
@@ -262,7 +265,8 @@ public class MenuPrincipale : MonoBehaviour
         LevelTransition.SetTrigger("End");
         audioManager.Play("GameplayMusic");
         yield return new WaitForSeconds(1.3f);
-        SchermataFacileGame.SetActive(true);        
+        SchermataFacileGame.SetActive(true);
+        audioManager.PlayInstance("schermata_facile_audio");
     }
 
     public void PartitaMedia()
@@ -281,6 +285,7 @@ public class MenuPrincipale : MonoBehaviour
         audioManager.Play("GameplayMusic");
         yield return new WaitForSeconds(1.3f);
         SchermataMediaGame.SetActive(true);
+        audioManager.PlayInstance("schermata_media_audio");
     }
     public void PartitaDifficile()
     {
@@ -298,6 +303,7 @@ public class MenuPrincipale : MonoBehaviour
         audioManager.Play("GameplayMusic");
         yield return new WaitForSeconds(1.3f);
         SchermataDifficileGame.SetActive(true);
+        audioManager.PlayInstance("schermata_difficile_audio");
     }
 
 }
