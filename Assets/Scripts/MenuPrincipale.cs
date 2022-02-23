@@ -110,30 +110,31 @@ public class MenuPrincipale : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!inGame)
-            {
-                if (inOptions)
+                if (!inGame)
                 {
-                    Indietro();
+                    if (inOptions)
+                    {
+                        Indietro();
+                    }
+
+                    if (inScelta)
+                    {
+                        BackToMainMenu();
+                    }
+
+                    if (inCredits)
+                    {
+                        RitornoDaCredits();
+                    }
+
+                    if (inComandi)
+                    {
+                        RitornoDaComandi();
+                    }
                 }
 
-                if (inScelta)
-                {
-                    BackToMainMenu();
-                }
-
-                if (inCredits)
-                {
-                    RitornoDaCredits();
-                }
-
-                if (inComandi)
-                {
-                    RitornoDaComandi();
-                }
             }
-
-        }
+        
     }
 
     public void StartGame()
