@@ -42,7 +42,7 @@ public class tutorial_canvas_controller : MonoBehaviour
     {
         if ( counter == 0 || counter == 2 || counter == 6 || counter == 13)
         {
-            if (speech.isReady)
+            if (Tutorial_typewriter.isReady)
             {
                 counter++;
                 if (counter == 1) { StopSounds(); audioMan.PlayInstance("01"); }
@@ -55,7 +55,7 @@ public class tutorial_canvas_controller : MonoBehaviour
         }
         if (counter == 16)
         {
-            if (speech.isReady)
+            if (Tutorial_typewriter.isReady)
             {
                 StopSounds();
                 audioMan.PlayInstance("16");
