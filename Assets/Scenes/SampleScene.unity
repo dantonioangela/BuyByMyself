@@ -10331,6 +10331,8 @@ MonoBehaviour:
   legendaOpened: 0
   OggettiNonInListaAnim: {fileID: 1593421711}
   oggettiNonInListaOpened: 0
+  LegendaButton: {fileID: 991605317}
+  OggettiNonInListaButton: {fileID: 1537949081}
 --- !u!114 &557809208
 MonoBehaviour:
   m_ObjectHideFlags: 0

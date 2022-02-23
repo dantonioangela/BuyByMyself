@@ -20,6 +20,9 @@ public class Resoconti : MonoBehaviour
     public Animator OggettiNonInListaAnim;
     public bool oggettiNonInListaOpened = false;
 
+    public Button LegendaButton;
+    public Button OggettiNonInListaButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -209,14 +212,18 @@ public class Resoconti : MonoBehaviour
     IEnumerator CloseLegenda()
     {
         LegendaAnim.SetTrigger("Close");
+        LegendaButton.interactable = false;
         yield return new WaitForSeconds(0.5f);
+        LegendaButton.interactable = true;
         legendaOpened = false;
     }
 
     IEnumerator OpenLegenda()
     {
         LegendaAnim.SetTrigger("Open");
+        LegendaButton.interactable = false;
         yield return new WaitForSeconds(0.5f);
+        LegendaButton.interactable = true;
         legendaOpened = true;
     }
 
@@ -236,14 +243,18 @@ public class Resoconti : MonoBehaviour
     IEnumerator CloseOggettiNonInLista()
     {
         OggettiNonInListaAnim.SetTrigger("Close");
+        OggettiNonInListaButton.interactable = false;
         yield return new WaitForSeconds(0.5f);
+        OggettiNonInListaButton.interactable = true;
         oggettiNonInListaOpened = false;
     }
 
     IEnumerator OpenOggettiNonInLista()
     {
         OggettiNonInListaAnim.SetTrigger("Open");
+        OggettiNonInListaButton.interactable = false;
         yield return new WaitForSeconds(0.5f);
+        OggettiNonInListaButton.interactable = true;
         oggettiNonInListaOpened = true;
     }
 
