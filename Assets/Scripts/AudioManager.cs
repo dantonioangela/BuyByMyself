@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     private Sound playingSound = null;
+    public AudioMixer audiomixer;
     
     void Awake()
     {
@@ -17,6 +18,8 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
+        //audiomixer.SetFloat("MasterVolume", volume.vol);
+        setGeneralVolume(volume.vol);
     }
 
     public void Play(string name)
@@ -55,12 +58,13 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-    public void setGeneralVolume(float volume)
+    public void setGeneralVolume(float volum)
     {
-        float value = volume;
+        float value = volum;
         float from1 = 0;
         float to1 = 1;
         float from2 = 0;
+        volume.vol = volum;
         
         foreach(Sound sound in sounds)
         {

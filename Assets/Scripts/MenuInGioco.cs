@@ -15,8 +15,9 @@ public class MenuInGioco : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject OptionsMenuUI;
     public GameObject MainMenuUI;
+    public Slider volSlider;
 
-    public AudioMixer audioMixer;
+    //public AudioMixer audioMixer;
 
     Resolution[] resolutions;
     public Dropdown ResolutionDropdownUI;
@@ -124,6 +125,7 @@ public class MenuInGioco : MonoBehaviour
 
     public void Opzioni()
     {
+        volSlider.value = volume.vol;
         PauseMenuUI.SetActive(false);
         OptionsMenuUI.SetActive(true);
         MenuPrincipale.MainMenuActive = true;
@@ -150,9 +152,11 @@ public class MenuInGioco : MonoBehaviour
         inOptions = false;
     }
 
-    public void Volume(float volume)
+    public void Volume(float v)
     {
-        audioMixer.SetFloat("MasterVolume", volume);
+        //audioMixer.SetFloat("MasterVolume", volume);
+        //AudioManager.volume = volume;
+        //volume.vol = v;
     }
 
     public void SetGrafica(int graficaIndex)

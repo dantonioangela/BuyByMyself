@@ -15,6 +15,7 @@ public class MenuPrincipale : MonoBehaviour
     public GameObject SceltaDiffUI;
 	public static int levelDifficulty; //0 = facile, 1 = normale, 2 = difficile;
     private AudioManager audioManager;
+    public Slider volSlider;
 
     public GameObject CreditsUI;
     public GameObject ComandiUI;
@@ -146,6 +147,7 @@ public class MenuPrincipale : MonoBehaviour
     {
         MainMenuUI.SetActive(false);
         OptionsUI.SetActive(true);
+        volSlider.value = volume.vol;
         inOptions = true;
     }
 

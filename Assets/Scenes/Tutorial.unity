@@ -1706,6 +1706,109 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: 00
+    clip: {fileID: 8300000, guid: f8d5d1159cc464e4786c571fd8d98a86, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 01
+    clip: {fileID: 8300000, guid: 32bda708cc559ef4f9aa8b08ae1a1a51, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 02
+    clip: {fileID: 8300000, guid: 43a9f1e11673ace43b86a3e26ef2d336, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 03
+    clip: {fileID: 8300000, guid: 5b1f266d0d2423544a456c52bfbca55a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 04
+    clip: {fileID: 8300000, guid: 63e116d984674a441ad9d2f7b6b7592d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 05
+    clip: {fileID: 8300000, guid: 4b4c1797d4e564b43bd6a9665c149b46, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 06
+    clip: {fileID: 8300000, guid: c87061e684908d94d94b483d0082e0c2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 07
+    clip: {fileID: 8300000, guid: 1be0d71fce091f242b7dfc67f2f24ce2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 08
+    clip: {fileID: 8300000, guid: 3e2646c017b2d2941b5d4677b6426bc4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 09
+    clip: {fileID: 8300000, guid: 9d8160ca81a53394b91bda1ef287696a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 10
+    clip: {fileID: 8300000, guid: e62a60078d5368b4b9ed90c7f5d235be, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 11
+    clip: {fileID: 8300000, guid: ff4c594d14de1724ba658fa17d174434, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 12
+    clip: {fileID: 8300000, guid: 3d7635b257f04744d81bf82e4aa022dc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 13
+    clip: {fileID: 8300000, guid: 171d1fe467ffcfd4f937eac634226e53, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 14
+    clip: {fileID: 8300000, guid: d999304687703bc4291f4265db694b97, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 15
+    clip: {fileID: 8300000, guid: eec3328ec108ee44a8469902d99c146b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 16
+    clip: {fileID: 8300000, guid: 69dedd2da3a78ea43ade89c964ab39aa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  audiomixer: {fileID: 24100000, guid: 9262446087984be4b809295da6013385, type: 2}
 --- !u!4 &368488878
 Transform:
   m_ObjectHideFlags: 0
@@ -5272,6 +5375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0c8d7f5430ae14c9e413e5bcbf4d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMan: {fileID: 368488877}
   tutorialStepBananaInventarioDone: 0
 --- !u!1 &1941962803
 GameObject:

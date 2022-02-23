@@ -53,7 +53,9 @@ public class Tutorial_typewriter : MonoBehaviour
         yield return new WaitForSecondsRealtime(2);
         Clean();
         cloud.enabled = false;
+        Debug.Log("Ready again");
         isReady = true;
+        yield return null;
     }
 
     public void ChangeCounter(int c)
