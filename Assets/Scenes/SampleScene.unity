@@ -39857,19 +39857,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 49443756, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_text
-      value: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
-        Chiara
-      objectReference: {fileID: 0}
-    - target: {fileID: 49443756, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 49443756, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 58948723, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -39878,83 +39865,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1827315911}
-    - target: {fileID: 180582115, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 180582115, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 276740370, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 276740370, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 472825994, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_text
-      value: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
-        Chiara
-      objectReference: {fileID: 0}
-    - target: {fileID: 472825994, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 472825994, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 499083551, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_text
-      value: Francesco De Stefano, Marco Offre, Andrea Parente, Emanuele Parente
-      objectReference: {fileID: 0}
-    - target: {fileID: 499083551, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 499083551, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 834115665, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_text
-      value: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Parente Chiara.
-      objectReference: {fileID: 0}
-    - target: {fileID: 834115665, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 834115665, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204636742, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_text
-      value: D'Antonio Angela
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204636742, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204636742, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1813119414, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -154.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042166865, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042166865, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1055872226881998580, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -39983,10 +39893,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1820791569}
-    - target: {fileID: 2377125509898266577, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3833277751940110269, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -40007,10 +39913,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1820791569}
-    - target: {fileID: 6587419877368866680, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7154852180260696330, guid: a691f4e4f8afb454ea9149c49f24ea7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

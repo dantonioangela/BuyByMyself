@@ -200,7 +200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D'antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
+  m_text: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
     Chiara
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -579,8 +579,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -713,8 +713,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D'antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
+  m_text: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Palma Alessandro, Parente
     Chiara
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -848,8 +848,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -955,7 +955,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Francesco De Stefano, Andrea Gravile, Marco Offre, Andrea Parente, Emanuele
+    Parente
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
   m_sharedMaterial: {fileID: 7048159749325758348, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -982,8 +983,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1581,7 +1582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D'antonio Angela, Nuovo Caterina, Offre Giacomo, Parente Chiara.
+  m_text: D'Antonio Angela, Nuovo Caterina, Offre Giacomo, Parente Chiara.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
   m_sharedMaterial: {fileID: 7048159749325758348, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -1608,8 +1609,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1850,7 +1851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D'antonio Angela
+  m_text: D'Antonio Angela
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
   m_sharedMaterial: {fileID: 7048159749325758348, guid: da1cffafa9f6e6f4f8d8b70cc8000743, type: 2}
@@ -1877,8 +1878,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2367,7 +2368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -199.99802, y: -138}
+  m_AnchoredPosition: {x: -199.99802, y: -154.2}
   m_SizeDelta: {x: 384.0039, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1813119416
@@ -2632,8 +2633,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
